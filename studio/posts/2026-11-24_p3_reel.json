@@ -1,0 +1,146 @@
+{
+  "id": "2026-11-24_p3_reel",
+  "kind": "reel_overlays",
+  "title": "DÍA 1 · Cuenta nueva, 0 seguidores",
+  "overlays": [
+    {
+      "id": "cuenta-nueva",
+      "pos": "top",
+      "lines": [
+        {
+          "t": "Cuenta nueva.",
+          "size": "l"
+        },
+        {
+          "t": "<span class='c'>0</span> seguidores.",
+          "size": "l"
+        }
+      ]
+    },
+    {
+      "id": "meta",
+      "pos": "mid",
+      "lines": [
+        {
+          "t": "Meta:",
+          "size": "m"
+        },
+        {
+          "t": "<span class='c'>100K</span>",
+          "size": "xl"
+        },
+        {
+          "t": "seguidores.",
+          "size": "l"
+        }
+      ]
+    },
+    {
+      "id": "60-dias",
+      "pos": "mid",
+      "lines": [
+        {
+          "t": "En 60 días.",
+          "size": "xl"
+        }
+      ]
+    },
+    {
+      "id": "sin-bots",
+      "pos": "low",
+      "lines": [
+        {
+          "t": "Sin comprar seguidores.",
+          "size": "m"
+        },
+        {
+          "t": "Sin bots.",
+          "size": "l"
+        }
+      ]
+    },
+    {
+      "id": "todo-publico",
+      "pos": "low",
+      "lines": [
+        {
+          "t": "Todo lo que pruebe,",
+          "size": "m"
+        },
+        {
+          "t": "lo publico aquí.",
+          "size": "l"
+        }
+      ]
+    },
+    {
+      "id": "numeros-reales",
+      "pos": "top",
+      "lines": [
+        {
+          "t": "Números reales.",
+          "size": "l"
+        },
+        {
+          "t": "Cada semana.",
+          "size": "l"
+        }
+      ]
+    },
+    {
+      "id": "lo-logro",
+      "pos": "mid",
+      "lines": [
+        {
+          "t": "¿Lo logro?",
+          "size": "xl"
+        }
+      ]
+    },
+    {
+      "id": "sigueme",
+      "pos": "top",
+      "lines": [
+        {
+          "t": "Sígueme",
+          "size": "l"
+        },
+        {
+          "t": "desde el <span class='c'>día 1</span>.",
+          "size": "l"
+        },
+        {
+          "t": "RUTA 100K · Día 01/60",
+          "size": "s"
+        }
+      ]
+    },
+    {
+      "id": "portada",
+      "pos": "mid",
+      "bg": true,
+      "lines": [
+        {
+          "t": "RUTA 100K · Día 01/60",
+          "size": "s"
+        },
+        {
+          "t": "<span class='c' style='font-size:330px'>Día 1</span>",
+          "size": "xl"
+        },
+        {
+          "t": "0 seguidores.",
+          "size": "l"
+        },
+        {
+          "t": "Meta: 100K",
+          "size": "l"
+        },
+        {
+          "t": "en 60 días.",
+          "size": "l"
+        }
+      ]
+    }
+  ]
+}

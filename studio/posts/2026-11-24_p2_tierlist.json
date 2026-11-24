@@ -1,0 +1,255 @@
+{
+  "id": "2026-11-24_p2_tierlist",
+  "kind": "carousel",
+  "series": "FUENTE OFICIAL",
+  "foot_left": "Solo declaraciones de Instagram y Meta",
+  "foot_last": "Verificado el 24/11/2026",
+  "slides": [
+    {
+      "type": "cover_text",
+      "theme": "dark",
+      "kicker": "Fuente oficial · verificado en noviembre de 2026",
+      "display": [
+        "Tier list"
+      ],
+      "display_size": 250,
+      "h1": "13 tácticas para crecer en Instagram, clasificadas solo con lo que Instagram ha dicho.",
+      "lead": "Cero opiniones de gurús. Las fuentes están en la última slide.",
+      "teaser_label": "Los 5 niveles",
+      "teaser": [
+        "Elite",
+        "Solid",
+        "Okay",
+        "Limit",
+        "Avoid"
+      ]
+    },
+    {
+      "type": "numbered",
+      "kicker": "Primero, la base",
+      "h2": "Las 3 señales que Adam Mosseri llamó las más importantes",
+      "items": [
+        {
+          "t": "Tiempo de visualización",
+          "d": "Cuánto tiempo la gente ve tu contenido."
+        },
+        {
+          "t": "Envíos por alcance",
+          "d": "Cuántos de los que lo ven lo mandan por DM. Pesa un poco más para llegar a quien no te sigue."
+        },
+        {
+          "t": "Likes por alcance",
+          "d": "Cuántos de los que lo ven le dan like. Pesa un poco más con tus seguidores."
+        }
+      ],
+      "foot_left": "Adam Mosseri, enero 2025, vía Social Media Today"
+    },
+    {
+      "type": "tier",
+      "tier": "elite",
+      "label": "Elite",
+      "sub": "Lo que Instagram confirmó que pesa más",
+      "entries": [
+        {
+          "t": "Contenido que da ganas de enviar",
+          "d": "Es una de las 3 señales principales, y para llegar a quien no te sigue pesa un poco más que los likes.",
+          "src": "Mosseri, enero 2025"
+        },
+        {
+          "t": "Enganchar en los primeros 3 segundos",
+          "d": "Instagram lo recomienda, y desde diciembre de 2025 su API muestra cuánta gente salta tu Reel en ese tramo.",
+          "src": "Instagram Creators · Meta for Developers, 03/12/2025"
+        },
+        {
+          "t": "Contenido 100% original",
+          "d": "Si alguien sube tu mismo video, Instagram recomienda solo el original y etiqueta la copia.",
+          "src": "Instagram Creators, 30/04/2024"
+        }
+      ]
+    },
+    {
+      "type": "tier",
+      "tier": "solid",
+      "label": "Solid",
+      "sub": "Lo que Instagram recomienda usar",
+      "entries": [
+        {
+          "t": "Trial Reels",
+          "d": "Muestras un Reel primero a quien no te sigue. Si le va bien en 72 horas, puede compartirse automáticamente con tus seguidores.",
+          "src": "Instagram Creators, 10/12/2024 · se desbloquea por etapas"
+        },
+        {
+          "t": "Collabs",
+          "d": "Un mismo post en dos cuentas, visible para los seguidores de ambas y apto para recomendaciones.",
+          "src": "Instagram Creators"
+        },
+        {
+          "t": "Palabras clave en tu perfil",
+          "d": "Instagram aconseja ponerlas en tu nombre de usuario, tu bio y tus descripciones para aparecer en las búsquedas.",
+          "src": "Instagram Creators"
+        },
+        {
+          "t": "Revisar “Estado de la cuenta”",
+          "d": "Te dice si tu cuenta o tus posts no pueden recomendarse a quien no te sigue, y te deja pedir revisión.",
+          "src": "Instagram Creators"
+        }
+      ],
+      "compact": true
+    },
+    {
+      "type": "tiers",
+      "blocks": [
+        {
+          "tier": "okay",
+          "label": "Okay",
+          "sub": "Permitido, sin ventaja oficial",
+          "entries": [
+            {
+              "t": "Reels de hasta 3 minutos",
+              "d": "Instagram puede recomendar Reels de hasta 3 minutos. Nada oficial dice que más largos funcionen mejor.",
+              "src": "Instagram Creators, 2025"
+            },
+            {
+              "t": "Carruseles y fotos",
+              "d": "También pueden recomendarse a quien no te sigue, si son originales.",
+              "src": "Original Content Guidelines, 2026"
+            }
+          ]
+        },
+        {
+          "tier": "limit",
+          "label": "Limit",
+          "sub": "Úsalos, pero no esperes alcance",
+          "entries": [
+            {
+              "t": "Hashtags",
+              "d": "Máximo 5 por post desde diciembre de 2025. Según Mosseri no aumentan el alcance: describen el tema.",
+              "src": "Instagram (@creators), dic. 2025 · Mosseri, 2025"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tier",
+      "tier": "avoid",
+      "label": "Avoid",
+      "sub": "Lo que te saca de las recomendaciones",
+      "entries": [
+        {
+          "t": "Resubir contenido ajeno",
+          "d": "Desde el 30/04/2026, las cuentas que suben con frecuencia contenido que no crearon dejan de recomendarse en toda la app, carruseles incluidos.",
+          "src": "Instagram, vía TechCrunch, 30/04/2026"
+        },
+        {
+          "t": "Videos con marca de agua",
+          "d": "Instagram dice que tienen menos probabilidades de ser recomendados. Un borde, otra velocidad o dar crédito no vuelven original un video.",
+          "src": "Instagram Creators · Original Content Guidelines"
+        },
+        {
+          "t": "Apps para inflar seguidores o likes",
+          "d": "Instagram detecta y borra la interacción falsa de apps de crecimiento, y limita las cuentas que las usan.",
+          "src": "Instagram, nov. 2018, vía Engadget"
+        }
+      ]
+    },
+    {
+      "type": "tiergrid",
+      "kicker": "Para guardar",
+      "h2": "La tier list completa",
+      "rows": [
+        {
+          "tier": "elite",
+          "label": "Elite",
+          "chips": [
+            "Contenido para enviar",
+            "Primeros 3 segundos",
+            "Contenido original"
+          ]
+        },
+        {
+          "tier": "solid",
+          "label": "Solid",
+          "chips": [
+            "Trial Reels",
+            "Collabs",
+            "Palabras clave",
+            "Estado de la cuenta"
+          ]
+        },
+        {
+          "tier": "okay",
+          "label": "Okay",
+          "chips": [
+            "Reels hasta 3 min",
+            "Carruseles y fotos"
+          ]
+        },
+        {
+          "tier": "limit",
+          "label": "Limit",
+          "chips": [
+            "Hashtags"
+          ]
+        },
+        {
+          "tier": "avoid",
+          "label": "Avoid",
+          "chips": [
+            "Resubir contenido",
+            "Marcas de agua",
+            "Inflar seguidores"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sources",
+      "kicker": "Fuentes",
+      "h2": "Todo lo que cité, para que lo revises",
+      "items": [
+        {
+          "t": "Mosseri: las 3 señales más importantes, ene. 2025",
+          "u": "socialmediatoday.com/news/instagram-shares-algorithm-insights-2025/738034"
+        },
+        {
+          "t": "Trial Reels, 10/12/2024",
+          "u": "creators.instagram.com/blog/instagram-trial-reels"
+        },
+        {
+          "t": "Recomendaciones y originalidad, 30/04/2024",
+          "u": "creators.instagram.com/recommendations-and-originality"
+        },
+        {
+          "t": "Guía de contenido original, 2026",
+          "u": "creators.instagram.com/original-content-guidelines"
+        },
+        {
+          "t": "Cuentas que repostean, 30/04/2026",
+          "u": "techcrunch.com/2026/04/30/instagram-restricts-reach-of-content-aggregators-in-new-crackdown"
+        },
+        {
+          "t": "Límite de 5 hashtags, dic. 2025",
+          "u": "socialmediatoday.com/news/instagram-implements-new-limits-on-hashtag-use/808309"
+        },
+        {
+          "t": "Alcance, marcas de agua y collabs",
+          "u": "creators.instagram.com/blog/tips-for-improving-your-reach"
+        },
+        {
+          "t": "Estado de la cuenta y palabras clave",
+          "u": "creators.instagram.com/blog/instagram-recommendations-eligibility-tips-creators"
+        },
+        {
+          "t": "Tasa de salto de Reels en la API, 03/12/2025",
+          "u": "developers.facebook.com/blog/post/2025/12/03/instragram-api-updates"
+        },
+        {
+          "t": "Interacción falsa de apps de terceros, 19/11/2018",
+          "u": "engadget.com/2018/11/19/instagram-cracks-down-fake-likes-follows-comments"
+        }
+      ],
+      "cta": "Envíaselo a quien todavía cree que los hashtags dan <b>alcance</b>."
+    }
+  ]
+}

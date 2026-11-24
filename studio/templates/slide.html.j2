@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{ root }}/brand/brand.css">
+<style>:root { --w: {{ W }}px; --h: {{ H }}px; }</style>
+</head>
+<body>
+{%- set theme = s.theme or 'light' %}
+<section class="slide {{ theme }} {{ s.type|replace('_','-') }} {{ s.type }}{{ ' compact' if s.compact }}">
+  <div class="grid">{% for k in range(7) %}<i style="left: calc(var(--pad) + {{ k }} * (var(--w) - 2 * var(--pad)) / 6)"></i>{% endfor %}</div>
+
+  <header class="top">
+    <span class="brand">RUTA <em>100K</em></span>
+    <span class="meta mono">{{ post.series }} · {{ '%02d' % i }}/{{ '%02d' % n }}</span>
+  </header>
+
+  <div class="body">
+  {%- if s.type == 'cover_num' %}
+    <div class="kicker mono">{{ s.kicker }}</div>
+    <div class="display bignum" data-fit{% if s.number_size %} style="font-size: {{ s.number_size }}px"{% endif %}>{{ s.number }}</div>
+    <h1 class="h1">{{ s.h1|safe }}</h1>
+    {% if s.lead %}<p class="lead">{{ s.lead|safe }}</p>{% endif %}
+    {% if s.teaser %}<div class="teaser"><div class="lab mono">{{ s.teaser_label }}</div><div class="items">{% for it in s.teaser %}<div class="it"><span class="mono">{{ '%02d' % loop.index }}</span>{{ it }}</div>{% endfor %}</div></div>{% endif %}
+
+  {%- elif s.type == 'cover_text' %}
+    <div class="kicker mono {{ 'coral' if s.kicker_coral }}">{{ s.kicker }}</div>
+    {% for d in s.display %}<div class="display" data-fit style="font-size: {{ s.display_size or 210 }}px">{{ d|safe }}</div>{% endfor %}
+    <h1 class="h1">{{ s.h1|safe }}</h1>
+    {% if s.lead %}<p class="lead muted">{{ s.lead|safe }}</p>{% endif %}
+    {% if s.teaser %}<div class="teaser"><div class="lab mono">{{ s.teaser_label }}</div><div class="items">{% for it in s.teaser %}<div class="it"><span class="mono">{{ '%02d' % loop.index }}</span>{{ it }}</div>{% endfor %}</div></div>{% endif %}
+
+  {%- elif s.type == 'tool' %}
+    <div class="idx mono"><span class="coral">{{ s.idx }}</span><span class="muted">{{ s.category }}</span></div>
+    <div class="paid">
+      <div class="label mono">En vez de pagar</div>
+      <div class="paid-row"><span class="paid-name">{{ s.paid.name }}</span><span class="paid-price">{{ s.paid.price }}</span></div>
+    </div>
+    <div class="free">
+      <div class="label mono">Usa gratis</div>
+      <div class="display free-name" data-fit>{{ s.free.name }}</div>
+      <p class="desc">{{ s.free.desc|safe }}</p>
+    </div>
+    <div class="bottom">
+    <div class="facts">
+      {% for f in s.facts %}<div class="fact"><div class="k mono">{{ f.k }}</div><div class="v">{{ f.v }}</div></div>{% endfor %}
+    </div>
+    {% if s.platforms %}<div class="platforms mono">{{ s.platforms }}</div>{% endif %}
+    <div class="pros">
+      <div class="pro"><span class="sign">+</span><span>{{ s.good|safe }}</span></div>
+      <div class="pro minus"><span class="sign">−</span><span>{{ s.limit|safe }}</span></div>
+    </div>
+    </div>
+
+  {%- elif s.type == 'summary' %}
+    <div class="kicker mono">{{ s.kicker }}</div>
+    <h2 class="h2">{{ s.h2|safe }}</h2>
+    <table>
+      {% for r in s.rows %}<tr><td class="paid">{{ r.paid }}</td><td class="arrow">→</td><td class="free">{{ r.free }}</td><td class="amt">{{ r.amt }}</td></tr>{% endfor %}
+      <tr class="total"><td colspan="3" class="free">{{ s.total.label }}</td><td class="amt">{{ s.total.amt }}</td></tr>
+    </table>
+    {% if s.note %}<p class="note mono">{{ s.note }}</p>{% endif %}
+
+  {%- elif s.type == 'cta' %}
+    <div class="kicker mono">{{ s.kicker }}</div>
+    <div class="verb">{{ s.verb }}</div>
+    <div class="display keyword" data-fit>{{ s.keyword }}</div>
+    <p class="lead">{{ s.lead|safe }}</p>
+    {% if s.list %}<div class="list">{% for r in s.list %}<div class="row"><span class="n">{{ '%02d' % loop.index }}</span><span>{{ r|safe }}</span></div>{% endfor %}</div>{% endif %}
+
+  {%- elif s.type == 'numbered' %}
+    <div class="kicker mono">{{ s.kicker }}</div>
+    <h2 class="h2" style="margin-bottom: 34px">{{ s.h2|safe }}</h2>
+    {% for it in s['items'] %}<div class="item"><div class="num">{{ loop.index }}</div><div><div class="t">{{ it.t|safe }}</div>{% if it.d %}<div class="d">{{ it.d|safe }}</div>{% endif %}{% if it.src %}<div class="src mono">{{ it.src }}</div>{% endif %}</div></div>{% endfor %}
+
+  {%- elif s.type == 'tier' %}
+    <div class="tierhead"><div class="badge {{ s.tier }}">{{ s.label }}</div><div class="tiersub muted">{{ s.sub|safe }}</div></div>
+    {% for e in s.entries %}<div class="entry"><div class="t">{{ e.t|safe }}</div><div class="d">{{ e.d|safe }}</div>{% if e.src %}<div class="src mono">{{ e.src }}</div>{% endif %}</div>{% endfor %}
+
+  {%- elif s.type == 'tiers' %}
+    {% for b in s.blocks %}<div class="tblock"><div class="tierhead"><div class="badge {{ b.tier }}">{{ b.label }}</div><div class="tiersub muted">{{ b.sub|safe }}</div></div>
+    {% for e in b.entries %}<div class="entry"><div class="t">{{ e.t|safe }}</div><div class="d">{{ e.d|safe }}</div>{% if e.src %}<div class="src mono">{{ e.src }}</div>{% endif %}</div>{% endfor %}</div>{% endfor %}
+
+  {%- elif s.type == 'tiergrid' %}
+    <div class="kicker mono">{{ s.kicker }}</div>
+    <h2 class="h2" style="margin-bottom: 30px">{{ s.h2|safe }}</h2>
+    {% for r in s.rows %}<div class="row {{ r.tier }}"><div class="lab {{ r.tier }}">{{ r.label }}</div><div class="chips">{% for c in r.chips %}<span class="chip">{{ c }}</span>{% endfor %}</div></div>{% endfor %}
+
+  {%- elif s.type == 'sources' %}
+    <div class="kicker mono">{{ s.kicker }}</div>
+    <h2 class="h2" style="margin-bottom: 26px">{{ s.h2|safe }}</h2>
+    {% for it in s['items'] %}<div class="srcrow"><span class="n">{{ '%02d' % loop.index }}</span><div><div>{{ it.t|safe }}</div>{% if it.u %}<div class="u">{{ it.u }}</div>{% endif %}</div></div>{% endfor %}
+    {% if s.cta %}<p class="lead" style="margin-top: auto; padding-top: 30px">{{ s.cta|safe }}</p>{% endif %}
+
+  {%- elif s.type == 'text' %}
+    {% if s.kicker %}<div class="kicker mono">{{ s.kicker }}</div>{% endif %}
+    <h1 class="h1">{{ s.h1|safe }}</h1>
+    {% for p in s.paragraphs %}<p class="p">{{ p|safe }}</p>{% endfor %}
+  {%- endif %}
+  </div>
+
+  <footer class="foot mono">
+    <span>{{ s.foot_left or post.foot_left }}</span>
+    <span class="right">{{ s.foot_right or ('Desliza →' if i < n else post.foot_last or '') }}</span>
+  </footer>
+</section>
+<script>
+  // Ajuste automatique : réduit la taille des titres data-fit tant que le texte dépasse la colonne.
+  const textWidth = el => { const r = document.createRange(); r.selectNodeContents(el); return r.getBoundingClientRect().width; };
+  document.fonts.ready.then(() => {
+    document.querySelectorAll('[data-fit]').forEach(el => {
+      const max = el.parentElement.getBoundingClientRect().width;
+      let size = parseFloat(getComputedStyle(el).fontSize);
+      while (textWidth(el) > max && size > 40) { size -= 2; el.style.fontSize = size + 'px'; }
+    });
+    document.body.dataset.ready = '1';
+  });
+</script>
+</body>
+</html>

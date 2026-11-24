@@ -1,0 +1,112 @@
+{
+ "id": "2026-11-25_p6_prompt",
+ "kind": "carousel",
+ "series": "RECURSO GRATIS",
+ "foot_left": "RUTA 100K · Día 2 de 60",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "Recurso gratis · Día 2",
+   "display": [
+    "1 prompt,",
+    "1 carrusel."
+   ],
+   "display_size": 230,
+   "h1": "El prompt con el que escribo los carruseles de esta cuenta.",
+   "lead": "Funciona en ChatGPT, Claude o Gemini. Completo y gratis al final.",
+   "teaser_label": "Lo que resuelve",
+   "teaser": [
+    "El gancho",
+    "La estructura",
+    "El CTA"
+   ]
+  },
+  {
+   "type": "numbered",
+   "theme": "light",
+   "kicker": "Por qué falla",
+   "h2": "«Hazme un carrusel sobre X» falla porque:",
+   "items": [
+    {
+     "t": "No hay objetivo",
+     "d": "Guardar, enviar o comentar piden carruseles distintos."
+    },
+    {
+     "t": "No hay lector",
+     "d": "Sin nicho ni nivel, la IA escribe para nadie."
+    },
+    {
+     "t": "No hay reglas",
+     "d": "Sin límite de palabras, te llena cada slide de texto."
+    }
+   ]
+  },
+  {
+   "type": "numbered",
+   "theme": "dark",
+   "compact": true,
+   "kicker": "Cómo está armado",
+   "h2": "Las 5 partes del prompt",
+   "items": [
+    {
+     "t": "Contexto",
+     "d": "Tu nicho, tu lector y tus fuentes."
+    },
+    {
+     "t": "Objetivo",
+     "d": "Una sola acción: guardar, enviar o comentar."
+    },
+    {
+     "t": "Estructura",
+     "d": "Gancho, por qué importa, valor, resumen y CTA."
+    },
+    {
+     "t": "Reglas",
+     "d": "Una idea por slide. Cero relleno."
+    },
+    {
+     "t": "Entrega",
+     "d": "Texto por slide, nota de diseño y 3 ganchos alternativos."
+    }
+   ]
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "La regla que más cambia",
+   "display": [
+    "Cero datos",
+    "inventados."
+   ],
+   "display_size": 200,
+   "h1": "Si falta un dato, la IA escribe [VERIFICAR] en su lugar.",
+   "lead": "Así nunca publicas una cifra que no puedes defender."
+  },
+  {
+   "type": "text",
+   "theme": "dark",
+   "kicker": "Vista previa",
+   "h1": "Así empieza:",
+   "paragraphs": [
+    "<span class=\"mono\" style=\"font-size:40px; line-height:1.34; text-transform:none; letter-spacing:0; display:block; padding-left:28px; border-left:3px solid var(--coral)\">Actúa como editor de carruseles para redes sociales, en español latino neutro.</span>",
+    "<span class=\"mono\" style=\"font-size:40px; line-height:1.34; text-transform:none; letter-spacing:0; display:block; padding-left:28px; border-left:3px solid var(--coral)\">OBJETIVO: el carrusel busca una sola acción: [GUARDAR / ENVIAR / COMENTAR].</span>",
+    "<span class=\"mono\" style=\"font-size:40px; line-height:1.34; text-transform:none; letter-spacing:0; display:block; padding-left:28px; border-left:3px solid var(--coral)\">REGLA: no inventes datos. Si falta uno, escribe [VERIFICAR: qué dato].</span>",
+    "<span class=\"mono\" style=\"font-size:40px; line-height:1.34; text-transform:none; letter-spacing:0; display:block; padding-left:28px; border-left:3px solid var(--coral)\">…</span>"
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "El prompt completo",
+   "verb": "Comenta",
+   "keyword": "PROMPT",
+   "lead": "Y escríbeme PROMPT por mensaje: te lo mando completo, listo para copiar y pegar.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para tu próximo carrusel."
+   ]
+  }
+ ]
+}

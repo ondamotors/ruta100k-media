@@ -1,0 +1,105 @@
+{
+ "id": "2026-11-25_p7_ganchos",
+ "kind": "carousel",
+ "series": "RECURSO GRATIS",
+ "foot_left": "RUTA 100K · Día 2 de 60",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "cover_num",
+   "theme": "dark",
+   "kicker": "Recurso gratis · Día 2",
+   "number": "30",
+   "number_size": 420,
+   "h1": "ganchos para la primera slide, en español y listos para copiar.",
+   "lead": "Aquí van 6. Los 30, gratis al final.",
+   "teaser_label": "Por tipo",
+   "teaser": [
+    "Números",
+    "Errores",
+    "Contraste",
+    "Fuentes",
+    "Curiosidad",
+    "Guías"
+   ]
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "Antes de copiar",
+   "display": [
+    "El gancho",
+    "es una",
+    "promesa."
+   ],
+   "display_size": 210,
+   "h1": "Si el carrusel no la cumple, la gente se va y no vuelve.",
+   "lead": "Escribe primero el contenido. Elige el gancho al final."
+  },
+  {
+   "type": "numbered",
+   "theme": "dark",
+   "kicker": "Números y errores",
+   "h2": "Cuando tienes un dato o corriges algo",
+   "items": [
+    {
+     "t": "[Número] herramientas gratis que reemplazan a [herramienta de pago]."
+    },
+    {
+     "t": "De [punto A] a [punto B] en [tiempo]: lo que hice paso a paso."
+    },
+    {
+     "t": "Deja de [hábito común] si quieres [resultado]."
+    }
+   ]
+  },
+  {
+   "type": "numbered",
+   "theme": "light",
+   "kicker": "Fuentes y guías",
+   "h2": "Cuando tienes una fuente o un método",
+   "items": [
+    {
+     "t": "[Fuente oficial] lo dijo y casi nadie lo leyó."
+    },
+    {
+     "t": "Tier list: [tema], clasificado solo con lo que dijo [fuente]."
+    },
+    {
+     "t": "Si empezara de 0 en [tema], haría esto."
+    }
+   ]
+  },
+  {
+   "type": "numbered",
+   "theme": "dark",
+   "kicker": "Cómo elegir",
+   "h2": "3 pasos",
+   "items": [
+    {
+     "t": "Escribe primero el carrusel."
+    },
+    {
+     "t": "Busca lo más concreto",
+     "d": "Un número, un nombre, una fuente."
+    },
+    {
+     "t": "Prueba 3 ganchos",
+     "d": "Quédate con el que da más curiosidad sin mentir."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Los 30 ganchos",
+   "verb": "Comenta",
+   "keyword": "GANCHOS",
+   "lead": "Y escríbeme GANCHOS por mensaje: te mando los 30, ordenados por tipo.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para tu próximo carrusel."
+   ]
+  }
+ ]
+}

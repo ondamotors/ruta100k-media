@@ -1,0 +1,103 @@
+{
+ "id": "2026-11-24_p4_dia1",
+ "kind": "carousel",
+ "series": "DÍA 1 DE 60",
+ "foot_left": "RUTA 100K · Día 1 de 60",
+ "foot_last": "Día 60: 22/01/2027",
+ "slides": [
+  {
+   "type": "cover_num",
+   "theme": "dark",
+   "kicker": "Día 1 de 60 · 24/11/2026",
+   "number": "0",
+   "h1": "seguidores. La meta: 100K el 22 de enero de 2027.",
+   "lead": "Cuenta nueva. Sin comprar nada y a la vista de todos.",
+   "teaser_label": "Lo que vas a ver aquí",
+   "teaser": [
+    "Cada herramienta",
+    "Cada número",
+    "Cada error"
+   ],
+   "number_size": 560
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "La historia",
+   "display": [
+    "No es mi",
+    "primera",
+    "cuenta."
+   ],
+   "display_size": 210,
+   "h1": "Ya hice crecer otras. Esta vez empiezo de 0 y lo hago en público, día por día.",
+   "lead": "Las pruebas de las anteriores las voy a ir mostrando aquí."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "Por qué desde cero",
+   "display": [
+    "Desde cero",
+    "no hay dónde",
+    "esconderse."
+   ],
+   "display_size": 190,
+   "h1": "Con una cuenta grande, cualquiera parece experto.",
+   "lead": "Si el método funciona, lo vas a ver en los números. Si no funciona, también."
+  },
+  {
+   "type": "numbered",
+   "theme": "light",
+   "kicker": "Las reglas",
+   "h2": "Lo que no voy a hacer",
+   "items": [
+    {
+     "t": "Comprar seguidores."
+    },
+    {
+     "t": "Usar bots o grupos de interacción."
+    },
+    {
+     "t": "Pedir «sígueme y te sigo»."
+    },
+    {
+     "t": "Esconder los números.",
+     "d": "Cada domingo, las métricas reales. Aunque sean malas."
+    }
+   ]
+  },
+  {
+   "type": "numbered",
+   "theme": "dark",
+   "kicker": "Si me sigues",
+   "h2": "Lo que te llevas",
+   "items": [
+    {
+     "t": "Cada herramienta que uso",
+     "d": "Gratis, si existe gratis."
+    },
+    {
+     "t": "Cada formato que funciona",
+     "d": "Con sus números, no con promesas."
+    },
+    {
+     "t": "Cada error",
+     "d": "Antes de que lo cometas tú."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Entra al reto",
+   "verb": "Comenta",
+   "keyword": "DENTRO",
+   "lead": "con tu nicho. Cada semana elijo 3 cuentas de los comentarios y las audito en público, gratis.",
+   "list": [
+    "Solo elijo entre quienes me siguen.",
+    "Día 60: 22/01/2027. ¿Llego a 100K? Sígueme y lo ves."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{ root }}/brand/brand.css">
+<style>html, body { width: 1080px; height: 1920px; background: transparent; }</style>
+</head>
+<body>
+<section class="ovl {{ 'bg' if o.bg }}">
+  <div class="box pos-{{ o.pos or 'mid' }}">
+    {% for l in o.lines %}<span class="line {{ l.size or 'l' }}">{{ l.t|safe }}</span>{% endfor %}
+  </div>
+</section>
+<script>document.fonts.ready.then(() => { document.body.dataset.ready = '1'; });</script>
+</body>
+</html>

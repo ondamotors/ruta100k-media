@@ -1,0 +1,296 @@
+{
+ "id": "2026-11-24_p1_stack",
+ "kind": "carousel",
+ "series": "STACK $0",
+ "foot_left": "Precios verificados el 24/11/2026",
+ "foot_last": "Links en el DM",
+ "slides": [
+  {
+   "type": "cover_num",
+   "theme": "dark",
+   "kicker": "Herramientas verificadas · noviembre 2026",
+   "number": "US$893",
+   "h1": "al año. Es lo que cuestan 6 apps populares entre creadores.",
+   "lead": "Para cada una hay una alternativa <b>open source</b> por US$0. Y 4 que no pasaron mi filtro.",
+   "teaser_label": "Lo que vas a reemplazar",
+   "teaser": [
+    "Voz con IA",
+    "Edición de video",
+    "Subtítulos",
+    "Mejorar imágenes",
+    "Imágenes con IA",
+    "Edición de fotos"
+   ]
+  },
+  {
+   "type": "tool",
+   "idx": "01/06",
+   "category": "Voz con IA",
+   "paid": {
+    "name": "ElevenLabs",
+    "price": "US$60/año"
+   },
+   "free": {
+    "name": "Chatterbox",
+    "desc": "Clona una voz con unos 10 segundos de audio. Habla más de 20 idiomas, con modelos de español latino y de España."
+   },
+   "facts": [
+    {
+     "k": "Costo",
+     "v": "US$0"
+    },
+    {
+     "k": "Licencia",
+     "v": "MIT"
+    },
+    {
+     "k": "Estrellas GitHub",
+     "v": "27.1K"
+    }
+   ],
+   "platforms": "Demo gratis en el navegador o instalación con Python",
+   "good": "Cada audio lleva una marca de agua invisible que lo identifica como IA.",
+   "limit": "No tiene instalador: sin Python, usa la demo online. Clona solo voces con permiso.",
+   "foot_left": "github.com/resemble-ai/chatterbox",
+   "foot_right": "Ahorro: US$60/año"
+  },
+  {
+   "type": "tool",
+   "idx": "02/06",
+   "category": "Edición de video",
+   "paid": {
+    "name": "Premiere Pro",
+    "price": "US$276/año"
+   },
+   "free": {
+    "name": "Kdenlive",
+    "desc": "Editor multipista con subtítulos automáticos por voz (Whisper), corrección de color y efectos."
+   },
+   "facts": [
+    {
+     "k": "Costo",
+     "v": "US$0"
+    },
+    {
+     "k": "Licencia",
+     "v": "GPL-3.0"
+    },
+    {
+     "k": "Última versión",
+     "v": "Nov. 2026"
+    }
+   ],
+   "platforms": "Windows · macOS · Linux",
+   "good": "Sin marca de agua y sin límite de exportación.",
+   "limit": "Los subtítulos automáticos son lentos y descargan unos 2 GB la primera vez.",
+   "foot_left": "kdenlive.org",
+   "foot_right": "Ahorro: US$276/año"
+  },
+  {
+   "type": "tool",
+   "idx": "03/06",
+   "category": "Subtítulos y transcripción",
+   "paid": {
+    "name": "Descript",
+    "price": "US$192/año"
+   },
+   "free": {
+    "name": "Buzz",
+    "desc": "Transcribe y traduce audio y video sin internet con Whisper, y exporta subtítulos SRT y VTT."
+   },
+   "facts": [
+    {
+     "k": "Costo",
+     "v": "US$0"
+    },
+    {
+     "k": "Licencia",
+     "v": "MIT"
+    },
+    {
+     "k": "Estrellas GitHub",
+     "v": "21.9K"
+    }
+   ],
+   "platforms": "Windows · macOS · Linux",
+   "good": "Tus archivos nunca salen de tu computador.",
+   "limit": "No edita video por texto como Descript. Descárgalo de GitHub: en la Mac App Store cuesta US$9.99.",
+   "foot_left": "github.com/chidiwilliams/buzz",
+   "foot_right": "Ahorro: US$192/año"
+  },
+  {
+   "type": "tool",
+   "idx": "04/06",
+   "category": "Mejorar imágenes",
+   "paid": {
+    "name": "Topaz Gigapixel",
+    "price": "US$149/año"
+   },
+   "free": {
+    "name": "Upscayl",
+    "desc": "Aumenta la resolución de fotos, capturas y miniaturas con IA, también por lotes. Interfaz en español."
+   },
+   "facts": [
+    {
+     "k": "Costo",
+     "v": "US$0"
+    },
+    {
+     "k": "Licencia",
+     "v": "AGPL-3.0"
+    },
+    {
+     "k": "Estrellas GitHub",
+     "v": "51.3K"
+    }
+   ],
+   "platforms": "Windows · macOS · Linux",
+   "good": "Agranda fotos y miniaturas por lotes, en tu computador.",
+   "limit": "Necesita una tarjeta gráfica compatible con Vulkan, y su última versión es de diciembre de 2024.",
+   "foot_left": "github.com/upscayl/upscayl",
+   "foot_right": "Ahorro: US$149/año"
+  },
+  {
+   "type": "tool",
+   "idx": "05/06",
+   "category": "Imágenes con IA",
+   "paid": {
+    "name": "Midjourney",
+    "price": "US$96/año"
+   },
+   "free": {
+    "name": "ComfyUI",
+    "desc": "Genera imágenes en tu computador con modelos abiertos como FLUX.1 [schnell] o Qwen-Image, de uso comercial permitido."
+   },
+   "facts": [
+    {
+     "k": "Costo",
+     "v": "US$0"
+    },
+    {
+     "k": "Licencia",
+     "v": "GPL-3.0"
+    },
+    {
+     "k": "Estrellas GitHub",
+     "v": "143.5K"
+    }
+   ],
+   "platforms": "Windows · macOS (Apple Silicon) · Linux",
+   "good": "Sin límite de imágenes al mes: el tope es tu equipo.",
+   "limit": "Interfaz de nodos, más técnica que Midjourney, y va mejor con una buena tarjeta gráfica.",
+   "foot_left": "comfy.org",
+   "foot_right": "Ahorro: US$96/año"
+  },
+  {
+   "type": "tool",
+   "idx": "06/06",
+   "category": "Edición de fotos",
+   "paid": {
+    "name": "Lightroom",
+    "price": "US$120/año"
+   },
+   "free": {
+    "name": "darktable",
+    "desc": "Revela RAW, corrige color y exposición y organiza tu biblioteca, sin tocar el archivo original."
+   },
+   "facts": [
+    {
+     "k": "Costo",
+     "v": "US$0"
+    },
+    {
+     "k": "Licencia",
+     "v": "GPL-3.0"
+    },
+    {
+     "k": "Estrellas GitHub",
+     "v": "13.0K"
+    }
+   ],
+   "platforms": "Windows · macOS · Linux",
+   "good": "Funciones de IA opcionales, como máscaras de objetos y reducción de ruido.",
+   "limit": "Solo escritorio: no hay app móvil ni versión web como en Lightroom.",
+   "foot_left": "darktable.org",
+   "foot_right": "Ahorro: US$120/año"
+  },
+  {
+   "type": "numbered",
+   "kicker": "Lo que dejé fuera",
+   "h2": "4 que no pasaron mi filtro",
+   "items": [
+    {
+     "t": "Cal.com",
+     "d": "Dejó de ser open source el 15/04/2026. Su plan gratis sigue, pero ya no es código abierto."
+    },
+    {
+     "t": "Cap",
+     "d": "Open source, pero su plan gratis es solo para uso personal. Si ganas dinero con tus videos, necesitas licencia."
+    },
+    {
+     "t": "OpenCut",
+     "d": "La alternativa a CapCut tiene 96.8K estrellas, pero está en plena reescritura. Todavía no reemplaza a CapCut."
+    },
+    {
+     "t": "Postiz",
+     "d": "Gratis solo en tu propio servidor, creando una app de desarrollador en casi todas las redes grandes."
+    }
+   ],
+   "compact": true
+  },
+  {
+   "type": "summary",
+   "kicker": "Resumen para guardar",
+   "h2": "6 apps de pago, 6 alternativas a US$0",
+   "rows": [
+    {
+     "paid": "ElevenLabs",
+     "free": "Chatterbox",
+     "amt": "US$60"
+    },
+    {
+     "paid": "Premiere Pro",
+     "free": "Kdenlive",
+     "amt": "US$276"
+    },
+    {
+     "paid": "Descript",
+     "free": "Buzz",
+     "amt": "US$192"
+    },
+    {
+     "paid": "Topaz Gigapixel",
+     "free": "Upscayl",
+     "amt": "US$149"
+    },
+    {
+     "paid": "Midjourney",
+     "free": "ComfyUI",
+     "amt": "US$96"
+    },
+    {
+     "paid": "Lightroom",
+     "free": "darktable",
+     "amt": "US$120"
+    }
+   ],
+   "total": {
+    "label": "Total de las 6 al año",
+    "amt": "US$893"
+   },
+   "note": "Plan de pago más barato con la función comparable, precio de lista en EE. UU. en USD, al 24/11/2026: ElevenLabs Starter, Premiere Pro (anual, pago mensual), Descript Hobbyist, Gigapixel Personal, Midjourney Basic y Lightroom. Montos redondeados."
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "La guía de instalación",
+   "verb": "Comenta",
+   "keyword": "STACK",
+   "lead": "Te mando por DM la guía con la instalación de las 6 y sus links oficiales.",
+   "list": [
+    "Solo para seguidores: sígueme antes de comentar.",
+    "Envíaselo a quien todavía paga las 6."
+   ]
+  }
+ ]
+}
