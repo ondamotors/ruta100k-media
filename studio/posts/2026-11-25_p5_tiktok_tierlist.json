@@ -1,0 +1,247 @@
+{
+  "id": "2026-11-25_p5_tiktok_tierlist",
+  "kind": "carousel",
+  "series": "FUENTE OFICIAL",
+  "foot_left": "Solo declaraciones oficiales de TikTok",
+  "foot_last": "Verificado el 24/11/2026",
+  "slides": [
+    {
+      "type": "cover_text",
+      "theme": "dark",
+      "kicker": "Fuente oficial · verificado en noviembre de 2026",
+      "display": [
+        "Tier list"
+      ],
+      "display_size": 250,
+      "h1": "13 tácticas para crecer en TikTok, clasificadas solo con lo que TikTok ha dicho.",
+      "lead": "Cero opiniones de gurús. Las fuentes están en la última slide.",
+      "teaser_label": "Los 5 niveles",
+      "teaser": [
+        "Elite",
+        "Solid",
+        "Okay",
+        "Limit",
+        "Avoid"
+      ]
+    },
+    {
+      "type": "numbered",
+      "kicker": "Primero, la base",
+      "h2": "Las 3 señales que TikTok dice que usa para tu Para ti",
+      "items": [
+        {
+          "t": "Tus interacciones",
+          "d": "Los videos que te gustan o compartes, las cuentas que sigues, tus comentarios y lo que creas."
+        },
+        {
+          "t": "Información del video",
+          "d": "Detalles como la descripción, los sonidos y los hashtags."
+        },
+        {
+          "t": "Dispositivo y cuenta",
+          "d": "Idioma, país y tipo de dispositivo. Pesan menos, porque no los eliges como preferencia."
+        }
+      ],
+      "foot_left": "TikTok Newsroom, 18/06/2020"
+    },
+    {
+      "type": "tier",
+      "tier": "elite",
+      "label": "Elite",
+      "sub": "Lo que TikTok confirmó que mide en cada video",
+      "entries": [
+        {
+          "t": "Que lo vean hasta el final",
+          "d": "Es el ejemplo de señal fuerte que da TikTok: ver un video largo de principio a fin pesa más que estar en el mismo país.",
+          "src": "TikTok Newsroom, 18/06/2020"
+        },
+        {
+          "t": "Que no lo salten",
+          "d": "El sistema calcula para cada video la probabilidad de que lo saltes y la de que lo veas cierto tiempo.",
+          "src": "Centro de Transparencia de TikTok"
+        },
+        {
+          "t": "Que lo compartan, comenten o guarden",
+          "d": "También predice si le darás like, lo compartirás, comentarás o guardarás, y combina todo en una puntuación por video.",
+          "src": "Centro de Transparencia de TikTok"
+        }
+      ]
+    },
+    {
+      "type": "tier",
+      "tier": "solid",
+      "label": "Solid",
+      "sub": "Lo que TikTok te da para no quedar fuera",
+      "entries": [
+        {
+          "t": "Content Check Lite",
+          "d": "En TikTok Studio web, revisas si tu video podría ser apto para el Para ti y lo corriges antes de subirlo.",
+          "src": "TikTok Newsroom, 30/07/2025 · despliegue gradual"
+        },
+        {
+          "t": "Revisar tus analíticas",
+          "d": "Si un video queda fuera del Para ti, aparece en tus analíticas. Si crees que es un error, puedes apelar.",
+          "src": "Normas de la comunidad de TikTok"
+        },
+        {
+          "t": "Etiquetar el contenido comercial",
+          "d": "Es obligatorio si promocionas una marca, producto o negocio. Sin la etiqueta, ese video puede quedar fuera del Para ti.",
+          "src": "Normas de la comunidad de TikTok"
+        }
+      ]
+    },
+    {
+      "type": "tiers",
+      "blocks": [
+        {
+          "tier": "okay",
+          "label": "Okay",
+          "sub": "Permitido, sin ventaja oficial",
+          "entries": [
+            {
+              "t": "Hashtags",
+              "d": "TikTok los cuenta entre las señales del video, junto al sonido o la duración. No dice cuánto pesan.",
+              "src": "Centro de Transparencia de TikTok"
+            },
+            {
+              "t": "Sonidos en tendencia",
+              "d": "El sonido es una señal del video, pero el Para ti evita mostrarte seguidos videos con el mismo sonido.",
+              "src": "Centro de Transparencia · TikTok Newsroom, 2020"
+            }
+          ]
+        },
+        {
+          "tier": "limit",
+          "label": "Limit",
+          "sub": "Ayuda, pero no decide el Para ti",
+          "entries": [
+            {
+              "t": "Tener muchos seguidores",
+              "d": "Suelen dar más vistas, pero ni tus seguidores ni tus virales anteriores son factores directos del Para ti.",
+              "src": "TikTok Newsroom, 18/06/2020"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "tier",
+      "tier": "avoid",
+      "label": "Avoid",
+      "sub": "Lo que te saca del Para ti",
+      "entries": [
+        {
+          "t": "Prometer like por like",
+          "d": "El contenido que engaña para conseguir likes, follows o regalos, con promesas o falsos incentivos, no es apto para el Para ti.",
+          "src": "Normas de la comunidad de TikTok"
+        },
+        {
+          "t": "Resubir videos sin aportar nada",
+          "d": "Material reutilizado sin edición creativa, como clips con la marca de agua o el logo de otro, no es apto para el Para ti.",
+          "src": "Normas de la comunidad de TikTok"
+        },
+        {
+          "t": "Comprar seguidores o likes",
+          "d": "TikTok prohíbe los servicios que inflan la interacción y borra los likes y seguidores falsos que detecta.",
+          "src": "Normas de la comunidad de TikTok"
+        },
+        {
+          "t": "Llenar tu cuenta de contenido no apto",
+          "d": "Aunque no rompas reglas, TikTok puede sacar del Para ti tu cuenta entera y hacerla más difícil de encontrar.",
+          "src": "Normas de la comunidad · TikTok Newsroom, 22/04/2024"
+        }
+      ],
+      "compact": true
+    },
+    {
+      "type": "tiergrid",
+      "kicker": "Para guardar",
+      "h2": "La tier list completa",
+      "rows": [
+        {
+          "tier": "elite",
+          "label": "Elite",
+          "chips": [
+            "Verlo hasta el final",
+            "Que no lo salten",
+            "Compartir y guardar"
+          ]
+        },
+        {
+          "tier": "solid",
+          "label": "Solid",
+          "chips": [
+            "Content Check Lite",
+            "Analíticas",
+            "Etiqueta comercial"
+          ]
+        },
+        {
+          "tier": "okay",
+          "label": "Okay",
+          "chips": [
+            "Hashtags",
+            "Sonidos en tendencia"
+          ]
+        },
+        {
+          "tier": "limit",
+          "label": "Limit",
+          "chips": [
+            "Muchos seguidores"
+          ]
+        },
+        {
+          "tier": "avoid",
+          "label": "Avoid",
+          "chips": [
+            "Like por like",
+            "Resubir sin aportar",
+            "Comprar seguidores",
+            "Contenido no apto en serie"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sources",
+      "kicker": "Fuentes",
+      "h2": "Todo lo que cité, para que lo revises",
+      "items": [
+        {
+          "t": "Cómo TikTok recomienda videos, 18/06/2020",
+          "u": "newsroom.tiktok.com/how-tiktok-recommends-videos-for-you"
+        },
+        {
+          "t": "El sistema de recomendación, Centro de Transparencia",
+          "u": "tiktok.com/transparency/en/recommendation-system"
+        },
+        {
+          "t": "Normas: interacción falsa y contenido no original",
+          "u": "tiktok.com/community-guidelines/en/integrity-authenticity"
+        },
+        {
+          "t": "Normas: contenido comercial",
+          "u": "tiktok.com/community-guidelines/en/regulated-commercial-activities"
+        },
+        {
+          "t": "Normas: cuentas con mucho contenido no apto",
+          "u": "tiktok.com/community-guidelines/en/accounts-features"
+        },
+        {
+          "t": "Normas: analíticas y apelaciones",
+          "u": "tiktok.com/community-guidelines"
+        },
+        {
+          "t": "Content Check Lite, 30/07/2025",
+          "u": "newsroom.tiktok.com/new-tools-for-creators"
+        },
+        {
+          "t": "Cuentas fuera del Para ti, 22/04/2024",
+          "u": "newsroom.tiktok.com/cgupdate"
+        }
+      ],
+      "cta": "¿Qué moverías de <b>tier</b>? Te leo en comentarios."
+    }
+  ]
+}
