@@ -8,11 +8,11 @@ Prendre les entrées dans l'ordre. Cocher une fois programmée, avec l'id Metric
 - [x] Día 1 · 25/11 00:30 · Tier list Instagram · Metricool 440871111
 - [x] Día 1 · 25/11 02:30 · Stack $0 (mot STACK) · Metricool 440871137
 - [x] Día 2 · 25/11 18:30 · El prompt (mot PROMPT) · Metricool 440875932
+- [x] Día 2 · 26/11 00:30 · Tier list TikTok · Metricool 440896545
 - [x] Día 2 · 26/11 02:30 · 30 ganchos (mot GANCHOS) · Metricool 440875965
 
 ## À produire
 
-- [ ] Día 2 · créneau imposé 26/11 00:30 · SOURCE OFFICIELLE · « Tier list: lo que TikTok dijo de verdad sobre el Para ti ». Promis dans la légende de la tier list Instagram. Préparé le 24/11 : `studio/posts/2026-11-25_p5_tiktok_tierlist.json` et `studio/research/tiktok_fyf.md`. S'il n'est pas déjà dans Metricool : reprendre ces fichiers s'ils existent, sinon le produire de zéro avec les sources officielles TikTok, puis le programmer.
 
 ### Día 3 (26/11)
 
