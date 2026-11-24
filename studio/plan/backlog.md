@@ -40,3 +40,12 @@ Prendre les entrées dans l'ordre. Cocher une fois programmée, avec l'id Metric
 ## Réserve
 
 Quand il reste moins de 6 entrées à produire, en ajouter 6 en respectant le mix quotidien, en partant de l'onglet Idées du tracker et des posts qui ont le mieux marché dans Metricool.
+
+## Format à tester plus tard (demandé par Vincent le 25/11, ne pas appliquer sans son feu vert)
+
+Référence : les Reels de @mavgpt, dont « Claude just built me a full marketing team » à 1M de vues.
+- Visage de Vincent en gros plan, face caméra, sans parler.
+- En haut, une bulle blanche de 1 ou 2 lignes : un résultat personnel réel et un emoji de réaction (🤯 😳 🤫).
+- Au centre, le mot-clé à commenter en très gros, visible dès la couverture et dans la grille.
+- Même cadrage et même bulle à chaque post, pour que la grille se reconnaisse.
+- Prérequis : une série de photos ou de plans muets de Vincent. Première accroche vraie disponible : « Claude escribe, diseña y programa mis 3 posts diarios 🤯 ».
