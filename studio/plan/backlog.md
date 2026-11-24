@@ -12,7 +12,7 @@ Prendre les entrées dans l'ordre. Cocher une fois programmée, avec l'id Metric
 
 ## À produire
 
-- [ ] Día 2 · créneau imposé 26/11 00:30 · SOURCE OFFICIELLE · « Tier list: lo que TikTok dijo de verdad sobre el Para ti ». Promis dans la légende de la tier list Instagram. Préparé le 24/11 : `studio/posts/2026-11-25_p5_tiktok_tierlist.json` et `studio/research/tiktok_fyf.md`. S'il n'est pas déjà dans Metricool, le rendre, le vérifier et le programmer.
+- [ ] Día 2 · créneau imposé 26/11 00:30 · SOURCE OFFICIELLE · « Tier list: lo que TikTok dijo de verdad sobre el Para ti ». Promis dans la légende de la tier list Instagram. Préparé le 24/11 : `studio/posts/2026-11-25_p5_tiktok_tierlist.json` et `studio/research/tiktok_fyf.md`. S'il n'est pas déjà dans Metricool : reprendre ces fichiers s'ils existent, sinon le produire de zéro avec les sources officielles TikTok, puis le programmer.
 
 ### Día 3 (26/11)
 
