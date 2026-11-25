@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+:root { --y: #FFE14D; --red: #E5484D; --green: #16A34A; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #EEF0F3; }
+body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color: #111; }
+#ui { position: absolute; inset: 0; background: #EEF0F3; transform-origin: 485px 980px; }
+.card { position: absolute; left: 60px; top: 560px; width: 850px; height: 840px; background: #fff; border-radius: 34px; box-shadow: 0 10px 30px rgba(17,17,17,0.07); overflow: hidden; }
+
+/* VS */
+.pc { position: absolute; left: 60px; width: 850px; height: 380px; background: #fff; border-radius: 34px; box-shadow: 0 10px 30px rgba(17,17,17,0.08); padding: 30px 38px; overflow: hidden; }
+#pa { top: 560px; }
+#pb { top: 1020px; }
+.pc .top { display: flex; align-items: center; gap: 18px; }
+.pc .ic { width: 74px; height: 74px; border-radius: 20px; display: grid; place-items: center; font-size: 42px; flex: none; }
+.pc .lb { font-weight: 700; font-size: 29px; color: #6B7280; }
+.pc .nm { font-weight: 800; font-size: 44px; line-height: 1.05; }
+.pc .pr { margin-top: 14px; font-weight: 800; font-size: 136px; line-height: 1; letter-spacing: -5px; white-space: nowrap; }
+.pc .pr small { font-size: 42px; letter-spacing: 0; margin-left: 10px; color: #9CA3AF; }
+.pc .sub { position: absolute; right: 38px; bottom: 34px; font-weight: 700; font-size: 31px; color: #374151; white-space: nowrap; }
+#pa .ic { background: #FDECEC; } #pa .pr { color: var(--red); }
+#pb .ic { background: #E6FAEC; } #pb .pr { color: var(--green); }
+#vs { position: absolute; left: 415px; top: 910px; width: 140px; height: 140px; border-radius: 50%; background: #111; color: #fff; display: grid; place-items: center; font-weight: 800; font-size: 58px; z-index: 5; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 6px solid #EEF0F3; }
+#gr { position: absolute; right: 70px; top: 1060px; z-index: 6; background: var(--y); font-weight: 800; font-size: 50px; padding: 8px 26px 12px; border-radius: 18px; border: 4px solid #111; box-shadow: 0 8px 20px rgba(0,0,0,0.18); }
+
+/* barres */
+#bench { padding: 32px 38px; }
+#bench h3 { font-weight: 800; font-size: 48px; }
+#bench .sb { margin-top: 2px; font-weight: 700; font-size: 28px; color: #6B7280; }
+.br { margin-top: 26px; }
+.br .n { display: flex; align-items: baseline; justify-content: space-between; font-weight: 800; font-size: 32px; }
+.br .n span.v { font-size: 34px; }
+.br .tr { margin-top: 8px; height: 44px; border-radius: 14px; background: #F1F2F5; overflow: hidden; }
+.br .fl { height: 100%; width: 0; border-radius: 14px; background: #C9CDD4; }
+#b1 .fl { background: var(--green); } #b1 .n { color: var(--green); }
+#b3 .fl, #b4 .fl { background: #F59E9F; }
+#crown { position: absolute; left: 330px; top: 285px; background: #111; color: #fff; font-weight: 800; font-size: 25px; padding: 6px 16px 8px; border-radius: 999px; white-space: nowrap; }
+#bench .src { position: absolute; left: 38px; bottom: 26px; font-weight: 600; font-size: 22px; color: #9CA3AF; }
+
+/* chat démos */
+#chat { z-index: 8; }
+#hd { position: absolute; left: 0; top: 0; width: 100%; height: 104px; display: flex; align-items: center; gap: 18px; padding: 0 30px; border-bottom: 2px solid #F1F2F5; }
+#hd .nm { font-weight: 800; font-size: 40px; }
+#free { margin-left: auto; font-weight: 700; font-size: 26px; color: var(--green); background: #E6FAEC; padding: 8px 18px; border-radius: 999px; white-space: nowrap; }
+.b { position: absolute; max-width: 640px; padding: 18px 26px 20px; border-radius: 30px; font-weight: 600; font-size: 38px; line-height: 1.25; white-space: nowrap; }
+.out { right: 26px; top: 128px; background: #DBEAFE; border-bottom-right-radius: 10px; }
+.res { position: absolute; left: 26px; top: 236px; width: 798px; height: 470px; border-radius: 28px; background: #F7F8FA; border: 2px solid #ECEEF2; overflow: hidden; }
+.res .h { height: 70px; display: flex; align-items: center; justify-content: space-between; padding: 0 26px; font-weight: 800; font-size: 31px; border-bottom: 2px solid #ECEEF2; background: #fff; }
+.res .h i { font-style: normal; font-weight: 800; font-size: 26px; color: #fff; background: var(--green); padding: 5px 16px 7px; border-radius: 999px; }
+#road { position: absolute; left: 30px; top: 120px; width: 738px; height: 230px; border-radius: 26px; background: #3B3F46; overflow: hidden; }
+#road .ln { position: absolute; left: 0; right: 0; top: 112px; height: 8px; background: repeating-linear-gradient(90deg, #fff 0 46px, transparent 46px 84px); opacity: 0.85; }
+#car { position: absolute; left: 0; top: 46px; font-size: 104px; line-height: 1; transform: scaleX(-1); }
+#flag { position: absolute; right: 20px; top: 60px; font-size: 84px; line-height: 1; }
+#lap { position: absolute; left: 30px; top: 380px; font-weight: 800; font-size: 32px; color: #374151; }
+#chair { position: absolute; left: 30px; top: 92px; }
+#xl { position: absolute; left: 30px; top: 96px; width: 738px; }
+#xl table { border-collapse: collapse; font-weight: 700; font-size: 28px; }
+#xl td { border: 2px solid #E5E7EB; padding: 10px 18px; background: #fff; white-space: nowrap; }
+#xl tr:first-child td { background: #EEF2F7; color: #374151; }
+#xl td.g { color: var(--green); }
+#bars { position: absolute; right: 34px; top: 120px; width: 230px; height: 300px; display: flex; align-items: flex-end; gap: 14px; }
+#bars div { flex: 1; background: var(--green); border-radius: 10px 10px 4px 4px; height: 0; }
+#note { position: absolute; left: 0; right: 0; bottom: 22px; text-align: center; font-weight: 600; font-size: 23px; color: #9CA3AF; }
+
+/* étapes */
+#sheet { position: absolute; left: 60px; top: 858px; width: 850px; height: 560px; background: #fff; border-radius: 40px; box-shadow: 0 -10px 50px rgba(17,17,17,0.18); padding: 26px 40px; z-index: 9; }
+#sheet .grab { width: 90px; height: 10px; border-radius: 9px; background: #D1D5DB; margin: 0 auto 24px; }
+#sheet h3 { font-weight: 800; font-size: 46px; margin-bottom: 12px; }
+.it { display: flex; align-items: center; gap: 20px; height: 120px; font-weight: 700; font-size: 40px; line-height: 1.15; border-top: 2px solid #F1F2F5; }
+.it .e { width: 72px; height: 72px; border-radius: 20px; background: #F5F6F8; display: grid; place-items: center; font-size: 40px; flex: none; }
+.it small { display: block; font-weight: 600; font-size: 28px; color: var(--green); }
+
+/* légendes */
+.cap { position: absolute; z-index: 12; left: 60px; right: 170px; display: flex; flex-direction: column; align-items: center; }
+.cap span { display: inline-block; font-weight: 700; font-size: 60px; line-height: 1.16; padding: 6px 24px 10px; border-radius: 20px; background: #fff; color: #111; margin-top: -6px; text-align: center; white-space: nowrap; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+.cap span.y { background: var(--y); }
+.cap span.xl { font-size: 92px; font-weight: 800; padding: 6px 30px 12px; }
+.cap span.l { font-size: 76px; font-weight: 800; padding: 6px 28px 12px; }
+.cap span.s { font-size: 48px; }
+.cap span.xs { font-size: 40px; font-weight: 600; }
+.conf { position: absolute; left: 0; top: 0; font-size: 64px; line-height: 1; opacity: 0; z-index: 11; }
+#flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 50; }
+.tap { position: absolute; width: 96px; height: 96px; margin: -48px 0 0 -48px; border-radius: 50%; background: rgba(120,120,128,0.45); border: 4px solid rgba(255,255,255,0.95); box-shadow: 0 6px 24px rgba(0,0,0,0.25); z-index: 40; opacity: 0; }
+</style>
+</head>
+<body>
+<div id="ui">
+  <div class="pc" id="pa">
+    <div class="top"><div class="ic">💸</div><div><div class="lb">El plan más caro de ChatGPT</div><div class="nm">Pro 500</div></div></div>
+    <div class="pr" id="pra">$0<small>al mes</small></div>
+    <div class="sub" id="y6k">= $6,000 al año 😳</div>
+  </div>
+  <div class="pc" id="pb">
+    <div class="top"><div class="ic">🔓</div><div><div class="lb">Open source · se descarga gratis</div><div class="nm">Kimi K3.1 Pro</div></div></div>
+    <div class="pr">$0<small>en kimi.com*</small></div>
+    <div class="sub" style="font-size: 25px; color: #9CA3AF">*plan gratis con uso limitado</div>
+  </div>
+  <div id="vs">VS</div>
+  <div id="gr">¡GRATIS! 🎉</div>
+
+  <div class="card" id="bench">
+    <h3>💼 Trabajo real</h3>
+    <div class="sb">documentos, Excel y presentaciones</div>
+    <div class="br" id="b0"><div class="n"><span>Claude Opus 5.5</span><span class="v" id="bv0">0</span></div><div class="tr"><div class="fl"></div></div></div>
+    <div class="br" id="b1"><div class="n"><span>Kimi K3.1 Pro 🆓</span><span class="v" id="bv1">0</span></div><div class="tr"><div class="fl"></div></div></div>
+    <div class="br" id="b2"><div class="n"><span>Gemini 4 Carbon</span><span class="v" id="bv2">0</span></div><div class="tr"><div class="fl"></div></div></div>
+    <div class="br" id="b3"><div class="n"><span>GPT-6.1 Sol</span><span class="v" id="bv3">0</span></div><div class="tr"><div class="fl"></div></div></div>
+    <div class="br" id="b4"><div class="n"><span>GPT-6 Astra</span><span class="v" id="bv4">0</span></div><div class="tr"><div class="fl"></div></div></div>
+    <div id="crown">👑 la mejor IA abierta</div>
+    <div class="src">Puntaje Elo · GDPval-AA v2.1 · Artificial Analysis, nov. 2026 (selección)</div>
+  </div>
+
+  <div class="card" id="chat">
+    <div id="hd"><span style="font-size: 40px">🌙</span><span class="nm">Kimi K3.1 Pro</span><span id="free">plan gratis ✅</span></div>
+    <div class="b out" id="q0">Hazme un juego de carreras 🏎️</div>
+    <div class="b out" id="q1">Diseña una silla en Blender 🪑</div>
+    <div class="b out" id="q2">Arma el Excel de mis ventas 📊</div>
+    <div class="res" id="r0"><div class="h">🎮 Juego listo<i>▶ Jugar</i></div><div id="road"><div class="ln"></div><div id="flag">🏁</div><div id="car">🏎️</div></div><div id="lap">Vuelta 1 de 3 · 🔥 récord</div></div>
+    <div class="res" id="r1"><div class="h">🧊 Modelo 3D listo<i>.blend</i></div><svg id="chair" width="738" height="360" viewBox="0 0 738 360"><path id="cp" d="" fill="none" stroke="#2563EB" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="res" id="r2"><div class="h">📊 ventas.xlsx<i>listo</i></div><div id="xl"><table><tr><td>Mes</td><td>Ventas</td><td>Δ</td></tr><tr><td>Ene</td><td>$1,240</td><td class="g">+8%</td></tr><tr><td>Feb</td><td>$1,390</td><td class="g">+12%</td></tr><tr><td>Mar</td><td>$1,520</td><td class="g">+9%</td></tr><tr><td>Abr</td><td>$1,780</td><td class="g">+17%</td></tr></table></div><div id="bars"><div id="x0"></div><div id="x1"></div><div id="x2"></div><div id="x3"></div></div></div>
+    <div id="note">Lo que puede hacer, según Moonshot · demos ilustrativas</div>
+  </div>
+
+  <div id="sheet">
+    <div class="grab"></div>
+    <h3>Un monstruo 👹</h3>
+    <div class="it" id="i0"><span class="e">🧠</span><div>2.8 billones de parámetros<small>la IA abierta mejor puntuada</small></div></div>
+    <div class="it" id="i1"><span class="e">📦</span><div>Descargarla pesa 1.56 TB 😂<small>para tu PC no: úsala en kimi.com</small></div></div>
+    <div class="it" id="i2"><span class="e">🎁</span><div>Plan gratis<small>K3.1 Pro con uso limitado</small></div></div>
+  </div>
+</div>
+<div class="cap" id="h" style="top: 300px"><span id="h1">La IA de $500 al mes 😳</span><span class="y xl" id="h2">vs una GRATIS 🤯</span></div>
+<div class="cap" id="g" style="top: 330px"><span id="g1">En trabajo real 💼</span><span class="y l" id="g2">le gana a GPT-6 🤯</span></div>
+<div class="cap" id="c" style="top: 330px"><span id="c1">Y hace de todo 😳</span><span class="y l" id="c2">juegos, 3D y Excel 🔥</span></div>
+<div class="cap" id="v" style="top: 330px"><span id="v1">Open source 🔓</span><span class="y l" id="v2">y la pruebas gratis 🙌</span></div>
+<div class="cap" id="k" style="top: 540px"><span id="k1">¿Quieres los prompts? 👀</span><span class="xl" id="k2">Comenta</span><span class="y xl" id="k3">KIMI 👇</span><span class="s" id="k4">y te mando cómo usarla gratis 📩</span><span class="xs" id="k5">(sígueme para recibirlo)</span></div>
+<div class="tap" id="tap"></div>
+<div id="flash"></div>
+
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<script>
+const EM = ['✨', '🔥', '💥', '🎉', '💚', '🤯'];
+const confs = [];
+for (let k = 0; k < 14; k++) { const el = document.createElement('div'); el.className = 'conf'; el.textContent = EM[k % EM.length]; document.body.appendChild(el); confs.push(el); }
+let seed = 47; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+
+const PR0 = 0.08, PR1 = 0.45, Y6K = 0.48, BOT = 0.55, VS = 0.82, GR = 1.15;
+const BE = 1.8;
+const VALS = [1866, 1856, 1733, 1607, 1587];
+const BAR = VALS.map((_, i) => BE + 0.3 + i * 0.16);
+const CROWN = BE + 1.35, G2 = BE + 1.45;
+const DM0 = BE + 2.8;
+const D = [DM0 + 0.15, DM0 + 1.3, DM0 + 2.45];
+const SH = DM0 + 3.65;
+const K = SH + 1.95;
+
+const tl = gsap.timeline({ paused: true, defaults: { ease: 'power3.out' } });
+const P = { v: 0 }, BV = VALS.map(() => ({ v: 0 })), CAR = { x: 0 }, CH = { th: 0.6 }, XB = [0, 0, 0, 0].map(() => ({ h: 0 }));
+const pop = (sel, at) => tl.fromTo(sel, { autoAlpha: 0, scale: 0.55 }, { autoAlpha: 1, scale: 1, duration: 0.32, ease: 'back.out(2.2)' }, at);
+gsap.set('#ui', { filter: 'blur(0px) brightness(1)' });
+gsap.set(['#g1', '#g2', '#c1', '#c2', '#v1', '#v2', '#k1', '#k2', '#k3', '#k4', '#k5', '#y6k', '#vs', '#gr', '#crown', '#q0', '#q1', '#q2', '#r0', '#r1', '#r2'], { autoAlpha: 0 });
+gsap.set('#pa', { x: -1000 });
+gsap.set('#pb', { x: 1000 });
+gsap.set('#bench', { autoAlpha: 0, scale: 0.92 });
+gsap.set('#chat', { y: 1500 });
+gsap.set('#sheet', { y: 1150 });
+gsap.set('.it', { autoAlpha: 0, x: 40 });
+
+/* 0 · le VS */
+tl.fromTo('#h', { scale: 1.06 }, { scale: 1, duration: 0.2, ease: 'back.out(2)' }, 0)
+  .fromTo('#ui', { scale: 1.0 }, { scale: 1.03, duration: BE, ease: 'none' }, 0)
+  .to('#pa', { x: 0, duration: 0.3 }, 0.03)
+  .to(P, { v: 500, duration: PR1 - PR0, ease: 'power2.out' }, PR0)
+  .fromTo('#y6k', { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0, duration: 0.22 }, Y6K)
+  .to('#pb', { x: 0, duration: 0.3 }, BOT)
+  .fromTo('#vs', { autoAlpha: 0, scale: 2.2, rotation: -25 }, { autoAlpha: 1, scale: 1, rotation: 0, duration: 0.3, ease: 'back.out(2.4)' }, VS)
+  .to('#ui', { x: -14, duration: 0.05, ease: 'none' }, VS)
+  .to('#ui', { x: 10, duration: 0.06, ease: 'none' }, VS + 0.05)
+  .to('#ui', { x: 0, duration: 0.08 }, VS + 0.11)
+  .fromTo('#gr', { autoAlpha: 0, scale: 2, rotation: -16 }, { autoAlpha: 1, scale: 1, rotation: -6, duration: 0.24, ease: 'back.out(2.6)' }, GR);
+
+/* 1.8 · la course de barres */
+tl.to(['#pa', '#pb', '#vs', '#gr'], { autoAlpha: 0, duration: 0.18 }, BE - 0.08)
+  .to('#bench', { autoAlpha: 1, scale: 1, duration: 0.3, ease: 'back.out(1.6)' }, BE)
+  .to('#h', { autoAlpha: 0, y: -20, duration: 0.15, ease: 'power2.in' }, BE - 0.1);
+pop('#g1', BE + 0.12);
+VALS.forEach((v, i) => tl.to(`#b${i} .fl`, { width: `${((v - 1000) / 900) * 100}%`, duration: 0.55, ease: 'power2.out' }, BAR[i]).to(BV[i], { v, duration: 0.55, ease: 'power2.out' }, BAR[i]));
+tl.fromTo('#crown', { autoAlpha: 0, scale: 0.4 }, { autoAlpha: 1, scale: 1, duration: 0.28, ease: 'back.out(2.6)' }, CROWN)
+  .fromTo('#b1 .tr', { boxShadow: '0 0 0 0 rgba(22,163,74,0.0)' }, { boxShadow: '0 0 0 8px rgba(22,163,74,0.25)', duration: 0.25, yoyo: true, repeat: 1 }, CROWN);
+pop('#g2', G2);
+confs.forEach((el) => {
+  const ang = rnd() * Math.PI * 2, sp = 220 + rnd() * 380;
+  const dx = Math.cos(ang) * sp, dy = Math.sin(ang) * sp * 0.8 - 200;
+  const sc = 0.7 + rnd() * 0.6, rot = (rnd() - 0.5) * 260;
+  tl.set(el, { left: 760, top: 900, x: 0, y: 0, rotation: 0, scale: 0.4, autoAlpha: 0 }, G2)
+    .to(el, { autoAlpha: 1, scale: sc, duration: 0.08 }, G2)
+    .to(el, { x: dx, y: dy, rotation: rot, duration: 0.45, ease: 'power3.out' }, G2)
+    .to(el, { y: dy + 700, duration: 0.65, ease: 'power2.in' }, G2 + 0.45)
+    .to(el, { autoAlpha: 0, duration: 0.25 }, G2 + 0.8);
+});
+
+/* démos */
+tl.to('#g', { autoAlpha: 0, duration: 0.12 }, DM0 - 0.1)
+  .to('#chat', { y: 0, duration: 0.4, ease: 'power3.out' }, DM0)
+  .to('#ui', { scale: 1.0, duration: 0.4 }, DM0);
+pop('#c1', DM0 + 0.1);
+pop('#c2', DM0 + 0.26);
+D.forEach((t, k) => {
+  tl.fromTo(`#q${k}`, { autoAlpha: 0, y: 30, scale: 0.9, transformOrigin: '100% 100%' }, { autoAlpha: 1, y: 0, scale: 1, duration: 0.26, ease: 'back.out(1.8)' }, t)
+    .fromTo(`#r${k}`, { autoAlpha: 0, y: 40 }, { autoAlpha: 1, y: 0, duration: 0.28, ease: 'back.out(1.6)' }, t + 0.3);
+  if (k < 2) tl.to([`#q${k}`, `#r${k}`], { autoAlpha: 0, y: -50, duration: 0.18, ease: 'power2.in' }, D[k + 1] - 0.16);
+});
+tl.to(CAR, { x: 560, duration: 0.75, ease: 'power2.in' }, D[0] + 0.4)
+  .to(CH, { th: 0.6 + Math.PI * 1.1, duration: 1.0, ease: 'power1.inOut' }, D[1] + 0.3);
+XB.forEach((o, i) => tl.to(o, { h: [0.42, 0.55, 0.66, 0.92][i], duration: 0.35, ease: 'back.out(1.6)' }, D[2] + 0.45 + i * 0.1));
+
+/* le monstre */
+tl.to('#c', { autoAlpha: 0, duration: 0.12 }, SH - 0.1)
+  .to('#sheet', { y: 0, duration: 0.38, ease: 'power3.out' }, SH);
+[0, 1, 2].forEach((k) => tl.to(`#i${k}`, { autoAlpha: 1, x: 0, duration: 0.22 }, SH + 0.35 + k * 0.3));
+pop('#v1', SH + 0.12);
+pop('#v2', SH + 0.3);
+
+/* commente */
+tl.to('#v', { autoAlpha: 0, duration: 0.12 }, K - 0.12)
+  .to('#flash', { opacity: 0.55, duration: 0.05, ease: 'none' }, K - 0.05)
+  .to('#flash', { opacity: 0, duration: 0.25 }, K)
+  .to('#ui', { filter: 'blur(16px) brightness(0.62)', scale: 1.08, duration: 0.3, ease: 'power2.out' }, K);
+pop('#k1', K + 0.06);
+pop('#k2', K + 0.3);
+pop('#k3', K + 0.5);
+pop('#k4', K + 0.85);
+pop('#k5', K + 1.05);
+tl.to('#k3', { scale: 1.07, duration: 0.35, yoyo: true, repeat: 3, ease: 'sine.inOut' }, K + 1.3);
+tl.to({}, { duration: 0.01 }, K + 3.0);
+window.DURATION = K + 3.0;
+window.TIMES = { PR0, PR1, Y6K, BOT, VS, GR, BE, BAR, CROWN, G2, DM0, D, SH, K };
+
+/* chaise en fil de fer */
+const E = [];
+const box = (x0, x1, y0, y1, z0, z1) => {
+  const p = [[x0, y0, z0], [x1, y0, z0], [x1, y0, z1], [x0, y0, z1], [x0, y1, z0], [x1, y1, z0], [x1, y1, z1], [x0, y1, z1]];
+  [[0, 1], [1, 2], [2, 3], [3, 0], [4, 5], [5, 6], [6, 7], [7, 4], [0, 4], [1, 5], [2, 6], [3, 7]].forEach(([a, b]) => E.push([p[a], p[b]]));
+};
+box(-1, 1, 0, 0.2, -1, 1);
+[[-0.85, -0.85], [0.85, -0.85], [0.85, 0.85], [-0.85, 0.85]].forEach(([x, z]) => E.push([[x, 0, z], [x, -1.5, z]]));
+E.push([[-1, 0.2, -1], [-1, 2.1, -1]], [[1, 0.2, -1], [1, 2.1, -1]], [[-1, 2.1, -1], [1, 2.1, -1]], [[-1, 1.15, -1], [1, 1.15, -1]], [[-1, 1.65, -1], [1, 1.65, -1]]);
+const proj = ([x, y, z], th) => {
+  const c = Math.cos(th), s = Math.sin(th);
+  let X = x * c + z * s, Z = -x * s + z * c, Y = y;
+  const ph = -0.32, cp = Math.cos(ph), sp = Math.sin(ph);
+  const Y2 = Y * cp - Z * sp, Z2 = Y * sp + Z * cp;
+  const f = 6 / (6 + Z2);
+  return [369 + X * 92 * f, 205 - Y2 * 92 * f];
+};
+const cp = document.getElementById('cp');
+const car = document.getElementById('car');
+const pra = document.getElementById('pra');
+const VEL = VALS.map((_, i) => document.getElementById(`bv${i}`));
+const XBE = [0, 1, 2, 3].map((i) => document.getElementById(`x${i}`));
+const fmt = (d) => '$' + String(Math.round(d)).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+window.seek = (t) => {
+  tl.seek(t, false);
+  pra.firstChild.nodeValue = fmt(P.v);
+  BV.forEach((o, i) => { VEL[i].textContent = String(Math.round(o.v)); });
+  car.style.left = CAR.x + 'px';
+  cp.setAttribute('d', E.map(([a, b]) => { const p = proj(a, CH.th), q = proj(b, CH.th); return `M${p[0].toFixed(1)} ${p[1].toFixed(1)}L${q[0].toFixed(1)} ${q[1].toFixed(1)}`; }).join(''));
+  XB.forEach((o, i) => { XBE[i].style.height = (o.h * 100) + '%'; });
+};
+Promise.all([
+  document.fonts.load('700 60px "TT"', 'Aa'), document.fonts.load('800 60px "TT"', 'Aa'), document.fonts.load('600 60px "TT"', 'Aa'),
+]).then(() => document.fonts.ready).then(() => { window.seek(0); document.body.dataset.ready = '1'; });
+</script>
+</body>
+</html>
