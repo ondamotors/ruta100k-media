@@ -1,0 +1,115 @@
+{
+ "id": "2026-11-29_p22_upscayl",
+ "kind": "carousel",
+ "series": "IA DE PAGO → GRATIS",
+ "foot_left": "Verificado el 25/11/2026",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "cover_vs",
+   "theme": "dark",
+   "paid": {
+    "name": "Topaz Gigapixel",
+    "price": "US$149 al año"
+   },
+   "free": {
+    "name": "Upscayl",
+    "price": "US$0"
+   },
+   "foot_left": "Precios oficiales · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "light",
+   "kicker": "Antes de seguir",
+   "lines": [
+    "Y está en",
+    "español."
+   ],
+   "size": 210,
+   "sub": "Open source, licencia AGPL-3.0, sin suscripción. La interfaz viene en español. Y la 3 casi nadie la usa.",
+   "foot_left": "github.com/upscayl/upscayl · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "dark",
+   "kicker": "1 de 4 · miniaturas",
+   "lines": [
+    "Hasta 4x",
+    "con IA"
+   ],
+   "size": 200,
+   "sub": "Agranda capturas, miniaturas y fotos de baja resolución. Eliges la imagen, el modelo y la carpeta, y pulsas <b>«Upscayl»</b>.",
+   "foot_left": "github.com/upscayl/upscayl · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "light",
+   "kicker": "2 de 4 · por lotes",
+   "lines": [
+    "Una carpeta",
+    "entera"
+   ],
+   "size": 200,
+   "sub": "Con <b>«Aumento por lotes»</b> agrandas todas las imágenes de una carpeta a la vez. Un carrusel completo de una pasada.",
+   "foot_left": "github.com/upscayl/upscayl · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "dark",
+   "kicker": "3 de 4 · la que casi nadie usa",
+   "lines": [
+    "Elige el",
+    "modelo"
+   ],
+   "size": 200,
+   "sub": "Hay uno para cada imagen: <b>«Arte Digital»</b> para ilustraciones, <b>«Alta Fidelidad»</b> para fotos con detalles realistas.",
+   "foot_left": "github.com/upscayl/upscayl · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "light",
+   "kicker": "4 de 4 · hasta 16x",
+   "lines": [
+    "Doble",
+    "Upscayl"
+   ],
+   "size": 200,
+   "sub": "Pasa la imagen dos veces por la IA y llega a <b>16x</b>. Tarda bastante más. Sin esta opción, por encima de 4x solo redimensiona.",
+   "foot_left": "github.com/upscayl/upscayl · 25/11/2026"
+  },
+  {
+   "type": "numbered",
+   "theme": "dark",
+   "kicker": "Ojo · el límite real",
+   "h2": "Antes de instalarlo",
+   "items": [
+    {
+     "t": "Pide tarjeta gráfica compatible con Vulkan.",
+     "d": "Con la mayoría de las gráficas integradas, o solo con el procesador, no funciona."
+    },
+    {
+     "t": "No arregla fotos movidas.",
+     "d": "Mejora imágenes pequeñas o pixeladas, pero no quita el desenfoque."
+    },
+    {
+     "t": "Bájalo de su web, no de la Mac App Store.",
+     "d": "Ahí cuesta US$12.99. Y 3 de sus modelos son solo para uso no comercial."
+    }
+   ],
+   "foot_left": "github.com/upscayl · apps.apple.com · 25/11/2026"
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "La guía completa",
+   "verb": "Comenta",
+   "keyword": "UPSCAYL",
+   "lead": "Y escríbeme UPSCAYL por DM. Te mando la guía: cómo tenerla gratis, cómo usarla y todo lo que puedes hacer con ella.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para tu próxima miniatura."
+   ]
+  }
+ ]
+}

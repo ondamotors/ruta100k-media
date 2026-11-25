@@ -1,0 +1,115 @@
+{
+ "id": "2026-11-28_p21_chatterbox",
+ "kind": "carousel",
+ "series": "IA DE PAGO → GRATIS",
+ "foot_left": "Verificado el 25/11/2026",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "cover_vs",
+   "theme": "dark",
+   "paid": {
+    "name": "ElevenLabs",
+    "price": "US$60 al año"
+   },
+   "free": {
+    "name": "Chatterbox",
+    "price": "US$0"
+   },
+   "foot_left": "Precios oficiales · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "light",
+   "kicker": "Antes de seguir",
+   "lines": [
+    "Y habla",
+    "latino."
+   ],
+   "size": 210,
+   "sub": "Tiene un modelo solo para <b>español de Latinoamérica</b>, con licencia MIT. Y la 3 casi nadie la conoce.",
+   "foot_left": "huggingface.co/ResembleAI · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "dark",
+   "kicker": "1 de 4 · voz en off",
+   "lines": [
+    "Narra sin",
+    "grabarte"
+   ],
+   "size": 200,
+   "sub": "Escribes el texto y te devuelve la voz para tus videos. Licencia MIT: sirve para contenido que monetizas. <b>El plan gratis de ElevenLabs no lo permite.</b>",
+   "foot_left": "github.com/resemble-ai · elevenlabs.io · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "light",
+   "kicker": "2 de 4 · tu voz",
+   "lines": [
+    "Tu voz en",
+    "10 segundos"
+   ],
+   "size": 200,
+   "sub": "Con unos <b>10 segundos de audio</b> clona una voz. Clona la tuya y narra sin volver a grabar.",
+   "foot_left": "resemble.ai · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "dark",
+   "kicker": "3 de 4 · la que casi nadie conoce",
+   "lines": [
+    "Sin",
+    "instalar"
+   ],
+   "size": 200,
+   "sub": "Su demo oficial en español latino funciona en el navegador: pegas hasta <b>300 caracteres</b>, subes o grabas tu voz y generas.",
+   "foot_left": "huggingface.co/spaces/ResembleAI · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "light",
+   "kicker": "4 de 4 · otros idiomas",
+   "lines": [
+    "23",
+    "idiomas"
+   ],
+   "size": 200,
+   "sub": "Inglés, portugués, francés y 20 más. La misma narración en otro idioma, con tu voz. Ojo: puede conservar tu acento.",
+   "foot_left": "github.com/resemble-ai/chatterbox · 25/11/2026"
+  },
+  {
+   "type": "numbered",
+   "theme": "dark",
+   "kicker": "Ojo · el límite real",
+   "h2": "Antes de usarlo",
+   "items": [
+    {
+     "t": "La demo tiene cupo diario.",
+     "d": "Minutos de GPU de Hugging Face: 5 al día con cuenta gratis, 2 sin cuenta."
+    },
+    {
+     "t": "En tu computador pide Python.",
+     "d": "No tiene instalador: se instala con pip, probado en Python 3.11."
+    },
+    {
+     "t": "Cada audio lleva marca de agua.",
+     "d": "Invisible, pero detectable como IA. Y clona solo voces con permiso."
+    }
+   ],
+   "foot_left": "huggingface.co/docs · github.com/resemble-ai · 25/11/2026"
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "La guía completa",
+   "verb": "Comenta",
+   "keyword": "CHATTERBOX",
+   "lead": "Y escríbeme CHATTERBOX por DM. Te mando la guía: cómo tenerla gratis, cómo usarla y todo lo que puedes hacer con ella.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para tu próximo video."
+   ]
+  }
+ ]
+}

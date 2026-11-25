@@ -1,0 +1,82 @@
+{
+ "id": "2026-11-29_p22_upscayl_tiktok",
+ "kind": "tiktok",
+ "series": "IA DE PAGO → GRATIS",
+ "foot_left": "Verificado el 25/11/2026",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "vs",
+   "theme": "dark",
+   "paid": {
+    "name": "Topaz Gigapixel",
+    "price": "US$149 al año"
+   },
+   "free": {
+    "name": "Upscayl",
+    "price": "US$0"
+   },
+   "foot_left": "Precios oficiales · 25/11/2026"
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "Y está en español.",
+   "text": "Open source y sin suscripción. La interfaz viene en español.",
+   "foot_left": "github.com/upscayl/upscayl"
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "1 de 4 · miniaturas",
+   "h": "Agranda tus imágenes hasta 4x con IA.",
+   "text": "Capturas, miniaturas y fotos de baja resolución.",
+   "foot_left": "github.com/upscayl/upscayl"
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "2 de 4 · por lotes",
+   "h": "Una carpeta entera de una vez.",
+   "text": "Activa <b>«Aumento por lotes»</b> y procesa todo tu carrusel.",
+   "foot_left": "github.com/upscayl/upscayl"
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "3 de 4 · la que casi nadie usa",
+   "h": "Elige el modelo según la imagen.",
+   "text": "<b>«Arte Digital»</b> para ilustraciones. <b>«Alta Fidelidad»</b> para fotos realistas.",
+   "foot_left": "github.com/upscayl/upscayl"
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "4 de 4 · hasta 16x",
+   "h": "Doble Upscayl: dos pasadas de IA.",
+   "text": "Llega a <b>16x</b>. Tarda bastante más.",
+   "foot_left": "github.com/upscayl/upscayl"
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Ojo · el límite real",
+   "h": "Pide tarjeta gráfica compatible con Vulkan.",
+   "text": "No quita el desenfoque. Y en la Mac App Store cuesta US$12.99: bájalo gratis de su web.",
+   "foot_left": "github.com/upscayl · apps.apple.com"
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "La guía completa",
+   "verb": "Comenta",
+   "keyword": "UPSCAYL",
+   "steps": [
+    "Sígueme: es solo para seguidores.",
+    "Escríbeme UPSCAYL por mensaje.",
+    "Te mando la guía: cómo tenerla gratis, cómo usarla y todo lo que puedes hacer con ella."
+   ]
+  }
+ ]
+}

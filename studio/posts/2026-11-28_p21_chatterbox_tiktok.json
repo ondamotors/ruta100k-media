@@ -1,0 +1,82 @@
+{
+ "id": "2026-11-28_p21_chatterbox_tiktok",
+ "kind": "tiktok",
+ "series": "IA DE PAGO → GRATIS",
+ "foot_left": "Verificado el 25/11/2026",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "vs",
+   "theme": "dark",
+   "paid": {
+    "name": "ElevenLabs",
+    "price": "US$60 al año"
+   },
+   "free": {
+    "name": "Chatterbox",
+    "price": "US$0"
+   },
+   "foot_left": "Precios oficiales · 25/11/2026"
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "Y habla español latino.",
+   "text": "Tiene un modelo solo para Latinoamérica, con licencia MIT.",
+   "foot_left": "huggingface.co/ResembleAI"
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "1 de 4 · voz en off",
+   "h": "Narra tus videos sin grabarte.",
+   "text": "Escribes el texto, te da la voz. <b>Y sirve para contenido que monetizas.</b>",
+   "foot_left": "github.com/resemble-ai/chatterbox"
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "2 de 4 · tu voz",
+   "h": "Clona tu voz con 10 segundos.",
+   "text": "Basta un audio corto de referencia. Usa la tuya, o una con permiso.",
+   "foot_left": "resemble.ai"
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "3 de 4 · la que casi nadie conoce",
+   "h": "Pruébalo sin instalar nada.",
+   "text": "Demo oficial en el navegador: <b>300 caracteres</b> por intento, con tu micrófono.",
+   "foot_left": "huggingface.co/spaces/ResembleAI"
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "4 de 4 · otros idiomas",
+   "h": "Tu misma voz en 23 idiomas.",
+   "text": "Inglés, portugués, francés y más. Ojo: puede conservar tu acento.",
+   "foot_left": "github.com/resemble-ai/chatterbox"
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Ojo · el límite real",
+   "h": "La demo tiene cupo diario.",
+   "text": "5 minutos de GPU al día con cuenta gratis. Y cada audio lleva marca de agua.",
+   "foot_left": "huggingface.co/docs · github.com/resemble-ai"
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "La guía completa",
+   "verb": "Comenta",
+   "keyword": "CHATTERBOX",
+   "steps": [
+    "Sígueme: es solo para seguidores.",
+    "Escríbeme CHATTERBOX por mensaje.",
+    "Te mando la guía: cómo tenerla gratis, cómo usarla y todo lo que puedes hacer con ella."
+   ]
+  }
+ ]
+}

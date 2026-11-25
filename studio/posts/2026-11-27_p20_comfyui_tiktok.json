@@ -1,0 +1,82 @@
+{
+ "id": "2026-11-27_p20_comfyui_tiktok",
+ "kind": "tiktok",
+ "series": "IA DE PAGO → GRATIS",
+ "foot_left": "Verificado el 25/11/2026",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "vs",
+   "theme": "dark",
+   "paid": {
+    "name": "Midjourney",
+    "price": "US$96 al año"
+   },
+   "free": {
+    "name": "ComfyUI",
+    "price": "US$0"
+   },
+   "foot_left": "Precios oficiales · 25/11/2026"
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "Y no es una prueba.",
+   "text": "Open source y gratis. Su web lo dice: sin funciones bloqueadas, sin periodo de prueba.",
+   "foot_left": "comfy.org/download"
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "1 de 4 · portadas",
+   "h": "Imágenes para tus portadas y carruseles.",
+   "text": "Con el modelo abierto <b>FLUX.1 [schnell]</b>. Su licencia permite uso comercial.",
+   "foot_left": "huggingface.co/black-forest-labs"
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "2 de 4 · sin cupo",
+   "h": "Sin cupo mensual.",
+   "text": "Midjourney Basic trae <b>200 minutos</b> de GPU rápida al mes. Aquí manda tu computador.",
+   "foot_left": "docs.midjourney.com"
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "3 de 4 · la que casi nadie usa",
+   "h": "No armas nada: abres una plantilla.",
+   "text": "Buscas <b>«Flux.1 Schnell»</b> en su biblioteca, escribes tu prompt y generas.",
+   "foot_left": "docs.comfy.org"
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "4 de 4 · más que imágenes",
+   "h": "También hace video y música.",
+   "text": "Con modelos abiertos como <b>Wan 2.2</b> y <b>ACE-Step 1.5</b>.",
+   "foot_left": "github.com/Comfy-Org/ComfyUI"
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Ojo · el límite real",
+   "h": "Más técnico, y mejor con buena tarjeta gráfica.",
+   "text": "Trabajas con nodos. Y cada modelo tiene su licencia: FLUX.1 [dev] no es comercial.",
+   "foot_left": "docs.comfy.org"
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "La guía completa",
+   "verb": "Comenta",
+   "keyword": "COMFYUI",
+   "steps": [
+    "Sígueme: es solo para seguidores.",
+    "Escríbeme COMFYUI por mensaje.",
+    "Te mando la guía: cómo tenerla gratis, cómo usarla y todo lo que puedes hacer con ella."
+   ]
+  }
+ ]
+}

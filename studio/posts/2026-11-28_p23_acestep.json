@@ -1,0 +1,115 @@
+{
+ "id": "2026-11-28_p23_acestep",
+ "kind": "carousel",
+ "series": "IA DE PAGO → GRATIS",
+ "foot_left": "Verificado el 25/11/2026",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "cover_vs",
+   "theme": "dark",
+   "paid": {
+    "name": "Suno",
+    "price": "US$96 al año"
+   },
+   "free": {
+    "name": "ACE-Step",
+    "price": "US$0"
+   },
+   "foot_left": "Precios oficiales · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "light",
+   "kicker": "Antes de seguir",
+   "lines": [
+    "Y puedes",
+    "usarlas."
+   ],
+   "size": 210,
+   "sub": "En el plan gratis de Suno no hay derechos comerciales ni descargas. ACE-Step es MIT y su ficha oficial <b>permite el uso comercial</b> de la música que generas. Y la 3 casi nadie la usa.",
+   "foot_left": "suno.com/pricing · huggingface.co/ACE-Step · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "dark",
+   "kicker": "1 de 4 · música de fondo",
+   "lines": [
+    "Tu música",
+    "de fondo"
+   ],
+   "size": 200,
+   "sub": "Describes el estilo y genera la pieza en tu computador, de <b>10 segundos a 10 minutos</b>. Y si no quieres voz, la pides instrumental.",
+   "foot_left": "github.com/ace-step/ACE-Step-1.5 · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "light",
+   "kicker": "2 de 4 · con letra",
+   "lines": [
+    "Letra en",
+    "español"
+   ],
+   "size": 200,
+   "sub": "Escribes tu propia letra: acepta más de 50 idiomas, español incluido. El jingle de tu marca o la canción de tu serie.",
+   "foot_left": "github.com/ace-step/ACE-Step-1.5 · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "dark",
+   "kicker": "3 de 4 · la que casi nadie usa",
+   "lines": [
+    "Rehaz",
+    "un tramo"
+   ],
+   "size": 200,
+   "sub": "Con el modo <b>Repaint</b> regeneras solo los segundos que no te gustaron y el resto queda igual. También sirve para alargar la canción.",
+   "foot_left": "github.com/ace-step/ACE-Step-1.5 · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "light",
+   "kicker": "4 de 4 · tu computador",
+   "lines": [
+    "Menos de",
+    "4 GB"
+   ],
+   "size": 200,
+   "sub": "Según su equipo, corre con menos de <b>4 GB de memoria de video</b>. Y para Windows y Mac hay un paquete portable, con todo ya instalado.",
+   "foot_left": "github.com/ace-step/ACE-Step-1.5 · 25/11/2026"
+  },
+  {
+   "type": "numbered",
+   "theme": "dark",
+   "kicker": "Ojo · el límite real",
+   "h2": "Antes de instalarlo",
+   "items": [
+    {
+     "t": "Pide NVIDIA o Mac con chip Apple.",
+     "d": "El paquete de Windows requiere CUDA; el de Mac, Apple Silicon. Solo con el procesador va mucho más lento."
+    },
+    {
+     "t": "Reserva unos 10 GB de disco.",
+     "d": "Los modelos principales se descargan la primera vez."
+    },
+    {
+     "t": "Puede parecerse a algo que ya existe.",
+     "d": "Su propio equipo lo advierte: revisa que sea original y di que usaste IA."
+    }
+   ],
+   "foot_left": "github.com/ace-step/ACE-Step-1.5 · 25/11/2026"
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "La guía completa",
+   "verb": "Comenta",
+   "keyword": "ACESTEP",
+   "lead": "Y escríbeme ACESTEP por DM. Te mando la guía: cómo tenerla gratis, cómo usarla y todo lo que puedes hacer con ella.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para tu próximo video."
+   ]
+  }
+ ]
+}

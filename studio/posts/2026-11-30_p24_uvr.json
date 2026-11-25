@@ -1,0 +1,115 @@
+{
+ "id": "2026-11-30_p24_uvr",
+ "kind": "carousel",
+ "series": "IA DE PAGO → GRATIS",
+ "foot_left": "Verificado el 25/11/2026",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "cover_vs",
+   "theme": "dark",
+   "paid": {
+    "name": "Lalal.ai",
+    "price": "US$90 al año"
+   },
+   "free": {
+    "name": "Ultimate Vocal Remover",
+    "price": "US$0"
+   },
+   "foot_left": "Precios oficiales · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "light",
+   "kicker": "Antes de seguir",
+   "lines": [
+    "Sin cupo",
+    "de minutos."
+   ],
+   "size": 210,
+   "sub": "El plan gratis de Lalal.ai te da 10 minutos para probar. UVR corre en tu computador, con licencia MIT. Y la 3 casi nadie la usa.",
+   "foot_left": "lalal.ai/pricing · github.com/Anjok07 · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "dark",
+   "kicker": "1 de 4 · voz y música",
+   "lines": [
+    "Voz por",
+    "un lado"
+   ],
+   "size": 200,
+   "sub": "Le das una canción o un audio y te devuelve dos archivos: <b>la voz sola y el instrumental</b>.",
+   "foot_left": "github.com/Anjok07/ultimatevocalremovergui · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "light",
+   "kicker": "2 de 4 · tus videos",
+   "lines": [
+    "Salva tu",
+    "audio"
+   ],
+   "size": 200,
+   "sub": "¿Grabaste con música de fondo? Exporta el audio de tu video, sepáralo y quédate solo con las voces.",
+   "foot_left": "github.com/Anjok07/ultimatevocalremovergui · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "dark",
+   "kicker": "3 de 4 · la que casi nadie usa",
+   "lines": [
+    "Quita el",
+    "eco"
+   ],
+   "size": 200,
+   "sub": "Con el modelo <b>«UVR-DeEcho-DeReverb»</b> instalado, quita la reverberación de una voz. Para la grabación que hiciste en un cuarto vacío.",
+   "foot_left": "github.com/Anjok07/ultimatevocalremovergui · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "light",
+   "kicker": "4 de 4 · 4 pistas",
+   "lines": [
+    "4 pistas",
+    "separadas"
+   ],
+   "size": 200,
+   "sub": "Con los modelos Demucs separa <b>voz, batería, bajo y el resto</b>. Para tus remixes y edits con música propia.",
+   "foot_left": "github.com/Anjok07 · github.com/facebookresearch/demucs · 25/11/2026"
+  },
+  {
+   "type": "numbered",
+   "theme": "dark",
+   "kicker": "Ojo · el límite real",
+   "h2": "Antes de instalarlo",
+   "items": [
+    {
+     "t": "Rápido con NVIDIA de 6 GB o más.",
+     "d": "Es el mínimo para usar la tarjeta gráfica: una GTX 1060 de 6 GB; recomiendan 8 GB. Si no, el tiempo depende de tu equipo."
+    },
+    {
+     "t": "Su versión estable es de 2023.",
+     "d": "La 5.6; después salieron versiones beta. En Windows se instala sí o sí en el disco C:."
+    },
+    {
+     "t": "Separar no te da derechos.",
+     "d": "Si la canción no es tuya, sigue teniendo dueño: úsala solo con permiso o licencia."
+    }
+   ],
+   "foot_left": "github.com/Anjok07/ultimatevocalremovergui · 25/11/2026"
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "La guía completa",
+   "verb": "Comenta",
+   "keyword": "UVR",
+   "lead": "Y escríbeme UVR por DM. Te mando la guía: cómo tenerla gratis, cómo usarla y todo lo que puedes hacer con ella.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para tu próximo edit."
+   ]
+  }
+ ]
+}

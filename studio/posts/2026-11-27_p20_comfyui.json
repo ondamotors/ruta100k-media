@@ -1,0 +1,115 @@
+{
+ "id": "2026-11-27_p20_comfyui",
+ "kind": "carousel",
+ "series": "IA DE PAGO → GRATIS",
+ "foot_left": "Verificado el 25/11/2026",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "cover_vs",
+   "theme": "dark",
+   "paid": {
+    "name": "Midjourney",
+    "price": "US$96 al año"
+   },
+   "free": {
+    "name": "ComfyUI",
+    "price": "US$0"
+   },
+   "foot_left": "Precios oficiales · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "light",
+   "kicker": "Antes de seguir",
+   "lines": [
+    "Y no es",
+    "una prueba."
+   ],
+   "size": 210,
+   "sub": "Open source, licencia GPL-3.0. Su web oficial lo dice: <b>sin funciones bloqueadas, sin periodo de prueba.</b> Y la 3 casi nadie la usa.",
+   "foot_left": "comfy.org/download · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "dark",
+   "kicker": "1 de 4 · portadas y miniaturas",
+   "lines": [
+    "Portadas",
+    "sin pagar"
+   ],
+   "size": 200,
+   "sub": "Imágenes para tus miniaturas y carruseles con el modelo abierto <b>FLUX.1 [schnell]</b>. Su licencia, Apache-2.0, permite uso personal y comercial.",
+   "foot_left": "huggingface.co/black-forest-labs · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "light",
+   "kicker": "2 de 4 · sin cupo",
+   "lines": [
+    "Sin cupo",
+    "mensual"
+   ],
+   "size": 200,
+   "sub": "Midjourney Basic trae <b>200 minutos</b> de GPU rápida al mes. ComfyUI corre en tu computador, incluso sin internet una vez instalado.",
+   "foot_left": "docs.midjourney.com · comfy.org · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "dark",
+   "kicker": "3 de 4 · la que casi nadie usa",
+   "lines": [
+    "Abre una",
+    "plantilla"
+   ],
+   "size": 200,
+   "sub": "No armas nodos: en su biblioteca buscas <b>«Flux.1 Schnell»</b>, escribes tu prompt y generas. Y si arrastras una imagen hecha con ComfyUI, recuperas el flujo que la creó.",
+   "foot_left": "docs.comfy.org · github.com/Comfy-Org · 25/11/2026"
+  },
+  {
+   "type": "cover_clean",
+   "theme": "light",
+   "kicker": "4 de 4 · más que imágenes",
+   "lines": [
+    "Video y",
+    "música"
+   ],
+   "size": 200,
+   "sub": "El mismo programa corre modelos abiertos de video como <b>Wan 2.2</b> y de música como <b>ACE-Step 1.5</b>. Una sola herramienta para todo tu contenido.",
+   "foot_left": "github.com/Comfy-Org/ComfyUI · 25/11/2026"
+  },
+  {
+   "type": "numbered",
+   "theme": "dark",
+   "kicker": "Ojo · el límite real",
+   "h2": "Antes de instalarlo",
+   "items": [
+    {
+     "t": "Es más técnico que Midjourney.",
+     "d": "Trabajas con nodos, no con un chat."
+    },
+    {
+     "t": "Va mejor con buena tarjeta gráfica.",
+     "d": "En Windows se recomienda NVIDIA o AMD. En Mac necesitas chip Apple (M1 o más reciente)."
+    },
+    {
+     "t": "Cada modelo tiene su licencia.",
+     "d": "FLUX.1 [dev] es solo para uso no comercial. Y los nodos de API de modelos cerrados se pagan aparte."
+    }
+   ],
+   "foot_left": "docs.comfy.org · github.com/Comfy-Org · 25/11/2026"
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "La guía completa",
+   "verb": "Comenta",
+   "keyword": "COMFYUI",
+   "lead": "Y escríbeme COMFYUI por DM. Te mando la guía: cómo tenerla gratis, cómo usarla y todo lo que puedes hacer con ella.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para tu próxima portada."
+   ]
+  }
+ ]
+}
