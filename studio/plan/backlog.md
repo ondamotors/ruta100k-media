@@ -10,7 +10,7 @@ Prendre les entrées dans l'ordre. Cocher une fois programmée, avec l'id Metric
 - [x] Día 2 · 25/11 18:30 · El prompt (mot PROMPT) · Metricool 440875932
 - [x] Día 1 · 25/11 01:50 · Algoritmo de TikTok, mot ALGORITMO (TikTok seulement) · Metricool 441096509
 - [x] Tier list TikTok (TikTok seulement) · déplacée au 29/11 00:30, créneau SOURCE TikTok du Día 5 · Metricool 441096559
-- [ ] Vincent : passer en privé dans l'app TikTok la tier list Instagram publiée sur TikTok le 25/11 00:30 (hors sujet sur TikTok)
+- [x] Tier list Instagram publiée sur TikTok le 25/11 00:30 : supprimée par Vincent le 25/11 (hors sujet sur TikTok)
 - [x] Día 2 · 26/11 02:30 · 30 ganchos (mot GANCHOS) · Metricool 440875965
 
 - [x] Instagram · 25/11 01:25 Día 1 (441081949) · 02:30 Stack (441081976) · 04:00 Tier list Instagram (441081990) · 18:30 El prompt (441082008) · 26/11 00:30 30 ideas, mot IDEAS (441091478, remplace la tier list TikTok : Instagram seulement) · 02:30 30 ganchos (441082068)
