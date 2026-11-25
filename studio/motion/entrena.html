@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+:root { --y: #FFE14D; --red: #E5484D; --green: #16A34A; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #EEF0F3; }
+body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color: #111; }
+#ui { position: absolute; inset: 0; background: #EEF0F3; transform-origin: 485px 980px; }
+.card { position: absolute; left: 60px; top: 560px; width: 850px; height: 840px; background: #fff; border-radius: 34px; box-shadow: 0 10px 30px rgba(17,17,17,0.07); overflow: hidden; }
+
+/* tâche */
+#thd { position: absolute; left: 0; top: 0; width: 100%; height: 104px; display: flex; align-items: center; gap: 18px; padding: 0 30px; border-bottom: 2px solid #F1F2F5; }
+#thd .nm { font-weight: 800; font-size: 40px; }
+#rate { margin-left: auto; font-weight: 700; font-size: 27px; color: var(--green); background: #E6FAEC; padding: 8px 18px; border-radius: 999px; white-space: nowrap; }
+.tb { position: absolute; left: 0; top: 104px; width: 850px; height: 736px; padding: 28px 34px; }
+.lb { font-weight: 700; font-size: 27px; color: #6B7280; }
+.ph { margin-top: 8px; font-weight: 800; font-size: 46px; white-space: nowrap; }
+.ai { margin-top: 12px; display: inline-block; background: #F1F2F5; border-radius: 28px; border-bottom-left-radius: 10px; padding: 18px 28px 20px; font-weight: 600; font-size: 40px; white-space: nowrap; }
+.btns { margin-top: 26px; display: flex; gap: 22px; }
+.bt { flex: 1; height: 96px; border-radius: 28px; border: 3px solid #E5E7EB; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 36px; }
+.inpb { margin-top: 12px; height: 96px; border-radius: 26px; border: 3px solid #111; display: flex; align-items: center; padding: 0 28px; font-weight: 700; font-size: 40px; white-space: nowrap; overflow: hidden; }
+.inpb .cur { display: inline-block; width: 4px; height: 44px; background: #111; margin-left: 4px; }
+.st { position: absolute; left: 50%; top: 640px; transform: translateX(-50%); background: var(--green); color: #fff; font-weight: 800; font-size: 34px; padding: 12px 30px 14px; border-radius: 999px; white-space: nowrap; box-shadow: 0 8px 24px rgba(22,163,74,0.35); }
+
+/* argent */
+#money { z-index: 8; box-shadow: 0 10px 30px rgba(17,17,17,0.12); padding: 32px 40px; overflow: visible; }
+#money h3 { font-weight: 800; font-size: 50px; }
+.rw { margin-top: 14px; }
+.rw .l { font-weight: 700; font-size: 30px; color: #374151; }
+.rw .v { font-weight: 800; font-size: 56px; line-height: 1.05; color: var(--green); letter-spacing: -1px; }
+.rw .v small { font-size: 30px; color: #9CA3AF; letter-spacing: 0; margin-left: 6px; }
+#pago { margin-top: 16px; font-weight: 700; font-size: 30px; color: #111; }
+#money .src { margin-top: 4px; font-weight: 600; font-size: 23px; color: #9CA3AF; }
+#hr { margin-top: 18px; height: 2px; background: #F1F2F5; }
+#mlab { margin-top: 16px; font-weight: 700; font-size: 34px; color: #374151; }
+#mtot { margin-top: 2px; font-weight: 800; font-size: 132px; line-height: 1; color: var(--green); letter-spacing: -4px; white-space: nowrap; }
+#mtot small { font-size: 40px; color: #9CA3AF; letter-spacing: 0; margin-left: 12px; }
+#minw { margin-top: 10px; font-weight: 700; font-size: 31px; color: #6B7280; white-space: nowrap; }
+
+/* étapes */
+#sheet { position: absolute; left: 60px; top: 858px; width: 850px; height: 560px; background: #fff; border-radius: 40px; box-shadow: 0 -10px 50px rgba(17,17,17,0.18); padding: 26px 40px; z-index: 9; }
+#sheet .grab { width: 90px; height: 10px; border-radius: 9px; background: #D1D5DB; margin: 0 auto 24px; }
+#sheet h3 { font-weight: 800; font-size: 46px; margin-bottom: 12px; }
+.it { display: flex; align-items: center; gap: 20px; height: 120px; font-weight: 700; font-size: 40px; line-height: 1.15; border-top: 2px solid #F1F2F5; }
+.it .e { width: 72px; height: 72px; border-radius: 20px; background: #F5F6F8; display: grid; place-items: center; font-size: 40px; flex: none; }
+.it small { display: block; font-weight: 600; font-size: 28px; color: var(--green); }
+
+/* légendes */
+.cap { position: absolute; z-index: 12; left: 60px; right: 170px; display: flex; flex-direction: column; align-items: center; }
+.cap span { display: inline-block; font-weight: 700; font-size: 60px; line-height: 1.16; padding: 6px 24px 10px; border-radius: 20px; background: #fff; color: #111; margin-top: -6px; text-align: center; white-space: nowrap; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+.cap span.y { background: var(--y); }
+.cap span.xl { font-size: 92px; font-weight: 800; padding: 6px 30px 12px; }
+.cap span.l { font-size: 76px; font-weight: 800; padding: 6px 28px 12px; }
+.cap span.s { font-size: 48px; }
+.cap span.xs { font-size: 40px; font-weight: 600; }
+.conf { position: absolute; left: 0; top: 0; font-size: 64px; line-height: 1; opacity: 0; z-index: 11; }
+#flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 50; }
+.tap { position: absolute; width: 96px; height: 96px; margin: -48px 0 0 -48px; border-radius: 50%; background: rgba(120,120,128,0.45); border: 4px solid rgba(255,255,255,0.95); box-shadow: 0 6px 24px rgba(0,0,0,0.25); z-index: 40; opacity: 0; }
+</style>
+</head>
+<body>
+<div id="ui">
+  <div class="card" id="task">
+    <div id="thd"><span style="font-size: 40px">🧠</span><span class="nm">Tarea de IA</span><span id="rate">💵 hasta $7.50/h</span></div>
+    <div class="tb" id="t0"><div class="lb">Frase en español</div><div class="ph">🇨🇴 «Me tiraron los perros»</div><div class="lb" style="margin-top: 22px">Respuesta de la IA</div><div class="ai" id="a0">Me atacaron unos perros 🐕</div><div class="btns"><div class="bt">✅ Correcta</div><div class="bt" id="x0">❌ Incorrecta</div></div><div class="lb" style="margin-top: 26px">Tu corrección</div><div class="inpb"><span id="c0"></span><span class="cur"></span></div><div class="st" id="s0">✅ Corregido</div></div>
+    <div class="tb" id="t1"><div class="lb">Frase en español</div><div class="ph">🇲🇽 «Está bien chido»</div><div class="lb" style="margin-top: 22px">Respuesta de la IA</div><div class="ai" id="a1">Está muy frío 🥶</div><div class="btns"><div class="bt">✅ Correcta</div><div class="bt" id="x1">❌ Incorrecta</div></div><div class="lb" style="margin-top: 26px">Tu corrección</div><div class="inpb"><span id="c1"></span><span class="cur"></span></div><div class="st" id="s1">✅ Corregido</div></div>
+    <div class="tb" id="t2"><div class="lb">Frase en español</div><div class="ph">🇦🇷 «Estoy al horno»</div><div class="lb" style="margin-top: 22px">Respuesta de la IA</div><div class="ai" id="a2">Estoy cocinando 🍗</div><div class="btns"><div class="bt">✅ Correcta</div><div class="bt" id="x2">❌ Incorrecta</div></div><div class="lb" style="margin-top: 26px">Tu corrección</div><div class="inpb"><span id="c2"></span><span class="cur"></span></div><div class="st" id="s2">✅ Corregido</div></div>
+  </div>
+
+  <div class="card" id="money">
+    <h3>¿Cuánto pagan? 💸</h3>
+    <div class="rw" id="r0"><div class="l">✍️ Escribir y evaluar en español</div><div class="v">hasta $7.50<small>por hora</small></div></div>
+    <div class="rw" id="r1"><div class="l">💻 Si sabes programar</div><div class="v">$14 a $29<small>por hora</small></div></div>
+    <div id="pago">📅 Pago semanal por PayPal o AirTM</div>
+    <div class="src">Fuente: Outlier, noviembre 2026</div>
+    <div id="hr"></div>
+    <div id="mlab">40 h a la semana = hasta</div>
+    <div id="mtot">$0<small>al mes</small></div>
+    <div id="minw">Mínimo en México: $489 al mes 💀 (STPS 2026)</div>
+  </div>
+
+  <div id="sheet">
+    <div class="grab"></div>
+    <h3>Cómo entrar:</h3>
+    <div class="it" id="i0"><span class="e">🌐</span><div>Aplica en la web oficial<small>gratis · nunca pagues por entrar</small></div></div>
+    <div class="it" id="i1"><span class="e">📝</span><div>Pasa la prueba de español<small>sin experiencia en IA</small></div></div>
+    <div class="it" id="i2"><span class="e">⏰</span><div>Elige tus horas<small>la mayoría hace 5 a 10 h por semana</small></div></div>
+  </div>
+</div>
+<div class="cap" id="h" style="top: 262px"><span class="s" id="h1">Te pagan en</span><span class="y xl" id="h2">DÓLARES 💵</span><span id="h3">por corregir a la IA 🤖</span></div>
+<div class="cap" id="g" style="top: 330px"><span id="g1">La IA no entiende 😂</span><span class="y l" id="g2">cómo hablamos</span></div>
+<div class="cap" id="z" style="top: 262px"><span class="s" id="z0">Hasta</span><span class="y xl" id="z1">$1,300 al mes 💸</span><span id="z2">casi 3× el mínimo 🤯</span></div>
+<div class="cap" id="v" style="top: 330px"><span id="v1">Sin experiencia en IA 😳</span><span class="y l" id="v2">solo tu español 🙌</span></div>
+<div class="cap" id="k" style="top: 540px"><span id="k1">¿Quieres los links? 👀</span><span class="xl" id="k2">Comenta</span><span class="y xl" id="k3">ENTRENA 👇</span><span class="s" id="k4">y te mando dónde aplicar 📩</span><span class="xs" id="k5">(sígueme para recibirlo)</span></div>
+<div class="tap" id="tap"></div>
+<div id="flash"></div>
+
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<script>
+const EM = ['💸', '💵', '🤑', '💰', '🎉', '✨'];
+const confs = [];
+for (let k = 0; k < 26; k++) { const el = document.createElement('div'); el.className = 'conf'; el.textContent = EM[k % EM.length]; document.body.appendChild(el); confs.push(el); }
+let seed = 31; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+
+/* tâche k : bulle IA, tap ❌, saisie de la correction, tampon */
+const T = [
+  { a: 0.35, x: 0.85, c0: 1.0, c1: 1.35, s: 1.42, txt: 'Me coquetearon 😏' },
+  { a: 1.88, x: 2.12, c0: 2.22, c1: 2.48, s: 2.53, txt: 'Está genial 🔥' },
+  { a: 2.93, x: 3.15, c0: 3.25, c1: 3.5, s: 3.55, txt: 'Estoy en problemas 😩' },
+];
+const SW = [1.7, 2.75];
+const G = 1.62;
+const MO = 3.9;
+const ROWT = [MO + 0.35, MO + 0.6];
+const PAGO = MO + 0.85;
+const C0 = MO + 1.1, B = MO + 1.9;
+const SH = B + 1.8;
+const K = SH + 2.1;
+
+const tl = gsap.timeline({ paused: true, defaults: { ease: 'power3.out' } });
+const M = { v: 0 };
+const pop = (sel, at) => tl.fromTo(sel, { autoAlpha: 0, scale: 0.55 }, { autoAlpha: 1, scale: 1, duration: 0.32, ease: 'back.out(2.2)' }, at);
+const tap = (x, y, at) => tl.set('#tap', { left: x, top: y, scale: 1.2, autoAlpha: 0 }, at).to('#tap', { autoAlpha: 1, scale: 0.85, duration: 0.06 }, at).to('#tap', { autoAlpha: 0, duration: 0.1 }, at + 0.14);
+gsap.set('#ui', { filter: 'blur(0px) brightness(1)' });
+gsap.set(['#g1', '#g2', '#z0', '#z1', '#z2', '#v1', '#v2', '#k1', '#k2', '#k3', '#k4', '#k5', '#a0', '#a1', '#a2', '#s0', '#s1', '#s2', '#r0', '#r1', '#pago', '#minw'], { autoAlpha: 0 });
+gsap.set(['#t1', '#t2'], { x: 900 });
+gsap.set('#money', { y: 1500 });
+gsap.set('#sheet', { y: 1150 });
+gsap.set('.it', { autoAlpha: 0, x: 40 });
+
+/* 0 · accroche + les 3 tâches */
+tl.fromTo('#h', { scale: 1.06 }, { scale: 1, duration: 0.2, ease: 'back.out(2)' }, 0)
+  .fromTo('#ui', { scale: 1.0 }, { scale: 1.03, duration: MO, ease: 'none' }, 0);
+T.forEach((k, i) => {
+  tl.fromTo(`#a${i}`, { autoAlpha: 0, y: 24, scale: 0.9, transformOrigin: '0% 100%' }, { autoAlpha: 1, y: 0, scale: 1, duration: 0.26, ease: 'back.out(1.8)' }, k.a);
+  tap(60 + 34 + 403 + 22 + 190, 560 + 104 + 28 + 300, k.x - 0.04);
+  tl.to(`#x${i}`, { backgroundColor: '#FDECEC', borderColor: '#E5484D', color: '#E5484D', duration: 0.08 }, k.x)
+    .to(`#a${i}`, { backgroundColor: '#FDECEC', duration: 0.08 }, k.x)
+    .to(`#a${i}`, { x: -12, duration: 0.04, ease: 'none' }, k.x)
+    .to(`#a${i}`, { x: 10, duration: 0.05, ease: 'none' }, k.x + 0.04)
+    .to(`#a${i}`, { x: 0, duration: 0.05 }, k.x + 0.09)
+    .fromTo(`#s${i}`, { autoAlpha: 0, scale: 1.8, rotation: -8, xPercent: -50 }, { autoAlpha: 1, scale: 1, rotation: -3, xPercent: -50, duration: 0.22, ease: 'back.out(2.6)' }, k.s);
+});
+SW.forEach((t, i) => tl.to(`#t${i}`, { x: -900, duration: 0.24, ease: 'power2.in' }, t).to(`#t${i + 1}`, { x: 0, duration: 0.26, ease: 'power3.out' }, t + 0.04));
+tl.to('#h', { autoAlpha: 0, y: -20, duration: 0.15, ease: 'power2.in' }, G - 0.14);
+pop('#g1', G);
+pop('#g2', G + 0.16);
+
+/* 3.9 · combien ça paie */
+tl.to('#g', { autoAlpha: 0, duration: 0.12 }, MO - 0.1)
+  .to('#money', { y: 0, duration: 0.4, ease: 'power3.out' }, MO)
+  .to('#ui', { scale: 1.0, duration: 0.4, ease: 'power2.out' }, MO);
+ROWT.forEach((t, i) => tl.fromTo(`#r${i}`, { autoAlpha: 0, x: 40 }, { autoAlpha: 1, x: 0, duration: 0.24 }, t));
+tl.fromTo('#pago', { autoAlpha: 0, x: 40 }, { autoAlpha: 1, x: 0, duration: 0.24 }, PAGO)
+  .to(M, { v: 1300, duration: B - C0, ease: 'power2.in' }, C0)
+  .to('#flash', { opacity: 0.7, duration: 0.05, ease: 'none' }, B - 0.05)
+  .to('#flash', { opacity: 0, duration: 0.3 }, B)
+  .fromTo('#mtot', { scale: 1 }, { scale: 1.12, duration: 0.14, yoyo: true, repeat: 1, ease: 'power2.out', transformOrigin: '0% 50%' }, B)
+  .to('#ui', { x: -18, duration: 0.05, ease: 'none' }, B)
+  .to('#ui', { x: 14, duration: 0.06, ease: 'none' }, B + 0.05)
+  .to('#ui', { x: -8, duration: 0.06, ease: 'none' }, B + 0.11)
+  .to('#ui', { x: 0, duration: 0.08 }, B + 0.17);
+confs.forEach((el) => {
+  const ang = rnd() * Math.PI * 2, sp = 260 + rnd() * 440;
+  const dx = Math.cos(ang) * sp, dy = Math.sin(ang) * sp * 0.8 - 220;
+  const sc = 0.8 + rnd() * 0.6, rot = (rnd() - 0.5) * 260;
+  tl.set(el, { left: 420, top: 1180, x: 0, y: 0, rotation: 0, scale: 0.4, autoAlpha: 0 }, B)
+    .to(el, { autoAlpha: 1, scale: sc, duration: 0.08 }, B)
+    .to(el, { x: dx, y: dy, rotation: rot, duration: 0.45, ease: 'power3.out' }, B)
+    .to(el, { y: dy + 700, duration: 0.65, ease: 'power2.in' }, B + 0.45)
+    .to(el, { autoAlpha: 0, duration: 0.25 }, B + 0.8);
+});
+pop('#minw', B + 0.3);
+pop('#z0', B + 0.05);
+pop('#z1', B + 0.18);
+pop('#z2', B + 0.42);
+
+/* les étapes */
+tl.to('#z', { autoAlpha: 0, duration: 0.15 }, SH - 0.1)
+  .to('#sheet', { y: 0, duration: 0.38, ease: 'power3.out' }, SH);
+[0, 1, 2].forEach((k) => tl.to(`#i${k}`, { autoAlpha: 1, x: 0, duration: 0.22 }, SH + 0.35 + k * 0.3));
+pop('#v1', SH + 0.12);
+pop('#v2', SH + 0.3);
+
+/* commente */
+tl.to('#v', { autoAlpha: 0, duration: 0.12 }, K - 0.12)
+  .to('#flash', { opacity: 0.55, duration: 0.05, ease: 'none' }, K - 0.05)
+  .to('#flash', { opacity: 0, duration: 0.25 }, K)
+  .to('#ui', { filter: 'blur(16px) brightness(0.62)', scale: 1.08, duration: 0.3, ease: 'power2.out' }, K);
+pop('#k1', K + 0.06);
+pop('#k2', K + 0.3);
+pop('#k3', K + 0.5);
+pop('#k4', K + 0.85);
+pop('#k5', K + 1.05);
+tl.to('#k3', { scale: 1.07, duration: 0.35, yoyo: true, repeat: 3, ease: 'sine.inOut' }, K + 1.3);
+tl.to({}, { duration: 0.01 }, K + 3.0);
+window.DURATION = K + 3.0;
+window.TIMES = { T, SW, G, MO, ROWT, PAGO, C0, B, SH, K };
+
+const CS = T.map((_, i) => document.getElementById(`c${i}`));
+const CH = T.map((k) => Array.from(k.txt));
+const mtot = document.getElementById('mtot');
+const fmt = (d) => '$' + String(Math.round(d)).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+window.seek = (t) => {
+  tl.seek(t, false);
+  T.forEach((k, i) => {
+    const q = Math.max(0, Math.min(1, (t - k.c0) / (k.c1 - k.c0)));
+    CS[i].textContent = t >= k.c0 ? CH[i].slice(0, Math.ceil(q * CH[i].length)).join('') : '';
+  });
+  mtot.firstChild.nodeValue = fmt(Math.round(M.v / 10) * 10);
+};
+Promise.all([
+  document.fonts.load('700 60px "TT"', 'Aa'), document.fonts.load('800 60px "TT"', 'Aa'), document.fonts.load('600 60px "TT"', 'Aa'),
+]).then(() => document.fonts.ready).then(() => { window.seek(0); document.body.dataset.ready = '1'; });
+</script>
+</body>
+</html>
