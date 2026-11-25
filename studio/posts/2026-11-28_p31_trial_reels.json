@@ -1,0 +1,124 @@
+{
+ "id": "2026-11-28_p31_trial_reels",
+ "kind": "carousel",
+ "series": "FUENTE OFICIAL",
+ "foot_left": "Solo lo que Instagram publicó",
+ "foot_last": "Verificado el 25/11/2026",
+ "slides": [
+  {
+   "type": "cover_clean",
+   "theme": "dark",
+   "kicker": "Instagram lo confirmó · Trial Reels",
+   "lines": [
+    "Tus",
+    "seguidores",
+    "no lo ven"
+   ],
+   "size": 230,
+   "sub": "Y es a propósito. <b>Se llama Trial Reel.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "Antes de seguir",
+   "display": [
+    "No lo",
+    "digo yo."
+   ],
+   "display_size": 210,
+   "h1": "Lo dice Instagram. Sus páginas oficiales están al final.",
+   "lead": "<b>Y la 4 decide sola si tus seguidores lo ven.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "1 de 5 · cómo funciona",
+   "display": [
+    "Primero:",
+    "gente nueva"
+   ],
+   "display_size": 200,
+   "h1": "Lo ve primero gente que no te sigue.",
+   "lead": "Activas «Trial» antes de compartir el reel. Tus seguidores no lo ven en su Feed ni en la pestaña Reels, y no aparece en tu perfil."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "2 de 5 · ojo con esta",
+   "display": [
+    "No es",
+    "invisible"
+   ],
+   "display_size": 200,
+   "h1": "Algunos seguidores sí pueden verlo.",
+   "lead": "Si alguien se lo manda por mensaje directo, o en la página de reels con el mismo audio, la misma ubicación o el mismo filtro."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "3 de 5 · tus números",
+   "display": [
+    "24 horas"
+   ],
+   "display_size": 230,
+   "h1": "Y ya ves cómo le fue a tu prueba.",
+   "lead": "Vistas, likes, comentarios y veces compartido, en el visor de reels. Instagram también lo compara con tus pruebas anteriores."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "4 de 5 · la automática",
+   "display": [
+    "72 horas"
+   ],
+   "display_size": 230,
+   "h1": "Si le va bien, se comparte solo con tus seguidores.",
+   "lead": "Lo eliges al crearlo: Instagram lo comparte si sus vistas de las primeras 72 horas son buenas. Lo cambias cuando quieras."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "5 de 5 · el dato de Instagram",
+   "display": [
+    "80%"
+   ],
+   "display_size": 260,
+   "h1": "ganó alcance con gente que no lo sigue.",
+   "lead": "De los creadores que probaron los Trial Reels, 40% empezó a publicar reels más seguido. De esos, 80% vio subir ese alcance. Adam Mosseri, jefe de Instagram, 12/06/2025."
+  },
+  {
+   "type": "sources",
+   "theme": "light",
+   "kicker": "Fuentes",
+   "h2": "Todo, de Instagram",
+   "items": [
+    {
+     "t": "Trial Reels: cómo funcionan, 10/12/2024",
+     "u": "creators.instagram.com/blog/instagram-trial-reels"
+    },
+    {
+     "t": "Trial Reels para todos, y el dato de 40% y 80%, 12/06/2025",
+     "u": "about.fb.com/news/2025/06/inspiring-creativity-that-brings-people-together"
+    },
+    {
+     "t": "Herramientas que se desbloquean por etapas, 26/02/2026",
+     "u": "creators.instagram.com/create/insight-bundle"
+    }
+   ],
+   "cta": "Mándaselo a quien publica sus reels <b>sin probarlos antes</b>.",
+   "foot_left": "Verificado el 25/11/2026"
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "TRIAL",
+   "lead": "Y escríbeme TRIAL por DM: te mando el paso a paso para activarlo y dónde ver si ya lo tienes.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para tu próximo reel."
+   ]
+  }
+ ]
+}

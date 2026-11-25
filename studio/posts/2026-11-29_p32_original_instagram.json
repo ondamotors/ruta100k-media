@@ -1,0 +1,131 @@
+{
+ "id": "2026-11-29_p32_original_instagram",
+ "kind": "carousel",
+ "series": "FUENTE OFICIAL",
+ "foot_left": "Solo lo que Instagram publicó",
+ "foot_last": "Verificado el 25/11/2026",
+ "slides": [
+  {
+   "type": "cover_clean",
+   "theme": "dark",
+   "kicker": "Regla oficial",
+   "lines": [
+    "30 días:",
+    "10 reposts"
+   ],
+   "size": 250,
+   "sub": "y Instagram <b>deja de recomendarte.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "Antes de seguir",
+   "display": [
+    "No lo",
+    "digo yo."
+   ],
+   "display_size": 210,
+   "h1": "Son las reglas de Instagram sobre contenido original. Fuentes al final.",
+   "lead": "<b>Y la 5 puede esconderte de todo un público.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "1 de 5 · qué cuenta como repost",
+   "display": [
+    "Lo ajeno"
+   ],
+   "display_size": 230,
+   "h1": "Subir lo que no creaste ni mejoraste de verdad.",
+   "lead": "Regla de 2024: 10 veces o más en los últimos 30 días, y tu cuenta deja de salir donde Instagram recomienda contenido. Desde el 30/04/2026 cuenta también para fotos y carruseles."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "2 de 5 · la que duele",
+   "display": [
+    "Subtítulos"
+   ],
+   "display_size": 220,
+   "h1": "Ponerle subtítulos no lo vuelve tuyo.",
+   "lead": "Tampoco un borde, una marca de agua o el crédito en la descripción. Instagram pide un aporte creativo real que mejore el original."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "3 de 5 · lo que no cambia",
+   "display": [
+    "Te siguen",
+    "viendo"
+   ],
+   "display_size": 210,
+   "h1": "Tus seguidores, sí. La gente nueva, no.",
+   "lead": "La regla solo toca las recomendaciones. Y en EE. UU., 75% de lo que Instagram recomienda ya viene de posts originales."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "4 de 5 · cómo volver",
+   "display": [
+    "30 días"
+   ],
+   "display_size": 240,
+   "h1": "Vuelves cuando una parte importante de tus últimos 30 días es original.",
+   "lead": "Instagram lo mide sobre tus reels, fotos y carruseles de esos 30 días, y lo recalcula de forma continua."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "5 de 5 · la que casi nadie sabe",
+   "display": [
+    "Menores",
+    "de 18"
+   ],
+   "display_size": 210,
+   "h1": "Tu cuenta puede dejar de verse para adolescentes.",
+   "lead": "Desde el 14/10/2025, Estado de la cuenta te avisa si tu cuenta no está disponible para menores de 18. <b>Si no estás de acuerdo, puedes intentar pedir otra revisión.</b>"
+  },
+  {
+   "type": "sources",
+   "theme": "light",
+   "kicker": "Fuentes",
+   "h2": "Todo, de Instagram y Meta",
+   "items": [
+    {
+     "t": "Recomendaciones y originalidad, 30/04/2024",
+     "u": "creators.instagram.com/recommendations-and-originality"
+    },
+    {
+     "t": "La misma regla, en español, 02/05/2024",
+     "u": "about.fb.com/ltam/news/2024/05/ayudando-a-los-creadores-a-encontrar-nuevas-audiencias"
+    },
+    {
+     "t": "Fotos, carruseles y subtítulos, 30/04/2026",
+     "u": "creators.instagram.com/blog/rewarding-original-creators-on-instagram"
+    },
+    {
+     "t": "Guía de contenido original",
+     "u": "creators.instagram.com/original-content-guidelines"
+    },
+    {
+     "t": "Estado de la cuenta y menores de 18, 14/10/2025",
+     "u": "about.instagram.com/blog/announcements/instagram-outages-and-account-status"
+    }
+   ],
+   "cta": "Mándaselo a quien sube clips ajenos <b>con subtítulos</b>.",
+   "foot_left": "Verificado el 25/11/2026"
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "ORIGINAL",
+   "lead": "Y escríbeme ORIGINAL por DM: te mando qué cuenta como original, qué no, y cómo revisar tu Estado de la cuenta.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo antes de tu próximo repost."
+   ]
+  }
+ ]
+}

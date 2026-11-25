@@ -1,0 +1,58 @@
+{
+ "id": "2026-11-25_v1_hora_publicar_video",
+ "kind": "tiktok_video",
+ "series": "TRUCO DE TIKTOK",
+ "foot_left": "Solo lo que TikTok publicó",
+ "foot_last": "",
+ "scenes": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "kicker": "Lo muestra TikTok",
+   "lines": [
+    "¿A qué hora",
+    "publicar?"
+   ],
+   "size": 240,
+   "sub": "TikTok te lo dice. <b>Mira dónde.</b>",
+   "dur": 1.8
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "No lo digo yo. Lo muestra TikTok.",
+   "text": "Con los datos de tu propio público.",
+   "dur": 1.6
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "Paso 1 · dónde mirar",
+   "h": "TikTok Studio, en tus analíticas.",
+   "text": "Las horas de actividad de tu público.",
+   "dur": 1.9
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "Paso 2 · el que cuenta",
+   "h": "Publica cuando tu público está activo.",
+   "text": "Sus horas, no las de un gurú.",
+   "dur": 1.9
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "STUDIO",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme STUDIO por mensaje.",
+    "Te mando lo que TikTok Studio te muestra y casi nadie mira."
+   ],
+   "dur": 1.8
+  }
+ ]
+}

@@ -1,0 +1,157 @@
+{
+ "id": "2026-11-27_p30_cobrar_instagram",
+ "kind": "carousel",
+ "series": "FUENTE OFICIAL",
+ "foot_left": "Solo lo que Instagram publicó",
+ "foot_last": "Verificado el 25/11/2026",
+ "slides": [
+  {
+   "type": "cover_clean",
+   "theme": "dark",
+   "kicker": "Lo dice Instagram · Dinero",
+   "lines": [
+    "5 formas",
+    "de cobrar en",
+    "Instagram"
+   ],
+   "size": 220,
+   "sub": "<b>La 5 es solo por invitación.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "Antes de seguir",
+   "display": [
+    "No lo",
+    "digo yo."
+   ],
+   "display_size": 200,
+   "h1": "Montos y requisitos de las páginas de Instagram. Primero, cuenta profesional.",
+   "lead": "<b>Y en la 3, Apple y Google se quedan el 30%.</b>",
+   "teaser_label": "Las 5",
+   "teaser": [
+    "Suscripciones",
+    "Regalos",
+    "Insignias",
+    "Marcas",
+    "Bonos"
+   ]
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "1 de 5 · cada mes",
+   "display": [
+    "Suscripciones"
+   ],
+   "display_size": 200,
+   "h1": "Tus fans te pagan cada mes el precio que tú eliges.",
+   "lead": "A cambio de contenido exclusivo. Instagram te paga el día 21 del mes siguiente. En 2023 las abrió en México, Colombia, Chile, Perú y España, entre otros."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "2 de 5 · en tus reels",
+   "display": [
+    "Regalos"
+   ],
+   "display_size": 230,
+   "h1": "Tus fans compran Estrellas y te mandan regalos.",
+   "lead": "Requisitos que publicó Meta en 2023: cuenta profesional, más de 18 años, cumplir sus políticas de monetización y al menos 5000 seguidores."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "3 de 5 · la del 30%",
+   "display": [
+    "Insignias"
+   ],
+   "display_size": 230,
+   "h1": "En tus directos, de US$0.99 a US$4.99.",
+   "lead": "Cada persona puede gastar hasta US$250 por directo y cobras desde US$100. <b>Google y Apple descuentan el 30% de las compras dentro de la app.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "4 de 5 · con marcas",
+   "display": [
+    "Marcas"
+   ],
+   "display_size": 230,
+   "h1": "Una marca puede convertir tu post en anuncio.",
+   "lead": "Según Instagram, puedes pedir más pago por esos derechos de uso. Usa música libre de derechos. Y en Creator Marketplace, las marcas te encuentran."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "5 de 5 · ¿paga por vistas?",
+   "display": [
+    "Bonos"
+   ],
+   "display_size": 250,
+   "h1": "Premian el rendimiento de tus reels y tus fotos.",
+   "lead": "Carruseles incluidos. <b>Pero son por tiempo limitado y solo por invitación.</b>"
+  },
+  {
+   "type": "sources",
+   "theme": "light",
+   "kicker": "Fuentes",
+   "h2": "Todo, de Instagram y Meta",
+   "items": [
+    {
+     "t": "Suscripciones: precio y día de pago",
+     "u": "creators.instagram.com/earn-money/subscriptions"
+    },
+    {
+     "t": "Suscripciones: países, actualizado el 20/09/2023",
+     "u": "creators.instagram.com/blog/bringing-subscriptions-to-more-creators-on-instagram"
+    },
+    {
+     "t": "Regalos y Estrellas",
+     "u": "creators.instagram.com/earn-money/gifts"
+    },
+    {
+     "t": "Requisitos de los regalos, Meta, 06/11/2023",
+     "u": "about.fb.com/news/2023/11/giving-creators-more-ways-to-earn-money-on-facebook-and-instagram"
+    },
+    {
+     "t": "Insignias en directos",
+     "u": "creators.instagram.com/earn-money/badges"
+    },
+    {
+     "t": "Anuncios de colaboración",
+     "u": "creators.instagram.com/earn-money/partnership-ads"
+    },
+    {
+     "t": "Creator Marketplace",
+     "u": "creators.instagram.com/earn-money/creator-marketplace"
+    },
+    {
+     "t": "Bonos",
+     "u": "creators.instagram.com/bonuses"
+    },
+    {
+     "t": "Cuenta profesional y herramientas, 26/02/2026",
+     "u": "creators.instagram.com/create/insight-bundle"
+    },
+    {
+     "t": "Políticas de monetización para socios",
+     "u": "help.instagram.com/512371932629820"
+    }
+   ],
+   "foot_left": "Verificado el 25/11/2026"
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "COBRAR",
+   "lead": "Y escríbeme COBRAR por DM: te mando las 5 con sus requisitos, dónde ver cuáles tienes y los links oficiales.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para el día que actives tu cuenta profesional."
+   ]
+  }
+ ]
+}

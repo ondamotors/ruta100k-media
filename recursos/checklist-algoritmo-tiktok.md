@@ -25,4 +25,4 @@ Recurso gratis de RUTA 100K para seguidores. Cada punto sale de una página ofic
 
 ---
 
-RUTA 100K · Pruebo herramientas y métodos para crecer en redes, a la vista de todos. Sigue el reto de 0 a 100K en TikTok e Instagram.
+RUTA 100K · Tips para llegar a tus primeros 100K en TikTok e Instagram.

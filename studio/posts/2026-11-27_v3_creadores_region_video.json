@@ -1,0 +1,59 @@
+{
+ "id": "2026-11-27_v3_creadores_region_video",
+ "kind": "tiktok_video",
+ "series": "TRUCO DE TIKTOK",
+ "foot_left": "Solo lo que TikTok publicó",
+ "foot_last": "",
+ "scenes": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "kicker": "Regla oficial del Para ti",
+   "lines": [
+    "Creadores",
+    "de tu región,",
+    "por regla"
+   ],
+   "size": 210,
+   "sub": "TikTok los mete en tu Para ti.",
+   "dur": 1.8
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "No lo digo yo. Lo dice TikTok.",
+   "text": "En su Centro de Transparencia.",
+   "dur": 1.6
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "La regla · palabra de TikTok",
+   "h": "Tu Para ti incluye creadores de tu región.",
+   "text": "Es una regla extra, además de tus gustos.",
+   "dur": 1.9
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "Qué hacer con esto",
+   "h": "Háblale a la gente de tu región.",
+   "text": "Tu idioma, tus referencias, tus temas.",
+   "dur": 1.9
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "PARATI",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme PARATI por mensaje.",
+    "Te mando las reglas del Para ti que TikTok publicó."
+   ],
+   "dur": 1.8
+  }
+ ]
+}

@@ -1,0 +1,118 @@
+{
+ "id": "2026-11-30_p34_alcance_instagram",
+ "kind": "carousel",
+ "series": "FUENTE OFICIAL",
+ "foot_left": "Solo lo que Instagram publicó",
+ "foot_last": "Verificado el 25/11/2026",
+ "slides": [
+  {
+   "type": "cover_clean",
+   "theme": "dark",
+   "kicker": "Lo dijo Instagram · cómo recomienda",
+   "lines": [
+    "No hay",
+    "un solo",
+    "algoritmo"
+   ],
+   "size": 240,
+   "sub": "Hay uno en cada parte de la app."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "Antes de seguir",
+   "display": [
+    "No lo",
+    "digo yo."
+   ],
+   "display_size": 210,
+   "h1": "«Instagram no cuenta con un solo algoritmo». Cada parte usa el suyo.",
+   "lead": "<b>Y en la 4, la mayoría de lo que se ve es de cuentas que la gente no sigue.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "1 de 5 · Feed",
+   "display": [
+    "Feed"
+   ],
+   "display_size": 260,
+   "h1": "Cuentan hasta los segundos que te miran.",
+   "lead": "Las 5 interacciones que más mira: que pasen unos segundos en tu post, lo comenten, le den like, lo compartan y toquen tu foto de perfil."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "2 de 5 · Historias",
+   "display": [
+    "Historias"
+   ],
+   "display_size": 240,
+   "h1": "Las ve quien ya te sigue.",
+   "lead": "Muestran cuentas que la gente eligió seguir, más anuncios. Pesan cuánto te ven, cuánto interactúan contigo y qué tan cercanos son."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "3 de 5 · Explorar",
+   "display": [
+    "Explorar"
+   ],
+   "display_size": 240,
+   "h1": "Sobre todo, recomendaciones.",
+   "lead": "Fotos y videos que Instagram sale a buscar para ti. Lo que más predice ahí: likes, guardados y compartidos."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "4 de 5 · la de los desconocidos",
+   "display": [
+    "Reels"
+   ],
+   "display_size": 260,
+   "h1": "La mayoría viene de cuentas que no sigues.",
+   "lead": "Lo que más predice: que lo compartas, lo veas hasta el final, le des like y vayas a la página del audio."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "5 de 5 · la que casi nadie pide",
+   "display": [
+    "Favoritos"
+   ],
+   "display_size": 240,
+   "h1": "Pide a tus fans que te agreguen a Favoritos.",
+   "lead": "Es consejo de Instagram: así lo que publicas les sale más arriba en su Feed."
+  },
+  {
+   "type": "sources",
+   "theme": "light",
+   "kicker": "Fuentes",
+   "h2": "Todo, de Instagram",
+   "items": [
+    {
+     "t": "Así funciona el ranking de Instagram, Adam Mosseri, 31/05/2023 (en español)",
+     "u": "about.instagram.com/es-la/blog/announcements/instagram-ranking-explained"
+    },
+    {
+     "t": "Consejos para mejorar tu alcance: Historias, Explorar y Favoritos, 31/05/2023",
+     "u": "creators.instagram.com/blog/tips-for-improving-your-reach"
+    }
+   ],
+   "cta": "Mándaselo a quien cree que <b>hay un solo algoritmo</b>.",
+   "foot_left": "Verificado el 25/11/2026"
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "ALCANCE",
+   "lead": "Y escríbeme ALCANCE por DM: te mando la guía de las 5 partes, con lo que mide cada una y qué publicar para cada una.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para planear tu semana."
+   ]
+  }
+ ]
+}

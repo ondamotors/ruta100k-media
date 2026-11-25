@@ -1,0 +1,123 @@
+{
+ "id": "2026-11-29_p33_envios",
+ "kind": "carousel",
+ "series": "RECURSO GRATIS",
+ "foot_left": "Fuentes: Instagram y Adam Mosseri",
+ "foot_last": "Verificado el 25/11/2026",
+ "slides": [
+  {
+   "type": "cover_clean",
+   "theme": "dark",
+   "kicker": "Lo dijo Mosseri · envíos",
+   "lines": [
+    "Que te",
+    "manden",
+    "por DM"
+   ],
+   "size": 240,
+   "sub": "Con no seguidores, <b>pesa un poco más.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "Antes de seguir",
+   "display": [
+    "No lo",
+    "digo yo."
+   ],
+   "display_size": 210,
+   "h1": "Lo dijo Adam Mosseri, jefe de Instagram: con quien no te sigue, los envíos pesan un poco más que los likes.",
+   "lead": "<b>Aquí van 4 formatos que dan ganas de mandar. Y la trampa que no debes usar.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "1 de 4 · el más fácil de hacer hoy",
+   "display": [
+    "Checklist"
+   ],
+   "display_size": 230,
+   "h1": "Algo que resuelve el problema de un amigo.",
+   "lead": "Una checklist o una guía corta que alguien le manda a quien la necesita. «Lo que tienes que saber antes de [situación]»."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "2 de 4 · el espejo",
+   "display": [
+    "Eres tú"
+   ],
+   "display_size": 250,
+   "h1": "La situación que todos viven y nadie dice.",
+   "lead": "Se manda con un «somos nosotros». «Cuando [situación típica de tu nicho]» o «Los 5 tipos de [personas de tu nicho]»."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "3 de 4 · el plan",
+   "display": [
+    "Para dos"
+   ],
+   "display_size": 250,
+   "h1": "Un plan para hacer con alguien.",
+   "lead": "Lugares, recetas, rutinas o retos para hacer juntos. «3 [planes] para este fin de semana»."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "4 de 4 · el debate",
+   "display": [
+    "¿A o B?"
+   ],
+   "display_size": 250,
+   "h1": "Una pregunta para tomar partido.",
+   "lead": "«¿[Opción A] o [opción B]?», con tu respuesta y por qué. Pensado para mandárselo a quien opina distinto."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "Lo que no · la trampa",
+   "display": [
+    "Sin",
+    "trampas"
+   ],
+   "display_size": 220,
+   "h1": "No exijas que lo manden.",
+   "lead": "Instagram no recomienda el clickbait ni el engagement bait: el contenido que la gente dice que no le gusta. <b>Que lo manden por lo que vale.</b>"
+  },
+  {
+   "type": "sources",
+   "theme": "light",
+   "kicker": "Fuentes",
+   "h2": "Lo que dijeron, palabra por palabra",
+   "items": [
+    {
+     "t": "Mosseri: «sends are slightly more important for unconnected content», citado por Social Media Today, 22/01/2025",
+     "u": "socialmediatoday.com/news/instagram-shares-algorithm-insights-2025/738034"
+    },
+    {
+     "t": "Meta: contenido «unconnected» es el de cuentas que no sigues, 29/06/2023",
+     "u": "about.fb.com/news/2023/06/how-ai-ranks-content-on-facebook-and-instagram"
+    },
+    {
+     "t": "Instagram no recomienda el clickbait ni el engagement bait, 30/04/2024",
+     "u": "creators.instagram.com/recommendations-and-originality"
+    }
+   ],
+   "cta": "Mándaselo a quien todavía <b>pide likes</b> en cada post.",
+   "foot_left": "Verificado el 25/11/2026"
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Los 15 formatos",
+   "verb": "Comenta",
+   "keyword": "ENVIOS",
+   "lead": "Y escríbeme ENVIOS por DM: te mando 15 formatos con plantillas, y cómo medir tus envíos por alcance.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para cuando no sepas qué publicar."
+   ]
+  }
+ ]
+}

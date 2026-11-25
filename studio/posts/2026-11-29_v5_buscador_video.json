@@ -1,0 +1,58 @@
+{
+ "id": "2026-11-29_v5_buscador_video",
+ "kind": "tiktok_video",
+ "series": "TRUCO DE TIKTOK",
+ "foot_left": "Solo lo que TikTok publicó",
+ "foot_last": "",
+ "scenes": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "kicker": "Herramienta oficial de TikTok",
+   "lines": [
+    "Escribe esto",
+    "en el buscador"
+   ],
+   "size": 220,
+   "sub": "Y TikTok te dice qué busca la gente.",
+   "dur": 1.8
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "No lo digo yo. Es de TikTok.",
+   "text": "Está en algunas regiones, como México y Colombia.",
+   "dur": 1.6
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "Paso 1 · escribe",
+   "h": "«Creator Search Insights»",
+   "text": "En la barra de búsqueda de TikTok.",
+   "dur": 1.9
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "Paso 2 · el filtro que vale oro",
+   "h": "Temas muy buscados con pocos videos.",
+   "text": "Se buscan mucho y casi nadie los grabó.",
+   "dur": 1.9
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "SEO",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme SEO por mensaje.",
+    "Te mando la checklist de búsqueda, con cada fuente oficial."
+   ],
+   "dur": 1.8
+  }
+ ]
+}

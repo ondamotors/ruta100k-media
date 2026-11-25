@@ -1,0 +1,95 @@
+{
+ "id": "2026-11-30_p41_para_ti_tiktok",
+ "kind": "tiktok",
+ "series": "FUENTE OFICIAL",
+ "foot_left": "Solo lo que TikTok publicó",
+ "foot_last": "Verificado el 25/11/2026",
+ "slides": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "kicker": "TikTok lo anunció el 23/11/2026",
+   "lines": [
+    "Tu público",
+    "ya elige",
+    "cuánta IA ve"
+   ],
+   "size": 210,
+   "sub": "En su Para ti. <b>Y hay 4 controles más.</b>"
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "No lo digo yo. Lo dijo TikTok.",
+   "text": "Fuentes al final. Y la 4 filtra hasta sinónimos."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "1 de 5 · lo nuevo",
+   "h": "Gestionar temas ya incluye la IA.",
+   "text": "Cada uno ajusta cuánta IA le sale en el Para ti."
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "2 de 5",
+   "h": "También ajustan cada cuánto ven un tema.",
+   "text": "Más de 10 temas. No los borran: cambian la frecuencia."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "3 de 5",
+   "h": "Pueden filtrar palabras y hashtags.",
+   "text": "Lo que los lleve se filtra de su Para ti."
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "4 de 5 · la que casi nadie conoce",
+   "h": "El filtro usa IA para atrapar sinónimos.",
+   "text": "Un ajuste extra limita también los videos con palabras parecidas."
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "5 de 5 · la que TikTok predice",
+   "h": "«No me interesa», con un toque largo.",
+   "text": "Y TikTok calcula la probabilidad de que lo marquen."
+  },
+  {
+   "type": "sources",
+   "theme": "dark",
+   "kicker": "Fuentes",
+   "h": "Todo, de TikTok",
+   "items": [
+    {
+     "t": "Más claridad y control sobre la IA, 23/11/2026",
+     "u": "newsroom.tiktok.com/herramientas-ia-tiktok-claridad-control-contenido"
+    },
+    {
+     "t": "Más formas de descubrir contenido, 03/06/2025",
+     "u": "newsroom.tiktok.com/more-ways-to-discover-new-content-and-creators-you-love"
+    },
+    {
+     "t": "Sistema de recomendación, Centro de Transparencia",
+     "u": "tiktok.com/transparency/en/recommendation-system"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "PARATI",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme PARATI por mensaje.",
+    "Te mando los controles y las reglas del Para ti, con cada fuente."
+   ]
+  }
+ ]
+}

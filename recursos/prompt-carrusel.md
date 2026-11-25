@@ -60,4 +60,4 @@ Si falta un dato, la IA escribe `[VERIFICAR]` en vez de inventarlo. Así nunca p
 
 ---
 
-RUTA 100K · Pruebo herramientas y métodos para crecer en redes, a la vista de todos. Sigue el reto de 0 a 100K en TikTok.
+RUTA 100K · Tips para llegar a tus primeros 100K en TikTok e Instagram.

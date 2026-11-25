@@ -1,0 +1,91 @@
+{
+ "id": "2026-11-28_p40_recompensas_tiktok",
+ "kind": "tiktok",
+ "series": "FUENTE OFICIAL",
+ "foot_left": "Solo lo que TikTok publicó",
+ "foot_last": "Verificado el 25/11/2026",
+ "slides": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "kicker": "Programa de Recompensas · TikTok",
+   "lines": [
+    "10K",
+    "seguidores",
+    "no bastan"
+   ],
+   "size": 230,
+   "sub": "Para que TikTok te pague."
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "No lo digo yo. Lo dice TikTok.",
+   "text": "Fuentes al final. Y la 4 depende de tu país."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "1 de 5",
+   "h": "También 100K vistas en 30 días.",
+   "text": "Las dos a la vez: 10K seguidores y 100K vistas."
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "2 de 5",
+   "h": "18 años o más, y cuenta personal.",
+   "text": "Nada de cuentas de empresa, medios o gobierno. Y pública."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "3 de 5 · ojo con tus videos cortos",
+   "h": "Solo videos de más de 1 minuto.",
+   "text": "Originales y de alta calidad. Puedes subir hasta 60 minutos."
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "4 de 5 · la que más duele",
+   "h": "Depende de tu país.",
+   "text": "En su anuncio para México, TikTok nombra 8: EE. UU., Inglaterra, Alemania, Japón, Corea del Sur, Francia, Brasil y México."
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "5 de 5 · cuándo cobras",
+   "h": "Cobras el día 15 del mes siguiente.",
+   "text": "Por TikTok Wallet o PayPal, según TikTok México."
+  },
+  {
+   "type": "sources",
+   "theme": "dark",
+   "kicker": "Fuentes",
+   "h": "Todo, de TikTok",
+   "items": [
+    {
+     "t": "Programa de Recompensas en México, 01/10/2025",
+     "u": "newsroom.tiktok.com/es-latam/programa-recompensas-creadores-tiktok-mexico"
+    },
+    {
+     "t": "Nuevo Programa de Recompensas, 18/03/2024",
+     "u": "newsroom.tiktok.com/introducing-the-new-creator-rewards-program"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "PAGO",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme PAGO por mensaje.",
+    "Te mando las condiciones completas, cómo entrar y cómo apelar."
+   ]
+  }
+ ]
+}

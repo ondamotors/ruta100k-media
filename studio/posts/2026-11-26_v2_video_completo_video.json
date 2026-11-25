@@ -1,0 +1,58 @@
+{
+ "id": "2026-11-26_v2_video_completo_video",
+ "kind": "tiktok_video",
+ "series": "TRUCO DE TIKTOK",
+ "foot_left": "Solo lo que TikTok publicó",
+ "foot_last": "",
+ "scenes": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "kicker": "Lo dice TikTok",
+   "lines": [
+    "¿Lo ven",
+    "hasta el final?"
+   ],
+   "size": 230,
+   "sub": "TikTok te da el porcentaje.",
+   "dur": 1.8
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "No lo digo yo. Lo dice TikTok.",
+   "text": "El dato ya está en tus analíticas.",
+   "dur": 1.6
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "Paso 1 · dónde mirar",
+   "h": "En las analíticas de cada video.",
+   "text": "El % de gente que lo vio completo.",
+   "dur": 1.9
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "Paso 2 · por qué importa",
+   "h": "Que lo terminen es una señal fuerte.",
+   "text": "Pesa más que compartir país con quien lo publicó.",
+   "dur": 1.9
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "ALGORITMO",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme ALGORITMO por mensaje.",
+    "Te mando la checklist de 10 puntos que TikTok confirmó."
+   ],
+   "dur": 1.8
+  }
+ ]
+}

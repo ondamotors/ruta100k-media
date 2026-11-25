@@ -1,0 +1,59 @@
+{
+ "id": "2026-11-28_v4_un_minuto_video",
+ "kind": "tiktok_video",
+ "series": "TRUCO DE TIKTOK",
+ "foot_left": "Solo lo que TikTok publicó",
+ "foot_last": "",
+ "scenes": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "kicker": "Programa de Recompensas de TikTok",
+   "lines": [
+    "Menos de",
+    "1 minuto:",
+    "no paga"
+   ],
+   "size": 230,
+   "sub": "Lo dice TikTok. <b>Y hay más reglas.</b>",
+   "dur": 1.8
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "No lo digo yo. Lo dice TikTok.",
+   "text": "En el anuncio oficial de su programa.",
+   "dur": 1.6
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "La regla",
+   "h": "Solo premia videos de más de 1 minuto.",
+   "text": "Originales y de alta calidad.",
+   "dur": 1.9
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "La buena noticia",
+   "h": "Puedes subir de 1 a 60 minutos.",
+   "text": "En vertical o en horizontal.",
+   "dur": 1.9
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "PAGO",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme PAGO por mensaje.",
+    "Te mando todas las condiciones oficiales, con las fuentes."
+   ],
+   "dur": 1.8
+  }
+ ]
+}
