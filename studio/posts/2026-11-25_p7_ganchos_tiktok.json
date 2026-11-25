@@ -20,7 +20,7 @@
    "theme": "coral",
    "kicker": "Antes de copiar",
    "h": "El gancho es una promesa.",
-   "text": "Si tu post no la cumple, la gente se va. Y no vuelve."
+   "text": "Copia la estructura, cambia lo naranja y cumple lo que prometes."
   },
   {
    "type": "list",
@@ -28,10 +28,10 @@
    "kicker": "1 de 3 · cuando tienes un dato",
    "items": [
     {
-     "t": "[Número] herramientas gratis que reemplazan a [app de pago]."
+     "t": "<b>Midjourney</b> cuesta <b>US$96</b> al año. <b>ComfyUI</b> lo hace gratis."
     },
     {
-     "t": "De [A] a [B] en [tiempo]: lo que hice paso a paso."
+     "t": "<b>TikTok</b> lo confirmó: así te encuentran en <b>la búsqueda</b>."
     }
    ]
   },
@@ -41,10 +41,10 @@
    "kicker": "2 de 3 · cuando corriges algo",
    "items": [
     {
-     "t": "Deja de [hábito común] si quieres [resultado]."
+     "t": "Deja de <b>publicar a cualquier hora</b> si quieres <b>más vistas</b>."
     },
     {
-     "t": "El error que hace que [problema], y casi nadie lo nota."
+     "t": "El error que deja <b>tu video</b> fuera del <b>Para ti</b>."
     }
    ]
   },
@@ -54,10 +54,10 @@
    "kicker": "3 de 3 · guarda este",
    "items": [
     {
-     "t": "[Fuente oficial] lo dijo y casi nadie lo leyó."
+     "t": "Si empezara de 0 en <b>TikTok</b>, haría esto."
     },
     {
-     "t": "Si empezara de 0 en [tema], haría esto."
+     "t": "Tier list de <b>apps de IA gratis</b>, solo con <b>fuentes oficiales</b>."
     }
    ]
   },

@@ -26,7 +26,7 @@
    ],
    "display_size": 210,
    "h1": "Si el carrusel no la cumple, la gente se va y no vuelve.",
-   "lead": "Escribe primero el contenido. Elige el gancho al final."
+   "lead": "Copia la estructura y cambia lo naranja por tu tema."
   },
   {
    "type": "numbered",
@@ -35,13 +35,13 @@
    "h2": "Cuando tienes un dato o corriges algo",
    "items": [
     {
-     "t": "[Número] herramientas gratis que reemplazan a [herramienta de pago]."
+     "t": "<b>Midjourney</b> cuesta <b>US$96</b> al año. <b>ComfyUI</b> lo hace gratis."
     },
     {
-     "t": "De [punto A] a [punto B] en [tiempo]: lo que hice paso a paso."
+     "t": "Deja de <b>publicar a cualquier hora</b> si quieres <b>más alcance</b>."
     },
     {
-     "t": "Deja de [hábito común] si quieres [resultado]."
+     "t": "El error que hace que <b>tus reels</b> no lleguen a <b>quien no te sigue</b>."
     }
    ]
   },
@@ -52,13 +52,13 @@
    "h2": "Cuando tienes una fuente o un método",
    "items": [
     {
-     "t": "[Fuente oficial] lo dijo y casi nadie lo leyó."
+     "t": "<b>Instagram</b> lo dijo: así recomienda <b>tus reels</b>."
     },
     {
-     "t": "Tier list: [tema], clasificado solo con lo que dijo [fuente]."
+     "t": "Tier list: <b>apps de IA gratis</b>, solo con <b>sus páginas oficiales</b>."
     },
     {
-     "t": "Si empezara de 0 en [tema], haría esto."
+     "t": "Si empezara de 0 en <b>Instagram</b>, haría esto."
     }
    ]
   },

@@ -1,0 +1,94 @@
+{
+ "id": "2026-11-26_p42_estado_tiktok",
+ "kind": "tiktok",
+ "series": "FUENTE OFICIAL",
+ "foot_left": "Solo lo que TikTok publicó",
+ "foot_last": "Verificado el 25/11/2026",
+ "slides": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "kicker": "Herramienta oficial de TikTok",
+   "lines": [
+    "¿TikTok",
+    "te esconde?"
+   ],
+   "size": 230,
+   "sub": "Hay una pantalla que te lo dice. <b>Mira dónde.</b>"
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "Se llama Account check.",
+   "text": "Revisa tu cuenta y tus últimos 30 posts. Fuentes al final."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "1 de 4 · dónde está",
+   "h": "En TikTok Studio.",
+   "text": "Perfil, menú, TikTok Studio. Baja hasta <b>Account check</b>."
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "2 de 4 · qué revisa",
+   "h": "Posts fuera del Para ti.",
+   "text": "Y posts con una infracción. Ves cuál y por qué."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "3 de 4 · no te la saltes",
+   "h": "Si repites, cae toda tu cuenta.",
+   "text": "Fuera del Para ti por un tiempo. <b>Y más difícil de encontrar.</b>"
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "4 de 4 · qué hacer",
+   "h": "Ves el motivo y apelas.",
+   "text": "Te avisan, y puedes apelar si crees que es un error."
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Ojo · el límite real",
+   "h": "No mide tus vistas.",
+   "text": "Revisa restricciones: inicio de sesión, posts, comentarios, perfil y mensajes."
+  },
+  {
+   "type": "sources",
+   "theme": "dark",
+   "kicker": "Fuentes",
+   "h": "Todo, de TikTok",
+   "items": [
+    {
+     "t": "Tu estado de la cuenta, Centro de ayuda",
+     "u": "support.tiktok.com/en/safety-hc/account-and-user-safety/account-status"
+    },
+    {
+     "t": "Account check, Creator Academy",
+     "u": "tiktok.com/creator-academy/article/account-check"
+    },
+    {
+     "t": "Normas actualizadas y Account Check, 22/04/2024",
+     "u": "newsroom.tiktok.com/cgupdate"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "ESTADO",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme ESTADO por mensaje.",
+    "Te mando el paso a paso: qué significa cada aviso y cómo apelar."
+   ]
+  }
+ ]
+}

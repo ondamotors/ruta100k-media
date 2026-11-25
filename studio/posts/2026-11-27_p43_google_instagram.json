@@ -1,0 +1,124 @@
+{
+ "id": "2026-11-27_p43_google_instagram",
+ "kind": "carousel",
+ "series": "FUENTE OFICIAL",
+ "foot_left": "Solo lo que Instagram publicó",
+ "foot_last": "Verificado el 25/11/2026",
+ "slides": [
+  {
+   "type": "cover_clean",
+   "theme": "dark",
+   "kicker": "Lo dice Instagram · búsqueda",
+   "lines": [
+    "Tu reel",
+    "en Google"
+   ],
+   "size": 240,
+   "sub": "Instagram lo permite. Revisa este ajuste."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "Antes de seguir",
+   "display": [
+    "Y es",
+    "oficial."
+   ],
+   "display_size": 210,
+   "h1": "Instagram deja que buscadores como Google y Bing muestren reels y posts públicos.",
+   "lead": "<b>No de todas las cuentas. Y no te saltes la 3: el ajuste.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "1 de 4 · quién entra",
+   "display": [
+    "Cuenta",
+    "pro"
+   ],
+   "display_size": 240,
+   "h1": "Pública, profesional y de alguien mayor de 18 años.",
+   "lead": "Tiene que cumplir las tres. Una cuenta privada o personal no entra."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "2 de 4 · qué se indexa",
+   "display": [
+    "Desde",
+    "2020"
+   ],
+   "display_size": 240,
+   "h1": "Reels y posts públicos subidos desde el 1 de enero de 2020.",
+   "lead": "Si tu cuenta cumple, también tus historias destacadas pueden salir."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "3 de 4 · no te la saltes",
+   "display": [
+    "El",
+    "ajuste"
+   ],
+   "display_size": 240,
+   "h1": "Configuración, Privacidad de la cuenta.",
+   "lead": "Ahí está la opción que deja ver tus fotos y videos públicos en los buscadores. <b>Revisa que esté activada.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "4 de 4 · dentro de Instagram",
+   "display": [
+    "Palabras",
+    "clave"
+   ],
+   "display_size": 220,
+   "h1": "Lo que la gente escribe en el buscador es la señal más importante.",
+   "lead": "Instagram lo cruza con nombres de usuario, bios, descripciones, hashtags y lugares. <b>Escribe ahí lo que tu público busca.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "Ojo · el límite real",
+   "display": [
+    "Google",
+    "decide"
+   ],
+   "display_size": 240,
+   "h1": "Instagram lo permite. Cada buscador elige qué muestra.",
+   "lead": "Cumplir las condiciones no garantiza que salgas primero, ni que salgas."
+  },
+  {
+   "type": "sources",
+   "theme": "light",
+   "kicker": "Fuentes",
+   "h2": "Todo, de Instagram",
+   "items": [
+    {
+     "t": "Por qué los buscadores pueden indexar fotos y videos públicos, Centro de ayuda",
+     "u": "help.instagram.com/147542625391305"
+    },
+    {
+     "t": "Cuentas profesionales en Instagram, Centro de ayuda",
+     "u": "help.instagram.com/138925576505882"
+    },
+    {
+     "t": "Cómo funciona la búsqueda de Instagram",
+     "u": "about.instagram.com/blog/announcements/break-down-how-instagram-search-works"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "GOOGLE",
+   "lead": "Y escríbeme GOOGLE por DM: te mando el paso a paso para revisar el ajuste y cómo escribir tu perfil y tus descripciones para que te encuentren.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para tu próximo post."
+   ]
+  }
+ ]
+}
