@@ -25,6 +25,7 @@ Des posts qui apprennent quelque chose de fort et donnent envie de demander la s
 - Toute ressource promise existe dans `recursos/` avant que le post soit programmé.
 - Jamais de logo de marque dans les visuels : les noms des outils sont composés dans notre typo.
 - Jamais de tiret cadratin. Pas d'emoji dans les slides.
+- Jamais de crochets sur une slide (« [tema] », « [número] ») : dans un modèle à remplir, on écrit un exemple réel et la partie à changer passe en orange avec `<b>`.
 - Rien n'est publié hors Metricool. Aucun DM, aucun commentaire au nom de Vincent.
 - Ne jamais chercher dans Google Drive, Gmail, Slack ou Notion : ce sont des comptes professionnels sans rapport avec RUTA 100K.
 

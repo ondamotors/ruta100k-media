@@ -6,17 +6,19 @@ Plus de Día, de RETO ni de post CHIFFRES : aucun chiffre du compte n'est publi�
 
 ## Programmé du 25/11 au 30/11 02:30 (semaine complète)
 
-Ids au 25/11 12:10. Un update Metricool change l'id, pas l'uuid : se fier à `getScheduledPosts`.
+Ids au 25/11 12:30. Un update Metricool change l'id, pas l'uuid : se fier à `getScheduledPosts`.
 
-- Jour 25/11 · 18:30 PROMPT (TT 441514479, IG 441514501) · 23:30 vidéo STUDIO (TT 441570390) · 00:30 SUBTITULOS (TT 441514605), IDEAS (IG 441514579) · 02:30 GANCHOS (TT 441514537, IG 441514556)
-- Jour 26/11 · 18:30 BIO (TT 441514664, IG 441514703) · 23:30 vidéo ALGORITMO (TT 441538798) · 00:30 SEO (TT 441514730), SUBTITULOS (IG 441514632) · 02:30 COBRAR (IG 441545643)
+- Jour 25/11 · 18:30 PROMPT (TT 441514479, IG 441514501) · 23:30 vidéo STUDIO (TT 441570390) · 00:30 ESTADO (TT 441592742), IDEAS (IG 441514579) · 02:30 GANCHOS (TT 441592821, IG 441592859)
+- Jour 26/11 · 18:30 BIO (TT 441514664, IG 441514703) · 23:30 vidéo ALGORITMO (TT 441538798) · 00:30 SEO (TT 441514730), GOOGLE (IG 441592768) · 02:30 COBRAR (IG 441545643)
 - Jour 27/11 · 18:30 COMFYUI (TT 441564850, IG 441565091) · 23:30 vidéo PARATI (TT 441538830) · 00:30 PAGO (TT 441538946), TRIAL (IG 441545670) · 02:30 ACESTEP (IG 441565347)
 - Jour 28/11 · 18:30 CHATTERBOX (TT 441565179, IG 441565235) · 23:30 vidéo PAGO (TT 441538864) · 00:30 tier list ALGORITMO (TT 441514748), ORIGINAL (IG 441570417) · 02:30 ENVIOS (IG 441545720)
 - Jour 29/11 · 18:30 UPSCAYL (TT 441565272, IG 441565313) · 23:30 vidéo SEO (TT 441538897) · 00:30 PARATI (TT 441570552), ALCANCE (IG 441570455) · 02:30 UVR (IG 441565372)
 
+Retirés le 25/11 (sujet jugé faible par Vincent) : Subtítulos sur TikTok et Instagram, remplacés par ESTADO et GOOGLE.
+
 Publiés avant : Día 1 (24/11), Stack (STACK), Algoritmo de TikTok (ALGORITMO), tier list Instagram.
 
-Mots-clés déjà pris, jamais réutilisés : STACK, PROMPT, GANCHOS, IDEAS, ALGORITMO, SUBTITULOS, BIO, SEO, STUDIO, PAGO, PARATI, COBRAR, TRIAL, ORIGINAL, ENVIOS, ALCANCE, COMFYUI, CHATTERBOX, ACESTEP, UPSCAYL, UVR, DENTRO.
+Mots-clés déjà pris, jamais réutilisés : STACK, PROMPT, GANCHOS, IDEAS, ALGORITMO, SUBTITULOS, BIO, SEO, STUDIO, PAGO, PARATI, COBRAR, TRIAL, ORIGINAL, ENVIOS, ALCANCE, COMFYUI, CHATTERBOX, ACESTEP, UPSCAYL, UVR, ESTADO, GOOGLE, DENTRO.
 
 ## À produire à partir du jour 30/11
 
@@ -42,7 +44,7 @@ Faits déjà vérifiés dans les posts de la semaine, aucune nouvelle recherche.
 
 ### ALGO INSTAGRAM · 00:30, Instagram seulement
 
-- [ ] Recherche Instagram : ce qui fait qu'on te trouve, d'après Instagram · mot BUSCAR
+- [x] Recherche Instagram · fait le 25/11 avec Google : « Tu reel en Google », mot GOOGLE, IG 27/11 00:30 (441592768)
 - [ ] Hashtags sur Instagram : la règle et la limite actuelles, d'après Instagram · mot ETIQUETAS
 - [ ] Durée des Reels : ce qu'Instagram recommande aux non-abonnés selon la durée (n'affirmer que ce qu'Instagram ou Mosseri ont publié) · mot DURACION
 
