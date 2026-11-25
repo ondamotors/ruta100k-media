@@ -1,0 +1,120 @@
+{
+ "id": "2026-11-25_p44_app",
+ "kind": "carousel",
+ "series": "IA GRATIS",
+ "foot_left": "Solo lo que Google publicó",
+ "foot_last": "Verificado el 25/11/2026",
+ "slides": [
+  {
+   "type": "cover_clean",
+   "theme": "dark",
+   "kicker": "Gratis · de Google",
+   "lines": [
+    "Haz una app",
+    "sin programar"
+   ],
+   "size": 210,
+   "sub": "Parece de 2030. Y ya existe."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "Antes de seguir",
+   "display": [
+    "Y es",
+    "gratis."
+   ],
+   "display_size": 210,
+   "h1": "Se llama Canvas, está dentro de Gemini y la puede usar cualquiera.",
+   "lead": "<b>No te saltes la 3: así la compartes con un link.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "1 de 4 · cómo",
+   "display": [
+    "Descríbela"
+   ],
+   "display_size": 200,
+   "h1": "Le cuentas tu idea y Gemini escribe el código.",
+   "lead": "Te la muestra funcionando en minutos. Después la cambias pidiéndolo en el chat."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "2 de 4 · la más loca",
+   "display": [
+    "Dibújala"
+   ],
+   "display_size": 220,
+   "h1": "Sube la foto de un dibujo en papel.",
+   "lead": "Le pides «programa esta app» y Gemini la crea. Colores y funciones se cambian en tiempo real."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "3 de 4 · no te la saltes",
+   "display": [
+    "Compártela"
+   ],
+   "display_size": 190,
+   "h1": "Con un link, lista para que otros la usen.",
+   "lead": "Arriba del panel: Compartir y exportar. <b>Y puedes agregarle funciones de IA adentro.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "4 de 4 · para cobrar",
+   "display": [
+    "Véndela"
+   ],
+   "display_size": 220,
+   "h1": "Un negocio de tu barrio también la necesita.",
+   "lead": "Una carta digital para un restaurante, un cotizador para un taller, una página para un emprendimiento."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "Ojo · el límite real",
+   "display": [
+    "Es un",
+    "prototipo"
+   ],
+   "display_size": 210,
+   "h1": "Para pagos, cuentas de usuarios o mucho tráfico vas a necesitar más.",
+   "lead": "Para mostrar tu idea o hacer tu primer proyecto, alcanza."
+  },
+  {
+   "type": "sources",
+   "theme": "light",
+   "kicker": "Fuentes",
+   "h2": "Todo, de Google",
+   "items": [
+    {
+     "t": "Canvas, Gemini",
+     "u": "gemini.google/overview/canvas"
+    },
+    {
+     "t": "Crear apps con Canvas, Centro de ayuda de Gemini",
+     "u": "support.google.com/gemini/answer/16047321"
+    },
+    {
+     "t": "Del dibujo a la app con Gemini, Google",
+     "u": "blog.google/innovation-and-ai/products/gemini-app/turn-drawings-into-apps-gemini"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "APP",
+   "lead": "Y escríbeme APP por DM: te mando 10 prompts exactos para crear tu primera app y cómo ofrecerla a un negocio.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para cuando tengas tu idea."
+   ]
+  }
+ ]
+}

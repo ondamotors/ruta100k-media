@@ -1,0 +1,94 @@
+{
+ "id": "2026-11-25_p44_app_tiktok",
+ "kind": "tiktok",
+ "series": "IA GRATIS",
+ "foot_left": "Solo lo que Google publicó",
+ "foot_last": "Verificado el 25/11/2026",
+ "slides": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "kicker": "Gratis · de Google",
+   "lines": [
+    "Haz una app",
+    "sin programar"
+   ],
+   "size": 200,
+   "sub": "Parece de 2030. <b>Y ya existe.</b>"
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "Y es gratis para todos.",
+   "text": "Se llama Canvas y está dentro de Gemini."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "1 de 4 · cómo",
+   "h": "Describes tu idea. La IA la programa.",
+   "text": "Te la muestra funcionando en minutos."
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "2 de 4 · la más loca",
+   "h": "Dibújala en un papel.",
+   "text": "Subes la foto y Gemini escribe el código."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "3 de 4 · no te la saltes",
+   "h": "Compártela con un link.",
+   "text": "Tu app, lista para que otros la usen."
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "4 de 4 · para cobrar",
+   "h": "Hazla para un negocio.",
+   "text": "Carta digital para un restaurante. <b>Cotizador para un taller.</b>"
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Ojo · el límite real",
+   "h": "Es un prototipo.",
+   "text": "Para pagos o miles de usuarios vas a necesitar más."
+  },
+  {
+   "type": "sources",
+   "theme": "dark",
+   "kicker": "Fuentes",
+   "h": "Todo, de Google",
+   "items": [
+    {
+     "t": "Canvas, Gemini",
+     "u": "gemini.google/overview/canvas"
+    },
+    {
+     "t": "Crear apps con Canvas, Centro de ayuda",
+     "u": "support.google.com/gemini/answer/16047321"
+    },
+    {
+     "t": "Del dibujo a la app con Gemini",
+     "u": "blog.google/innovation-and-ai/products/gemini-app/turn-drawings-into-apps-gemini"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "APP",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme APP por mensaje.",
+    "Te mando 10 prompts exactos para crear tu app y cómo venderla."
+   ]
+  }
+ ]
+}
