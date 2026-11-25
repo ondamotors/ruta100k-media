@@ -1,0 +1,125 @@
+{
+ "id": "2026-11-26_p45_codigo",
+ "kind": "carousel",
+ "series": "IA DE PAGO → GRATIS",
+ "foot_left": "Verificado el 25/11/2026",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "cover_vs",
+   "theme": "dark",
+   "paid": {
+    "name": "Claude Ultra",
+    "price": "US$200 al mes"
+   },
+   "free": {
+    "name": "Antigravity",
+    "price": "US$0"
+   },
+   "foot_left": "Precios oficiales · 25/11/2026"
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "Antes de seguir",
+   "display": [
+    "Agentes",
+    "gratis."
+   ],
+   "display_size": 210,
+   "h1": "Antigravity es la plataforma de Google donde agentes de IA programan por ti.",
+   "lead": "<b>Tiene plan gratis: US$0 al mes. Y no te saltes la 3.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "1 de 4 · lo loco",
+   "display": [
+    "En",
+    "paralelo"
+   ],
+   "display_size": 220,
+   "h1": "Varios agentes trabajando a la vez, en segundo plano.",
+   "lead": "Tú sigues con lo tuyo mientras ellos avanzan."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "2 de 4",
+   "display": [
+    "Solos"
+   ],
+   "display_size": 260,
+   "h1": "Planean, ejecutan y verifican sus tareas.",
+   "lead": "Y usan el navegador para probar lo que construyen."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "3 de 4 · no te la saltes",
+   "display": [
+    "Tareas",
+    "programadas"
+   ],
+   "display_size": 190,
+   "h1": "Les dejas trabajo agendado y el agente lo hace.",
+   "lead": "<b>Aunque tú no estés. Esto parece de 2030.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "4 de 4 · cómo entrar",
+   "display": [
+    "Con tu",
+    "Gmail"
+   ],
+   "display_size": 220,
+   "h1": "Entras con tu cuenta personal de Google.",
+   "lead": "En la app, la terminal o tu editor. Para Mac, Windows y Linux."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "Ojo · el límite real",
+   "display": [
+    "Cuota",
+    "semanal"
+   ],
+   "display_size": 220,
+   "h1": "El plan gratis tiene un límite de uso que se recarga cada semana.",
+   "lead": "Y los modelos incluidos cambian: revisa la página de planes antes de empezar."
+  },
+  {
+   "type": "sources",
+   "theme": "light",
+   "kicker": "Fuentes",
+   "h2": "Precios y funciones oficiales",
+   "items": [
+    {
+     "t": "Planes de Claude",
+     "u": "claude.com/pricing"
+    },
+    {
+     "t": "Planes de Google Antigravity",
+     "u": "antigravity.google/pricing"
+    },
+    {
+     "t": "Antigravity, Google Developers Blog",
+     "u": "developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "CODIGO",
+   "lead": "Y escríbeme CODIGO por DM: te mando cómo instalarlo y 7 prompts para que los agentes te hagan una web, una app y más.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para tu primer proyecto."
+   ]
+  }
+ ]
+}

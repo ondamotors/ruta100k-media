@@ -1,0 +1,96 @@
+{
+ "id": "2026-11-26_p45_codigo_tiktok",
+ "kind": "tiktok",
+ "series": "IA DE PAGO → GRATIS",
+ "foot_left": "Verificado el 25/11/2026",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "vs",
+   "theme": "dark",
+   "paid": {
+    "name": "Claude Ultra",
+    "price": "US$200 al mes"
+   },
+   "free": {
+    "name": "Antigravity",
+    "price": "US$0"
+   },
+   "foot_left": "Precios oficiales · 25/11/2026"
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "Agentes que programan por ti.",
+   "text": "Es de Google y tiene plan gratis: US$0 al mes."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "1 de 4 · lo loco",
+   "h": "Varios agentes a la vez.",
+   "text": "Trabajan en segundo plano mientras haces otra cosa."
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "2 de 4",
+   "h": "Planean, ejecutan y verifican.",
+   "text": "Y usan el navegador solos para probar lo que hacen."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "3 de 4 · no te la saltes",
+   "h": "Les dejas tareas programadas.",
+   "text": "El agente trabaja aunque tú no estés. <b>Esto es 2030.</b>"
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "4 de 4 · cómo entrar",
+   "h": "Con tu cuenta de Gmail.",
+   "text": "App, terminal o tu editor. Mac, Windows y Linux."
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Ojo · el límite real",
+   "h": "Cuota semanal.",
+   "text": "El plan gratis tiene un límite que se recarga cada semana."
+  },
+  {
+   "type": "sources",
+   "theme": "dark",
+   "kicker": "Fuentes",
+   "h": "Precios y funciones oficiales",
+   "items": [
+    {
+     "t": "Planes de Claude",
+     "u": "claude.com/pricing"
+    },
+    {
+     "t": "Planes de Google Antigravity",
+     "u": "antigravity.google/pricing"
+    },
+    {
+     "t": "Antigravity, Google Developers Blog",
+     "u": "developers.googleblog.com/build-with-google-antigravity-our-new-agentic-development-platform"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "CODIGO",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme CODIGO por mensaje.",
+    "Te mando cómo instalarlo y 7 prompts para que los agentes te hagan una web, una app y más."
+   ]
+  }
+ ]
+}
