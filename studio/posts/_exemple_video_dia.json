@@ -1,0 +1,55 @@
+{
+ "id": "_exemple_video_dia",
+ "kind": "tiktok_video",
+ "series": "DÍA 1 DE 60",
+ "foot_left": "RUTA 100K · De 0 a 100K",
+ "foot_last": "",
+ "scenes": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "kicker": "Reto público",
+   "lines": [
+    "Día 1",
+    "de 60"
+   ],
+   "size": 300,
+   "sub": "Cuenta nueva. 0 seguidores.",
+   "dur": 1.8
+  },
+  {
+   "type": "num",
+   "theme": "light",
+   "kicker": "La meta",
+   "number": "100K",
+   "label": "antes del 22/01/2027",
+   "dur": 1.6
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Las reglas",
+   "h": "Sin bots. Sin comprar nada.",
+   "text": "Todo a la vista de todos.",
+   "dur": 1.8
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "h": "No es mi primera cuenta.",
+   "text": "Sí la primera vez que lo hago en público.",
+   "dur": 2.0
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Mañana",
+   "verb": "Sígueme",
+   "keyword": "Día 2",
+   "steps": [
+    "Los números reales, sin filtro."
+   ],
+   "dur": 1.8
+  }
+ ]
+}

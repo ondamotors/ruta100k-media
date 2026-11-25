@@ -1,0 +1,99 @@
+{
+ "id": "2026-11-25_p8_ideas",
+ "kind": "carousel",
+ "series": "RECURSO GRATIS",
+ "foot_left": "RUTA 100K · Día 2 de 60",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "cover_num",
+   "theme": "dark",
+   "kicker": "Recurso gratis · Día 2",
+   "number": "30",
+   "number_size": 420,
+   "h1": "ideas de contenido para cualquier nicho, listas para completar.",
+   "lead": "Aquí van 8. Las 30, gratis al final.",
+   "teaser_label": "Por tipo",
+   "teaser": [
+    "Enseñar",
+    "Comparar",
+    "Contar",
+    "Números",
+    "Fuentes"
+   ]
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "Antes de empezar",
+   "display": [
+    "Nunca más",
+    "la página",
+    "en blanco."
+   ],
+   "display_size": 200,
+   "h1": "5 tipos de post, 6 ideas por tipo.",
+   "lead": "Completa lo que está entre corchetes con tu nicho."
+  },
+  {
+   "type": "numbered",
+   "theme": "dark",
+   "kicker": "Enseñar y comparar",
+   "h2": "Ideas para que te guarden",
+   "items": [
+    {
+     "t": "Cómo [lograr un resultado] en [tiempo] sin [obstáculo]."
+    },
+    {
+     "t": "Gratis contra de pago: [herramienta gratis] o [herramienta de pago]."
+    },
+    {
+     "t": "Mito o realidad: [creencia común en tu nicho]."
+    }
+   ]
+  },
+  {
+   "type": "numbered",
+   "theme": "light",
+   "kicker": "Historias y números",
+   "h2": "Ideas para que te sigan",
+   "items": [
+    {
+     "t": "Lo que nadie me dijo cuando empecé en [nicho]."
+    },
+    {
+     "t": "Probé [cosa] durante [días]: los resultados."
+    },
+    {
+     "t": "El post que peor me funcionó y por qué."
+    }
+   ]
+  },
+  {
+   "type": "numbered",
+   "theme": "dark",
+   "kicker": "Fuentes",
+   "h2": "Ideas para que te comenten",
+   "items": [
+    {
+     "t": "[Plataforma o experto] dijo [cosa]: lo que significa para ti."
+    },
+    {
+     "t": "Respondo a un comentario: [pregunta de un seguidor]."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Las 30 ideas",
+   "verb": "Comenta",
+   "keyword": "IDEAS",
+   "lead": "Y escríbeme IDEAS por DM: te mando las 30, ordenadas por tipo.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para cuando no sepas qué publicar."
+   ]
+  }
+ ]
+}

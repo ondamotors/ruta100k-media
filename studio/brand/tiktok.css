@@ -48,7 +48,8 @@ b, strong { font-weight: inherit; color: var(--coral); }
 .coral .foot { border-top-color: rgba(13, 13, 13, 0.25); color: rgba(13, 13, 13, 0.72); }
 .kicker { font-size: 28px; color: var(--coral); margin-bottom: 30px; }
 .coral .kicker { color: var(--paper); }
-.display { font-weight: 900; font-stretch: 62%; text-transform: uppercase; line-height: 0.86; white-space: nowrap; }
+.display { font-weight: 900; font-stretch: 62%; text-transform: uppercase; line-height: 0.9; white-space: nowrap; }
+.display + .display { margin-top: 6px; }
 .hook .sub { font-size: 48px; line-height: 1.2; font-weight: 500; margin-top: 44px; }
 .punch .h { font-weight: 800; font-stretch: 78%; font-size: 100px; line-height: 0.98; letter-spacing: -0.01em; }
 .punch .text { font-size: 48px; line-height: 1.24; margin-top: 40px; }
@@ -63,7 +64,7 @@ b, strong { font-weight: inherit; color: var(--coral); }
 .list .t { font-weight: 750; font-stretch: 82%; font-size: 58px; line-height: 1.04; }
 .list .d { font-size: 38px; line-height: 1.24; margin-top: 10px; }
 .cta .verb { font-weight: 800; font-stretch: 80%; font-size: 100px; line-height: 1; }
-.cta .keyword { font-weight: 900; font-stretch: 62%; text-transform: uppercase; font-size: 330px; line-height: 0.86; color: var(--coral); white-space: nowrap; margin-top: 8px; }
+.cta .keyword { font-weight: 900; font-stretch: 62%; text-transform: uppercase; font-size: 330px; line-height: 0.86; color: var(--coral); white-space: nowrap; margin-top: 36px; }
 .cta .steps { margin-top: 48px; }
 .cta .step { display: flex; gap: 22px; font-size: 46px; line-height: 1.2; padding: 18px 0; border-top: 1px solid var(--rule-d); }
 .cta .step .n { font-family: "Plex Mono", monospace; font-weight: 600; color: var(--coral); }
