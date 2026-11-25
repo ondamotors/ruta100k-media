@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+:root { --y: #FFE14D; --red: #E5484D; --green: #16A34A; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #EEF0F3; }
+body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color: #111; }
+#ui { position: absolute; inset: 0; background: #EEF0F3; transform-origin: 485px 980px; }
+.card { position: absolute; left: 60px; top: 560px; width: 850px; height: 840px; background: #fff; border-radius: 34px; box-shadow: 0 10px 30px rgba(17,17,17,0.07); overflow: hidden; }
+
+/* carte */
+#map { position: absolute; left: 0; top: 0; width: 850px; height: 330px; }
+#search { position: absolute; left: 22px; right: 22px; top: 22px; height: 84px; border-radius: 42px; background: #fff; box-shadow: 0 4px 16px rgba(17,17,17,0.14); display: flex; align-items: center; gap: 16px; padding: 0 30px; font-weight: 700; font-size: 34px; }
+#sph { color: #9CA3AF; font-weight: 600; }
+.pin { position: absolute; font-size: 56px; line-height: 1; transform-origin: 50% 100%; opacity: 0; }
+#list { position: absolute; left: 0; top: 330px; width: 850px; height: 510px; padding: 4px 26px 0; }
+.row { position: relative; display: flex; align-items: center; gap: 20px; height: 124px; border-bottom: 2px solid #F1F2F5; border-radius: 18px; }
+.row .av { width: 84px; height: 84px; border-radius: 22px; background: #F5F6F8; display: grid; place-items: center; font-size: 46px; flex: none; }
+.row .mid { flex: 1; min-width: 0; }
+.row .nm { font-weight: 800; font-size: 34px; white-space: nowrap; }
+.row .sub { font-weight: 600; font-size: 25px; color: #6B7280; margin-top: 4px; white-space: nowrap; }
+.row .sub b { color: #111; }
+.row .sub i { font-style: normal; color: var(--green); }
+.pill { flex: none; font-weight: 800; font-size: 25px; padding: 9px 16px 11px; border-radius: 999px; white-space: nowrap; }
+.pill.no { background: #FDECEC; color: var(--red); border: 3px solid var(--red); }
+.pill.ok { background: #F1F2F5; color: #6B7280; border: 3px solid #F1F2F5; }
+
+/* chat IA */
+#chat { transform: translateX(980px); }
+#hd { position: absolute; left: 0; top: 0; width: 100%; height: 104px; display: flex; align-items: center; gap: 18px; padding: 0 30px; border-bottom: 2px solid #F1F2F5; }
+#hd .nm { font-weight: 800; font-size: 40px; }
+#free { margin-left: auto; font-weight: 700; font-size: 26px; color: var(--green); background: #E6FAEC; padding: 8px 18px; border-radius: 999px; white-space: nowrap; }
+.b { position: absolute; max-width: 640px; padding: 18px 26px 20px; border-radius: 30px; font-weight: 600; font-size: 36px; line-height: 1.28; }
+.out { right: 26px; background: #DBEAFE; border-bottom-right-radius: 10px; }
+.in { left: 26px; background: #F1F2F5; border-bottom-left-radius: 10px; }
+#bar { position: absolute; left: 22px; right: 22px; bottom: 18px; height: 76px; border-radius: 38px; background: #F1F2F5; display: flex; align-items: center; padding: 0 12px 0 30px; gap: 12px; }
+#inp { flex: 1; font-weight: 600; font-size: 30px; color: #111; white-space: nowrap; overflow: hidden; }
+#ph { position: absolute; left: 30px; font-weight: 600; font-size: 30px; color: #9CA3AF; }
+#send { width: 56px; height: 56px; border-radius: 50%; background: #111; color: #fff; display: grid; place-items: center; font-size: 26px; font-weight: 800; }
+
+/* la web générée */
+#site { position: absolute; left: 26px; top: 414px; width: 798px; height: 334px; border-radius: 24px; border: 2px solid #E5E7EB; overflow: hidden; background: #fff; }
+#sbar { height: 42px; background: #F3F4F6; display: flex; align-items: center; gap: 9px; padding: 0 16px; }
+#sbar .d { width: 13px; height: 13px; border-radius: 50%; background: #D1D5DB; }
+#sbar .u { margin-left: 14px; font-weight: 700; font-size: 20px; color: #6B7280; background: #fff; padding: 3px 18px; border-radius: 999px; }
+#hero { height: 112px; background: #111; display: flex; align-items: center; gap: 22px; padding: 0 26px; }
+#hero .e { font-size: 64px; line-height: 1; }
+#hero .t { color: #fff; font-weight: 800; font-size: 38px; line-height: 1.05; }
+#hero .t small { display: block; margin-top: 6px; font-weight: 600; font-size: 22px; color: #D1D5DB; }
+#btns { display: flex; gap: 14px; padding: 14px 24px 0; }
+.sb { height: 52px; border-radius: 26px; display: flex; align-items: center; padding: 0 22px; font-weight: 800; font-size: 25px; white-space: nowrap; }
+.sb.wa { background: var(--green); color: #fff; }
+.sb.go { border: 3px solid #111; }
+#chips { display: flex; gap: 12px; padding: 14px 24px 0; }
+.ch { background: #F5F6F8; border-radius: 14px; padding: 6px 14px; font-weight: 700; font-size: 23px; white-space: nowrap; }
+#hrs { padding: 12px 26px 0; font-weight: 700; font-size: 23px; color: #374151; }
+#link { position: absolute; z-index: 3; left: 50%; top: 758px; transform: translateX(-50%); background: var(--green); color: #fff; font-weight: 800; font-size: 30px; padding: 12px 28px 14px; border-radius: 999px; white-space: nowrap; box-shadow: 0 8px 24px rgba(22,163,74,0.35); }
+
+/* argent */
+#money { z-index: 8; box-shadow: 0 10px 30px rgba(17,17,17,0.12); padding: 34px 40px; overflow: visible; }
+#money h3 { font-weight: 800; font-size: 50px; }
+#money .p { margin-top: 8px; font-weight: 700; font-size: 32px; color: #374151; }
+#range { margin-top: 6px; font-weight: 800; font-size: 76px; line-height: 1.05; color: var(--green); letter-spacing: -2px; white-space: nowrap; }
+#range small { font-size: 34px; color: #9CA3AF; letter-spacing: 0; margin-left: 10px; }
+#money .src { margin-top: 4px; font-weight: 600; font-size: 24px; color: #9CA3AF; }
+#shops { margin-top: 24px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; }
+.sh { height: 118px; border-radius: 24px; background: #F5F6F8; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font-size: 52px; line-height: 1; }
+.sh small { font-weight: 800; font-size: 25px; color: var(--green); }
+#mlab { margin-top: 22px; font-weight: 700; font-size: 34px; color: #374151; }
+#mtot { margin-top: 2px; font-weight: 800; font-size: 132px; line-height: 1; color: var(--green); letter-spacing: -4px; white-space: nowrap; }
+#mtot small { font-size: 40px; color: #9CA3AF; letter-spacing: 0; margin-left: 12px; }
+#usd { margin-top: 6px; font-weight: 700; font-size: 32px; color: #6B7280; }
+
+/* étapes */
+#sheet { position: absolute; left: 60px; top: 858px; width: 850px; height: 560px; background: #fff; border-radius: 40px; box-shadow: 0 -10px 50px rgba(17,17,17,0.18); padding: 26px 40px; z-index: 9; }
+#sheet .grab { width: 90px; height: 10px; border-radius: 9px; background: #D1D5DB; margin: 0 auto 24px; }
+#sheet h3 { font-weight: 800; font-size: 46px; margin-bottom: 12px; }
+.it { display: flex; align-items: center; gap: 20px; height: 120px; font-weight: 700; font-size: 40px; line-height: 1.15; border-top: 2px solid #F1F2F5; }
+.it .e { width: 72px; height: 72px; border-radius: 20px; background: #F5F6F8; display: grid; place-items: center; font-size: 40px; flex: none; }
+.it small { display: block; font-weight: 600; font-size: 28px; color: var(--green); }
+
+/* légendes */
+.cap { position: absolute; z-index: 12; left: 60px; right: 170px; display: flex; flex-direction: column; align-items: center; }
+.cap span { display: inline-block; font-weight: 700; font-size: 60px; line-height: 1.16; padding: 6px 24px 10px; border-radius: 20px; background: #fff; color: #111; margin-top: -6px; text-align: center; white-space: nowrap; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+.cap span.y { background: var(--y); }
+.cap span.xl { font-size: 92px; font-weight: 800; padding: 6px 30px 12px; }
+.cap span.l { font-size: 76px; font-weight: 800; padding: 6px 28px 12px; }
+.cap span.s { font-size: 48px; }
+.cap span.xs { font-size: 40px; font-weight: 600; }
+.conf { position: absolute; left: 0; top: 0; font-size: 64px; line-height: 1; opacity: 0; z-index: 11; }
+#flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 50; }
+.tap { position: absolute; width: 96px; height: 96px; margin: -48px 0 0 -48px; border-radius: 50%; background: rgba(120,120,128,0.45); border: 4px solid rgba(255,255,255,0.95); box-shadow: 0 6px 24px rgba(0,0,0,0.25); z-index: 40; opacity: 0; }
+</style>
+</head>
+<body>
+<div id="ui">
+  <div class="card" id="maps">
+    <div id="map">
+      <svg width="850" height="330" viewBox="0 0 850 330">
+        <rect width="850" height="330" fill="#E9EEF2"/>
+        <rect x="430" y="205" width="130" height="96" rx="20" fill="#D3EBCB"/>
+        <rect x="36" y="150" width="160" height="86" rx="20" fill="#D3EBCB"/>
+        <path d="M0 268 L850 178" stroke="#fff" stroke-width="30"/>
+        <path d="M0 132 L850 150" stroke="#fff" stroke-width="14"/>
+        <path d="M300 0 L382 330" stroke="#fff" stroke-width="22"/>
+        <path d="M640 0 L585 330" stroke="#fff" stroke-width="16"/>
+        <circle cx="480" cy="168" r="34" fill="rgba(59,130,246,0.18)"/>
+        <circle cx="480" cy="168" r="14" fill="#3B82F6" stroke="#fff" stroke-width="5"/>
+      </svg>
+      <div class="pin" id="p0" style="left: 128px; top: 170px">📍</div>
+      <div class="pin" id="p1" style="left: 318px; top: 232px">📍</div>
+      <div class="pin" id="p2" style="left: 560px; top: 128px">📍</div>
+      <div class="pin" id="p3" style="left: 720px; top: 214px">📍</div>
+      <div id="search"><span>🔍</span><span id="sq"></span><span id="sph">Busca aquí</span></div>
+    </div>
+    <div id="list">
+      <div class="row" id="r0"><div class="av">💈</div><div class="mid"><div class="nm">Barbería El Parche</div><div class="sub"><b>4.8</b> ⭐ (312) · <i>Abierto</i></div></div><div class="pill no" id="w0">✕ Sin sitio web</div></div>
+      <div class="row" id="r1"><div class="av">✂️</div><div class="mid"><div class="nm">Estilo Urbano Barber</div><div class="sub"><b>4.7</b> ⭐ (268) · <i>Abierto</i></div></div><div class="pill no" id="w1">✕ Sin sitio web</div></div>
+      <div class="row" id="r2"><div class="av">🪒</div><div class="mid"><div class="nm">La Navaja de Oro</div><div class="sub"><b>4.9</b> ⭐ (190) · <i>Abierto</i></div></div><div class="pill ok">🌐 Sitio web</div></div>
+      <div class="row" id="r3"><div class="av">💇‍♂️</div><div class="mid"><div class="nm">Barbería Don Chucho</div><div class="sub"><b>4.8</b> ⭐ (421) · <i>Abierto</i></div></div><div class="pill no" id="w3">✕ Sin sitio web</div></div>
+    </div>
+  </div>
+
+  <div class="card" id="chat">
+    <div id="hd"><span style="font-size: 40px">✨</span><span class="nm">Gemini</span><span id="free">Canvas · gratis ✅</span></div>
+    <div class="b out" id="m1" style="top: 124px">Hazle una página web a Barbería El Parche: servicios, horario y botón de WhatsApp</div>
+    <div class="b in" id="m2" style="top: 318px">Listo ✅ Aquí está tu web 👇</div>
+    <div id="site">
+      <div id="sbar"><span class="d"></span><span class="d"></span><span class="d"></span><span class="u">🔒 vista previa</span></div>
+      <div id="hero"><span class="e">💈</span><div class="t">Barbería El Parche<small>⭐ 4.8 · 312 reseñas en Google</small></div></div>
+      <div id="btns"><div class="sb wa">📲 Reserva por WhatsApp</div><div class="sb go">📍 Cómo llegar</div></div>
+      <div id="chips"><span class="ch">✂️ Corte</span><span class="ch">🧔 Barba</span><span class="ch">🪒 Afeitado</span><span class="ch">👦 Niños</span></div>
+      <div id="hrs">🕒 Lunes a sábado · 9:00 a 20:00</div>
+    </div>
+    <div id="link">🔗 Link listo para mandar</div>
+    <div id="bar"><span id="ph">Pregúntale a Gemini…</span><span id="inp"></span><div id="send">↑</div></div>
+  </div>
+
+  <div class="card" id="money">
+    <h3>¿Cuánto se cobra? 💸</h3>
+    <div class="p">Web de 1 página, con freelance, en México:</div>
+    <div id="range">$0 a $0<small>MXN</small></div>
+    <div class="src">Fuente: GoDaddy México, 2026</div>
+    <div id="shops">
+      <div class="sh" id="s0">💈<small>+$10K</small></div>
+      <div class="sh" id="s1">🥐<small>+$10K</small></div>
+      <div class="sh" id="s2">🔧<small>+$10K</small></div>
+      <div class="sh" id="s3">💅<small>+$10K</small></div>
+      <div class="sh" id="s4">🌮<small>+$10K</small></div>
+      <div class="sh" id="s5">🦷<small>+$10K</small></div>
+      <div class="sh" id="s6">🏋️<small>+$10K</small></div>
+      <div class="sh" id="s7">☕<small>+$10K</small></div>
+      <div class="sh" id="s8">🐶<small>+$10K</small></div>
+      <div class="sh" id="s9">🌸<small>+$10K</small></div>
+    </div>
+    <div id="mlab">10 negocios = hasta</div>
+    <div id="mtot">$0<small>MXN</small></div>
+    <div id="usd">≈ $5,100 USD</div>
+  </div>
+
+  <div id="sheet">
+    <div class="grab"></div>
+    <h3>Paso a paso, gratis:</h3>
+    <div class="it" id="i0"><span class="e">📍</span><div>Busca en Google Maps<small>negocios con reseñas y sin web</small></div></div>
+    <div class="it" id="i1"><span class="e">🤖</span><div>Pídele la web a la IA<small>Gemini con Canvas, gratis</small></div></div>
+    <div class="it" id="i2"><span class="e">📲</span><div>Mándale el link al dueño<small>por WhatsApp, uno por uno</small></div></div>
+  </div>
+</div>
+<div class="cap" id="h" style="top: 262px"><span class="s" id="h1">Cobra hasta</span><span class="y xl" id="h2">$10,000 MXN 💸</span><span id="h3">por una web con IA 🤖</span></div>
+<div class="cap" id="g" style="top: 330px"><span id="g1">Cientos de reseñas 😳</span><span class="y l" id="g2">y SIN página web</span></div>
+<div class="cap" id="c" style="top: 330px"><span id="c1">Se la pides a la IA 🤖</span><span class="y l" id="c2">y la hace en minutos ⏱️</span></div>
+<div class="cap" id="z" style="top: 300px"><span id="z1">10 webs = hasta</span><span class="y xl" id="z2">$100,000 MXN 🤯</span></div>
+<div class="cap" id="v" style="top: 330px"><span id="v1">Sin saber programar 😳</span><span class="y l" id="v2">y con IA gratis 🙌</span></div>
+<div class="cap" id="k" style="top: 540px"><span id="k1">¿Quieres el paso a paso? 👀</span><span class="xl" id="k2">Comenta</span><span class="y xl" id="k3">WEB 👇</span><span class="s" id="k4">y te mando el prompt exacto 📩</span><span class="xs" id="k5">(sígueme para recibirlo)</span></div>
+<div class="tap" id="tap"></div>
+<div id="flash"></div>
+
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<script>
+const EM = ['💸', '💵', '🤑', '💰', '🎉', '✨'];
+const confs = [];
+for (let k = 0; k < 26; k++) { const el = document.createElement('div'); el.className = 'conf'; el.textContent = EM[k % EM.length]; document.body.appendChild(el); confs.push(el); }
+let seed = 23; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+
+const SQ = 'barbería cerca de mí';
+const SQ0 = 0.12, SQ1 = 0.6;
+const ROWS = [0.62, 0.7, 0.78, 0.86];
+const STAMP = [1.0, 1.18, 1.36];
+const G = 1.3;
+const CH = 2.25;
+const Q = 'Hazle una web a Barbería El Parche…';
+const TYPE0 = CH + 0.2, TYPE1 = CH + 0.7;
+const BLD = [3.48, 3.62, 3.78, 3.94, 4.1];
+const LK = 4.4;
+const MO = 4.85;
+const SHOP = Array.from({ length: 10 }, (_, i) => MO + 0.8 + i * 0.075);
+const B = MO + 1.6;
+const SH = B + 1.75;
+const K = SH + 2.1;
+
+const tl = gsap.timeline({ paused: true, defaults: { ease: 'power3.out' } });
+const R = { a: 0, b: 0 }, M = { v: 0 };
+const pop = (sel, at) => tl.fromTo(sel, { autoAlpha: 0, scale: 0.55 }, { autoAlpha: 1, scale: 1, duration: 0.32, ease: 'back.out(2.2)' }, at);
+const bub = (sel, at, from) => tl.fromTo(sel, { autoAlpha: 0, y: 30, scale: 0.9, transformOrigin: from }, { autoAlpha: 1, y: 0, scale: 1, duration: 0.28, ease: 'back.out(1.8)' }, at);
+const tap = (x, y, at) => tl.set('#tap', { left: x, top: y, scale: 1.2, autoAlpha: 0 }, at).to('#tap', { autoAlpha: 1, scale: 0.85, duration: 0.06 }, at).to('#tap', { autoAlpha: 0, duration: 0.1 }, at + 0.14);
+gsap.set('#ui', { filter: 'blur(0px) brightness(1)' });
+gsap.set(['#g1', '#g2', '#c1', '#c2', '#z1', '#z2', '#v1', '#v2', '#k1', '#k2', '#k3', '#k4', '#k5', '#m1', '#m2', '#site', '#link', '.sh', '#w0', '#w1', '#w3', '#usd'], { autoAlpha: 0 });
+gsap.set(['#sbar', '#hero', '#btns', '#chips', '#hrs'], { autoAlpha: 0 });
+gsap.set('.row', { autoAlpha: 0, y: 40 });
+gsap.set('#money', { y: 1500 });
+gsap.set('#sheet', { y: 1150 });
+gsap.set('.it', { autoAlpha: 0, x: 40 });
+
+/* 0 · accroche, recherche, les commerces sans site */
+tl.fromTo('#h', { scale: 1.06 }, { scale: 1, duration: 0.2, ease: 'back.out(2)' }, 0)
+  .fromTo('#ui', { scale: 1.0 }, { scale: 1.03, duration: CH, ease: 'none' }, 0)
+  .to('#sph', { autoAlpha: 0, duration: 0.05 }, SQ0);
+ROWS.forEach((t, i) => tl.to(`#r${i}`, { autoAlpha: 1, y: 0, duration: 0.24 }, t)
+  .fromTo(`#p${i}`, { autoAlpha: 0, scale: 0.2, y: -30 }, { autoAlpha: 1, scale: 1, y: 0, duration: 0.3, ease: 'back.out(2.4)' }, t + 0.04));
+['#w0', '#w1', '#w3'].forEach((s, i) => tl.fromTo(s, { autoAlpha: 0, scale: 1.9, rotation: -10 }, { autoAlpha: 1, scale: 1, rotation: -3, duration: 0.22, ease: 'back.out(2.6)' }, STAMP[i])
+  .set(`#r${[0, 1, 3][i]}`, { backgroundColor: 'rgba(229,72,77,0.16)' }, STAMP[i])
+  .to(`#r${[0, 1, 3][i]}`, { backgroundColor: 'rgba(229,72,77,0)', duration: 0.5, ease: 'power1.out' }, STAMP[i] + 0.02));
+tl.to('#h', { autoAlpha: 0, y: -20, duration: 0.15, ease: 'power2.in' }, G - 0.12);
+pop('#g1', G);
+pop('#g2', G + 0.16);
+
+/* 2.25 · on tape le commerce, la IA fait la web */
+tap(60 + 26 + 300, 560 + 330 + 4 + 62, CH - 0.2);
+tl.to('#r0', { backgroundColor: 'rgba(17,17,17,0.06)', duration: 0.08 }, CH - 0.18)
+  .to('#g', { autoAlpha: 0, duration: 0.12 }, CH - 0.1)
+  .to('#maps', { x: -980, duration: 0.32, ease: 'power2.in' }, CH)
+  .to('#chat', { x: 0, duration: 0.36, ease: 'power3.out' }, CH + 0.06)
+  .to('#ph', { autoAlpha: 0, duration: 0.05 }, TYPE0);
+pop('#c1', CH + 0.12);
+pop('#c2', CH + 0.28);
+tap(60 + 850 - 22 - 12 - 28, 560 + 840 - 18 - 38, TYPE1 - 0.06);
+tl.set('#ph', { autoAlpha: 1 }, TYPE1 + 0.06);
+bub('#m1', TYPE1 + 0.06, '100% 100%');
+bub('#m2', 3.3, '0% 100%');
+tl.fromTo('#site', { autoAlpha: 0, y: 30 }, { autoAlpha: 1, y: 0, duration: 0.2 }, 3.42);
+['#sbar', '#hero', '#btns', '#chips', '#hrs'].forEach((s, i) => tl.fromTo(s, { autoAlpha: 0, y: 16 }, { autoAlpha: 1, y: 0, duration: 0.2, ease: 'back.out(2)' }, BLD[i]));
+tl.to('#bar', { autoAlpha: 0, duration: 0.1 }, LK - 0.05)
+  .fromTo('#link', { autoAlpha: 0, scale: 0.5, xPercent: -50, x: 0 }, { autoAlpha: 1, scale: 1, xPercent: -50, duration: 0.3, ease: 'back.out(2.4)' }, LK)
+  .to('#ui', { scale: 1.06, duration: 0.5, ease: 'power2.out' }, LK);
+
+/* 4.85 · l'argent */
+tl.to('#c', { autoAlpha: 0, duration: 0.12 }, MO - 0.1)
+  .to('#money', { y: 0, duration: 0.4, ease: 'power3.out' }, MO)
+  .to('#ui', { scale: 1.0, duration: 0.4, ease: 'power2.out' }, MO)
+  .to(R, { a: 3000, b: 10000, duration: 0.45, ease: 'power2.out' }, MO + 0.3);
+SHOP.forEach((t, i) => tl.fromTo(`#s${i}`, { autoAlpha: 0, scale: 0.4 }, { autoAlpha: 1, scale: 1, duration: 0.18, ease: 'back.out(2.6)' }, t).to(M, { v: 10000 * (i + 1), duration: 0.07, ease: 'none' }, t + 0.03));
+tl.to('#flash', { opacity: 0.7, duration: 0.05, ease: 'none' }, B - 0.05)
+  .to('#flash', { opacity: 0, duration: 0.3 }, B)
+  .fromTo('#mtot', { scale: 1 }, { scale: 1.12, duration: 0.14, yoyo: true, repeat: 1, ease: 'power2.out', transformOrigin: '0% 50%' }, B)
+  .to('#ui', { x: -18, duration: 0.05, ease: 'none' }, B)
+  .to('#ui', { x: 14, duration: 0.06, ease: 'none' }, B + 0.05)
+  .to('#ui', { x: -8, duration: 0.06, ease: 'none' }, B + 0.11)
+  .to('#ui', { x: 0, duration: 0.08 }, B + 0.17);
+confs.forEach((el) => {
+  const ang = rnd() * Math.PI * 2, sp = 260 + rnd() * 440;
+  const dx = Math.cos(ang) * sp, dy = Math.sin(ang) * sp * 0.8 - 220;
+  const sc = 0.8 + rnd() * 0.6, rot = (rnd() - 0.5) * 260;
+  tl.set(el, { left: 420, top: 1240, x: 0, y: 0, rotation: 0, scale: 0.4, autoAlpha: 0 }, B)
+    .to(el, { autoAlpha: 1, scale: sc, duration: 0.08 }, B)
+    .to(el, { x: dx, y: dy, rotation: rot, duration: 0.45, ease: 'power3.out' }, B)
+    .to(el, { y: dy + 700, duration: 0.65, ease: 'power2.in' }, B + 0.45)
+    .to(el, { autoAlpha: 0, duration: 0.25 }, B + 0.8);
+});
+pop('#z1', B + 0.1);
+pop('#z2', B + 0.3);
+pop('#usd', B + 0.2);
+
+/* les étapes */
+tl.to('#z', { autoAlpha: 0, duration: 0.15 }, SH - 0.1)
+  .to('#sheet', { y: 0, duration: 0.38, ease: 'power3.out' }, SH);
+[0, 1, 2].forEach((k) => tl.to(`#i${k}`, { autoAlpha: 1, x: 0, duration: 0.22 }, SH + 0.35 + k * 0.3));
+pop('#v1', SH + 0.12);
+pop('#v2', SH + 0.3);
+
+/* commente */
+tl.to('#v', { autoAlpha: 0, duration: 0.12 }, K - 0.12)
+  .to('#flash', { opacity: 0.55, duration: 0.05, ease: 'none' }, K - 0.05)
+  .to('#flash', { opacity: 0, duration: 0.25 }, K)
+  .to('#ui', { filter: 'blur(16px) brightness(0.62)', scale: 1.08, duration: 0.3, ease: 'power2.out' }, K);
+pop('#k1', K + 0.06);
+pop('#k2', K + 0.3);
+pop('#k3', K + 0.5);
+pop('#k4', K + 0.85);
+pop('#k5', K + 1.05);
+tl.to('#k3', { scale: 1.07, duration: 0.35, yoyo: true, repeat: 3, ease: 'sine.inOut' }, K + 1.3);
+tl.to({}, { duration: 0.01 }, K + 3.0);
+window.DURATION = K + 3.0;
+window.TIMES = { SQ0, SQ1, ROWS, STAMP, G, CH, TYPE0, TYPE1, BLD, LK, MO, SHOP, B, SH, K };
+
+const sq = document.getElementById('sq'), inp = document.getElementById('inp');
+const range = document.getElementById('range'), mtot = document.getElementById('mtot');
+const SQC = Array.from(SQ), QCH = Array.from(Q);
+const fmt = (d) => '$' + String(Math.round(d)).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+const r100 = (d) => Math.round(d / 100) * 100;
+window.seek = (t) => {
+  tl.seek(t, false);
+  const a = Math.max(0, Math.min(1, (t - SQ0) / (SQ1 - SQ0)));
+  sq.textContent = t >= SQ0 ? SQC.slice(0, Math.ceil(a * SQC.length)).join('') : '';
+  const q = Math.max(0, Math.min(1, (t - TYPE0) / (TYPE1 - TYPE0)));
+  inp.textContent = t >= TYPE0 && t < TYPE1 + 0.06 ? QCH.slice(0, Math.ceil(q * QCH.length)).join('') : '';
+  range.firstChild.nodeValue = fmt(r100(R.a)) + ' a ' + fmt(r100(R.b));
+  mtot.firstChild.nodeValue = fmt(M.v);
+};
+Promise.all([
+  document.fonts.load('700 60px "TT"', 'Aa'), document.fonts.load('800 60px "TT"', 'Aa'), document.fonts.load('600 60px "TT"', 'Aa'),
+]).then(() => document.fonts.ready).then(() => { window.seek(0); document.body.dataset.ready = '1'; });
+</script>
+</body>
+</html>
