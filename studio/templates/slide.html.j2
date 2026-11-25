@@ -23,6 +23,16 @@
     {% if s.lead %}<p class="lead">{{ s.lead|safe }}</p>{% endif %}
     {% if s.teaser %}<div class="teaser"><div class="lab mono">{{ s.teaser_label }}</div><div class="items">{% for it in s.teaser %}<div class="it"><span class="mono">{{ '%02d' % loop.index }}</span>{{ it }}</div>{% endfor %}</div></div>{% endif %}
 
+  {%- elif s.type == 'cover_clean' %}
+    {% if s.kicker %}<div class="kicker mono">{{ s.kicker }}</div>{% endif %}
+    {% for l in s.lines %}<div class="display" data-fit style="font-size: {{ s.size or 220 }}px">{{ l|safe }}</div>{% endfor %}
+    {% if s.sub %}<p class="clean-sub">{{ s.sub|safe }}</p>{% endif %}
+  {%- elif s.type == 'cover_vs' %}
+    {% if s.kicker %}<div class="kicker mono">{{ s.kicker }}</div>{% endif %}
+    <div class="vs-block paid"><div class="vs-name" data-fit>{{ s.paid.name }}</div><div class="vs-price mono">{{ s.paid.price }}</div></div>
+    <div class="vs-arrow">↓</div>
+    <div class="vs-block free"><div class="vs-name" data-fit>{{ s.free.name }}</div><div class="vs-price mono">{{ s.free.price }}</div></div>
+    {% if s.sub %}<p class="clean-sub">{{ s.sub|safe }}</p>{% endif %}
   {%- elif s.type == 'cover_text' %}
     <div class="kicker mono {{ 'coral' if s.kicker_coral }}">{{ s.kicker }}</div>
     {% for d in s.display %}<div class="display" data-fit style="font-size: {{ s.display_size or 210 }}px">{{ d|safe }}</div>{% endfor %}

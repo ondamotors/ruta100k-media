@@ -1,88 +1,85 @@
 # RUTA 100K · Studio : règles de production
 
-À lire en entier avant de produire quoi que ce soit.
+À lire en entier avant de produire quoi que ce soit. Ligne éditoriale revue par Vincent le 25/11/2026.
 
 ## Le compte
 
-- RUTA 100K | Crecer con IA. TikTok @ruta100k et Instagram @ruta100k.latam, tous deux connectés à Metricool. Chaque post sort sur les deux réseaux.
-- Espagnol latino neutre, tutoiement. Défi public : 0 à 100K abonnés du 24/11/2026 au 22/01/2027.
-- Día N = date en Amérique latine. Día 1 = 24/11/2026, Día 2 = 25/11/2026, etc.
-- Vincent peut apparaître dans des vidéos mais ne parle jamais face caméra. Il a déjà fait grandir d'autres comptes : on le dit, mais aucun chiffre sur ces comptes tant qu'il n'a pas fourni ses captures.
-- Promesses publiques déjà faites, à tenir : les chiffres réels chaque dimanche ; chaque semaine, audit public de 3 comptes choisis parmi ceux qui ont commenté DENTRO et qui suivent le compte.
+- RUTA 100K | Crecer con IA. TikTok @ruta100k et Instagram @ruta100k.latam, connectés à Metricool.
+- Espagnol latino neutre, tutoiement.
+- Le compte donne aux gens les clés pour faire LEURS 100K. On ne parle pas des 100K de Vincent, on ne raconte pas son défi, et on ne publie aucun chiffre du compte (vues, abonnés, likes) jusqu'à nouvel ordre.
+- Vincent peut apparaître dans des vidéos mais ne parle jamais face caméra. Pas de vidéo de lui pour l'instant.
+
+## Ce qu'on publie
+
+Des posts qui apprennent quelque chose de fort et donnent envie de demander la suite en commentaire :
+1. **ALGO TIKTOK** : ce que TikTok a confirmé sur sa recommandation, la recherche, ce qui sort un post du Pour toi. TikTok seulement.
+2. **ALGO INSTAGRAM** : la même chose pour Instagram (Mosseri, Instagram Creators, Meta). Instagram seulement. Jamais un post Instagram sur TikTok, ni l'inverse.
+3. **IA DE PAGO → IA GRATIS** : une app d'IA payante, son prix, et l'alternative gratuite, une paire par post. Les deux réseaux.
+4. **DINERO** : comment les plateformes paient les créateurs, avec les conditions officielles, et ce que coûtent vraiment les outils. Selon le sujet, un réseau ou les deux.
+5. **VISTAS** : ressources pour faire plus de vues (prompts, accroches, idées, bio, sous-titres). Les deux réseaux.
 
 ## Lignes rouges
 
-- Aucun chiffre, résultat, témoignage, partenariat ou preuve inventé. Chaque fait sur une slide est vérifié pendant le run sur une source officielle ouverte (WebFetch), sinon il saute.
+- Aucun chiffre, résultat, témoignage, partenariat ou preuve inventé. Chaque fait sur une slide est vérifié pendant la production sur une source officielle ouverte (WebFetch), sinon il saute. Les prix viennent de la page de prix officielle, avec la date de vérification en pied.
 - Jamais de « like si… », « sígueme y te sigo », promesse de follow-back, bots, groupes d'engagement : TikTok rend ces contenus inéligibles au Pour toi et peut sortir tout le compte des recommandations.
 - Toute ressource promise existe dans `recursos/` avant que le post soit programmé.
+- Jamais de logo de marque dans les visuels : les noms des outils sont composés dans notre typo.
 - Jamais de tiret cadratin. Pas d'emoji dans les slides.
 - Rien n'est publié hors Metricool. Aucun DM, aucun commentaire au nom de Vincent.
-- Ne jamais chercher dans Google Drive, Gmail, Slack ou Notion : ces connecteurs sont des comptes professionnels sans rapport avec RUTA 100K. Les idées viennent du backlog, des analytics Metricool et de la recherche du run.
+- Ne jamais chercher dans Google Drive, Gmail, Slack ou Notion : ce sont des comptes professionnels sans rapport avec RUTA 100K.
 
 ## Créneaux
 
-Metricool : brand 8343331, timezone Europe/Paris, réseaux tiktok et instagram. Heures de Paris pour le Día N (Bogotá = Paris moins 6 h) :
+Metricool : brand 8343331, timezone Europe/Paris, réseaux tiktok et instagram. Heures de Paris pour le jour N (Bogotá = Paris moins 6 h) :
 
 | Réseau | 18:30 (jour N) | 23:30 (jour N) | 00:30 (N+1) | 02:30 (N+1) |
 | --- | --- | --- | --- | --- |
-| TikTok | RESSOURCE, carrousel natif | RETO, vidéo « Día N/60 » en notification | SOURCE ou OUTILS, carrousel natif | rien |
-| Instagram | RESSOURCE, carrousel 4:5 | rien | SOURCE ou OUTILS, carrousel 4:5 | RETO, carrousel 4:5 |
+| TikTok | IA DE PAGO → GRATIS ou DINERO, carrousel natif | vidéo astuce, en notification | ALGO TIKTOK, carrousel natif | rien |
+| Instagram | même sujet que TikTok 18:30, carrousel 4:5 | rien | ALGO INSTAGRAM, carrousel 4:5 | VISTAS ou DINERO, carrousel 4:5 |
 
-Un créneau est pris, réseau par réseau, s'il existe déjà un post programmé à moins de 20 minutes sur ce réseau. Une entrée du backlog à date imposée réserve son créneau : ne rien y mettre d'autre, et ne la produire que le jour indiqué.
+Un créneau est pris, réseau par réseau, s'il existe déjà un post programmé à moins de 20 minutes sur ce réseau. Un post réservé à une plateforme est noté « TikTok seulement » ou « Instagram seulement » dans le backlog et n'est jamais dupliqué.
 
-Les créneaux RETO (vidéo « Día N/60 » et carrousel RETO Instagram) ne se remplissent que pour le Día d'aujourd'hui, avec les chiffres Metricool du matin même : publier un chiffre vieux d'un jour et demi sous l'étiquette du jour suivant serait trompeur. Seule exception, un RETO dont les chiffres sont figés (post supprimé, semaine terminée).
+## La première slide
 
-Un post qui ne parle que d'une plateforme (tier list TikTok, astuce Instagram) ne sort que sur cette plateforme : le noter « TikTok seulement » ou « Instagram seulement » dans le backlog et ne jamais le dupliquer. Le créneau laissé libre sur l'autre réseau prend l'entrée suivante du même type.
+C'est elle qui décide si on s'arrête. Elle doit se comprendre en un coup d'œil :
+- 2 à 6 mots en énorme, et au plus une ligne courte en dessous. Rien d'autre : pas de paragraphe, pas de liste, pas de puces, pas de « Día ».
+- Types : `cover_clean` (Instagram) ou `hook` (TikTok) pour une phrase ; `cover_vs` (Instagram) ou `vs` (TikTok) pour une paire payant → gratuit (nom barré et prix, flèche, nom gratuit et « US$0 »).
+- Les slides suivantes peuvent être plus chargées, juste assez pour qu'on reste quelques secondes, jamais sales.
 
-## Mix quotidien
+## Triple accroche, à chaque post
 
-1. RESSOURCE : un mot-clé à commenter, follow obligatoire, la ressource part en DM.
-2. SOURCE OFFICIELLE ou OUTILS vérifiés : tier list, comparatif, « ce que TikTok a dit ». Fait pour le débat et le partage.
-3. RETO : récit du défi, coulisses, chiffres réels tirés de Metricool. Fait pour le follow.
+Pour garder les gens le plus longtemps possible :
+1. Une première slide qui contredit, choque ou promet, avec un fait vrai.
+2. Une slide 2 qui relance (« No lo digo yo, lo dijo TikTok », « la 3 casi nadie la conoce »).
+3. Un titre et une première ligne de légende qui ouvrent une boucle vers la fin (« La 5 puede sacar tu cuenta del Para ti »).
 
-## Mécanique commentaire + follow
+Puis une relance dans le kicker de chaque slide (« 3 de 5 · la que casi nadie sabe »). Modèle : `posts/2026-11-25_p9_algoritmo_tiktok.json`.
 
-ManyChat ne peut pas se brancher sur un compte TikTok basé dans l'UE, et rien n'est encore automatisé sur Instagram : Vincent livre les ressources à la main en DM sur les deux réseaux.
+## Mot-clé en commentaire
 
-- Dernière slide d'un post ressource : type `cta`, verb « Comenta », keyword = le mot-clé en majuscules, lead « Y escríbeme MOT por mensaje: te mando … », list [« Solo para seguidores: sígueme antes de escribir. », « Guárdalo para … »].
-- Légende : une phrase de valeur, puis « ¿Lo quieres? Comenta MOT, sígueme y escríbeme MOT por mensaje. », puis 3 ou 4 hashtags de niche.
-- Créer la ressource `recursos/<slug>.md` (même style que les existantes, pied RUTA 100K) et ajouter sa ligne dans `recursos/README.md` (mot-clé, lien GitHub, réponse DM prête à coller).
-- Un mot-clé = une seule ressource. Ne jamais réutiliser un mot-clé existant.
+Chaque post se termine par un mot-clé à commenter pour obtenir une info en plus, réelle et prête dans `recursos/`. ManyChat ne peut pas se brancher sur un compte TikTok basé dans l'UE et rien n'est automatisé sur Instagram : Vincent livre à la main en DM.
+- Dernière slide : type `cta`, verb « Comenta », keyword en majuscules, puis « Escríbeme MOT por mensaje » et « Solo para seguidores ».
+- Légende : d'abord les mots que les gens tapent dans la recherche, la boucle vers la fin, puis « ¿Lo quieres? Comenta MOT, sígueme y escríbeme MOT por mensaje. » (« por DM » sur Instagram), puis 3 hashtags.
+- Ressource `recursos/<slug>.md` (même style que les existantes) et sa ligne dans `recursos/README.md` (mot-clé, lien GitHub, réponse DM prête à coller). Un mot-clé = une seule ressource, jamais réutilisé.
 
-## TikTok natif
+## Deux versions par post
 
-Un carrousel pensé pour Instagram ne suffit pas sur TikTok. Chaque post a donc deux versions :
-- Instagram : la version éditoriale 4:5 (kind `carousel`, `<date>_p<N>_<slug>.json`), export `instagram/NN.jpg` depuis `out/<id>/ig/`.
-- TikTok : une version native plein écran (kind `tiktok`, `<date>_p<N>_<slug>_tiktok.json`, gabarit `templates/tiktok.html.j2`), export `tiktok/NN.jpg` depuis `out/<id>/tt/`. Modèle : `posts/_exemple_tiktok_stack.json`.
+- Instagram : carrousel 4:5 (kind `carousel`, `<date>_p<N>_<slug>.json`), export `instagram/NN.jpg` depuis `out/<id>/ig/`, 10 images au maximum.
+- TikTok : carrousel natif plein écran (kind `tiktok`, `<date>_p<N>_<slug>_tiktok.json`), export `tiktok/NN.jpg` depuis `out/<id>/tt/`. Une idée par slide, 12 mots maximum hors listes, 5 à 9 slides, ton oral et direct.
 
-Règles de la version TikTok :
-- Une idée par slide, 12 mots maximum hors listes, 5 à 8 slides. Types : hook, punch, num, list, cta. Thèmes dark, light, coral.
-- La couverture arrête le pouce : un chiffre énorme, une contradiction ou une promesse concrète, jamais une phrase de contexte.
-- Ton oral et direct, phrases courtes (« Ojo », « Nadie te lo dice »). « POV » seulement si c'est vrai.
-- Triple accroche, toujours, pour garder les gens le plus longtemps possible sur le post : (1) une couverture qui contredit ou choque, avec un fait vrai ; (2) une slide 2 qui relance (« No lo digo yo, lo dijo TikTok », « la 3 casi nadie la conoce ») ; (3) un titre TikTok et une première ligne de légende qui ouvrent une boucle vers la fin (« La 5 puede sacar tu cuenta del Para ti »). Ensuite, une relance dans le kicker de chaque slide (« 3 de 5 · la que casi nadie sabe »). Modèle : `posts/2026-11-25_p9_algoritmo_tiktok.json`.
-- Chaque carrousel TikTok se termine par un mot-clé à commenter pour obtenir une info en plus, réelle et prête dans `recursos/` (commentaire, follow, DM).
-- Le gabarit garde le texte dans la zone sûre (boutons à droite, légende en bas) : ne jamais le contourner avec du style en ligne.
-- Légende TikTok : d'abord les mots que les gens tapent dans la recherche, puis l'appel à l'action, puis 3 hashtags.
+## Vidéo astuce TikTok (23:30)
 
-## Vidéo TikTok du jour : « Día N/60 »
-
-- Sur TikTok, le RETO du jour sort en vidéo courte : 4 à 6 scènes de 1,4 à 2 s, 7 à 10 s au total, fichier `<date>_p<N>_dia<N>_video.json` (kind `tiktok_video`, mêmes types de scène que la version TikTok native plus `dur`). Modèle : `posts/_exemple_video_dia.json`.
-- Rendu : `cd studio && python3 video.py posts/<fichier>.json`, zéro « [A CORRIGER] », puis ouvrir `out/<id>/planche.png` avec Read. Export : `out/<id>/video.mp4` et `cover.jpg` vers `<date>/p<N>_dia<N>/tiktok/`.
-- Écriture : scène 1 = « DÍA N » en énorme, puis les vrais chiffres Metricool de la veille (abonnés, vues, meilleur post), une leçon, et « Mañana: Día N+1 ». Pensée pour être regardée jusqu'au bout et revue.
-- Couverture : tant que le réseau n'a pas 1 000 abonnés, le nombre d'abonnés ne va jamais en couverture (ni de la vidéo, ni du carrousel RETO Instagram). Il est montré, en vrai, à l'intérieur.
-- Metricool : providers tiktok, media = URL raw du `video.mp4` au SHA du commit, **autoPublish false** (Vincent reçoit une notif dans l'app Metricool, ajoute un son dans TikTok et publie), tiktokData { privacyOption PUBLIC_TO_EVERYONE, title, isAigc false }.
+- 4 à 6 scènes de 1,4 à 2 s, 7 à 10 s au total, kind `tiktok_video` (mêmes types de scène que la version TikTok native, plus `dur`). Une seule astuce vérifiée, la triple accroche dès la scène 1, et la dernière scène renvoie vers un mot-clé ou vers le compte.
+- Rendu : `cd studio && python3 video.py posts/<fichier>.json`, zéro « [A CORRIGER] », puis ouvrir `out/<id>/planche.png` avec Read. Export `video.mp4` et `cover.jpg` vers `<date>/p<N>_<slug>/tiktok/`.
+- Metricool : providers tiktok, media = URL raw du `video.mp4` au SHA du commit, **autoPublish false** (Vincent reçoit une notif, ajoute un son dans TikTok et publie), tiktokData { privacyOption PUBLIC_TO_EVERYONE, title, isAigc false }.
 
 ## Produire un post
 
-1. JSON dans `studio/posts/<AAAA-MM-JJ>_p<N>_<slug>.json`. Schéma : `studio/README.md`. Modèles : les posts existants, dont les longueurs de texte sont calibrées. 6 à 10 slides. Couverture : un chiffre ou une promesse concrète. « Día N » dans le kicker de couverture ou le pied (`foot_left`).
-2. Rendu : `cd studio && python3 render.py posts/<fichier>.json`. Zéro ligne « [A CORRIGER] » : raccourcir le texte ou ajouter `"compact": true`. Puis ouvrir `out/<id>/planche.png` avec Read et vérifier chaque slide à l'œil.
-3. Export JPEG qualité 92 à la racine du dépôt : `<AAAA-MM-JJ>/p<N>_<slug>/tiktok/NN.jpg` depuis la version TikTok native (`out/<id>_tiktok/tt/`) et `.../instagram/NN.jpg` depuis la version Instagram (`out/<id>/ig/`).
+1. JSON dans `studio/posts/`. Schémas : `studio/README.md`. Modèles : les posts existants.
+2. Rendu : `cd studio && python3 render.py posts/<fichier>.json`. Zéro ligne « [A CORRIGER] » : raccourcir ou ajouter `"compact": true`. Puis ouvrir `out/<id>/planche.png` avec Read et vérifier chaque slide à l'œil, la première surtout.
+3. Export JPEG qualité 92 à la racine du dépôt : `<AAAA-MM-JJ>/p<N>_<slug>/tiktok/NN.jpg` et `.../instagram/NN.jpg`.
 4. Commit avec `git -c user.name="RUTA 100K" -c user.email="studio@ruta100k.invalid"`, jamais d'adresse personnelle. Push sur main.
-5. Metricool `createScheduledPost`, une fois par réseau au créneau prévu par la table Créneaux (les carrousels TikTok et Instagram d'un même post sortent ensemble), avec media = `https://raw.githubusercontent.com/ondamotors/ruta100k-media/<SHA du commit>/<chemin>` (le SHA, jamais main) et autoPublish true :
-   - TikTok : images `tiktok/NN.jpg`, providers tiktok, tiktokData { privacyOption PUBLIC_TO_EVERYONE, title de 90 caractères maximum, autoAddMusic true, photoCoverIndex 0 }.
-   - Instagram : images `instagram/NN.jpg` (10 au maximum), providers instagram, instagramData { type POST, isAiGenerated false }. Même légende, avec « por DM » au lieu de « por mensaje ».
+5. Metricool `createScheduledPost`, une fois par réseau au créneau prévu, media = `https://raw.githubusercontent.com/ondamotors/ruta100k-media/<SHA du commit>/<chemin>` (le SHA, jamais main), autoPublish true sauf la vidéo :
+   - TikTok : providers tiktok, tiktokData { privacyOption PUBLIC_TO_EVERYONE, title de 90 caractères maximum, autoAddMusic true, photoCoverIndex 0 }.
+   - Instagram : providers instagram, instagramData { type POST, isAiGenerated false }.
 6. Dans `studio/plan/backlog.md`, cocher l'entrée et noter l'id Metricool et l'heure.
-
-## Chiffres du défi
-
-Source unique : les analytics Metricool du compte TikTok. On publie les chiffres tels quels, même petits. Jamais d'arrondi à la hausse, jamais d'estimation présentée comme un chiffre.

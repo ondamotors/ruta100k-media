@@ -75,3 +75,12 @@ b, strong { font-weight: inherit; color: var(--coral); }
 .sources .t { font-size: 34px; line-height: 1.2; font-weight: 600; }
 .sources .u { font-size: 20px; text-transform: none; letter-spacing: 0; margin-top: 6px; color: var(--mute); overflow-wrap: anywhere; }
 .dark .sources .u { color: var(--mute-d); }
+.vs-block { display: flex; flex-direction: column; }
+.vs-name { font-weight: 900; font-stretch: 62%; font-size: 200px; line-height: 0.88; white-space: nowrap; letter-spacing: -0.01em; }
+.vs-block.paid .vs-name { text-decoration: line-through; text-decoration-thickness: 12px; text-decoration-color: var(--coral); }
+.vs-block.free .vs-name { color: var(--coral); }
+.coral .vs-block.free .vs-name { color: var(--paper); }
+.vs-price { font-size: 38px; margin-top: 16px; }
+.vs-arrow { font-weight: 900; font-stretch: 62%; font-size: 170px; line-height: 0.9; color: var(--coral); margin: 26px 0 20px; }
+.vs .sub { font-size: 46px; line-height: 1.2; font-weight: 500; margin-top: 48px; }
+.hook .sub { max-width: 830px; }

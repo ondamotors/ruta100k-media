@@ -66,3 +66,13 @@ Polices sous licence SIL Open Font License (Archivo, IBM Plex Mono), licences da
 | `cta` | kicker, verb, keyword, steps[] |
 
 Thèmes : `dark`, `light`, `coral`.
+
+## Couvertures épurées
+
+| kind | type | champs |
+| --- | --- | --- |
+| `carousel` | `cover_clean` | kicker, lines[], size, sub |
+| `carousel` | `cover_vs` | kicker, paid{name, price}, free{name, price}, sub |
+| `tiktok` | `vs` | kicker, paid{name, price}, free{name, price}, sub |
+
+Pour TikTok, une couverture phrase utilise `hook` avec `lines` et au plus une `sub` courte.

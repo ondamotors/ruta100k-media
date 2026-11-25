@@ -31,6 +31,11 @@
     {%- elif s.type == 'sources' %}
       {% if s.h %}<h2 class="h">{{ s.h|safe }}</h2>{% endif %}
       {% for it in s['items'] %}<div class="srcrow"><span class="n mono">{{ '%02d' % loop.index }}</span><div><div class="t">{{ it.t|safe }}</div><div class="u mono">{{ it.u }}</div></div></div>{% endfor %}
+    {%- elif s.type == 'vs' %}
+      <div class="vs-block paid"><div class="vs-name" data-fit>{{ s.paid.name }}</div><div class="vs-price mono">{{ s.paid.price }}</div></div>
+      <div class="vs-arrow">↓</div>
+      <div class="vs-block free"><div class="vs-name" data-fit>{{ s.free.name }}</div><div class="vs-price mono">{{ s.free.price }}</div></div>
+      {% if s.sub %}<p class="sub">{{ s.sub|safe }}</p>{% endif %}
     {%- elif s.type == 'cta' %}
       <div class="verb">{{ s.verb }}</div>
       <div class="keyword" data-fit>{{ s.keyword }}</div>

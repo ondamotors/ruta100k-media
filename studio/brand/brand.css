@@ -226,3 +226,14 @@ b, strong { font-weight: inherit; color: var(--coral); }
 .compact.tier .entry { padding: 22px 0; }
 .compact.tier .entry .t { font-size: 46px; }
 .compact.tier .entry .d { font-size: 30px; }
+
+/* Couvertures épurées : compréhensibles en un coup d'œil */
+.cover-clean .body, .cover-vs .body { justify-content: center; }
+.cover-clean .display + .display { margin-top: 4px; }
+.clean-sub { font-size: 46px; line-height: 1.18; font-weight: 500; margin-top: 44px; max-width: 900px; }
+.vs-block { display: flex; flex-direction: column; }
+.vs-name { font-weight: 900; font-stretch: 62%; font-size: 190px; line-height: 0.88; white-space: nowrap; letter-spacing: -0.01em; }
+.vs-block.paid .vs-name { text-decoration: line-through; text-decoration-thickness: 12px; text-decoration-color: var(--coral); }
+.vs-block.free .vs-name { color: var(--coral); }
+.vs-price { font-size: 36px; margin-top: 16px; }
+.vs-arrow { font-weight: 900; font-stretch: 62%; font-size: 150px; line-height: 0.9; color: var(--coral); margin: 22px 0 18px; }
