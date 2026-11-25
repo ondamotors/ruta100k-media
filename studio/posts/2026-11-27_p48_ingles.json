@@ -1,0 +1,123 @@
+{
+ "id": "2026-11-27_p48_ingles",
+ "kind": "carousel",
+ "series": "IA GRATIS",
+ "foot_left": "Solo lo que Instagram y Meta publicaron",
+ "foot_last": "Verificado el 25/11/2026",
+ "slides": [
+  {
+   "type": "cover_clean",
+   "theme": "dark",
+   "kicker": "Gratis · Meta AI",
+   "lines": [
+    "Tu reel",
+    "en inglés"
+   ],
+   "size": 240,
+   "sub": "Con TU voz. En un toque."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "Antes de seguir",
+   "display": [
+    "Con tu",
+    "voz."
+   ],
+   "display_size": 220,
+   "h1": "Meta AI traduce y dobla tu reel manteniendo tu voz y tu tono.",
+   "lead": "<b>Y si quieres, sincroniza tus labios con el otro idioma. No te saltes la 3.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "1 de 4 · los idiomas",
+   "display": [
+    "4",
+    "idiomas"
+   ],
+   "display_size": 240,
+   "h1": "Inglés, español, portugués e hindi.",
+   "lead": "Un solo reel para quien habla inglés, y para Brasil en portugués."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "2 de 4 · cómo",
+   "display": [
+    "Un",
+    "toque"
+   ],
+   "display_size": 240,
+   "h1": "Lo activas justo antes de compartir tu reel.",
+   "lead": "Eliges los idiomas y si quieres revisar la traducción antes de que salga."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "3 de 4 · no te la saltes",
+   "display": [
+    "Gratis"
+   ],
+   "display_size": 260,
+   "h1": "Para todas las cuentas públicas de Instagram.",
+   "lead": "En los países donde está Meta AI. <b>No necesitas miles de seguidores.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "4 de 4 · quién lo ve",
+   "display": [
+    "En su",
+    "idioma"
+   ],
+   "display_size": 230,
+   "h1": "Quien ve tu reel puede escucharlo en otro idioma.",
+   "lead": "Tu mismo video, sin grabarlo dos veces."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "Ojo · el límite real",
+   "display": [
+    "Una",
+    "voz"
+   ],
+   "display_size": 240,
+   "h1": "Por ahora, solo reels con una persona hablando.",
+   "lead": "Mira a la cámara, habla claro y pon la música desde la biblioteca de audio de Instagram."
+  },
+  {
+   "type": "sources",
+   "theme": "light",
+   "kicker": "Fuentes",
+   "h2": "Todo, de Instagram y Meta",
+   "items": [
+    {
+     "t": "Traduce tus reels, Instagram para creadores",
+     "u": "creators.instagram.com/save-time-creating"
+    },
+    {
+     "t": "Traducciones con Meta AI: gratis y para cuentas públicas, Meta",
+     "u": "about.fb.com/news/2025/10/translate-dub-and-lip-sync-your-reels-between-hindi-and-english-now-on-instagram-and-facebook"
+    },
+    {
+     "t": "Ver reels traducidos, Centro de ayuda de Instagram",
+     "u": "help.instagram.com/1805048780019931"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "INGLES",
+   "lead": "Y escríbeme INGLES por DM: te mando el paso a paso para activarlo, cómo grabar para que salga perfecto y 5 ideas de reels que funcionan en dos idiomas.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para tu próximo reel."
+   ]
+  }
+ ]
+}

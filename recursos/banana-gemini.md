@@ -35,7 +35,7 @@ Recurso gratis de RUTA 100K para seguidores. Lo que dice Google viene con su enl
 **Tu personaje en serie**
 
 11. «Usando esta foto mía, crea 4 imágenes del mismo personaje: en una oficina, en la playa, en un gimnasio y en un escenario. Mantén mi cara igual.»
-12. «Convierte esta selfie en una foto de perfil profesional: luz de estudio, fondo liso gris oscuro, ropa formal. Mantén mi cara exactamente igual.»
+12. «Convierte esta selfie en una foto de perfil profesional de estudio, nivel portada de revista de negocios. Plano de pecho hacia arriba, mirando a la cámara, con una sonrisa ligera y segura. Luz de estudio suave desde un lado, como una ventana grande, y una luz de contorno naranja sutil detrás de los hombros. Fondo oscuro casi negro con un degradado suave detrás de la cabeza. Ropa: camisa o blazer negro, sin logos. Nitidez de cámara profesional, piel natural con textura real, sin efecto plástico. Mantén mi cara, mis rasgos, mi peinado y mi tono de piel exactamente iguales.» Si cambia tu cara, repite con: «Mantén mi cara exactamente igual, cambia solo la luz, la ropa y el fondo.»
 
 **Arreglos**
 
