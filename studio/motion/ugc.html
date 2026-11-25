@@ -43,13 +43,14 @@ body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color
 .conf { position: absolute; left: 0; top: 0; font-size: 64px; line-height: 1; opacity: 0; z-index: 11; }
 #flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 50; }
 .tap { position: absolute; width: 96px; height: 96px; margin: -48px 0 0 -48px; border-radius: 50%; background: rgba(120,120,128,0.45); border: 4px solid rgba(255,255,255,0.95); box-shadow: 0 6px 24px rgba(0,0,0,0.25); z-index: 40; opacity: 0; }
+#h1 { font-size: 80px; }
 </style>
 </head>
 <body>
 <div id="ui">
   <div id="wallet">
     <div class="lbl">Lo que te pagan las marcas:</div>
-    <div class="src">mediana: $175 por video</div>
+    <div class="src">tarifa pro, EE. UU.</div>
     <div class="amt"><span id="tot">$0</span><span class="usd">USD</span></div>
   </div>
   <div id="cam">
@@ -65,15 +66,15 @@ body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color
   </div>
   <div id="sheet">
     <div class="grab"></div>
-    <h3>Y cuando subes de nivel:</h3>
+    <h3>El camino a los $3,000 🚀</h3>
     <div class="src">precio por video UGC en EE. UU., 2026</div>
     <div class="tr" id="t0">Principiante<b>$150 a $300</b></div>
     <div class="tr" id="t1">Con experiencia<b>$400 a $800</b></div>
     <div class="tr" id="t2">Pro 🔥<b>$1,000 a $3,000+</b></div>
   </div>
 </div>
-<div class="cap" id="h" style="top: 300px"><span class="y xl" id="h1">$175 por video 💸</span><span id="h2">con 0 seguidores 😳</span></div>
-<div class="cap" id="z" style="top: 300px"><span id="z1">10 videos al mes =</span><span class="y xl" id="z2">$1,750 🤯</span></div>
+<div class="cap" id="h" style="top: 300px"><span class="y xl" id="h1">$3,000 por video 💸</span><span id="h2">con 0 seguidores 😳</span></div>
+<div class="cap" id="z" style="top: 300px"><span id="z1">10 videos al mes =</span><span class="y xl" id="z2">$30,000 🤯</span></div>
 <div class="cap" id="k" style="top: 540px"><span id="k1">¿Cómo consigo marcas? 👀</span><span class="xl" id="k2">Comenta</span><span class="y xl" id="k3">UGC 👇</span><span class="s" id="k4">y te mando el paso a paso 📩</span><span class="xs" id="k5">(sígueme para recibirlo)</span></div>
 <div class="tap" id="tap"></div>
 <div id="flash"></div>
@@ -82,11 +83,11 @@ body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color
 <script>
 const TAKES = [0.55, 1.15, 1.65, 2.08, 2.46, 2.8, 3.1, 3.36, 3.59, 3.8];
 const PRODS = ['🧴', '☕', '👟', '🎧', '💄', '📱', '🍫', '🕶️', '🧃', '⌚'];
-const PAY = 175;
+const PAY = 3000;
 const EM = ['💸', '💵', '🤑', '💰', '🎉', '✨'];
 const confs = [];
 for (let k = 0; k < 26; k++) { const el = document.createElement('div'); el.className = 'conf'; el.textContent = EM[k % EM.length]; document.body.appendChild(el); confs.push(el); }
-TAKES.forEach((t, i) => document.body.insertAdjacentHTML('beforeend', `<div class="chip" id="d${i}">+$${PAY}</div>`));
+TAKES.forEach((t, i) => document.body.insertAdjacentHTML('beforeend', `<div class="chip" id="d${i}">+$${PAY.toLocaleString('en-US')}</div>`));
 let seed = 17; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
 const tl = gsap.timeline({ paused: true, defaults: { ease: 'power3.out' } });
 const C = { v: 0 };

@@ -1,6 +1,6 @@
 # Réponse DM au mot WEB (3 messages à coller dans l'ordre)
 
-Mot-clé du reel « Cobra hasta $10,000 MXN por una web con IA » (Google Maps, Gemini Canvas, lien envoyé au commerce). Instagram limite un DM à 1 000 caractères : chaque message tient dessous. Vérifié le 25/11/2026 (sources en bas).
+Mot-clé du reel « Cobra hasta $30,000 MXN por una web con IA » (site complet pour PME, haut de la fourchette GoDaddy) (Google Maps, Gemini Canvas, lien envoyé au commerce). Instagram limite un DM à 1 000 caractères : chaque message tient dessous. Vérifié le 25/11/2026 (sources en bas).
 
 ## Message 1
 
@@ -18,7 +18,7 @@ Mot-clé du reel « Cobra hasta $10,000 MXN por una web con IA » (Google Maps, 
 ```
 El prompt (cambia lo que está entre corchetes):
 
-Crea una página web de una sola sección para [nombre del negocio], [tipo de negocio] en [ciudad]. Incluye: nombre y una frase corta, servicios, horario [horario], dirección con un botón «Cómo llegar» y un botón grande de WhatsApp que abra https://wa.me/[número con código de país, sin + ni espacios]. Diseño moderno, que cargue rápido y se vea perfecto en el celular. Todo en español, en un solo archivo HTML y sin imágenes externas.
+Crea la página web completa de [nombre del negocio], [tipo de negocio] en [ciudad], con secciones: inicio con nombre y una frase corta, servicios con precios [precios], horario [horario], un botón a sus reseñas de Google, dirección con un botón «Cómo llegar» y un botón grande de WhatsApp que abra https://wa.me/[número con código de país, sin + ni espacios]. Diseño moderno, que cargue rápido y se vea perfecto en el celular. Todo en español, en un solo archivo HTML y sin imágenes externas.
 ```
 
 ## Message 3
@@ -27,17 +27,18 @@ Crea una página web de una sola sección para [nombre del negocio], [tipo de ne
 Cómo cerrarlo: escríbele por WhatsApp, uno por uno (nada de mensajes masivos):
 «Hola, vi que [negocio] tiene [X] reseñas en Google pero no tiene página web. Le hice esta muestra: [link]. Si le gusta, se la dejo publicada con su propio dominio.»
 
-Precio de referencia en México: una web de 1 página con freelance va de $3,000 a $10,000 MXN (GoDaddy). El dominio lo paga el negocio: de $200 a $500 MXN al año.
+Precio de referencia en México (GoDaddy): una web para pyme va de $10,000 a $30,000 MXN; una de 1 página, de $3,000 a $10,000 MXN. El dominio lo paga el negocio: de $200 a $500 MXN al año.
 
 Si te dice que sí: copia el código de Canvas, guárdalo como index.html en una carpeta, arrástrala a app.netlify.com/drop con tu cuenta gratis de Netlify y conecta su dominio.
 
-Si no le interesa, borra la muestra. No uses sus fotos sin permiso. No es plata segura: es un servicio que tienes que vender. ¿A qué negocio le escribes primero? 👀
+Si no le interesa, borra la muestra. No uses sus fotos sin permiso. ¿A qué negocio le escribes primero? 👀
 ```
 
 ## Sources (vues le 25/11/2026)
 
 - Prix au Mexique : landing ou one-page informative de 3 000 à 10 000 MXN avec un freelance, plus de 10 000 MXN en agence ; domaine .com ou .mx de 200 à 500 MXN par an. GoDaddy LatAm, publié le 20/11/2025, mis à jour le 30/07/2026 : https://www.godaddy.com/resources/latam/clientes/cuanto-cuesta-una-pagina-web-mexico
-- Conversion du reel : 1 USD = 19,60 MXN le 25/11/2026 (Alpha Vantage), donc 100 000 MXN ≈ 5 100 USD.
+- Site pour PME (corporativo) : 10 000 à 30 000 MXN, même article GoDaddy.
+- Conversion du reel : 1 USD = 19,60 MXN le 25/11/2026 (Alpha Vantage), donc 300 000 MXN ≈ 15 300 USD.
 - Gemini Canvas : création d'une page web et partage par lien public : https://support.google.com/gemini/answer/16047321
 - Netlify : plan Free à 0 $ pour toujours, domaines personnalisés avec SSL : https://netlify.com/pricing ; Netlify Drop publie un dossier ou un ZIP : https://docs.netlify.com/start/get-started-with-drop/ ; sans compte, le site est supprimé au bout d'une heure s'il n'est pas réclamé (d'où « con tu cuenta gratis ») : https://www.netlify.com/blog/thirteen-years-of-netlify-drop
 - Pourquoi Gemini et pas Claude dans ce reel : en Free, Claude ne permet pas de partager un nouvel artefact par lien public (seuls Pro, Max, Ultra, Team et Enterprise) : https://support.claude.com/en/articles/9547008-share-artifacts

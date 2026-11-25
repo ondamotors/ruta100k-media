@@ -1,6 +1,6 @@
 # Réponse DM au mot CLIP (3 messages à coller dans l'ordre)
 
-Mot-clé du reel « Mil dólares por un clip viral » (clipping). Instagram limite un DM à 1 000 caractères : chaque message tient dessous. Chiffres vus le 25/11/2026 (sources en bas).
+Mot-clé du reel « 5 mil dólares por un clip viral » (clipping, chiffres au plafond des campagnes le 25/11/2026). Instagram limite un DM à 1 000 caractères : chaque message tient dessous. Chiffres vus le 25/11/2026 (sources en bas).
 
 ## Message 1
 
@@ -9,9 +9,9 @@ Mot-clé du reel « Mil dólares por un clip viral » (clipping). Instagram limi
 
 Marcas, creadores y streamers pagan por cada 1.000 vistas que hagan los clips de su contenido. No necesitas seguidores ni portafolio para entrar.
 
-💸 Cuánto pagan hoy (mediana en Content Rewards, 10/11/2026): TikTok US$1.00, Instagram US$1.20 y YouTube US$1.43 por cada 1.000 vistas. Un clip con 1 millón de vistas en TikTok = unos US$1.000, antes de la comisión.
+💸 Cuánto pagan: de US$1 a US$5 por cada 1.000 vistas. En Content Rewards, la mitad de las campañas paga entre US$1 y US$2 (16/11/2026) y las top llegan a US$5. Un clip con 1 millón de vistas en una campaña top = hasta US$5.000, antes de la comisión.
 
-Ya le pagaron más de US$2,5 millones a clippers.
+Los mejores clippers pasan de US$10.000 al mes. Ya le pagaron más de US$2,5 millones a clippers.
 ```
 
 ## Message 2
@@ -41,7 +41,9 @@ Cómo saber si TikTok te esconde: github.com/ondamotors/ruta100k-media/blob/main
 
 ## Sources (vues le 25/11/2026)
 
-- Médiane 1,0875 $ pour 1 000 vues sur 707 campagnes au 10/11/2026, TikTok 1,00 $, Instagram 1,20 $, YouTube 1,425 $, vues comptées sur ton propre post, 10 % prélevés sur chaque paiement : https://contentrewards.com/articles/how-much-do-clippers-make
+- Au 16/11/2026, sur 710 campagnes, la moitié paie entre 1 et 2 $ pour 1 000 vues, campagnes UGC à 2 $, vues comptées sur ton propre post, 10 % prélevés sur chaque paiement : https://contentrewards.com/articles/how-much-do-clippers-make
+- De 1 à 5 $ pour 1 000 vues vérifiées sur les campagnes de marques : https://luminaclippers.com/blog/how-much-do-clippers-make ; de 0,20 à 6 $ pour 1 000 sur Whop, top 1 % des clippers à plus de 10 000 $ par mois : https://openclip.app/guides/how-much-do-clippers-make
+- Calcul du reel : 1 000 000 de vues à 5 $ les 1 000 = 5 000 $ avant la commission.
 - Retrait dès 1 $ via Whop : https://contentrewards.com/articles/how-brands-pay-creators-per-1000-views
 - N'importe qui peut rejoindre, sans audience, candidature ni portfolio : https://www.opus.pro/blog/whop-content-rewards
 - 2,58 millions de dollars versés aux créateurs début 2026 : https://contentrewards.com/blog/mega-clipping-guide-content-rewards

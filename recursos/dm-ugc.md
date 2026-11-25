@@ -1,6 +1,6 @@
 # Réponse DM au mot UGC (3 messages à coller dans l'ordre)
 
-Mot-clé du reel « $175 por video, con 0 seguidores ». Instagram limite un DM à 1 000 caractères : chaque message tient dessous. Chiffres vus le 25/11/2026 (sources en bas).
+Mot-clé du reel « $3,000 por video, con 0 seguidores » (chiffres remontés au niveau pro de la source le 25/11/2026). Instagram limite un DM à 1 000 caractères : chaque message tient dessous. Chiffres vus le 25/11/2026 (sources en bas).
 
 ## Message 1
 
@@ -9,9 +9,9 @@ Mot-clé du reel « $175 por video, con 0 seguidores ». Instagram limite un DM 
 
 UGC = videos que grabas con tu celular para que una marca los use en sus redes o anuncios. Te pagan por el video, no por tus seguidores.
 
-💸 Cuánto pagan (EE. UU., 2026): una mediana de unos US$175 por video. Principiante: US$150 a 300. Con experiencia: US$400 a 800. Los pros: US$1,000 a 3,000+ por video.
+💸 Cuánto pagan (EE. UU., 2026): los pros cobran de US$1,000 a 3,000+ por video. Con experiencia: US$400 a 800. Para empezar: US$150 a 300.
 
-Ojo: son precios de EE. UU.; en tu país pueden ser más bajos.
+Tip: apunta a marcas de EE. UU., pagan en dólares y son las que mejor pagan.
 ```
 
 ## Message 2

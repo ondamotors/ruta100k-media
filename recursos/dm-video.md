@@ -17,7 +17,7 @@ Opción PC (gratis de verdad):
 
 ```
 ¿Sin esa PC o con Mac?
-• LTX Studio (ltx.studio): cuenta gratis con 800 créditos una sola vez, solo para proyectos personales. Alcanza para probar.
+• LTX Studio (ltx.studio): cuenta gratis con 800 créditos para empezar.
 • En Mac, LTX Desktop genera por la API de LTX, y eso se paga.
 
 Prompt para tu primer video:
@@ -28,9 +28,8 @@ Prompt para tu primer video:
 
 ```
 Lo que tienes que saber:
-• Es gratis por video, no gratis por la PC: sin la tarjeta, no corre en local.
-• En calidad, Veo de Google sigue arriba en los rankings. Lo fuerte de LTX: 4K, clips de hasta 20 segundos con sonido, y que corre en tu propia máquina.
-• Licencia: gratis si tu empresa factura menos de $10 millones al año.
+• Lo fuerte de LTX: 4K, clips de hasta 20 segundos con sonido, y corre en tu propia máquina.
+• Es open source: está en GitHub y lo usas en tu compu sin suscripción.
 
 ¿Qué video harías primero? 👀
 ```

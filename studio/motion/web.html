@@ -95,6 +95,7 @@ body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color
 .conf { position: absolute; left: 0; top: 0; font-size: 64px; line-height: 1; opacity: 0; z-index: 11; }
 #flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 50; }
 .tap { position: absolute; width: 96px; height: 96px; margin: -48px 0 0 -48px; border-radius: 50%; background: rgba(120,120,128,0.45); border: 4px solid rgba(255,255,255,0.95); box-shadow: 0 6px 24px rgba(0,0,0,0.25); z-index: 40; opacity: 0; }
+#z2 { font-size: 84px; }
 </style>
 </head>
 <body>
@@ -143,24 +144,24 @@ body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color
 
   <div class="card" id="money">
     <h3>¿Cuánto se cobra? 💸</h3>
-    <div class="p">Web de 1 página, con freelance, en México:</div>
+    <div class="p">Web para negocio (pyme), en México:</div>
     <div id="range">$0 a $0<small>MXN</small></div>
     <div class="src">Fuente: GoDaddy México, 2026</div>
     <div id="shops">
-      <div class="sh" id="s0">💈<small>+$10K</small></div>
-      <div class="sh" id="s1">🥐<small>+$10K</small></div>
-      <div class="sh" id="s2">🔧<small>+$10K</small></div>
-      <div class="sh" id="s3">💅<small>+$10K</small></div>
-      <div class="sh" id="s4">🌮<small>+$10K</small></div>
-      <div class="sh" id="s5">🦷<small>+$10K</small></div>
-      <div class="sh" id="s6">🏋️<small>+$10K</small></div>
-      <div class="sh" id="s7">☕<small>+$10K</small></div>
-      <div class="sh" id="s8">🐶<small>+$10K</small></div>
-      <div class="sh" id="s9">🌸<small>+$10K</small></div>
+      <div class="sh" id="s0">💈<small>+$30K</small></div>
+      <div class="sh" id="s1">🥐<small>+$30K</small></div>
+      <div class="sh" id="s2">🔧<small>+$30K</small></div>
+      <div class="sh" id="s3">💅<small>+$30K</small></div>
+      <div class="sh" id="s4">🌮<small>+$30K</small></div>
+      <div class="sh" id="s5">🦷<small>+$30K</small></div>
+      <div class="sh" id="s6">🏋️<small>+$30K</small></div>
+      <div class="sh" id="s7">☕<small>+$30K</small></div>
+      <div class="sh" id="s8">🐶<small>+$30K</small></div>
+      <div class="sh" id="s9">🌸<small>+$30K</small></div>
     </div>
     <div id="mlab">10 negocios = hasta</div>
     <div id="mtot">$0<small>MXN</small></div>
-    <div id="usd">≈ $5,100 USD</div>
+    <div id="usd">≈ $15,300 USD</div>
   </div>
 
   <div id="sheet">
@@ -171,10 +172,10 @@ body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color
     <div class="it" id="i2"><span class="e">📲</span><div>Mándale el link al dueño<small>por WhatsApp, uno por uno</small></div></div>
   </div>
 </div>
-<div class="cap" id="h" style="top: 262px"><span class="s" id="h1">Cobra hasta</span><span class="y xl" id="h2">$10,000 MXN 💸</span><span id="h3">por una web con IA 🤖</span></div>
+<div class="cap" id="h" style="top: 262px"><span class="s" id="h1">Cobra hasta</span><span class="y xl" id="h2">$30,000 MXN 💸</span><span id="h3">por una web con IA 🤖</span></div>
 <div class="cap" id="g" style="top: 330px"><span id="g1">Cientos de reseñas 😳</span><span class="y l" id="g2">y SIN página web</span></div>
 <div class="cap" id="c" style="top: 330px"><span id="c1">Se la pides a la IA 🤖</span><span class="y l" id="c2">y la hace en minutos ⏱️</span></div>
-<div class="cap" id="z" style="top: 300px"><span id="z1">10 webs = hasta</span><span class="y xl" id="z2">$100,000 MXN 🤯</span></div>
+<div class="cap" id="z" style="top: 300px"><span id="z1">10 webs = hasta</span><span class="y xl" id="z2">$300,000 MXN 🤯</span></div>
 <div class="cap" id="v" style="top: 330px"><span id="v1">Sin saber programar 😳</span><span class="y l" id="v2">y con IA gratis 🙌</span></div>
 <div class="cap" id="k" style="top: 540px"><span id="k1">¿Quieres el paso a paso? 👀</span><span class="xl" id="k2">Comenta</span><span class="y xl" id="k3">WEB 👇</span><span class="s" id="k4">y te mando el prompt exacto 📩</span><span class="xs" id="k5">(sígueme para recibirlo)</span></div>
 <div class="tap" id="tap"></div>
@@ -252,8 +253,8 @@ tl.to('#bar', { autoAlpha: 0, duration: 0.1 }, LK - 0.05)
 tl.to('#c', { autoAlpha: 0, duration: 0.12 }, MO - 0.1)
   .to('#money', { y: 0, duration: 0.4, ease: 'power3.out' }, MO)
   .to('#ui', { scale: 1.0, duration: 0.4, ease: 'power2.out' }, MO)
-  .to(R, { a: 3000, b: 10000, duration: 0.45, ease: 'power2.out' }, MO + 0.3);
-SHOP.forEach((t, i) => tl.fromTo(`#s${i}`, { autoAlpha: 0, scale: 0.4 }, { autoAlpha: 1, scale: 1, duration: 0.18, ease: 'back.out(2.6)' }, t).to(M, { v: 10000 * (i + 1), duration: 0.07, ease: 'none' }, t + 0.03));
+  .to(R, { a: 10000, b: 30000, duration: 0.45, ease: 'power2.out' }, MO + 0.3);
+SHOP.forEach((t, i) => tl.fromTo(`#s${i}`, { autoAlpha: 0, scale: 0.4 }, { autoAlpha: 1, scale: 1, duration: 0.18, ease: 'back.out(2.6)' }, t).to(M, { v: 30000 * (i + 1), duration: 0.07, ease: 'none' }, t + 0.03));
 tl.to('#flash', { opacity: 0.7, duration: 0.05, ease: 'none' }, B - 0.05)
   .to('#flash', { opacity: 0, duration: 0.3 }, B)
   .fromTo('#mtot', { scale: 1 }, { scale: 1.12, duration: 0.14, yoyo: true, repeat: 1, ease: 'power2.out', transformOrigin: '0% 50%' }, B)

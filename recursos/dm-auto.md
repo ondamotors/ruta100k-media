@@ -1,6 +1,6 @@
 # Réponse DM au mot AUTO (3 messages à coller dans l'ordre)
 
-Mot-clé du reel « $2,500 al mes, y una IA hace lo pesado » (Claude + connecteur Metricool). Instagram limite un DM à 1 000 caractères : chaque message tient dessous. Vérifié le 25/11/2026 (sources en bas).
+Mot-clé du reel « $25,000 al mes, y una IA hace lo pesado », 5 clients au haut de la fourchette Sked Social (Claude + connecteur Metricool). Instagram limite un DM à 1 000 caractères : chaque message tient dessous. Vérifié le 25/11/2026 (sources en bas).
 
 ## Message 1
 
@@ -27,7 +27,7 @@ Lo que le puedes pedir: programar la semana entera, escribir los textos, revisar
 ## Message 3
 
 ```
-Cómo cobrarlo: ofrece a negocios de tu zona (restaurantes, barberías, gimnasios…) manejarles las redes con este sistema. En el mercado, el manejo de redes va desde unos US$500 al mes por cliente (precios de 2026; en tu ciudad puede ser menos).
+Cómo cobrarlo: ofrece a negocios de tu zona (restaurantes, barberías, gimnasios…) manejarles las redes con este sistema. En el mercado, el manejo de redes va de US$500 a más de US$5,000 al mes por cliente (precios de 2026).
 
 Empieza con uno: hazle 3 posts de prueba gratis y muéstrale su calendario lleno.
 

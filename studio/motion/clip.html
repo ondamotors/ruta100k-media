@@ -18,6 +18,7 @@ body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color
 .rt { flex: 1; height: 118px; border-radius: 24px; background: #F5F6F8; display: flex; flex-direction: column; align-items: center; justify-content: center; }
 .rt b { font-weight: 800; font-size: 52px; color: var(--green); letter-spacing: -1px; }
 .rt span { font-weight: 700; font-size: 26px; color: #6B7280; margin-top: 2px; }
+#r2 { background: #FFF4C2; }
 #rates .src { position: absolute; right: 34px; top: 30px; font-weight: 600; font-size: 22px; color: #9CA3AF; }
 #calc { top: 790px; height: 610px; padding: 34px 40px; transform-origin: 425px 305px; }
 #calc .lbl { font-weight: 700; font-size: 34px; color: #6B7280; }
@@ -47,18 +48,18 @@ body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color
 <div id="ui">
   <div class="card" id="rates">
     <div class="lbl">Te pagan por cada 1.000 vistas</div>
-    <div class="src">mediana, nov. 2026</div>
+    <div class="src">clipping, 2026</div>
     <div class="row">
-      <div class="rt" id="r0"><b>$1.00</b><span>TikTok</span></div>
-      <div class="rt" id="r1"><b>$1.20</b><span>Instagram</span></div>
-      <div class="rt" id="r2"><b>$1.43</b><span>YouTube</span></div>
+      <div class="rt" id="r0"><b>$1.00</b><span>Normal</span></div>
+      <div class="rt" id="r1"><b>$2.00</b><span>Buena</span></div>
+      <div class="rt" id="r2"><b>$5.00</b><span>Top 🔥</span></div>
     </div>
   </div>
   <div class="card" id="calc">
-    <div class="lbl">Tu clip en TikTok:</div>
+    <div class="lbl">Tu clip en una campaña top:</div>
     <div id="views">0<small>vistas</small></div>
     <div id="bar"><i></i></div>
-    <div id="mult">× $1.00 por cada 1.000 vistas =</div>
+    <div id="mult">× $5.00 por cada 1.000 vistas =</div>
     <div id="earn">$0<small>USD</small></div>
   </div>
   <div id="sheet">
@@ -69,7 +70,7 @@ body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color
     <div class="it" id="i2"><span class="n">3</span>Te pagan por cada 1.000 vistas</div>
   </div>
 </div>
-<div class="cap" id="h" style="top: 300px"><span class="y xl" id="h1">Mil dólares 💸</span><span id="h2">por un clip viral 🤯</span></div>
+<div class="cap" id="h" style="top: 300px"><span class="y xl" id="h1">5 mil dólares 💸</span><span id="h2">por un clip viral 🤯</span></div>
 <div class="cap" id="z" style="top: 300px"><span id="z1">Sin ser famoso 😳</span><span class="y" id="z2">y con 0 seguidores</span></div>
 <div class="cap" id="k" style="top: 540px"><span id="k1">¿Cómo empiezo? 👀</span><span class="xl" id="k2">Comenta</span><span class="y xl" id="k3">CLIP 👇</span><span class="s" id="k4">y te mando el paso a paso 📩</span><span class="xs" id="k5">(sígueme para recibirlo)</span></div>
 <div id="flash"></div>
@@ -150,7 +151,7 @@ window.seek = (t) => {
   const p = Math.max(0, Math.min(1, (t - T0) / (T1 - T0)));
   const v = 1e6 * p * p * p;
   vEl.firstChild.nodeValue = fmtV(v);
-  eEl.firstChild.nodeValue = fmtE(v / 1000);
+  eEl.firstChild.nodeValue = fmtE(v / 1000 * 5);
 };
 Promise.all([
   document.fonts.load('700 60px "TT"', 'Aa'), document.fonts.load('800 60px "TT"', 'Aa'), document.fonts.load('600 60px "TT"', 'Aa'),

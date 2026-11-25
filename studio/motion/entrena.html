@@ -66,7 +66,7 @@ body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color
 <body>
 <div id="ui">
   <div class="card" id="task">
-    <div id="thd"><span style="font-size: 40px">🧠</span><span class="nm">Tarea de IA</span><span id="rate">💵 hasta $7.50/h</span></div>
+    <div id="thd"><span style="font-size: 40px">🧠</span><span class="nm">Tarea de IA</span><span id="rate">💵 pago en USD</span></div>
     <div class="tb" id="t0"><div class="lb">Frase en español</div><div class="ph">🇨🇴 «Me tiraron los perros»</div><div class="lb" style="margin-top: 22px">Respuesta de la IA</div><div class="ai" id="a0">Me atacaron unos perros 🐕</div><div class="btns"><div class="bt">✅ Correcta</div><div class="bt" id="x0">❌ Incorrecta</div></div><div class="lb" style="margin-top: 26px">Tu corrección</div><div class="inpb"><span id="c0"></span><span class="cur"></span></div><div class="st" id="s0">✅ Corregido</div></div>
     <div class="tb" id="t1"><div class="lb">Frase en español</div><div class="ph">🇲🇽 «Está bien chido»</div><div class="lb" style="margin-top: 22px">Respuesta de la IA</div><div class="ai" id="a1">Está muy frío 🥶</div><div class="btns"><div class="bt">✅ Correcta</div><div class="bt" id="x1">❌ Incorrecta</div></div><div class="lb" style="margin-top: 26px">Tu corrección</div><div class="inpb"><span id="c1"></span><span class="cur"></span></div><div class="st" id="s1">✅ Corregido</div></div>
     <div class="tb" id="t2"><div class="lb">Frase en español</div><div class="ph">🇦🇷 «Estoy al horno»</div><div class="lb" style="margin-top: 22px">Respuesta de la IA</div><div class="ai" id="a2">Estoy cocinando 🍗</div><div class="btns"><div class="bt">✅ Correcta</div><div class="bt" id="x2">❌ Incorrecta</div></div><div class="lb" style="margin-top: 26px">Tu corrección</div><div class="inpb"><span id="c2"></span><span class="cur"></span></div><div class="st" id="s2">✅ Corregido</div></div>
@@ -79,7 +79,7 @@ body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color
     <div id="pago">📅 Pago semanal por PayPal o AirTM</div>
     <div class="src">Fuente: Outlier, noviembre 2026</div>
     <div id="hr"></div>
-    <div id="mlab">40 h a la semana = hasta</div>
+    <div id="mlab">A $29 la hora, 40 h a la semana:</div>
     <div id="mtot">$0<small>al mes</small></div>
     <div id="minw">Mínimo en México: $489 al mes 💀 (STPS 2026)</div>
   </div>
@@ -89,13 +89,13 @@ body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color
     <h3>Cómo entrar:</h3>
     <div class="it" id="i0"><span class="e">🌐</span><div>Aplica en la web oficial<small>gratis · nunca pagues por entrar</small></div></div>
     <div class="it" id="i1"><span class="e">📝</span><div>Pasa la prueba de español<small>sin experiencia en IA</small></div></div>
-    <div class="it" id="i2"><span class="e">⏰</span><div>Elige tus horas<small>la mayoría hace 5 a 10 h por semana</small></div></div>
+    <div class="it" id="i2"><span class="e">⏰</span><div>Elige tus horas<small>hasta 40 h por semana</small></div></div>
   </div>
 </div>
 <div class="cap" id="h" style="top: 262px"><span class="s" id="h1">Te pagan en</span><span class="y xl" id="h2">DÓLARES 💵</span><span id="h3">por corregir a la IA 🤖</span></div>
 <div class="cap" id="g" style="top: 330px"><span id="g1">La IA no entiende 😂</span><span class="y l" id="g2">cómo hablamos</span></div>
-<div class="cap" id="z" style="top: 262px"><span class="s" id="z0">Hasta</span><span class="y xl" id="z1">$1,300 al mes 💸</span><span id="z2">casi 3× el mínimo 🤯</span></div>
-<div class="cap" id="v" style="top: 330px"><span id="v1">Sin experiencia en IA 😳</span><span class="y l" id="v2">solo tu español 🙌</span></div>
+<div class="cap" id="z" style="top: 262px"><span class="s" id="z0">Hasta</span><span class="y xl" id="z1">$5,000 al mes 💸</span><span id="z2">10× el mínimo 🤯</span></div>
+<div class="cap" id="v" style="top: 330px"><span id="v1">Sin experiencia en IA 😳</span><span class="y l" id="v2">y desde tu casa 🙌</span></div>
 <div class="cap" id="k" style="top: 540px"><span id="k1">¿Quieres los links? 👀</span><span class="xl" id="k2">Comenta</span><span class="y xl" id="k3">ENTRENA 👇</span><span class="s" id="k4">y te mando dónde aplicar 📩</span><span class="xs" id="k5">(sígueme para recibirlo)</span></div>
 <div class="tap" id="tap"></div>
 <div id="flash"></div>
@@ -157,7 +157,7 @@ tl.to('#g', { autoAlpha: 0, duration: 0.12 }, MO - 0.1)
   .to('#ui', { scale: 1.0, duration: 0.4, ease: 'power2.out' }, MO);
 ROWT.forEach((t, i) => tl.fromTo(`#r${i}`, { autoAlpha: 0, x: 40 }, { autoAlpha: 1, x: 0, duration: 0.24 }, t));
 tl.fromTo('#pago', { autoAlpha: 0, x: 40 }, { autoAlpha: 1, x: 0, duration: 0.24 }, PAGO)
-  .to(M, { v: 1300, duration: B - C0, ease: 'power2.in' }, C0)
+  .to(M, { v: 5000, duration: B - C0, ease: 'power2.in' }, C0)
   .to('#flash', { opacity: 0.7, duration: 0.05, ease: 'none' }, B - 0.05)
   .to('#flash', { opacity: 0, duration: 0.3 }, B)
   .fromTo('#mtot', { scale: 1 }, { scale: 1.12, duration: 0.14, yoyo: true, repeat: 1, ease: 'power2.out', transformOrigin: '0% 50%' }, B)

@@ -7,12 +7,12 @@ Mot-clé du reel « Te pagan en DÓLARES por corregir a la IA » (tâches d'IA e
 ```
 ¡Aquí va! 🤖 Cómo te pagan en dólares por entrenar IA en español:
 
-1. Entra a outlier.ai (la web oficial, es de Scale AI) y aplica a un proyecto en español: hay para escribir, evaluar respuestas de la IA o conversar por voz.
-2. Haz la prueba de español con calma: no piden experiencia en IA.
-3. Elige tus horas: la mayoría hace de 5 a 10 por semana.
+1. Entra a outlier.ai (la web oficial, es de Scale AI) y aplica a un proyecto en español: hay para escribir, evaluar respuestas de la IA, programar o conversar por voz.
+2. Haz la prueba con calma: no piden experiencia en IA.
+3. Elige tus horas: hasta 40 por semana.
 4. Te pagan cada semana por PayPal o AirTM.
 
-Tarifas publicadas: hasta $7.50 USD la hora en español, y de $14 a $29 si sabes programar (ahí piden carrera en sistemas).
+Tarifas publicadas: de $14 a $29 USD la hora si sabes programar (piden carrera en sistemas) y hasta $7.50 en español general. A $29 la hora y 40 h por semana: hasta $5,000 al mes.
 ```
 
 ## Message 2
@@ -47,5 +47,5 @@ Para que no te estafen 🚨
 - Avis mitigés : accusations de non-paiement (Inc.) : https://www.inc.com/sam-blum/its-a-scam-accusations-of-mass-non-payment-grow-against-scale-ais-subsidiary-outlier-ai.html ; 3,2/5 et 61 % de recommandation sur Glassdoor selon DeleteMe (août 2026) : https://joindeleteme.com/is-it-scam/is-outlier-ai-a-scam/
 - Prolific, annonce « AI Trainer - Advanced Spanish Fluency (Mexico) » : https://job-boards.greenhouse.io/prolific/jobs/4720310101
 - Salaire minimum Mexique 2026 : 315,04 MXN par jour, 9 582,47 MXN par mois (STPS/CONASAMI) : https://www.bloomberglinea.com/latinoamerica/mexico/cuanto-y-cuando-entra-en-vigor-el-aumento-del-salario-minimo-2026-en-mexico/ ; au taux du 25/11/2026 (1 USD = 19,60 MXN, Alpha Vantage) ≈ 489 USD.
-- Calcul du reel : 7,50 USD × 40 h × 52/12 semaines = 1 300 USD par mois au maximum, soit 2,7 fois le minimum mexicain (« casi 3× »).
+- Calcul du reel (mis à jour le 25/11/2026, tarif maximum publié) : 29 USD × 40 h × 52/12 semaines = 5 027 USD par mois, affiché « hasta $5,000 », soit 10,3 fois le minimum mexicain (« 10× »).
 - Anti-arnaque : un employeur honnête ne demande jamais de frais pour un emploi (FTC) : https://consumer.ftc.gov/comment/187350 ; marché noir de comptes Outlier (AlgorithmWatch) : https://algorithmwatch.org/en/scams-and-shadow-workers-a-black-market/
