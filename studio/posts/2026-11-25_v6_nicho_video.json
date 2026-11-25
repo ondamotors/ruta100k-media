@@ -1,0 +1,58 @@
+{
+ "id": "2026-11-25_v6_nicho_video",
+ "kind": "tiktok_video",
+ "series": "IA GRATIS",
+ "foot_left": "Solo lo que Google publicó",
+ "foot_last": "",
+ "scenes": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "kicker": "Gratis · de Google",
+   "lines": [
+    "Espía a tu",
+    "competencia"
+   ],
+   "size": 220,
+   "sub": "Con IA. <b>En minutos.</b>",
+   "dur": 1.8
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "Se llama Deep Research.",
+   "text": "Gemini lee cientos de fuentes por ti.",
+   "dur": 1.7
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "Paso 1",
+   "h": "Pídele un análisis de tu competencia.",
+   "text": "Google lo pone de ejemplo. <b>Literal.</b>",
+   "dur": 1.9
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "Paso 2 · no te lo saltes",
+   "h": "Te arma un informe con fuentes.",
+   "text": "Y lo conviertes en web o en podcast.",
+   "dur": 1.9
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "NICHO",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme NICHO por mensaje.",
+    "Te mando 7 prompts para espiar tu nicho y sacar 30 ideas."
+   ],
+   "dur": 2.0
+  }
+ ]
+}
