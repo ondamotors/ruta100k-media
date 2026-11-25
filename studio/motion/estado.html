@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+:root { --y: #FFE14D; --red: #E5484D; --green: #16A34A; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #EEF0F3; }
+body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color: #111; }
+#ui { position: absolute; inset: 0; background: #EEF0F3; transform-origin: 485px 960px; }
+#phone { position: absolute; left: 60px; top: 530px; width: 850px; height: 870px; background: #fff; border-radius: 34px; box-shadow: 0 10px 30px rgba(17,17,17,0.07); overflow: hidden; }
+.scr { position: absolute; inset: 0; padding: 30px 34px; }
+.hd { font-weight: 800; font-size: 46px; }
+.path { margin-top: 8px; font-weight: 600; font-size: 28px; color: #6B7280; }
+.sec { margin-top: 34px; font-weight: 700; font-size: 30px; color: #6B7280; }
+.tool { margin-top: 18px; height: 112px; border-radius: 26px; background: #F5F6F8; display: flex; align-items: center; gap: 22px; padding: 0 26px; font-weight: 700; font-size: 40px; }
+.tool .ic { width: 66px; height: 66px; border-radius: 18px; background: #fff; display: grid; place-items: center; font-size: 38px; }
+.tool .ch { margin-left: auto; color: #9CA3AF; font-size: 40px; }
+#t3 { outline: 0 solid var(--y); }
+#B { transform: translateX(100%); }
+#B .sub { margin-top: 6px; font-weight: 600; font-size: 30px; color: #6B7280; }
+#prog { margin-top: 22px; height: 14px; border-radius: 8px; background: #EEF0F3; overflow: hidden; }
+#prog i { display: block; height: 100%; width: 0%; background: #111; border-radius: 8px; }
+.ck { margin-top: 10px; height: 74px; border-radius: 20px; display: flex; align-items: center; padding: 0 22px; font-weight: 700; font-size: 34px; position: relative; }
+.ck .st { margin-left: auto; width: 46px; height: 46px; position: relative; }
+.ck .sp, .ck .ok { position: absolute; inset: 0; border-radius: 50%; display: grid; place-items: center; }
+.ck .sp { border: 5px solid #E5E7EB; border-top-color: #111; }
+.ck .ok { background: #E5E7EB; color: #6B7280; font-size: 26px; font-weight: 800; }
+#c5 { background: #fff; }
+#sheet { position: absolute; left: 60px; top: 858px; width: 850px; height: 560px; background: #fff; border-radius: 40px; box-shadow: 0 -10px 50px rgba(17,17,17,0.18); padding: 26px 40px; z-index: 6; }
+#sheet .grab { width: 90px; height: 10px; border-radius: 9px; background: #D1D5DB; margin: 0 auto 24px; }
+#sheet h3 { font-weight: 800; font-size: 42px; line-height: 1.15; margin-bottom: 14px; }
+.it { display: flex; align-items: center; gap: 18px; height: 112px; font-weight: 700; font-size: 38px; line-height: 1.15; border-top: 2px solid #F1F2F5; }
+.it .no { width: 56px; height: 56px; border-radius: 50%; background: var(--red); color: #fff; display: grid; place-items: center; font-size: 30px; font-weight: 800; flex: none; }
+.cap { position: absolute; z-index: 12; left: 60px; right: 170px; display: flex; flex-direction: column; align-items: center; }
+.cap span { display: inline-block; font-weight: 700; font-size: 60px; line-height: 1.16; padding: 6px 24px 10px; border-radius: 20px; background: #fff; color: #111; margin-top: -6px; text-align: center; white-space: nowrap; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+.cap span.y { background: var(--y); }
+.cap span.xl { font-size: 92px; font-weight: 800; padding: 6px 30px 12px; }
+.cap span.s { font-size: 48px; }
+.cap span.xs { font-size: 40px; font-weight: 600; }
+#flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 50; }
+.tap { position: absolute; width: 96px; height: 96px; margin: -48px 0 0 -48px; border-radius: 50%; background: rgba(120,120,128,0.45); border: 4px solid rgba(255,255,255,0.95); box-shadow: 0 6px 24px rgba(0,0,0,0.25); z-index: 40; opacity: 0; }
+</style>
+</head>
+<body>
+<div id="ui">
+  <div id="phone">
+    <div class="scr" id="A">
+      <div class="hd">TikTok Studio</div>
+      <div class="path">Perfil → ☰ → TikTok Studio</div>
+      <div class="sec">Herramientas</div>
+      <div class="tool" id="t1"><div class="ic">📊</div>Analíticas<span class="ch">›</span></div>
+      <div class="tool" id="t2"><div class="ic">💰</div>Monetización<span class="ch">›</span></div>
+      <div class="tool" id="t3"><div class="ic">🛡️</div>Account check<span class="ch">›</span></div>
+    </div>
+    <div class="scr" id="B">
+      <div class="hd">‹ Account check</div>
+      <div class="sub">Tu cuenta y tus últimos 30 posts</div>
+      <div id="prog"><i></i></div>
+      <div id="cks"></div>
+    </div>
+  </div>
+  <div id="sheet">
+    <div class="grab"></div>
+    <h3>Lo que te saca del Para ti, según TikTok:</h3>
+    <div class="it" id="i0"><span class="no">✕</span>Pedir «like por like»</div>
+    <div class="it" id="i1"><span class="no">✕</span>Subir videos de otros con su marca de agua</div>
+    <div class="it" id="i2"><span class="no">✕</span>Promocionar sin marcar el contenido comercial</div>
+  </div>
+</div>
+<div class="cap" id="h" style="top: 300px"><span class="y xl" id="h1">¿Shadowban? 👀</span><span id="h2">hay un botón para verlo 👇</span></div>
+<div class="cap" id="z" style="top: 300px"><span id="z1">Si aquí sale un video 👀</span><span class="y" id="z2">NO sale en el Para ti 😳</span></div>
+<div class="cap" id="k" style="top: 540px"><span id="k1">¿Te salió algo? 👀</span><span class="xl" id="k2">Comenta</span><span class="y xl" id="k3">ESTADO 👇</span><span class="s" id="k4">y te mando cómo apelar 📩</span><span class="xs" id="k5">(sígueme para recibirlo)</span></div>
+<div class="tap" id="tap"></div>
+<div id="flash"></div>
+
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<script>
+const CKS = ['Iniciar sesión', 'Publicar', 'Comentar', 'Editar tu perfil', 'Enviar mensajes', 'Posts fuera del Para ti', 'Infracciones'];
+const cks = document.getElementById('cks');
+CKS.forEach((c, i) => cks.insertAdjacentHTML('beforeend', `<div class="ck" id="c${i}">${c}<div class="st"><div class="sp"></div><div class="ok">✓</div></div></div>`));
+const tl = gsap.timeline({ paused: true, defaults: { ease: 'power3.out' } });
+const pop = (sel, at) => tl.fromTo(sel, { autoAlpha: 0, scale: 0.55 }, { autoAlpha: 1, scale: 1, duration: 0.32, ease: 'back.out(2.2)' }, at);
+function tapAt(x, y, at) {
+  tl.set('#tap', { left: x, top: y, scale: 1.25, autoAlpha: 0 }, at - 0.1)
+    .to('#tap', { autoAlpha: 1, scale: 1, duration: 0.07 }, at - 0.1)
+    .to('#tap', { scale: 0.8, duration: 0.07 }, at - 0.02)
+    .to('#tap', { autoAlpha: 0, duration: 0.12 }, at + 0.1);
+}
+gsap.set('#ui', { filter: 'blur(0px) brightness(1)' });
+gsap.set(['#z1', '#z2', '#k1', '#k2', '#k3', '#k4', '#k5', '.ck .ok'], { autoAlpha: 0 });
+gsap.set('#sheet', { y: 1150 });
+gsap.set('.it', { autoAlpha: 0, x: 40 });
+
+/* 0 · accroche */
+tl.fromTo('#h', { scale: 1.06 }, { scale: 1, duration: 0.2, ease: 'back.out(2)' }, 0)
+  .fromTo('#ui', { scale: 1.0 }, { scale: 1.03, duration: 5.0, ease: 'none' }, 0)
+  .to('#h', { autoAlpha: 0, y: -20, duration: 0.15, ease: 'power2.in' }, 1.3)
+  .to('#t3', { backgroundColor: '#FFF6CC', duration: 0.2 }, 0.5);
+tapAt(470, 530 + 30 + 46 + 8 + 34 + 34 + 3 * 130 - 14, 0.86);
+const SW = 1.0;
+tl.to('#A', { xPercent: -100, duration: 0.3, ease: 'power3.inOut' }, SW)
+  .to('#B', { x: 0, duration: 0.3, ease: 'power3.inOut' }, SW);
+
+/* 1.4 · le contrôle tourne */
+const S0 = 1.4, STEP = 0.27;
+tl.to('#prog i', { width: '100%', duration: STEP * CKS.length, ease: 'none' }, S0);
+CKS.forEach((c, i) => {
+  const at = S0 + (i + 1) * STEP;
+  tl.to(`#c${i} .sp`, { rotation: 360 * 3, duration: STEP * (i + 1), ease: 'none' }, S0)
+    .set(`#c${i} .sp`, { autoAlpha: 0 }, at)
+    .fromTo(`#c${i} .ok`, { autoAlpha: 0, scale: 0.4 }, { autoAlpha: 1, scale: 1, duration: 0.18, ease: 'back.out(2.4)' }, at);
+});
+const HL = S0 + CKS.length * STEP + 0.15;
+tl.to('#c5', { backgroundColor: '#FFE14D', scale: 1.04, duration: 0.18 }, HL)
+  .to('#c5', { scale: 1, duration: 0.2 }, HL + 0.2)
+  .to('#ui', { x: -10, duration: 0.04, ease: 'none' }, HL)
+  .to('#ui', { x: 8, duration: 0.05, ease: 'none' }, HL + 0.04)
+  .to('#ui', { x: 0, duration: 0.06 }, HL + 0.09);
+pop('#z1', HL + 0.1);
+pop('#z2', HL + 0.35);
+tl.fromTo('#c5', { boxShadow: '0 0 0 0 rgba(255,225,77,0.9)' }, { boxShadow: '0 0 0 16px rgba(255,225,77,0)', duration: 0.5, repeat: 2, ease: 'power2.out' }, HL + 0.4);
+
+/* 5.6 · la feuille des règles monte */
+const SH = HL + 1.6;
+tl.to('#z', { autoAlpha: 0, duration: 0.15 }, SH - 0.1)
+  .to('#sheet', { y: 0, duration: 0.38, ease: 'power3.out' }, SH);
+[0, 1, 2].forEach((k) => tl.to(`#i${k}`, { autoAlpha: 1, x: 0, duration: 0.22 }, SH + 0.35 + k * 0.3));
+
+/* commente */
+const K = SH + 2.2;
+tl.to('#flash', { opacity: 0.55, duration: 0.05, ease: 'none' }, K - 0.05)
+  .to('#flash', { opacity: 0, duration: 0.25 }, K)
+  .to('#ui', { filter: 'blur(16px) brightness(0.62)', scale: 1.08, duration: 0.3, ease: 'power2.out' }, K);
+pop('#k1', K + 0.06);
+pop('#k2', K + 0.3);
+pop('#k3', K + 0.5);
+pop('#k4', K + 0.85);
+pop('#k5', K + 1.05);
+tl.to('#k3', { scale: 1.07, duration: 0.35, yoyo: true, repeat: 3, ease: 'sine.inOut' }, K + 1.3);
+tl.to({}, { duration: 0.01 }, K + 3.3);
+window.DURATION = K + 3.3;
+window.TIMES = { SW, S0, STEP, N: CKS.length, HL, SH, K };
+window.seek = (t) => { tl.seek(t, false); };
+Promise.all([
+  document.fonts.load('700 60px "TT"', 'Aa'), document.fonts.load('800 60px "TT"', 'Aa'), document.fonts.load('600 60px "TT"', 'Aa'),
+]).then(() => document.fonts.ready).then(() => { window.seek(0); document.body.dataset.ready = '1'; });
+</script>
+</body>
+</html>
