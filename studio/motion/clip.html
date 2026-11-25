@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+:root { --y: #FFE14D; --red: #E5484D; --green: #16A34A; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #EEF0F3; }
+body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color: #111; }
+#ui { position: absolute; inset: 0; background: #EEF0F3; transform-origin: 485px 960px; }
+.card { position: absolute; left: 60px; width: 850px; background: #fff; border-radius: 34px; box-shadow: 0 10px 30px rgba(17,17,17,0.07); }
+#rates { top: 524px; height: 246px; padding: 26px 34px; }
+#rates .lbl { font-weight: 600; font-size: 32px; color: #6B7280; }
+#rates .row { display: flex; gap: 16px; margin-top: 16px; }
+.rt { flex: 1; height: 118px; border-radius: 24px; background: #F5F6F8; display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.rt b { font-weight: 800; font-size: 52px; color: var(--green); letter-spacing: -1px; }
+.rt span { font-weight: 700; font-size: 26px; color: #6B7280; margin-top: 2px; }
+#rates .src { position: absolute; right: 34px; top: 30px; font-weight: 600; font-size: 22px; color: #9CA3AF; }
+#calc { top: 790px; height: 610px; padding: 34px 40px; transform-origin: 425px 305px; }
+#calc .lbl { font-weight: 700; font-size: 34px; color: #6B7280; }
+#views { margin-top: 6px; font-weight: 800; font-size: 120px; line-height: 1; letter-spacing: -3px; }
+#views small { font-size: 44px; color: #6B7280; letter-spacing: 0; margin-left: 10px; }
+#bar { margin-top: 22px; height: 18px; border-radius: 10px; background: #EEF0F3; overflow: hidden; }
+#bar i { display: block; height: 100%; width: 0%; background: var(--green); border-radius: 10px; }
+#mult { margin-top: 22px; font-weight: 700; font-size: 34px; color: #6B7280; }
+#earn { margin-top: 18px; font-weight: 800; font-size: 150px; line-height: 1; color: var(--green); letter-spacing: -4px; }
+#earn small { font-size: 40px; color: #9CA3AF; letter-spacing: 0; margin-left: 12px; }
+#sheet { position: absolute; left: 60px; top: 858px; width: 850px; height: 560px; background: #fff; border-radius: 40px; box-shadow: 0 -10px 50px rgba(17,17,17,0.18); padding: 26px 40px; z-index: 6; }
+#sheet .grab { width: 90px; height: 10px; border-radius: 9px; background: #D1D5DB; margin: 0 auto 24px; }
+#sheet h3 { font-weight: 800; font-size: 46px; margin-bottom: 12px; }
+.it { display: flex; align-items: center; gap: 20px; height: 120px; font-weight: 700; font-size: 40px; line-height: 1.15; border-top: 2px solid #F1F2F5; }
+.it .n { width: 60px; height: 60px; border-radius: 50%; background: #111; color: #fff; display: grid; place-items: center; font-size: 32px; font-weight: 800; flex: none; }
+.cap { position: absolute; z-index: 12; left: 60px; right: 170px; display: flex; flex-direction: column; align-items: center; }
+.cap span { display: inline-block; font-weight: 700; font-size: 60px; line-height: 1.16; padding: 6px 24px 10px; border-radius: 20px; background: #fff; color: #111; margin-top: -6px; text-align: center; white-space: nowrap; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+.cap span.y { background: var(--y); }
+.cap span.xl { font-size: 92px; font-weight: 800; padding: 6px 30px 12px; }
+.cap span.s { font-size: 48px; }
+.cap span.xs { font-size: 40px; font-weight: 600; }
+.conf { position: absolute; left: 0; top: 0; font-size: 64px; line-height: 1; opacity: 0; z-index: 11; }
+#flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 50; }
+</style>
+</head>
+<body>
+<div id="ui">
+  <div class="card" id="rates">
+    <div class="lbl">Te pagan por cada 1.000 vistas</div>
+    <div class="src">mediana, nov. 2026</div>
+    <div class="row">
+      <div class="rt" id="r0"><b>$1.00</b><span>TikTok</span></div>
+      <div class="rt" id="r1"><b>$1.20</b><span>Instagram</span></div>
+      <div class="rt" id="r2"><b>$1.43</b><span>YouTube</span></div>
+    </div>
+  </div>
+  <div class="card" id="calc">
+    <div class="lbl">Tu clip en TikTok:</div>
+    <div id="views">0<small>vistas</small></div>
+    <div id="bar"><i></i></div>
+    <div id="mult">× $1.00 por cada 1.000 vistas =</div>
+    <div id="earn">$0<small>USD</small></div>
+  </div>
+  <div id="sheet">
+    <div class="grab"></div>
+    <h3>Así funciona el clipping:</h3>
+    <div class="it" id="i0"><span class="n">1</span>Eliges la campaña de un creador o una marca</div>
+    <div class="it" id="i1"><span class="n">2</span>Cortas sus videos y subes los clips en TU cuenta</div>
+    <div class="it" id="i2"><span class="n">3</span>Te pagan por cada 1.000 vistas</div>
+  </div>
+</div>
+<div class="cap" id="h" style="top: 300px"><span class="y xl" id="h1">Mil dólares 💸</span><span id="h2">por un clip viral 🤯</span></div>
+<div class="cap" id="z" style="top: 300px"><span id="z1">Sin ser famoso 😳</span><span class="y" id="z2">y con 0 seguidores</span></div>
+<div class="cap" id="k" style="top: 540px"><span id="k1">¿Cómo empiezo? 👀</span><span class="xl" id="k2">Comenta</span><span class="y xl" id="k3">CLIP 👇</span><span class="s" id="k4">y te mando el paso a paso 📩</span><span class="xs" id="k5">(sígueme para recibirlo)</span></div>
+<div id="flash"></div>
+
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<script>
+const T0 = 1.45, T1 = 4.45;                 // les vues montent de 0 à 1M
+const EM = ['💸', '💵', '🤑', '💰', '🎉', '✨'];
+const confs = [];
+for (let k = 0; k < 26; k++) { const el = document.createElement('div'); el.className = 'conf'; el.textContent = EM[k % EM.length]; document.body.appendChild(el); confs.push(el); }
+let seed = 13; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+const tl = gsap.timeline({ paused: true, defaults: { ease: 'power3.out' } });
+const pop = (sel, at) => tl.fromTo(sel, { autoAlpha: 0, scale: 0.55 }, { autoAlpha: 1, scale: 1, duration: 0.32, ease: 'back.out(2.2)' }, at);
+gsap.set('#ui', { filter: 'blur(0px) brightness(1)' });
+gsap.set(['#z1', '#z2', '#k1', '#k2', '#k3', '#k4', '#k5'], { autoAlpha: 0 });
+gsap.set('#sheet', { y: 1150 });
+gsap.set('.it', { autoAlpha: 0, x: 40 });
+
+/* 0 · accroche */
+tl.fromTo('#h', { scale: 1.06 }, { scale: 1, duration: 0.2, ease: 'back.out(2)' }, 0)
+  .fromTo('#ui', { scale: 1.0 }, { scale: 1.03, duration: T1, ease: 'none' }, 0)
+  .to('#h', { autoAlpha: 0, y: -20, duration: 0.15, ease: 'power2.in' }, 1.35);
+[0, 1, 2].forEach((i) => tl.fromTo(`#r${i}`, { scale: 0.85 }, { scale: 1, duration: 0.25, ease: 'back.out(2.4)' }, 0.35 + i * 0.18));
+
+/* 1.45 → 4.45 · les vues montent */
+tl.to('#bar i', { width: '100%', duration: T1 - T0, ease: 'power3.in' }, T0);
+const MIL = [10000, 100000];
+MIL.forEach((m) => { const at = T0 + Math.cbrt(m / 1e6) * (T1 - T0); tl.fromTo('#calc', { scale: 1 }, { scale: 1.03, duration: 0.08, yoyo: true, repeat: 1 }, at); });
+
+/* 4.45 · mil dollars */
+const B = T1;
+tl.to('#flash', { opacity: 0.7, duration: 0.05, ease: 'none' }, B - 0.05)
+  .to('#flash', { opacity: 0, duration: 0.3 }, B)
+  .fromTo('#calc', { scale: 1 }, { scale: 1.07, duration: 0.14, yoyo: true, repeat: 1, ease: 'power2.out' }, B)
+  .to('#ui', { x: -18, duration: 0.05, ease: 'none' }, B)
+  .to('#ui', { x: 14, duration: 0.06, ease: 'none' }, B + 0.05)
+  .to('#ui', { x: -8, duration: 0.06, ease: 'none' }, B + 0.11)
+  .to('#ui', { x: 0, duration: 0.08 }, B + 0.17);
+confs.forEach((el) => {
+  const ang = rnd() * Math.PI * 2, sp = 260 + rnd() * 440;
+  const dx = Math.cos(ang) * sp, dy = Math.sin(ang) * sp * 0.8 - 220;
+  const sc = 0.8 + rnd() * 0.6, rot = (rnd() - 0.5) * 260;
+  tl.set(el, { left: 420, top: 1230, x: 0, y: 0, rotation: 0, scale: 0.4, autoAlpha: 0 }, B)
+    .to(el, { autoAlpha: 1, scale: sc, duration: 0.08 }, B)
+    .to(el, { x: dx, y: dy, rotation: rot, duration: 0.45, ease: 'power3.out' }, B)
+    .to(el, { y: dy + 700, duration: 0.65, ease: 'power2.in' }, B + 0.45)
+    .to(el, { autoAlpha: 0, duration: 0.25 }, B + 0.8);
+});
+pop('#z1', B + 0.15);
+pop('#z2', B + 0.4);
+
+/* 6.3 · comment ça marche */
+const SH = B + 1.85;
+tl.to('#z', { autoAlpha: 0, duration: 0.15 }, SH - 0.1)
+  .to('#sheet', { y: 0, duration: 0.38, ease: 'power3.out' }, SH);
+[0, 1, 2].forEach((k) => tl.to(`#i${k}`, { autoAlpha: 1, x: 0, duration: 0.22 }, SH + 0.35 + k * 0.3));
+
+/* commente */
+const K = SH + 2.25;
+tl.to('#flash', { opacity: 0.55, duration: 0.05, ease: 'none' }, K - 0.05)
+  .to('#flash', { opacity: 0, duration: 0.25 }, K)
+  .to('#ui', { filter: 'blur(16px) brightness(0.62)', scale: 1.08, duration: 0.3, ease: 'power2.out' }, K);
+pop('#k1', K + 0.06);
+pop('#k2', K + 0.3);
+pop('#k3', K + 0.5);
+pop('#k4', K + 0.85);
+pop('#k5', K + 1.05);
+tl.to('#k3', { scale: 1.07, duration: 0.35, yoyo: true, repeat: 3, ease: 'sine.inOut' }, K + 1.3);
+tl.to({}, { duration: 0.01 }, K + 3.3);
+window.DURATION = K + 3.3;
+window.TIMES = { T0, T1, B, SH, K };
+
+const vEl = document.getElementById('views'), eEl = document.getElementById('earn');
+const fmtV = (v) => v >= 1e6 ? '1M' : v >= 1e4 ? Math.floor(v / 1000) + 'K' : v >= 1000 ? (v / 1000).toFixed(1) + 'K' : String(Math.floor(v));
+const fmtE = (d) => '$' + String(Math.floor(d)).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+window.seek = (t) => {
+  tl.seek(t, false);
+  const p = Math.max(0, Math.min(1, (t - T0) / (T1 - T0)));
+  const v = 1e6 * p * p * p;
+  vEl.firstChild.nodeValue = fmtV(v);
+  eEl.firstChild.nodeValue = fmtE(v / 1000);
+};
+Promise.all([
+  document.fonts.load('700 60px "TT"', 'Aa'), document.fonts.load('800 60px "TT"', 'Aa'), document.fonts.load('600 60px "TT"', 'Aa'),
+]).then(() => document.fonts.ready).then(() => { window.seek(0); document.body.dataset.ready = '1'; });
+</script>
+</body>
+</html>
