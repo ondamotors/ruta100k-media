@@ -50,10 +50,10 @@ C'est elle qui décide si on s'arrête. Elle doit se comprendre en un coup d'œi
 
 Pour garder les gens le plus longtemps possible :
 1. Une première slide qui contredit, choque ou promet, avec un fait vrai.
-2. Une slide 2 qui relance (« No lo digo yo, lo dijo TikTok », « la 3 casi nadie la conoce »).
+2. Une slide 2 qui relance (« No lo digo yo, lo dijo TikTok », « no te saltes la 3 »), à varier d'un post à l'autre.
 3. Un titre et une première ligne de légende qui ouvrent une boucle vers la fin (« La 5 puede sacar tu cuenta del Para ti »).
 
-Puis une relance dans le kicker de chaque slide (« 3 de 5 · la que casi nadie sabe »). Modèle : `posts/2026-11-25_p9_algoritmo_tiktok.json`.
+Puis une relance dans le kicker de chaque slide (« 3 de 5 · no te la saltes »). Jamais d'affirmation invérifiable sur ce que font les autres (« casi nadie la usa », « la que más funciona ») : la relance pousse à lire, elle n'invente pas de fait. Modèle : `posts/2026-11-25_p9_algoritmo_tiktok.json`.
 
 ## Mot-clé en commentaire
 

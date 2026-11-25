@@ -1,4 +1,4 @@
-# TikTok Studio: lo que te muestra y casi nadie mira
+# TikTok Studio: lo que te muestra, punto por punto
 
 Recurso gratis de RUTA 100K para seguidores. Cada punto sale de una página oficial de TikTok, enlazada al lado. Verificado el 25/11/2026. Cuando la idea es nuestra y no de TikTok, lo decimos.
 
