@@ -41,11 +41,25 @@ ManyChat ne peut pas se brancher sur un compte TikTok basé dans l'UE, et rien n
 - Créer la ressource `recursos/<slug>.md` (même style que les existantes, pied RUTA 100K) et ajouter sa ligne dans `recursos/README.md` (mot-clé, lien GitHub, réponse DM prête à coller).
 - Un mot-clé = une seule ressource. Ne jamais réutiliser un mot-clé existant.
 
+## TikTok natif
+
+Un carrousel pensé pour Instagram ne suffit pas sur TikTok. Chaque post a donc deux versions :
+- Instagram : la version éditoriale 4:5 (kind `carousel`, `<date>_p<N>_<slug>.json`), export `instagram/NN.jpg` depuis `out/<id>/ig/`.
+- TikTok : une version native plein écran (kind `tiktok`, `<date>_p<N>_<slug>_tiktok.json`, gabarit `templates/tiktok.html.j2`), export `tiktok/NN.jpg` depuis `out/<id>/tt/`. Modèle : `posts/_exemple_tiktok_stack.json`.
+
+Règles de la version TikTok :
+- Une idée par slide, 12 mots maximum hors listes, 5 à 8 slides. Types : hook, punch, num, list, cta. Thèmes dark, light, coral.
+- La couverture arrête le pouce : un chiffre énorme, une contradiction ou une promesse concrète, jamais une phrase de contexte.
+- Ton oral et direct, phrases courtes (« Ojo », « Nadie te lo dice »). « POV » seulement si c'est vrai.
+- Le gabarit garde le texte dans la zone sûre (boutons à droite, légende en bas) : ne jamais le contourner avec du style en ligne.
+- Légende TikTok : d'abord les mots que les gens tapent dans la recherche, puis l'appel à l'action, puis 3 hashtags.
+- Le post RETO du jour sur TikTok devient la série « Día N/60 », toujours au même gabarit : couverture `num` avec le vrai nombre d'abonnés lu dans Metricool, puis la leçon du jour. La série doit se reconnaître d'un coup d'œil et donner envie de voir la suite.
+
 ## Produire un post
 
 1. JSON dans `studio/posts/<AAAA-MM-JJ>_p<N>_<slug>.json`. Schéma : `studio/README.md`. Modèles : les posts existants, dont les longueurs de texte sont calibrées. 6 à 10 slides. Couverture : un chiffre ou une promesse concrète. « Día N » dans le kicker de couverture ou le pied (`foot_left`).
 2. Rendu : `cd studio && python3 render.py posts/<fichier>.json`. Zéro ligne « [A CORRIGER] » : raccourcir le texte ou ajouter `"compact": true`. Puis ouvrir `out/<id>/planche.png` avec Read et vérifier chaque slide à l'œil.
-3. Export JPEG qualité 92 : `<AAAA-MM-JJ>/p<N>_<slug>/tiktok/NN.jpg` (depuis `out/<id>/tt/`) et `.../instagram/NN.jpg` (depuis `out/<id>/ig/`), à la racine du dépôt.
+3. Export JPEG qualité 92 à la racine du dépôt : `<AAAA-MM-JJ>/p<N>_<slug>/tiktok/NN.jpg` depuis la version TikTok native (`out/<id>_tiktok/tt/`) et `.../instagram/NN.jpg` depuis la version Instagram (`out/<id>/ig/`).
 4. Commit avec `git -c user.name="RUTA 100K" -c user.email="studio@ruta100k.invalid"`, jamais d'adresse personnelle. Push sur main.
 5. Metricool `createScheduledPost`, deux fois au même créneau, avec media = `https://raw.githubusercontent.com/ondamotors/ruta100k-media/<SHA du commit>/<chemin>` (le SHA, jamais main) et autoPublish true :
    - TikTok : images `tiktok/NN.jpg`, providers tiktok, tiktokData { privacyOption PUBLIC_TO_EVERYONE, title de 90 caractères maximum, autoAddMusic true, photoCoverIndex 0 }.

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="{{ root }}/brand/tiktok.css">
+</head>
+<body>
+{%- set theme = s.theme or 'dark' %}
+<section class="tt {{ theme }} {{ s.type }}">
+  <div class="grid">{% for k in range(7) %}<i style="left: {{ (80 + k * 830 / 6)|round(1) }}px"></i>{% endfor %}</div>
+  <div class="safe">
+    <header class="top">
+      <span class="brand">RUTA <em>100K</em></span>
+      <span class="meta mono">{{ post.series }} · {{ '%02d' % i }}/{{ '%02d' % n }}</span>
+    </header>
+    <div class="body">
+    {%- if s.kicker %}<div class="kicker mono">{{ s.kicker }}</div>{% endif %}
+    {%- if s.type == 'hook' %}
+      {% for l in s.lines %}<div class="display" data-fit style="font-size: {{ s.size or 190 }}px">{{ l|safe }}</div>{% endfor %}
+      {% if s.sub %}<p class="sub">{{ s.sub|safe }}</p>{% endif %}
+    {%- elif s.type == 'punch' %}
+      <h2 class="h">{{ s.h|safe }}</h2>
+      {% if s.text %}<p class="text">{{ s.text|safe }}</p>{% endif %}
+    {%- elif s.type == 'num' %}
+      <div class="number" data-fit{% if s.number_size %} style="font-size: {{ s.number_size }}px"{% endif %}>{{ s.number }}</div>
+      <div class="label">{{ s.label|safe }}</div>
+      {% if s.text %}<p class="text">{{ s.text|safe }}</p>{% endif %}
+    {%- elif s.type == 'list' %}
+      {% if s.h %}<h2 class="h">{{ s.h|safe }}</h2>{% endif %}
+      {% for it in s['items'] %}<div class="item"><div class="n">{{ it.n or loop.index }}</div><div><div class="t">{{ it.t|safe }}</div>{% if it.d %}<div class="d">{{ it.d|safe }}</div>{% endif %}</div></div>{% endfor %}
+    {%- elif s.type == 'cta' %}
+      <div class="verb">{{ s.verb }}</div>
+      <div class="keyword" data-fit>{{ s.keyword }}</div>
+      <div class="steps">{% for r in s.steps %}<div class="step"><span class="n">{{ '%02d' % loop.index }}</span><span>{{ r|safe }}</span></div>{% endfor %}</div>
+    {%- endif %}
+    </div>
+    <footer class="foot mono">
+      <span>{{ s.foot_left or post.foot_left or '' }}</span>
+      <span>{{ 'Desliza →' if i < n else (post.foot_last or '') }}</span>
+    </footer>
+  </div>
+</section>
+<script>
+  const textWidth = el => { const r = document.createRange(); r.selectNodeContents(el); return r.getBoundingClientRect().width; };
+  document.fonts.ready.then(() => {
+    document.querySelectorAll('[data-fit]').forEach(el => {
+      const max = el.parentElement.getBoundingClientRect().width;
+      let size = parseFloat(getComputedStyle(el).fontSize);
+      while (textWidth(el) > max && size > 40) { size -= 2; el.style.fontSize = size + 'px'; }
+    });
+    document.body.dataset.ready = '1';
+  });
+</script>
+</body>
+</html>

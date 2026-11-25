@@ -1,0 +1,82 @@
+{
+ "id": "_exemple_tiktok_stack",
+ "kind": "tiktok",
+ "series": "STACK $0",
+ "foot_left": "Precios verificados el 24/11/2026",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "kicker": "Lo comprobé el 24/11/2026",
+   "lines": [
+    "US$893",
+    "al año"
+   ],
+   "size": 300,
+   "sub": "Es lo que cuestan 6 apps que usan los creadores. <b>Las 6 tienen versión gratis.</b>"
+  },
+  {
+   "type": "list",
+   "theme": "light",
+   "kicker": "De pago → gratis",
+   "h": "Las 3 que más ahorran",
+   "items": [
+    {
+     "t": "Premiere Pro → Kdenlive",
+     "d": "Ahorras US$276 al año."
+    },
+    {
+     "t": "Descript → Buzz",
+     "d": "Ahorras US$192 al año."
+    },
+    {
+     "t": "Topaz Gigapixel → Upscayl",
+     "d": "Ahorras US$149 al año."
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "theme": "light",
+   "kicker": "De pago → gratis",
+   "h": "Y estas 3",
+   "items": [
+    {
+     "n": "4",
+     "t": "Lightroom → darktable",
+     "d": "Ahorras US$120 al año."
+    },
+    {
+     "n": "5",
+     "t": "Midjourney → ComfyUI",
+     "d": "Ahorras US$96 al año."
+    },
+    {
+     "n": "6",
+     "t": "ElevenLabs → Chatterbox",
+     "d": "Ahorras US$60 al año."
+    }
+   ]
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Ojo",
+   "h": "4 alternativas famosas no pasaron mi filtro.",
+   "text": "Cal.com, Cap, OpenCut y Postiz. El porqué está en la guía."
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "La guía de instalación",
+   "verb": "Comenta",
+   "keyword": "STACK",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme STACK por mensaje.",
+    "Te mando la guía con los links oficiales."
+   ]
+  }
+ ]
+}

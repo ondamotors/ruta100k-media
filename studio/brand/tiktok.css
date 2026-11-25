@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "Archivo";
+  src: url("fonts/Archivo-Variable.woff2") format("woff2");
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2190-2199, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("fonts/Archivo-Variable-ext.woff2") format("woff2");
+  font-weight: 100 900;
+  font-stretch: 62% 125%;
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face { font-family: "Plex Mono"; src: url("fonts/IBMPlexMono-400.woff2") format("woff2"); font-weight: 400; }
+@font-face { font-family: "Plex Mono"; src: url("fonts/IBMPlexMono-500.woff2") format("woff2"); font-weight: 500; }
+@font-face { font-family: "Plex Mono"; src: url("fonts/IBMPlexMono-600.woff2") format("woff2"); font-weight: 600; }
+
+/* RUTA 100K · gabarit TikTok natif, plein écran 1080 x 1920.
+   Zone sûre : 80 px à gauche, 170 px à droite (colonne de boutons), 230 px en haut (onglets), 520 px en bas (légende). */
+:root {
+  --ink: #0D0D0D; --paper: #F1F1EF; --coral: #FF5A3C; --mute: #6B6B68; --mute-d: #A5A5A1;
+  --rule: rgba(13, 13, 13, 0.16); --rule-d: rgba(241, 241, 239, 0.18);
+  --grid: rgba(13, 13, 13, 0.045); --grid-d: rgba(241, 241, 239, 0.05);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 1080px; height: 1920px; }
+body { -webkit-font-smoothing: antialiased; text-rendering: geometricPrecision; }
+b, strong { font-weight: inherit; color: var(--coral); }
+.tt { position: relative; width: 1080px; height: 1920px; overflow: hidden; font-family: "Archivo", sans-serif; font-weight: 450; color: var(--ink); background: var(--paper); }
+.tt.dark { color: var(--paper); background: var(--ink); }
+.tt.coral { color: var(--ink); background: var(--coral); }
+.tt.coral b { color: var(--paper); }
+.grid { position: absolute; inset: 0; pointer-events: none; }
+.grid i { position: absolute; top: 0; bottom: 0; width: 1px; background: var(--grid); }
+.dark .grid i { background: var(--grid-d); }
+.coral .grid i { background: rgba(13, 13, 13, 0.06); }
+.safe { position: absolute; left: 80px; top: 230px; width: 830px; height: 1170px; display: flex; flex-direction: column; }
+.top { display: flex; justify-content: space-between; align-items: baseline; padding-bottom: 16px; border-bottom: 2px solid currentColor; }
+.brand { font-weight: 800; font-stretch: 85%; font-size: 32px; letter-spacing: 0.07em; }
+.brand em { font-style: normal; color: var(--coral); }
+.coral .brand em { color: var(--paper); }
+.mono { font-family: "Plex Mono", monospace; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; }
+.top .meta { font-size: 22px; }
+.body { flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 36px 0; min-height: 0; }
+.foot { display: flex; justify-content: space-between; gap: 20px; padding-top: 14px; border-top: 1px solid var(--rule); font-size: 22px; color: var(--mute); }
+.dark .foot { border-top-color: var(--rule-d); color: var(--mute-d); }
+.coral .foot { border-top-color: rgba(13, 13, 13, 0.25); color: rgba(13, 13, 13, 0.72); }
+.kicker { font-size: 28px; color: var(--coral); margin-bottom: 30px; }
+.coral .kicker { color: var(--paper); }
+.display { font-weight: 900; font-stretch: 62%; text-transform: uppercase; line-height: 0.86; white-space: nowrap; }
+.hook .sub { font-size: 48px; line-height: 1.2; font-weight: 500; margin-top: 44px; }
+.punch .h { font-weight: 800; font-stretch: 78%; font-size: 100px; line-height: 0.98; letter-spacing: -0.01em; }
+.punch .text { font-size: 48px; line-height: 1.24; margin-top: 40px; }
+.num .number { font-weight: 900; font-stretch: 62%; font-size: 420px; line-height: 0.8; color: var(--coral); white-space: nowrap; }
+.coral .num .number { color: var(--paper); }
+.num .label { font-weight: 800; font-stretch: 78%; font-size: 80px; line-height: 1.0; margin-top: 34px; }
+.num .text { font-size: 46px; line-height: 1.24; margin-top: 30px; }
+.list .h { font-weight: 800; font-stretch: 78%; font-size: 80px; line-height: 1.0; margin-bottom: 30px; }
+.list .item { display: grid; grid-template-columns: 100px 1fr; padding: 28px 0; border-top: 1px solid var(--rule); }
+.dark .list .item { border-top-color: var(--rule-d); }
+.list .n { font-weight: 900; font-stretch: 62%; font-size: 100px; line-height: 0.82; color: var(--coral); }
+.list .t { font-weight: 750; font-stretch: 82%; font-size: 58px; line-height: 1.04; }
+.list .d { font-size: 38px; line-height: 1.24; margin-top: 10px; }
+.cta .verb { font-weight: 800; font-stretch: 80%; font-size: 100px; line-height: 1; }
+.cta .keyword { font-weight: 900; font-stretch: 62%; text-transform: uppercase; font-size: 330px; line-height: 0.86; color: var(--coral); white-space: nowrap; margin-top: 8px; }
+.cta .steps { margin-top: 48px; }
+.cta .step { display: flex; gap: 22px; font-size: 46px; line-height: 1.2; padding: 18px 0; border-top: 1px solid var(--rule-d); }
+.cta .step .n { font-family: "Plex Mono", monospace; font-weight: 600; color: var(--coral); }

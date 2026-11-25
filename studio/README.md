@@ -52,3 +52,17 @@ Options communes : `theme` (`dark` ou clair par défaut), `compact` (slide dense
 - Pas de tiret cadratin dans les textes.
 
 Polices sous licence SIL Open Font License (Archivo, IBM Plex Mono), licences dans `brand/fonts/`.
+
+## Version TikTok native
+
+`"kind": "tiktok"` rend des slides plein écran 1080 x 1920 dans `out/<id>/tt/`, texte gardé dans la zone sûre de TikTok.
+
+| type | champs |
+| --- | --- |
+| `hook` | kicker, lines[], size, sub |
+| `punch` | kicker, h, text |
+| `num` | kicker, number, number_size, label, text |
+| `list` | kicker, h, items[{n, t, d}] |
+| `cta` | kicker, verb, keyword, steps[] |
+
+Thèmes : `dark`, `light`, `coral`.

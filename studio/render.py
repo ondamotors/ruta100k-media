@@ -42,7 +42,7 @@ def overflow_report(page, height):
     return page.evaluate(
         """(h) => {
           const issues = [];
-          const slide = document.querySelector('.slide, .ovl');
+          const slide = document.querySelector('.slide, .ovl, .tt');
           if (slide && slide.scrollHeight > h + 1) issues.push('hauteur ' + slide.scrollHeight + 'px > ' + h);
           document.querySelectorAll('.body').forEach(b => {
             if (b.scrollHeight > b.clientHeight + 2) issues.push('bloc texte trop haut (' + b.scrollHeight + ' > ' + b.clientHeight + ')');
@@ -78,6 +78,24 @@ def render_post(post_path, browser, env):
             page.screenshot(path=str(out / "overlays" / f"{i:02d}_{o['id']}.png"), omit_background=True)
         page.close()
         contact_sheet(sorted((out / "overlays").glob("*.png")), out / "planche.png", cols=4, bg=(60, 60, 60))
+        shutil.rmtree(out / "_html")
+        return out, problems
+
+    if post.get("kind") == "tiktok":
+        # Version TikTok native : gabarit plein écran 1080 x 1920, contenu dans la zone sûre.
+        tpl = env.get_template("tiktok.html.j2")
+        slides = post["slides"]
+        (out / "tt").mkdir()
+        page = browser.new_page(viewport={"width": 1080, "height": 1920}, device_scale_factor=1)
+        for i, s in enumerate(slides, 1):
+            f = out / "_html" / f"{i:02d}.html"
+            f.write_text(tpl.render(post=post, s=s, i=i, n=len(slides), root=ROOT.as_uri()), encoding="utf-8")
+            page.goto(f.as_uri())
+            page.wait_for_function("document.body.dataset.ready === '1'")
+            problems += [f"slide {i:02d}: {p}" for p in overflow_report(page, 1920)]
+            page.screenshot(path=str(out / "tt" / f"{i:02d}.png"), clip={"x": 0, "y": 0, "width": 1080, "height": 1920})
+        page.close()
+        contact_sheet(sorted((out / "tt").glob("*.png")), out / "planche.png", cols=5, thumb_w=300)
         shutil.rmtree(out / "_html")
         return out, problems
 
