@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+:root { --y: #FFE14D; --red: #E5484D; --green: #16A34A; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #EEF0F3; }
+body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color: #111; }
+#ui { position: absolute; inset: 0; background: #EEF0F3; transform-origin: 485px 960px; }
+#top { position: absolute; left: 60px; top: 524px; width: 850px; height: 246px; background: #fff; border-radius: 34px; box-shadow: 0 10px 30px rgba(17,17,17,0.07); }
+#top .lbl { position: absolute; left: 40px; top: 30px; font-weight: 600; font-size: 36px; color: #6B7280; }
+#field { position: absolute; left: 36px; top: 92px; width: 778px; height: 120px; border-radius: 30px; background: #F1F2F5; display: flex; align-items: center; padding: 0 30px; gap: 22px; }
+#field .mag { font-size: 46px; }
+#typed { font-weight: 800; font-size: 62px; letter-spacing: -1px; white-space: nowrap; }
+#cursor { width: 5px; height: 66px; background: #111; border-radius: 3px; margin-left: -14px; }
+.row { position: absolute; left: 60px; width: 850px; height: 92px; border-radius: 26px; background: #fff; box-shadow: 0 6px 18px rgba(17,17,17,0.06); display: flex; align-items: center; padding: 0 22px 0 14px; }
+.ic { width: 64px; height: 64px; border-radius: 18px; display: grid; place-items: center; font-size: 42px; background: #F3F4F6; flex: none; }
+.nm { margin-left: 20px; flex: 1; font-weight: 700; font-size: 42px; white-space: nowrap; }
+.pills { position: relative; width: 250px; height: 56px; }
+.pill { position: absolute; right: 0; top: 0; height: 56px; display: flex; align-items: center; font-weight: 800; font-size: 30px; padding: 0 22px; border-radius: 999px; white-space: nowrap; }
+.q { background: #E5E7EB; color: #6B7280; }
+.yes { background: var(--green); color: #fff; }
+.no { background: var(--red); color: #fff; }
+#sheet { position: absolute; left: 60px; top: 858px; width: 850px; height: 560px; background: #fff; border-radius: 40px; box-shadow: 0 -10px 50px rgba(17,17,17,0.18); padding: 26px 44px; }
+#sheet .grab { width: 90px; height: 10px; border-radius: 9px; background: #D1D5DB; margin: 0 auto 26px; }
+#sheet h3 { font-weight: 800; font-size: 46px; margin-bottom: 18px; }
+.it { display: flex; align-items: center; gap: 20px; height: 96px; font-weight: 700; font-size: 44px; border-top: 2px solid #F1F2F5; }
+.it .ck { width: 56px; height: 56px; border-radius: 50%; background: var(--green); color: #fff; display: grid; place-items: center; font-size: 34px; font-weight: 800; flex: none; }
+.cap { position: absolute; z-index: 12; left: 60px; right: 170px; display: flex; flex-direction: column; align-items: center; }
+.cap span { display: inline-block; font-weight: 700; font-size: 60px; line-height: 1.16; padding: 6px 24px 10px; border-radius: 20px; background: #fff; color: #111; margin-top: -6px; text-align: center; white-space: nowrap; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+.cap span.y { background: var(--y); }
+.cap span.xl { font-size: 92px; font-weight: 800; padding: 6px 30px 12px; }
+.cap span.s { font-size: 48px; }
+.cap span.xs { font-size: 40px; font-weight: 600; }
+#flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 50; }
+.tap { position: absolute; width: 96px; height: 96px; margin: -48px 0 0 -48px; border-radius: 50%; background: rgba(120,120,128,0.45); border: 4px solid rgba(255,255,255,0.95); box-shadow: 0 6px 24px rgba(0,0,0,0.25); z-index: 40; opacity: 0; }
+</style>
+</head>
+<body>
+<div id="ui">
+  <div id="top">
+    <div class="lbl">¿TikTok te paga por vistas en…?</div>
+    <div id="field"><span class="mag">🔍</span><span id="typed"></span><span id="cursor"></span></div>
+  </div>
+  <div id="list"></div>
+  <div id="sheet">
+    <div class="grab"></div>
+    <h3>Y aunque vivas en 🇲🇽 o 🇧🇷:</h3>
+    <div class="it" id="i0"><span class="ck">✓</span>10K seguidores</div>
+    <div class="it" id="i1"><span class="ck">✓</span>100K vistas en 30 días</div>
+    <div class="it" id="i2"><span class="ck">✓</span>Videos de más de 1 minuto</div>
+    <div class="it" id="i3"><span class="ck">✓</span>Ser mayor de edad</div>
+  </div>
+</div>
+<div class="cap" id="h" style="top: 300px"><span class="y xl" id="h1">¿TikTok te paga? 💸</span><span id="h2">busca tu país 👇</span></div>
+<div class="cap" id="z" style="top: 330px"><span class="y" id="z1">En Latam, solo 🇲🇽 y 🇧🇷 😳</span></div>
+<div class="cap" id="k" style="top: 540px"><span id="k1">¿Tu país dijo NO? 😤</span><span class="xl" id="k2">Comenta</span><span class="y xl" id="k3">PAGO 👇</span><span class="s" id="k4">y te mando cómo cobrar igual 📩</span><span class="xs" id="k5">(sígueme para recibirlo)</span></div>
+<div class="tap" id="tap"></div>
+<div id="flash"></div>
+
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<script>
+const ROWS = [
+  { f: '🇲🇽', n: 'México', ok: true },
+  { f: '🇨🇴', n: 'Colombia', ok: false },
+  { f: '🇦🇷', n: 'Argentina', ok: false },
+  { f: '🇧🇷', n: 'Brasil', ok: true },
+  { f: '🇨🇱', n: 'Chile', ok: false },
+  { f: '🇵🇪', n: 'Perú', ok: false },
+];
+const ROWY = [790, 893, 996, 1099, 1202, 1305];
+const C = [0.35, 1.05, 1.65, 2.20, 2.70, 3.15];   // début de chaque recherche
+const TYPE = 0.24;                                  // durée de frappe d'un nom
+const list = document.getElementById('list');
+ROWS.forEach((r, i) => {
+  list.insertAdjacentHTML('beforeend', `
+    <div class="row" id="r${i}" style="top: ${ROWY[i]}px">
+      <div class="ic">${r.f}</div><div class="nm">${r.n}</div>
+      <div class="pills"><div class="pill q">?</div><div class="pill ${r.ok ? 'yes' : 'no'}">${r.ok ? '✓ SÍ PAGA' : '✕ NO PAGA'}</div></div>
+    </div>`);
+});
+const tl = gsap.timeline({ paused: true, defaults: { ease: 'power3.out' } });
+const pop = (sel, at) => tl.fromTo(sel, { autoAlpha: 0, scale: 0.55 }, { autoAlpha: 1, scale: 1, duration: 0.32, ease: 'back.out(2.2)' }, at);
+gsap.set('#ui', { filter: 'blur(0px) brightness(1)' });
+gsap.set(['#z1', '#k1', '#k2', '#k3', '#k4', '#k5', '.pill.yes', '.pill.no'], { autoAlpha: 0 });
+gsap.set('#sheet', { y: 1150 });
+gsap.set('.it', { autoAlpha: 0, x: 40 });
+
+/* 0 · accroche : les 6 pays sont déjà là, avec un « ? » */
+tl.fromTo('#h', { scale: 1.06 }, { scale: 1, duration: 0.2, ease: 'back.out(2)' }, 0)
+  .fromTo('#ui', { scale: 1.0 }, { scale: 1.03, duration: 4.3, ease: 'none' }, 0)
+  .to('#h', { autoAlpha: 0, y: -20, duration: 0.15, ease: 'power2.in' }, 1.2);
+
+/* 6 recherches, de plus en plus rapides */
+C.forEach((c, i) => {
+  const y = ROWY[i] + 46, r = `#r${i}`, at = c + TYPE + 0.04;
+  tl.set('#tap', { left: 760, top: y, scale: 1.25, autoAlpha: 0 }, at - 0.12)
+    .to('#tap', { autoAlpha: 1, scale: 1, duration: 0.07 }, at - 0.12)
+    .to('#tap', { scale: 0.8, duration: 0.07 }, at - 0.04)
+    .to('#tap', { autoAlpha: 0, duration: 0.12 }, at + 0.08)
+    .to(`${r} .q`, { scaleX: 0, duration: 0.07, ease: 'power2.in' }, at)
+    .fromTo(`${r} .pill:not(.q)`, { autoAlpha: 1, scaleX: 0 }, { scaleX: 1, duration: 0.16, ease: 'back.out(2.4)' }, at + 0.07)
+    .to(r, { backgroundColor: ROWS[i].ok ? '#E6FAEC' : '#FDECEC', duration: 0.12 }, at + 0.05)
+    .fromTo(r, { scale: 1 }, { scale: 1.035, duration: 0.09, yoyo: true, repeat: 1, ease: 'sine.inOut' }, at + 0.05);
+  if (!ROWS[i].ok) {
+    tl.to(r, { x: -10, duration: 0.04, ease: 'none' }, at + 0.08)
+      .to(r, { x: 9, duration: 0.05, ease: 'none' }, at + 0.12)
+      .to(r, { x: -5, duration: 0.05, ease: 'none' }, at + 0.17)
+      .to(r, { x: 0, duration: 0.06 }, at + 0.22);
+  }
+});
+
+/* 3.6 · le constat */
+pop('#z1', 3.62);
+tl.fromTo('#z1', { scale: 1 }, { scale: 1.06, duration: 0.18, yoyo: true, repeat: 1, ease: 'sine.inOut' }, 3.98);
+
+/* 4.3 · la feuille des conditions monte */
+const SH = 4.35;
+tl.to('#sheet', { y: 0, duration: 0.38, ease: 'power3.out' }, SH);
+[0, 1, 2, 3].forEach((k) => tl.to(`#i${k}`, { autoAlpha: 1, x: 0, duration: 0.2 }, SH + 0.32 + k * 0.2));
+
+/* 6.55 · commente */
+const K = 6.55;
+tl.to('#flash', { opacity: 0.55, duration: 0.05, ease: 'none' }, K - 0.05)
+  .to('#flash', { opacity: 0, duration: 0.25 }, K)
+  .to('#ui', { filter: 'blur(16px) brightness(0.62)', scale: 1.08, duration: 0.3, ease: 'power2.out' }, K)
+  .to('#z', { autoAlpha: 0, duration: 0.12 }, K);
+pop('#k1', K + 0.06);
+pop('#k2', K + 0.3);
+pop('#k3', K + 0.5);
+pop('#k4', K + 0.85);
+pop('#k5', K + 1.05);
+tl.to('#k3', { scale: 1.07, duration: 0.35, yoyo: true, repeat: 3, ease: 'sine.inOut' }, K + 1.3);
+tl.to({}, { duration: 0.01 }, K + 3.3);
+window.DURATION = K + 3.3;
+window.TIMES = { C, TYPE, SH, K };
+
+const typed = document.getElementById('typed'), cursor = document.getElementById('cursor');
+window.seek = (t) => {
+  tl.seek(t, false);
+  let txt = '';
+  C.forEach((c, i) => { if (t >= c) { const k = Math.min(1, (t - c) / TYPE); txt = ROWS[i].n.slice(0, Math.ceil(k * ROWS[i].n.length)); } });
+  if (t >= SH) txt = '';
+  typed.textContent = txt;
+  cursor.style.opacity = ((t * 2.4) % 1) < 0.6 ? 1 : 0;
+};
+Promise.all([
+  document.fonts.load('700 60px "TT"', 'Aa'), document.fonts.load('800 60px "TT"', 'Aa'), document.fonts.load('600 60px "TT"', 'Aa'),
+]).then(() => document.fonts.ready).then(() => { window.seek(0); document.body.dataset.ready = '1'; });
+</script>
+</body>
+</html>
