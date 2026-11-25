@@ -56,6 +56,8 @@ Règles de la version TikTok :
 - Une idée par slide, 12 mots maximum hors listes, 5 à 8 slides. Types : hook, punch, num, list, cta. Thèmes dark, light, coral.
 - La couverture arrête le pouce : un chiffre énorme, une contradiction ou une promesse concrète, jamais une phrase de contexte.
 - Ton oral et direct, phrases courtes (« Ojo », « Nadie te lo dice »). « POV » seulement si c'est vrai.
+- Triple accroche, toujours, pour garder les gens le plus longtemps possible sur le post : (1) une couverture qui contredit ou choque, avec un fait vrai ; (2) une slide 2 qui relance (« No lo digo yo, lo dijo TikTok », « la 3 casi nadie la conoce ») ; (3) un titre TikTok et une première ligne de légende qui ouvrent une boucle vers la fin (« La 5 puede sacar tu cuenta del Para ti »). Ensuite, une relance dans le kicker de chaque slide (« 3 de 5 · la que casi nadie sabe »). Modèle : `posts/2026-11-25_p9_algoritmo_tiktok.json`.
+- Chaque carrousel TikTok se termine par un mot-clé à commenter pour obtenir une info en plus, réelle et prête dans `recursos/` (commentaire, follow, DM).
 - Le gabarit garde le texte dans la zone sûre (boutons à droite, légende en bas) : ne jamais le contourner avec du style en ligne.
 - Légende TikTok : d'abord les mots que les gens tapent dans la recherche, puis l'appel à l'action, puis 3 hashtags.
 
