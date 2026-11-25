@@ -6,19 +6,19 @@ Plus de Día, de RETO ni de post CHIFFRES : aucun chiffre du compte n'est publi�
 
 ## Programmé du 25/11 au 30/11 02:30 (semaine complète)
 
-Ids au 25/11 12:30. Un update Metricool change l'id, pas l'uuid : se fier à `getScheduledPosts`.
+Ids au 25/11 16:40. Un update Metricool change l'id, pas l'uuid : se fier à `getScheduledPosts`.
 
-- Jour 25/11 · 18:30 PROMPT (TT 441514479, IG 441514501) · 23:30 vidéo STUDIO (TT 441570390) · 00:30 ESTADO (TT 441592742), IDEAS (IG 441514579) · 02:30 GANCHOS (TT 441592821, IG 441592859)
-- Jour 26/11 · 18:30 BIO (TT 441514664, IG 441514703) · 23:30 vidéo ALGORITMO (TT 441538798) · 00:30 SEO (TT 441514730), GOOGLE (IG 441592768) · 02:30 COBRAR (IG 441545643)
+- Jour 25/11 · 18:30 STUDIO, avant/après sans nommer l'IA (TT 441911384, IG 441911482) · 23:30 vidéo NICHO (TT 441871763) · 00:30 CODIGO (TT 441876653, IG 441876732) · 02:30 DINERO (TT 441879598, IG 441879647)
+- Jour 26/11 · 18:30 APP (TT 441912449, IG 441912743) · 23:30 vidéo ALGORITMO (TT 441538798) · 00:30 SEO (TT 441514730), INGLES (IG 441887068) · 02:30 COBRAR (IG 441545643)
 - Jour 27/11 · 18:30 COMFYUI (TT 441564850, IG 441565091) · 23:30 vidéo PARATI (TT 441538830) · 00:30 PAGO (TT 441538946), TRIAL (IG 441545670) · 02:30 ACESTEP (IG 441565347)
 - Jour 28/11 · 18:30 CHATTERBOX (TT 441565179, IG 441565235) · 23:30 vidéo PAGO (TT 441538864) · 00:30 tier list ALGORITMO (TT 441514748), ORIGINAL (IG 441570417) · 02:30 ENVIOS (IG 441545720)
 - Jour 29/11 · 18:30 UPSCAYL (TT 441565272, IG 441565313) · 23:30 vidéo SEO (TT 441538897) · 00:30 PARATI (TT 441570552), ALCANCE (IG 441570455) · 02:30 UVR (IG 441565372)
 
-Retirés le 25/11 (sujet jugé faible par Vincent) : Subtítulos sur TikTok et Instagram, remplacés par ESTADO et GOOGLE.
+Retirés le 25/11 avant publication (jugés faibles par Vincent) : Subtítulos, Prompt, Ganchos, Ideas, Bio, la vidéo Studio, ESTADO et GOOGLE. Remplacés par la ligne IA de malade : STUDIO, NICHO, CODIGO, DINERO, APP, INGLES.
 
 Publiés avant : Día 1 (24/11), Stack (STACK), Algoritmo de TikTok (ALGORITMO), tier list Instagram.
 
-Mots-clés déjà pris, jamais réutilisés : STACK, PROMPT, GANCHOS, IDEAS, ALGORITMO, SUBTITULOS, BIO, SEO, STUDIO, PAGO, PARATI, COBRAR, TRIAL, ORIGINAL, ENVIOS, ALCANCE, COMFYUI, CHATTERBOX, ACESTEP, UPSCAYL, UVR, ESTADO, GOOGLE, DENTRO.
+Mots-clés déjà pris, jamais réutilisés : STACK, PROMPT, GANCHOS, IDEAS, ALGORITMO, SUBTITULOS, BIO, SEO, STUDIO (avant/après, guía Nano Banana), PAGO, PARATI, COBRAR, TRIAL, ORIGINAL, ENVIOS, ALCANCE, COMFYUI, CHATTERBOX, ACESTEP, UPSCAYL, UVR, ESTADO, GOOGLE, APP, NICHO, CODIGO, DINERO, BANANA, INGLES, DENTRO.
 
 ## À produire à partir du jour 30/11
 
