@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+:root { --y: #FFE14D; --red: #E5484D; --green: #16A34A; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #EEF0F3; }
+body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color: #111; }
+#ui { position: absolute; inset: 0; background: #EEF0F3; transform-origin: 485px 960px; }
+#chat { position: absolute; left: 60px; top: 530px; width: 850px; height: 870px; background: #fff; border-radius: 34px; box-shadow: 0 10px 30px rgba(17,17,17,0.07); overflow: hidden; }
+#hd { position: absolute; left: 0; top: 0; width: 100%; height: 104px; display: flex; align-items: center; gap: 18px; padding: 0 30px; border-bottom: 2px solid #F1F2F5; }
+#hd .nm { font-weight: 800; font-size: 40px; }
+#conn { margin-left: auto; font-weight: 700; font-size: 26px; color: var(--green); background: #E6FAEC; padding: 8px 18px; border-radius: 999px; white-space: nowrap; }
+.b { position: absolute; max-width: 640px; padding: 18px 26px 20px; border-radius: 30px; font-weight: 600; font-size: 36px; line-height: 1.28; }
+.out { right: 26px; background: #DBEAFE; border-bottom-right-radius: 10px; }
+.in { left: 26px; background: #F1F2F5; border-bottom-left-radius: 10px; }
+#grid { position: absolute; left: 26px; top: 452px; width: 798px; height: 300px; border-radius: 26px; background: #F7F8FA; padding: 16px 18px; }
+#grid .days { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; font-weight: 800; font-size: 26px; color: #6B7280; text-align: center; margin-bottom: 8px; }
+#grid .cells { display: grid; grid-template-columns: repeat(7, 1fr); grid-template-rows: repeat(3, 66px); gap: 10px; }
+.cl { border-radius: 16px; display: grid; place-items: center; font-size: 34px; }
+.cl.tt { background: #FFE4EC; } .cl.ig { background: #EDE4FF; }
+#bar { position: absolute; left: 22px; right: 22px; bottom: 18px; height: 76px; border-radius: 38px; background: #F1F2F5; display: flex; align-items: center; padding: 0 12px 0 30px; gap: 12px; }
+#inp { flex: 1; font-weight: 600; font-size: 30px; color: #111; white-space: nowrap; overflow: hidden; }
+#ph { position: absolute; left: 30px; font-weight: 600; font-size: 30px; color: #9CA3AF; }
+#send { width: 56px; height: 56px; border-radius: 50%; background: #111; color: #fff; display: grid; place-items: center; font-size: 26px; font-weight: 800; }
+#lock { position: absolute; inset: 0; z-index: 7; background: rgba(15,16,20,0.86); }
+#lock .clock { position: absolute; left: 0; right: 0; top: 560px; text-align: center; color: #fff; font-weight: 800; font-size: 160px; letter-spacing: -4px; }
+#lock .day { position: absolute; left: 0; right: 0; top: 750px; text-align: center; color: #D1D5DB; font-weight: 600; font-size: 36px; }
+.nt { position: absolute; left: 90px; width: 790px; height: 120px; border-radius: 30px; background: rgba(255,255,255,0.94); display: flex; align-items: center; gap: 22px; padding: 0 28px; font-weight: 700; font-size: 36px; }
+.nt .i { width: 72px; height: 72px; border-radius: 18px; display: grid; place-items: center; font-size: 40px; background: #E6FAEC; flex: none; }
+.nt small { display: block; font-weight: 600; font-size: 26px; color: #6B7280; }
+#money { position: absolute; left: 60px; top: 530px; width: 850px; height: 870px; background: #fff; border-radius: 34px; box-shadow: 0 10px 30px rgba(17,17,17,0.12); z-index: 8; padding: 34px 40px; }
+#money h3 { font-weight: 800; font-size: 50px; }
+#money .p { margin-top: 10px; font-weight: 700; font-size: 38px; color: #374151; }
+#money .p b { color: var(--green); }
+#money .src { margin-top: 6px; font-weight: 600; font-size: 24px; color: #9CA3AF; }
+#shops { margin-top: 34px; display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+.sh { height: 170px; border-radius: 26px; background: #F5F6F8; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; font-size: 70px; }
+.sh small { font-weight: 800; font-size: 30px; color: var(--green); }
+#mtot { margin-top: 40px; font-weight: 800; font-size: 150px; line-height: 1; color: var(--green); letter-spacing: -4px; }
+#mtot small { font-size: 40px; color: #9CA3AF; letter-spacing: 0; margin-left: 12px; }
+#sheet { position: absolute; left: 60px; top: 858px; width: 850px; height: 560px; background: #fff; border-radius: 40px; box-shadow: 0 -10px 50px rgba(17,17,17,0.18); padding: 26px 40px; z-index: 9; }
+#sheet .grab { width: 90px; height: 10px; border-radius: 9px; background: #D1D5DB; margin: 0 auto 24px; }
+#sheet h3 { font-weight: 800; font-size: 46px; margin-bottom: 12px; }
+.it { display: flex; align-items: center; gap: 20px; height: 120px; font-weight: 700; font-size: 40px; line-height: 1.15; border-top: 2px solid #F1F2F5; }
+.it .e { width: 72px; height: 72px; border-radius: 20px; background: #F5F6F8; display: grid; place-items: center; font-size: 40px; flex: none; }
+.it small { display: block; font-weight: 600; font-size: 28px; color: var(--green); }
+.cap { position: absolute; z-index: 12; left: 60px; right: 170px; display: flex; flex-direction: column; align-items: center; }
+.cap span { display: inline-block; font-weight: 700; font-size: 60px; line-height: 1.16; padding: 6px 24px 10px; border-radius: 20px; background: #fff; color: #111; margin-top: -6px; text-align: center; white-space: nowrap; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+.cap span.y { background: var(--y); }
+.cap span.xl { font-size: 92px; font-weight: 800; padding: 6px 30px 12px; }
+.cap span.s { font-size: 48px; }
+.cap span.xs { font-size: 40px; font-weight: 600; }
+.conf { position: absolute; left: 0; top: 0; font-size: 64px; line-height: 1; opacity: 0; z-index: 11; }
+#flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 50; }
+.tap { position: absolute; width: 96px; height: 96px; margin: -48px 0 0 -48px; border-radius: 50%; background: rgba(120,120,128,0.45); border: 4px solid rgba(255,255,255,0.95); box-shadow: 0 6px 24px rgba(0,0,0,0.25); z-index: 40; opacity: 0; }
+</style>
+</head>
+<body>
+<div id="ui">
+  <div id="chat">
+    <div id="hd"><span style="font-size: 40px">🤖</span><span class="nm">Claude</span><span id="conn">🔌 Metricool conectado</span></div>
+    <div class="b out" id="m1" style="top: 130px">Programa mis 21 videos: 3 al día en TikTok e Instagram, toda la semana</div>
+    <div class="b in" id="m2" style="top: 360px">Listo ✅ 21 posts programados</div>
+    <div id="grid"><div class="days"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div><div class="cells" id="cells"></div></div>
+    <div id="bar"><span id="ph">Escribe a Claude…</span><span id="inp"></span><div id="send">↑</div></div>
+  </div>
+  <div id="lock">
+    <div class="clock">03:00</div>
+    <div class="day">Tú, durmiendo 😴</div>
+    <div class="nt" id="n0" style="top: 900px"><div class="i">✅</div><div>Publicado en TikTok<small>Metricool · ahora</small></div></div>
+    <div class="nt" id="n1" style="top: 1040px"><div class="i">✅</div><div>Publicado en Instagram<small>Metricool · ahora</small></div></div>
+    <div class="nt" id="n2" style="top: 1180px"><div class="i">📅</div><div>Mañana: 3 posts más programados<small>Metricool · ahora</small></div></div>
+  </div>
+  <div id="money">
+    <h3>Véndelo a negocios 💼</h3>
+    <div class="p">Manejo de redes: <b>desde $500 al mes</b> por cliente</div>
+    <div class="src">precios de mercado 2026 (Sked Social)</div>
+    <div id="shops">
+      <div class="sh" id="s0">🍔<small>+$500</small></div>
+      <div class="sh" id="s1">💇<small>+$500</small></div>
+      <div class="sh" id="s2">🦷<small>+$500</small></div>
+      <div class="sh" id="s3">🏋️<small>+$500</small></div>
+      <div class="sh" id="s4">☕<small>+$500</small></div>
+    </div>
+    <div id="mtot">$0<small>al mes</small></div>
+  </div>
+  <div id="sheet">
+    <div class="grab"></div>
+    <h3>Para empezar, gratis:</h3>
+    <div class="it" id="i0"><span class="e">🤖</span><div>Claude<small>plan gratis · 1 conector</small></div></div>
+    <div class="it" id="i1"><span class="e">📅</span><div>Metricool<small>plan gratis · 20 posts al mes</small></div></div>
+    <div class="it" id="i2"><span class="e">📱</span><div>Tu celular<small>y nada más</small></div></div>
+  </div>
+</div>
+<div class="cap" id="h" style="top: 300px"><span class="y xl" id="h1">$2,500 al mes 💸</span><span id="h2">y una IA hace lo pesado 🤖</span></div>
+<div class="cap" id="v" style="top: 330px"><span class="y" id="v1">se publica solo 😴</span></div>
+<div class="cap" id="z" style="top: 300px"><span id="z1">5 negocios =</span><span class="y xl" id="z2">$2,500 al mes 🤯</span></div>
+<div class="cap" id="k" style="top: 540px"><span id="k1">¿Quieres el setup? 👀</span><span class="xl" id="k2">Comenta</span><span class="y xl" id="k3">AUTO 👇</span><span class="s" id="k4">y te mando cómo conectarlo 📩</span><span class="xs" id="k5">(sígueme para recibirlo)</span></div>
+<div class="tap" id="tap"></div>
+<div id="flash"></div>
+
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<script>
+const cells = document.getElementById('cells');
+for (let r = 0; r < 3; r++) for (let d = 0; d < 7; d++) cells.insertAdjacentHTML('beforeend', `<div class="cl ${(r + d) % 2 ? 'ig' : 'tt'}" data-k="${d * 3 + r}">${(r + d) % 2 ? '📸' : '🎵'}</div>`);
+const CL = Array.from(document.querySelectorAll('.cl')).sort((a, b) => a.dataset.k - b.dataset.k);
+const EM = ['💸', '💵', '🤑', '💰', '🎉', '✨'];
+const confs = [];
+for (let k = 0; k < 26; k++) { const el = document.createElement('div'); el.className = 'conf'; el.textContent = EM[k % EM.length]; document.body.appendChild(el); confs.push(el); }
+let seed = 19; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+const Q = 'Programa mis 21 videos: 3 al día…';
+const TYPE0 = 0.45, TYPE1 = 1.05;
+const tl = gsap.timeline({ paused: true, defaults: { ease: 'power3.out' } });
+const M = { v: 0 };
+const pop = (sel, at) => tl.fromTo(sel, { autoAlpha: 0, scale: 0.55 }, { autoAlpha: 1, scale: 1, duration: 0.32, ease: 'back.out(2.2)' }, at);
+const bub = (sel, at, from) => tl.fromTo(sel, { autoAlpha: 0, y: 30, scale: 0.9, transformOrigin: from }, { autoAlpha: 1, y: 0, scale: 1, duration: 0.28, ease: 'back.out(1.8)' }, at);
+gsap.set('#ui', { filter: 'blur(0px) brightness(1)' });
+gsap.set(['#m1', '#m2', '#grid', '#v1', '#z1', '#z2', '#k1', '#k2', '#k3', '#k4', '#k5', '.cl', '.nt', '.sh'], { autoAlpha: 0 });
+gsap.set('#lock', { autoAlpha: 0 });
+gsap.set('#money', { y: 1500 });
+gsap.set('#sheet', { y: 1150 });
+gsap.set('.it', { autoAlpha: 0, x: 40 });
+
+/* 0 · accroche + la demande */
+tl.fromTo('#h', { scale: 1.06 }, { scale: 1, duration: 0.2, ease: 'back.out(2)' }, 0)
+  .fromTo('#ui', { scale: 1.0 }, { scale: 1.03, duration: 3.4, ease: 'none' }, 0)
+  .to('#ph', { autoAlpha: 0, duration: 0.05 }, TYPE0)
+  .set('#tap', { left: 60 + 850 - 22 - 12 - 28, top: 530 + 870 - 18 - 38, scale: 1.2, autoAlpha: 0 }, TYPE1 - 0.06)
+  .to('#tap', { autoAlpha: 1, scale: 0.85, duration: 0.06 }, TYPE1 - 0.06)
+  .to('#tap', { autoAlpha: 0, duration: 0.1 }, TYPE1 + 0.06)
+  .set('#ph', { autoAlpha: 1 }, TYPE1 + 0.06)
+  .to('#h', { autoAlpha: 0, y: -20, duration: 0.15, ease: 'power2.in' }, 1.45);
+bub('#m1', TYPE1 + 0.06, '100% 100%');
+bub('#m2', 1.6, '0% 100%');
+tl.fromTo('#grid', { autoAlpha: 0, y: 30 }, { autoAlpha: 1, y: 0, duration: 0.25 }, 1.75);
+CL.forEach((c, i) => tl.fromTo(c, { autoAlpha: 0, scale: 0.3 }, { autoAlpha: 1, scale: 1, duration: 0.16, ease: 'back.out(3)' }, 1.9 + i * 0.055));
+
+/* 3.3 · la nuit, ça publie tout seul */
+const N = 3.3;
+tl.to('#lock', { autoAlpha: 1, duration: 0.2 }, N);
+pop('#v1', N + 0.15);
+[0, 1, 2].forEach((k) => tl.fromTo(`#n${k}`, { autoAlpha: 0, y: -40 }, { autoAlpha: 1, y: 0, duration: 0.25, ease: 'back.out(1.6)' }, N + 0.3 + k * 0.35));
+
+/* 5.0 · l'argent */
+const MO = 5.05;
+tl.to('#v', { autoAlpha: 0, duration: 0.12 }, MO - 0.1)
+  .to('#money', { y: 0, duration: 0.4, ease: 'power3.out' }, MO)
+  .to('#lock', { autoAlpha: 0, duration: 0.25 }, MO + 0.2);
+const SHOP = [MO + 0.55, MO + 0.8, MO + 1.02, MO + 1.22, MO + 1.4];
+SHOP.forEach((t, i) => tl.fromTo(`#s${i}`, { autoAlpha: 0, scale: 0.4 }, { autoAlpha: 1, scale: 1, duration: 0.2, ease: 'back.out(2.6)' }, t).to(M, { v: 500 * (i + 1), duration: 0.18 }, t + 0.05));
+const B = MO + 1.65;
+tl.to('#flash', { opacity: 0.7, duration: 0.05, ease: 'none' }, B - 0.05)
+  .to('#flash', { opacity: 0, duration: 0.3 }, B)
+  .fromTo('#mtot', { scale: 1 }, { scale: 1.12, duration: 0.14, yoyo: true, repeat: 1, ease: 'power2.out', transformOrigin: '0% 50%' }, B)
+  .to('#ui', { x: -18, duration: 0.05, ease: 'none' }, B)
+  .to('#ui', { x: 14, duration: 0.06, ease: 'none' }, B + 0.05)
+  .to('#ui', { x: -8, duration: 0.06, ease: 'none' }, B + 0.11)
+  .to('#ui', { x: 0, duration: 0.08 }, B + 0.17);
+confs.forEach((el) => {
+  const ang = rnd() * Math.PI * 2, sp = 260 + rnd() * 440;
+  const dx = Math.cos(ang) * sp, dy = Math.sin(ang) * sp * 0.8 - 220;
+  const sc = 0.8 + rnd() * 0.6, rot = (rnd() - 0.5) * 260;
+  tl.set(el, { left: 420, top: 1160, x: 0, y: 0, rotation: 0, scale: 0.4, autoAlpha: 0 }, B)
+    .to(el, { autoAlpha: 1, scale: sc, duration: 0.08 }, B)
+    .to(el, { x: dx, y: dy, rotation: rot, duration: 0.45, ease: 'power3.out' }, B)
+    .to(el, { y: dy + 700, duration: 0.65, ease: 'power2.in' }, B + 0.45)
+    .to(el, { autoAlpha: 0, duration: 0.25 }, B + 0.8);
+});
+pop('#z1', B + 0.1);
+pop('#z2', B + 0.3);
+
+/* 8.6 · les outils */
+const SH = B + 1.9;
+tl.to('#z', { autoAlpha: 0, duration: 0.15 }, SH - 0.1)
+  .to('#sheet', { y: 0, duration: 0.38, ease: 'power3.out' }, SH);
+[0, 1, 2].forEach((k) => tl.to(`#i${k}`, { autoAlpha: 1, x: 0, duration: 0.22 }, SH + 0.35 + k * 0.32));
+
+/* commente */
+const K = SH + 2.3;
+tl.to('#flash', { opacity: 0.55, duration: 0.05, ease: 'none' }, K - 0.05)
+  .to('#flash', { opacity: 0, duration: 0.25 }, K)
+  .to('#ui', { filter: 'blur(16px) brightness(0.62)', scale: 1.08, duration: 0.3, ease: 'power2.out' }, K);
+pop('#k1', K + 0.06);
+pop('#k2', K + 0.3);
+pop('#k3', K + 0.5);
+pop('#k4', K + 0.85);
+pop('#k5', K + 1.05);
+tl.to('#k3', { scale: 1.07, duration: 0.35, yoyo: true, repeat: 3, ease: 'sine.inOut' }, K + 1.3);
+tl.to({}, { duration: 0.01 }, K + 3.3);
+window.DURATION = K + 3.3;
+window.TIMES = { TYPE0, TYPE1, N, MO, SHOP, B, SH, K };
+
+const inp = document.getElementById('inp'), mtot = document.getElementById('mtot');
+const QCH = Array.from(Q);
+const fmt = (d) => '$' + String(Math.round(d)).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+window.seek = (t) => {
+  tl.seek(t, false);
+  const q = Math.max(0, Math.min(1, (t - TYPE0) / (TYPE1 - TYPE0)));
+  inp.textContent = t >= TYPE0 && t < TYPE1 + 0.06 ? QCH.slice(0, Math.ceil(q * QCH.length)).join('') : '';
+  mtot.firstChild.nodeValue = fmt(M.v);
+};
+Promise.all([
+  document.fonts.load('700 60px "TT"', 'Aa'), document.fonts.load('800 60px "TT"', 'Aa'), document.fonts.load('600 60px "TT"', 'Aa'),
+]).then(() => document.fonts.ready).then(() => { window.seek(0); document.body.dataset.ready = '1'; });
+</script>
+</body>
+</html>
