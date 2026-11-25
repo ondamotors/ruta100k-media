@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+:root { --y: #FFE14D; --red: #E5484D; --green: #16A34A; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #EEF0F3; }
+body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color: #111; }
+#ui { position: absolute; inset: 0; background: #EEF0F3; transform-origin: 485px 960px; }
+#total { position: absolute; left: 60px; top: 524px; width: 850px; height: 246px; background: #fff; border-radius: 34px; box-shadow: 0 10px 30px rgba(17,17,17,0.07); padding: 28px 40px; transform-origin: 425px 123px; }
+#total .lbl { position: absolute; left: 40px; top: 30px; font-weight: 600; font-size: 36px; color: #6B7280; }
+#total .amt { position: absolute; left: 36px; top: 84px; display: flex; align-items: baseline; gap: 18px; }
+#amt { font-weight: 800; font-size: 150px; line-height: 1; color: var(--red); letter-spacing: -4px; }
+#total .usd { font-weight: 700; font-size: 34px; color: #9CA3AF; }
+.row { position: absolute; left: 60px; width: 850px; height: 92px; border-radius: 26px; overflow: hidden; box-shadow: 0 6px 18px rgba(17,17,17,0.06); }
+.lay { position: absolute; inset: 0; display: flex; align-items: center; padding: 0 22px 0 14px; }
+.under { background: #E6FAEC; }
+.top { background: #fff; }
+.ic { width: 64px; height: 64px; border-radius: 18px; display: grid; place-items: center; font-size: 38px; flex: none; }
+.nm { margin-left: 20px; flex: 1; display: flex; flex-direction: column; justify-content: center; white-space: nowrap; }
+.nm b { font-weight: 700; font-size: 40px; line-height: 1.05; }
+.nm s { font-weight: 600; font-size: 25px; line-height: 1.1; color: #9CA3AF; }
+.pr { font-weight: 800; font-size: 40px; color: var(--red); white-space: nowrap; }
+.pr small { font-weight: 600; font-size: 24px; color: #9CA3AF; margin-left: 4px; }
+.pill { font-weight: 800; font-size: 30px; color: #fff; background: var(--green); padding: 7px 20px 9px; border-radius: 999px; }
+.blurname { filter: blur(10px); }
+.lock { display: inline-block; filter: none; margin-right: 10px; }
+.chip { position: absolute; z-index: 20; font-weight: 800; font-size: 40px; color: var(--green); background: #fff; padding: 6px 18px 8px; border-radius: 999px; box-shadow: 0 8px 24px rgba(0,0,0,0.14); opacity: 0; white-space: nowrap; }
+.cap { position: absolute; z-index: 12; left: 60px; right: 170px; display: flex; flex-direction: column; align-items: center; }
+.cap span { display: inline-block; font-weight: 700; font-size: 60px; line-height: 1.16; padding: 6px 24px 10px; border-radius: 20px; background: #fff; color: #111; margin-top: -6px; text-align: center; white-space: nowrap; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+.cap span.y { background: var(--y); }
+.cap span.xl { font-size: 92px; font-weight: 800; padding: 6px 30px 12px; }
+.cap span.s { font-size: 48px; }
+.conf { position: absolute; left: 0; top: 0; font-size: 64px; line-height: 1; opacity: 0; z-index: 11; }
+#flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 50; }
+.tap { position: absolute; width: 96px; height: 96px; margin: -48px 0 0 -48px; border-radius: 50%; background: rgba(120,120,128,0.45); border: 4px solid rgba(255,255,255,0.95); box-shadow: 0 6px 24px rgba(0,0,0,0.25); z-index: 40; opacity: 0; }
+</style>
+</head>
+<body>
+<div id="ui">
+  <div id="total">
+    <div class="lbl" id="lbl1">Si pagas todo esto:</div>
+    <div class="lbl" id="lbl2" style="color: var(--green)">Ahora pagas:</div>
+    <div class="amt"><span id="amt">$87.98</span><span class="usd">USD al mes</span></div>
+  </div>
+  <div id="list"></div>
+</div>
+<div class="cap" id="h" style="top: 300px"><span class="y xl" id="h1">¿Pagas por IA? 😳</span><span id="h2">hay versión GRATIS 👇</span></div>
+<div class="cap" id="z" style="top: 300px"><span id="z1">Te ahorras</span><span class="y xl" id="z2">$88 al mes 🤯</span></div>
+<div class="cap" id="k" style="top: 600px"><span id="k1">¿Cuál es la #6? 🔒</span><span class="xl" id="k2">Comenta</span><span class="y xl" id="k3">GRATIS 👇</span><span class="s" id="k4">y sígueme para recibirla 📩</span></div>
+<div class="tap" id="tap"></div>
+<div id="flash"></div>
+
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<script>
+const ROWS = [
+  { paid: 'ChatGPT Plus', price: '20.00', free: 'Gemini', ic: '💬', bg: '#E7F0FF' },
+  { paid: 'CapCut Pro', price: '19.99', free: 'Edits (Instagram)', ic: '🎬', bg: '#FFE9F0' },
+  { paid: 'Photoshop', price: '22.99', free: 'Photopea (web)', ic: '🖼️', bg: '#FFF4D6' },
+  { paid: 'Midjourney', price: '10.00', free: 'Meta AI (WhatsApp)', ic: '🎨', bg: '#EFE7FF' },
+  { paid: 'ElevenLabs', price: '5.00', free: 'Chatterbox', ic: '🎙️', bg: '#E3F7FA' },
+  { paid: 'Suno Pro', price: '10.00', free: 'ACE-Step', ic: '🎵', bg: '#FFEBDD', lock: true },
+];
+const VALS = [87.98, 67.98, 47.99, 25.00, 15.00, 10.00, 0.00];
+const ROWY = [790, 893, 996, 1099, 1202, 1305];
+const list = document.getElementById('list');
+ROWS.forEach((r, i) => {
+  const free = r.lock ? `<b><span class="lock">🔒</span><span class="blurname">${r.free}</span></b>` : `<b>${r.free}</b>`;
+  list.insertAdjacentHTML('beforeend', `
+    <div class="row" id="r${i}" style="top: ${ROWY[i]}px">
+      <div class="lay under"><div class="ic" style="background: ${r.bg}">${r.ic}</div>
+        <div class="nm"><s>${r.paid}</s>${free}</div><div class="pill">GRATIS</div></div>
+      <div class="lay top"><div class="ic" style="background: ${r.bg}">${r.ic}</div>
+        <div class="nm"><b>${r.paid}</b></div><div class="pr">$${r.price}<small>/mes</small></div></div>
+    </div>`);
+  document.body.insertAdjacentHTML('beforeend', `<div class="chip" id="d${i}">−$${r.price}</div>`);
+});
+const EM = ['💸', '💵', '🤑', '💰', '🎉', '✨'];
+const confs = [];
+for (let k = 0; k < 24; k++) { const el = document.createElement('div'); el.className = 'conf'; el.textContent = EM[k % EM.length]; document.body.appendChild(el); confs.push(el); }
+let seed = 11; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+
+const tl = gsap.timeline({ paused: true, defaults: { ease: 'power3.out' } });
+const C = { v: VALS[0] };
+const amt = document.getElementById('amt');
+const pop = (sel, at) => tl.fromTo(sel, { autoAlpha: 0, scale: 0.55 }, { autoAlpha: 1, scale: 1, duration: 0.32, ease: 'back.out(2.2)' }, at);
+
+gsap.set('#ui', { filter: 'blur(0px) brightness(1)' });
+gsap.set(['#lbl2', '#z1', '#z2', '#k1', '#k2', '#k3', '#k4'], { autoAlpha: 0 });
+gsap.set('.under .pill', { autoAlpha: 0 });
+
+/* 0 · accroche, visible dès la première image */
+tl.fromTo('#h', { scale: 1.06 }, { scale: 1, duration: 0.2, ease: 'back.out(2)' }, 0)
+  .fromTo('#ui', { scale: 1.0 }, { scale: 1.03, duration: 4.6, ease: 'none' }, 0)
+  .to('#h', { autoAlpha: 0, y: -20, duration: 0.15, ease: 'power2.in' }, 1.05);
+
+/* 6 swipes, de plus en plus rapides */
+const S = [0.40, 1.15, 1.85, 2.50, 3.10, 3.65];
+S.forEach((s, i) => {
+  const y = ROWY[i] + 46;
+  tl.set('#tap', { left: 830, top: y, scale: 1.25, autoAlpha: 0 }, s - 0.1)
+    .to('#tap', { autoAlpha: 1, scale: 1, duration: 0.08 }, s - 0.1)
+    .to('#tap', { left: 320, duration: 0.28, ease: 'power2.in' }, s)
+    .to('#tap', { autoAlpha: 0, duration: 0.1 }, s + 0.28)
+    .to(`#r${i} .top`, { x: -880, duration: 0.28, ease: 'power3.in' }, s + 0.02)
+    .fromTo(`#r${i} .under .nm`, { x: 40, autoAlpha: 0.3 }, { x: 0, autoAlpha: 1, duration: 0.3 }, s + 0.14)
+    .fromTo(`#r${i} .pill`, { scale: 0.3, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 0.32, ease: 'back.out(2.6)' }, s + 0.24)
+    .set(`#d${i}`, { left: 660, top: y - 34, scale: 0.8, autoAlpha: 0 }, s + 0.2)
+    .to(`#d${i}`, { autoAlpha: 1, scale: 1.1, duration: 0.1 }, s + 0.2)
+    .to(`#d${i}`, { left: 470, top: 640, scale: 0.75, duration: 0.34, ease: 'power2.in' }, s + 0.3)
+    .to(`#d${i}`, { autoAlpha: 0, duration: 0.08 }, s + 0.6)
+    .to(C, { v: VALS[i + 1], duration: 0.3, ease: 'power2.out' }, s + 0.62)
+    .fromTo('#total', { scale: 1 }, { scale: 1.045, duration: 0.1, yoyo: true, repeat: 1, ease: 'sine.inOut' }, s + 0.62)
+    .to('#ui', { x: -7, duration: 0.04, ease: 'none' }, s + 0.62)
+    .to('#ui', { x: 6, duration: 0.05, ease: 'none' }, s + 0.66)
+    .to('#ui', { x: 0, duration: 0.06 }, s + 0.71);
+});
+
+/* 4.62 · $0 : explosion */
+const B = 4.62;
+tl.to('#flash', { opacity: 0.7, duration: 0.05, ease: 'none' }, B - 0.05)
+  .to('#flash', { opacity: 0, duration: 0.3 }, B)
+  .set('#lbl1', { autoAlpha: 0 }, B).set('#lbl2', { autoAlpha: 1 }, B)
+  .to('#amt', { color: '#16A34A', duration: 0.15 }, B)
+  .fromTo('#total', { scale: 1 }, { scale: 1.12, duration: 0.14, yoyo: true, repeat: 1, ease: 'power2.out' }, B)
+  .to('#ui', { x: -18, duration: 0.05, ease: 'none' }, B)
+  .to('#ui', { x: 14, duration: 0.06, ease: 'none' }, B + 0.05)
+  .to('#ui', { x: -8, duration: 0.06, ease: 'none' }, B + 0.11)
+  .to('#ui', { x: 0, duration: 0.08 }, B + 0.17);
+confs.forEach((el) => {
+  const ang = rnd() * Math.PI * 2, sp = 260 + rnd() * 440;
+  const dx = Math.cos(ang) * sp, dy = Math.sin(ang) * sp * 0.8 - 220;
+  const sc = 0.8 + rnd() * 0.6, rot = (rnd() - 0.5) * 260;
+  tl.set(el, { left: 453, top: 608, x: 0, y: 0, rotation: 0, scale: 0.4, autoAlpha: 0 }, B)
+    .to(el, { autoAlpha: 1, scale: sc, duration: 0.08 }, B)
+    .to(el, { x: dx, y: dy, rotation: rot, duration: 0.45, ease: 'power3.out' }, B)
+    .to(el, { y: dy + 700, duration: 0.65, ease: 'power2.in' }, B + 0.45)
+    .to(el, { autoAlpha: 0, duration: 0.25 }, B + 0.8);
+});
+pop('#z1', B + 0.08);
+pop('#z2', B + 0.22);
+tl.to('#r5 .lock', { scale: 1.35, duration: 0.18, yoyo: true, repeat: 3, ease: 'sine.inOut' }, B + 0.95);
+
+/* 6.47 · commente */
+const K = B + 2.0;
+tl.to('#flash', { opacity: 0.55, duration: 0.05, ease: 'none' }, K - 0.05)
+  .to('#flash', { opacity: 0, duration: 0.25 }, K)
+  .to('#ui', { filter: 'blur(16px) brightness(0.62)', scale: 1.08, duration: 0.3, ease: 'power2.out' }, K)
+  .to('#z', { autoAlpha: 0, duration: 0.12 }, K);
+pop('#k1', K + 0.06);
+pop('#k2', K + 0.3);
+pop('#k3', K + 0.5);
+pop('#k4', K + 0.85);
+tl.to('#k3', { scale: 1.07, duration: 0.35, yoyo: true, repeat: 3, ease: 'sine.inOut' }, K + 1.2);
+tl.to({}, { duration: 0.01 }, K + 3.2);
+window.DURATION = K + 3.2;
+window.TIMES = { S, B, K };
+window.seek = (t) => { tl.seek(t, false); amt.textContent = '$' + C.v.toFixed(2); };
+Promise.all([
+  document.fonts.load('700 60px "TT"', 'Aa'), document.fonts.load('800 60px "TT"', 'Aa'), document.fonts.load('600 60px "TT"', 'Aa'),
+]).then(() => document.fonts.ready).then(() => { window.seek(0); document.body.dataset.ready = '1'; });
+</script>
+</body>
+</html>
