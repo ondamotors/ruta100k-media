@@ -68,3 +68,10 @@ b, strong { font-weight: inherit; color: var(--coral); }
 .cta .steps { margin-top: 48px; }
 .cta .step { display: flex; gap: 22px; font-size: 46px; line-height: 1.2; padding: 18px 0; border-top: 1px solid var(--rule-d); }
 .cta .step .n { font-family: "Plex Mono", monospace; font-weight: 600; color: var(--coral); }
+.sources .h { font-weight: 800; font-stretch: 78%; font-size: 72px; line-height: 1.0; margin-bottom: 24px; }
+.sources .srcrow { display: grid; grid-template-columns: 64px 1fr; padding: 16px 0; border-top: 1px solid var(--rule); }
+.dark .sources .srcrow { border-top-color: var(--rule-d); }
+.sources .n { font-size: 24px; color: var(--coral); padding-top: 6px; }
+.sources .t { font-size: 34px; line-height: 1.2; font-weight: 600; }
+.sources .u { font-size: 20px; text-transform: none; letter-spacing: 0; margin-top: 6px; color: var(--mute); overflow-wrap: anywhere; }
+.dark .sources .u { color: var(--mute-d); }

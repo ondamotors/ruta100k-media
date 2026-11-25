@@ -1,0 +1,103 @@
+{
+ "id": "2026-11-25_p9_algoritmo_tiktok",
+ "kind": "tiktok",
+ "series": "FUENTE OFICIAL",
+ "foot_left": "Solo lo que TikTok publicó",
+ "foot_last": "Verificado el 24/11/2026",
+ "slides": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "kicker": "TikTok lo confirmó · Para ti",
+   "lines": [
+    "Tus",
+    "seguidores",
+    "no cuentan"
+   ],
+   "size": 230,
+   "sub": "5 cosas que TikTok admitió sobre su algoritmo. <b>La 5 puede sacar tu cuenta del Para ti.</b>"
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "No lo digo yo. Lo dijo TikTok.",
+   "text": "Las fuentes oficiales están al final. Y la 3 casi nadie la conoce."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "1 de 5",
+   "h": "Tus seguidores no son un factor directo.",
+   "text": "Tus virales anteriores tampoco. Más seguidores suele dar más vistas, pero el Para ti no los usa como factor directo."
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "2 de 5",
+   "h": "Que lo vean hasta el final pesa más.",
+   "text": "Es el ejemplo de señal fuerte que da TikTok: ver un video completo cuenta más que estar en el mismo país que quien lo publicó."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "3 de 5 · la que casi nadie sabe",
+   "h": "TikTok calcula si vas a saltar cada video.",
+   "text": "Predice si lo vas a ver, darle like, comentar, guardar o saltar. Con todo eso le pone una puntuación."
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "4 de 5",
+   "h": "Tu Para ti evita dos videos seguidos con el mismo sonido.",
+   "text": "Ni dos seguidos del mismo creador. Si los mejores se parecen demasiado, TikTok cambia algunos por variedad."
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "5 de 5 · la peligrosa",
+   "h": "Puede sacar tu cuenta entera del Para ti.",
+   "text": "Aunque no rompas ninguna regla, si publicas mucho contenido no apto. Te avisa en tus analíticas y puedes apelar."
+  },
+  {
+   "type": "sources",
+   "theme": "dark",
+   "kicker": "Fuentes",
+   "h": "Todo, de TikTok",
+   "items": [
+    {
+     "t": "Cómo TikTok recomienda videos, 18/06/2020",
+     "u": "newsroom.tiktok.com/how-tiktok-recommends-videos-for-you"
+    },
+    {
+     "t": "Sistema de recomendación, Centro de Transparencia",
+     "u": "tiktok.com/transparency/en/recommendation-system"
+    },
+    {
+     "t": "Normas: cuentas con mucho contenido no apto",
+     "u": "tiktok.com/community-guidelines/en/accounts-features"
+    },
+    {
+     "t": "Normas: analíticas y apelaciones",
+     "u": "tiktok.com/community-guidelines"
+    },
+    {
+     "t": "Cuentas fuera del Para ti, 22/04/2024",
+     "u": "newsroom.tiktok.com/cgupdate"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "ALGORITMO",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme ALGORITMO por mensaje.",
+    "Te mando la checklist de 10 puntos que TikTok confirmó, con cada fuente."
+   ]
+  }
+ ]
+}

@@ -28,6 +28,9 @@
     {%- elif s.type == 'list' %}
       {% if s.h %}<h2 class="h">{{ s.h|safe }}</h2>{% endif %}
       {% for it in s['items'] %}<div class="item"><div class="n">{{ it.n or loop.index }}</div><div><div class="t">{{ it.t|safe }}</div>{% if it.d %}<div class="d">{{ it.d|safe }}</div>{% endif %}</div></div>{% endfor %}
+    {%- elif s.type == 'sources' %}
+      {% if s.h %}<h2 class="h">{{ s.h|safe }}</h2>{% endif %}
+      {% for it in s['items'] %}<div class="srcrow"><span class="n mono">{{ '%02d' % loop.index }}</span><div><div class="t">{{ it.t|safe }}</div><div class="u mono">{{ it.u }}</div></div></div>{% endfor %}
     {%- elif s.type == 'cta' %}
       <div class="verb">{{ s.verb }}</div>
       <div class="keyword" data-fit>{{ s.keyword }}</div>
