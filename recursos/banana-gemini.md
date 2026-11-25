@@ -18,13 +18,13 @@ Recurso gratis de RUTA 100K para seguidores. Lo que dice Google viene con su enl
 
 **Producto**
 
-1. «Convierte esta foto en una foto de producto profesional: fondo de estudio limpio, luz suave, sombra natural, como para una tienda en línea. No cambies el producto.»
+1. **El anuncio de lujo del post:** «Convierte esta foto en un anuncio publicitario de lujo para este reloj. Fondo negro profundo con reflejos dorados suaves. El reloj sobre una superficie de piedra oscura con gotas de agua. Iluminación de estudio dramática con luz lateral que resalte el metal y el cristal, destellos sutiles y profundidad de campo cinematográfica. Calidad de campaña de revista. Formato vertical. Mantén el reloj exactamente igual: misma forma, mismos colores, misma correa y misma esfera.» Cambia «reloj» por tu producto. Si lo modifica, repite con: «Mantén el producto exactamente igual, cambia solo el fondo y la luz.»
 2. «Pon este producto sobre una mesa de mármol blanco con luz de mañana entrando por una ventana. Mantén el producto exactamente igual.»
 3. «Pon este producto en las manos de una persona en una cafetería, con el fondo desenfocado. No cambies el producto.»
 4. «Haz una composición vista desde arriba con este producto en el centro y objetos relacionados alrededor, fondo color pastel.»
 5. «Ambienta este producto para Navidad: luces cálidas, fondo rojo oscuro, estilo anuncio.»
 6. «Fondo blanco puro, producto centrado, sombra suave abajo, listo para catálogo.»
-7. «Pon este producto en una repisa de una tienda elegante, con luz cálida. No cambies el producto.»
+7. «Convierte esta foto en una foto de producto profesional: fondo de estudio limpio, luz suave, sombra natural, como para una tienda en línea. No cambies el producto.»
 
 **Portadas y miniaturas**
 

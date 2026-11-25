@@ -18,6 +18,14 @@ Des posts qui apprennent quelque chose de fort et donnent envie de demander la s
 4. **DINERO** : comment les plateformes paient les créateurs, avec les conditions officielles, et ce que coûtent vraiment les outils. Selon le sujet, un réseau ou les deux.
 5. **VISTAS** : ressources pour faire plus de vues (prompts, accroches, idées, bio, sous-titres). Les deux réseaux.
 
+## Ton et promesse (recadrage de Vincent, 25/11 16h)
+
+- On parle à des Latinos de 18 à 25 ans, très ambitieux, pour qui percer sur TikTok est la porte de sortie. Ton latino, énergique, on peut en faire trop : « parece de 2030 », « esto es gratis », « eso se cobra ». Jamais le ton prudent d'un rapport.
+- Chaque post apprend un truc de malade sur l'IA qui sert à grossir son compte ou à gagner de l'argent, avec presque rien : outils gratuits ou alternatives gratuites aux outils à 20, 100 ou 200 dollars par mois.
+- Le mot-clé promet l'info du siècle, concrète : « el prompt exacto de este anuncio », « 10 prompts para crear tu app y cómo venderla ». Plus jamais « la mejor hora para publicar », les sous-titres auto ou le statut du compte : trop 2020.
+- Pour donner faim avec les abonnés, uniquement les vrais paliers officiels (lien en bio à 1 000 abonnés, Recompensas TikTok à 10 000) et le fait qu'un client paie sans abonnés. Jamais nos chiffres.
+- Première slide : un vrai avant/après (type `ba`, images faites par Vincent, filigrane Gemini gardé), un payant → gratuit (`vs`), ou une promesse en 2 à 6 mots. Jamais un faux avant/après.
+
 ## Lignes rouges
 
 - Aucun chiffre, résultat, témoignage, partenariat ou preuve inventé. Chaque fait sur une slide est vérifié pendant la production sur une source officielle ouverte (WebFetch), sinon il saute. Les prix viennent de la page de prix officielle, avec la date de vérification en pied.

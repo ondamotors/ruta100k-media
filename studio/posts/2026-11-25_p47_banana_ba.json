@@ -1,0 +1,117 @@
+{
+ "id": "2026-11-25_p47_banana_ba",
+ "kind": "carousel",
+ "series": "IA GRATIS",
+ "foot_left": "Hecho con Nano Banana de Gemini",
+ "foot_last": "Verificado el 25/11/2026",
+ "slides": [
+  {
+   "type": "ba",
+   "theme": "dark",
+   "lines": [
+    "Esto es gratis"
+   ],
+   "size": 150,
+   "stage_h": 720,
+   "before": "assets/watch_before.jpg",
+   "after": "assets/watch_after.jpg",
+   "sub": "Foto de celular → anuncio de lujo, con la IA de Google."
+  },
+  {
+   "type": "photo",
+   "theme": "dark",
+   "kicker": "El resultado, completo",
+   "h1": "Un solo prompt. Sin cámara, sin estudio, sin pagar.",
+   "img": "assets/watch_after.jpg",
+   "stage_h": 820,
+   "tag": "HECHO CON IA"
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "Antes de seguir",
+   "display": [
+    "Nano",
+    "Banana"
+   ],
+   "display_size": 230,
+   "h1": "Está en la app de Gemini, es gratis y edita tus fotos con una frase.",
+   "lead": "<b>No te saltes la 3: es la que te arma una campaña completa.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "1 de 3",
+   "display": [
+    "El",
+    "anuncio"
+   ],
+   "display_size": 220,
+   "h1": "Subes tu foto y le pides el anuncio.",
+   "lead": "Fondo, luz, reflejos y ambiente: todo cambia con una frase. El producto queda igual."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "2 de 3",
+   "display": [
+    "Texto"
+   ],
+   "display_size": 260,
+   "h1": "Escribe texto dentro de la imagen, y se lee.",
+   "lead": "Para tus portadas, miniaturas y anuncios."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "3 de 3 · no te la saltes",
+   "display": [
+    "La",
+    "campaña"
+   ],
+   "display_size": 220,
+   "h1": "Mantiene igual el producto en cada imagen.",
+   "lead": "<b>Una campaña completa para un emprendedor. Eso se cobra.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "Ojo · el límite real",
+   "display": [
+    "Solo",
+    "+18"
+   ],
+   "display_size": 240,
+   "h1": "Editar fotos no está disponible para menores de 18 años.",
+   "lead": "Y el plan gratis tiene un límite diario de imágenes."
+  },
+  {
+   "type": "sources",
+   "theme": "dark",
+   "kicker": "Fuentes",
+   "h2": "Todo, de Google",
+   "items": [
+    {
+     "t": "Nano Banana, Gemini",
+     "u": "gemini.google/overview/image-generation"
+    },
+    {
+     "t": "Crear y editar imágenes, Centro de ayuda de Gemini",
+     "u": "support.google.com/gemini/answer/14286560"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "BANANA",
+   "lead": "Y escríbeme BANANA por DM: te mando el prompt exacto de este anuncio y 14 más para convertir fotos de celular en fotos de estudio.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para tu próxima foto."
+   ]
+  }
+ ]
+}

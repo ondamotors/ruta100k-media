@@ -18,6 +18,18 @@
     {%- if s.type == 'hook' %}
       {% for l in s.lines %}<div class="display" data-fit style="font-size: {{ s.size or 190 }}px">{{ l|safe }}</div>{% endfor %}
       {% if s.sub %}<p class="sub">{{ s.sub|safe }}</p>{% endif %}
+    {%- elif s.type == 'ba' %}
+      {% for l in s.lines %}<div class="display" data-fit style="font-size: {{ s.size or 170 }}px">{{ l|safe }}</div>{% endfor %}
+      <div class="ba-stage" style="height: {{ s.stage_h or 760 }}px">
+        <img class="ba-after" src="{{ root }}/{{ s.after }}" style="object-position: {{ s.after_pos or 'center' }}">
+        <span class="ba-tag after mono">{{ s.after_label or 'DESPUÉS' }}</span>
+        <div class="ba-before"><img src="{{ root }}/{{ s.before }}" style="object-position: {{ s.before_pos or 'center' }}"><span class="ba-tag mono">{{ s.before_label or 'ANTES' }}</span></div>
+      </div>
+      {% if s.sub %}<p class="sub">{{ s.sub|safe }}</p>{% endif %}
+    {%- elif s.type == 'photo' %}
+      {% if s.h %}<h2 class="h">{{ s.h|safe }}</h2>{% endif %}
+      <div class="ba-stage" style="height: {{ s.stage_h or 900 }}px"><img class="ba-after" src="{{ root }}/{{ s.img }}" style="object-position: {{ s.pos or 'center' }}">{% if s.tag %}<span class="ba-tag after mono">{{ s.tag }}</span>{% endif %}</div>
+      {% if s.text %}<p class="text">{{ s.text|safe }}</p>{% endif %}
     {%- elif s.type == 'punch' %}
       <h2 class="h">{{ s.h|safe }}</h2>
       {% if s.text %}<p class="text">{{ s.text|safe }}</p>{% endif %}

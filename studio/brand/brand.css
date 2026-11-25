@@ -237,3 +237,12 @@ b, strong { font-weight: inherit; color: var(--coral); }
 .vs-block.free .vs-name { color: var(--coral); }
 .vs-price { font-size: 36px; margin-top: 16px; }
 .vs-arrow { font-weight: 900; font-stretch: 62%; font-size: 150px; line-height: 0.9; color: var(--coral); margin: 22px 0 18px; }
+
+/* Avant / après : grande image après, petite image avant en incrustation */
+.ba-stage { position: relative; width: 100%; margin: 26px 0 24px; overflow: hidden; background: #000; flex-shrink: 0; }
+.ba-after { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.ba-before { position: absolute; left: 22px; bottom: 22px; width: 250px; height: 333px; border: 5px solid var(--paper); background: var(--ink); box-sizing: border-box; }
+.ba-before img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.ba-tag { position: absolute; top: 0; left: 0; background: var(--ink); color: var(--paper); font-family: "Plex Mono", monospace; font-weight: 600; font-size: 22px; padding: 6px 12px; letter-spacing: 0.06em; }
+.ba-tag.after { top: 18px; left: auto; right: 18px; background: var(--coral); color: var(--ink); font-size: 24px; }
+.ba .clean-sub { margin-top: 0; font-size: 42px; }

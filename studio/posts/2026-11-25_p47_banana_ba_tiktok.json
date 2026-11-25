@@ -1,0 +1,92 @@
+{
+ "id": "2026-11-25_p47_banana_ba_tiktok",
+ "kind": "tiktok",
+ "series": "IA GRATIS",
+ "foot_left": "Hecho con Nano Banana de Gemini",
+ "foot_last": "Verificado el 25/11/2026",
+ "slides": [
+  {
+   "type": "ba",
+   "theme": "dark",
+   "lines": [
+    "Esto es gratis"
+   ],
+   "size": 170,
+   "before": "assets/watch_before.jpg",
+   "after": "assets/watch_after.jpg",
+   "sub": "Foto de celular → anuncio de lujo. <b>Con la IA de Google.</b>"
+  },
+  {
+   "type": "photo",
+   "theme": "dark",
+   "h": "Un solo prompt.",
+   "img": "assets/watch_after.jpg",
+   "stage_h": 860,
+   "tag": "HECHO CON IA",
+   "text": "Sin cámara, sin estudio, sin pagar."
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "Se llama Nano Banana.",
+   "text": "Está en la app de Gemini y es gratis."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "1 de 3",
+   "h": "Subes tu foto y pides el anuncio.",
+   "text": "Fondo, luz y reflejos, con una frase."
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "2 de 3",
+   "h": "Escribe texto que sí se lee.",
+   "text": "Para portadas, miniaturas y anuncios."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "3 de 3 · no te la saltes",
+   "h": "El mismo producto en cada foto.",
+   "text": "Una campaña completa. <b>Eso se cobra.</b>"
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Ojo · el límite real",
+   "h": "Editar fotos: solo +18.",
+   "text": "Y el plan gratis tiene un límite diario."
+  },
+  {
+   "type": "sources",
+   "theme": "dark",
+   "kicker": "Fuentes",
+   "h": "Todo, de Google",
+   "items": [
+    {
+     "t": "Nano Banana, Gemini",
+     "u": "gemini.google/overview/image-generation"
+    },
+    {
+     "t": "Crear y editar imágenes, Centro de ayuda de Gemini",
+     "u": "support.google.com/gemini/answer/14286560"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "BANANA",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme BANANA por mensaje.",
+    "Te mando el prompt exacto de este anuncio y 14 más."
+   ]
+  }
+ ]
+}
