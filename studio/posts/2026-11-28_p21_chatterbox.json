@@ -27,7 +27,7 @@
     "latino."
    ],
    "size": 210,
-   "sub": "Tiene un modelo solo para <b>español de Latinoamérica</b>, con licencia MIT. Y la 3 casi nadie la conoce.",
+   "sub": "Tiene un modelo solo para <b>español de Latinoamérica</b>, con licencia MIT. Y no te saltes la 3.",
    "foot_left": "huggingface.co/ResembleAI · 25/11/2026"
   },
   {
@@ -57,7 +57,7 @@
   {
    "type": "cover_clean",
    "theme": "dark",
-   "kicker": "3 de 4 · la que casi nadie conoce",
+   "kicker": "3 de 4 · no te la saltes",
    "lines": [
     "Sin",
     "instalar"

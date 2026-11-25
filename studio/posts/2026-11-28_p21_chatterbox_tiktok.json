@@ -31,7 +31,7 @@
    "theme": "dark",
    "kicker": "1 de 4 · voz en off",
    "h": "Narra tus videos sin grabarte.",
-   "text": "Escribes el texto, te da la voz. <b>Y sirve para contenido que monetizas.</b>",
+   "text": "Escribes el texto, te da la voz. <b>Sirve si monetizas.</b>",
    "foot_left": "github.com/resemble-ai/chatterbox"
   },
   {
@@ -39,13 +39,13 @@
    "theme": "light",
    "kicker": "2 de 4 · tu voz",
    "h": "Clona tu voz con 10 segundos.",
-   "text": "Basta un audio corto de referencia. Usa la tuya, o una con permiso.",
+   "text": "Basta un audio corto. Usa la tuya, o una con permiso.",
    "foot_left": "resemble.ai"
   },
   {
    "type": "punch",
    "theme": "dark",
-   "kicker": "3 de 4 · la que casi nadie conoce",
+   "kicker": "3 de 4 · no te la saltes",
    "h": "Pruébalo sin instalar nada.",
    "text": "Demo oficial en el navegador: <b>300 caracteres</b> por intento, con tu micrófono.",
    "foot_left": "huggingface.co/spaces/ResembleAI"
@@ -62,8 +62,8 @@
    "type": "punch",
    "theme": "coral",
    "kicker": "Ojo · el límite real",
-   "h": "La demo tiene cupo diario.",
-   "text": "5 minutos de GPU al día con cuenta gratis. Y cada audio lleva marca de agua.",
+   "h": "Cupo diario y marca de agua.",
+   "text": "Con cuenta gratis: 5 minutos de GPU al día en la demo.",
    "foot_left": "huggingface.co/docs · github.com/resemble-ai"
   },
   {

@@ -23,11 +23,11 @@
    "theme": "light",
    "kicker": "Antes de seguir",
    "lines": [
-    "Y está en",
-    "español."
+    "Español",
+    "incluido."
    ],
    "size": 210,
-   "sub": "Open source, licencia AGPL-3.0, sin suscripción. La interfaz viene en español. Y la 3 casi nadie la usa.",
+   "sub": "Open source, licencia AGPL-3.0, sin suscripción. Y la interfaz viene en español. No te saltes la 3.",
    "foot_left": "github.com/upscayl/upscayl · 25/11/2026"
   },
   {
@@ -57,7 +57,7 @@
   {
    "type": "cover_clean",
    "theme": "dark",
-   "kicker": "3 de 4 · la que casi nadie usa",
+   "kicker": "3 de 4 · no te la saltes",
    "lines": [
     "Elige el",
     "modelo"
@@ -89,8 +89,8 @@
      "d": "Con la mayoría de las gráficas integradas, o solo con el procesador, no funciona."
     },
     {
-     "t": "No arregla fotos movidas.",
-     "d": "Mejora imágenes pequeñas o pixeladas, pero no quita el desenfoque."
+     "t": "No arregla fotos desenfocadas.",
+     "d": "Mejora imágenes pequeñas o pixeladas, pero no quita el desenfoque ni corrige el foco."
     },
     {
      "t": "Bájalo de su web, no de la Mac App Store.",

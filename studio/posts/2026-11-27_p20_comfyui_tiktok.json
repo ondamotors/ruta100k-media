@@ -23,7 +23,7 @@
    "theme": "coral",
    "kicker": "Antes de seguir",
    "h": "Y no es una prueba.",
-   "text": "Open source y gratis. Su web lo dice: sin funciones bloqueadas, sin periodo de prueba.",
+   "text": "Su web lo dice: sin funciones bloqueadas, sin periodo de prueba.",
    "foot_left": "comfy.org/download"
   },
   {
@@ -39,15 +39,15 @@
    "theme": "light",
    "kicker": "2 de 4 · sin cupo",
    "h": "Sin cupo mensual.",
-   "text": "Midjourney Basic trae <b>200 minutos</b> de GPU rápida al mes. Aquí manda tu computador.",
+   "text": "Midjourney Basic: <b>200 minutos</b> de GPU rápida al mes. Aquí, tu computador.",
    "foot_left": "docs.midjourney.com"
   },
   {
    "type": "punch",
    "theme": "dark",
-   "kicker": "3 de 4 · la que casi nadie usa",
+   "kicker": "3 de 4 · no te la saltes",
    "h": "No armas nada: abres una plantilla.",
-   "text": "Buscas <b>«Flux.1 Schnell»</b> en su biblioteca, escribes tu prompt y generas.",
+   "text": "Abres <b>«Flux.1 Schnell»</b>, descargas el modelo y escribes tu prompt.",
    "foot_left": "docs.comfy.org"
   },
   {
@@ -63,7 +63,7 @@
    "theme": "coral",
    "kicker": "Ojo · el límite real",
    "h": "Más técnico, y mejor con buena tarjeta gráfica.",
-   "text": "Trabajas con nodos. Y cada modelo tiene su licencia: FLUX.1 [dev] no es comercial.",
+   "text": "Usas nodos. Cada modelo tiene su licencia: FLUX.1 [dev] no es comercial.",
    "foot_left": "docs.comfy.org"
   },
   {

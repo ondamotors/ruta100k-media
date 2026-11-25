@@ -45,7 +45,7 @@
   {
    "type": "punch",
    "theme": "dark",
-   "kicker": "3 de 4 · la que casi nadie usa",
+   "kicker": "3 de 4 · no te la saltes",
    "h": "Elige el modelo según la imagen.",
    "text": "<b>«Arte Digital»</b> para ilustraciones. <b>«Alta Fidelidad»</b> para fotos realistas.",
    "foot_left": "github.com/upscayl/upscayl"
@@ -63,7 +63,7 @@
    "theme": "coral",
    "kicker": "Ojo · el límite real",
    "h": "Pide tarjeta gráfica compatible con Vulkan.",
-   "text": "No quita el desenfoque. Y en la Mac App Store cuesta US$12.99: bájalo gratis de su web.",
+   "text": "En la Mac App Store cuesta US$12.99: bájalo gratis de su web.",
    "foot_left": "github.com/upscayl · apps.apple.com"
   },
   {

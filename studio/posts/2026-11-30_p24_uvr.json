@@ -27,7 +27,7 @@
     "de minutos."
    ],
    "size": 210,
-   "sub": "El plan gratis de Lalal.ai te da 10 minutos para probar. UVR corre en tu computador, con licencia MIT. Y la 3 casi nadie la usa.",
+   "sub": "El plan gratis de Lalal.ai te da 10 minutos para probar. UVR corre en tu computador, con licencia MIT. Y no te saltes la 3.",
    "foot_left": "lalal.ai/pricing · github.com/Anjok07 · 25/11/2026"
   },
   {
@@ -57,13 +57,13 @@
   {
    "type": "cover_clean",
    "theme": "dark",
-   "kicker": "3 de 4 · la que casi nadie usa",
+   "kicker": "3 de 4 · no te la saltes",
    "lines": [
-    "Quita el",
-    "eco"
+    "Sin eco",
+    "en tu voz"
    ],
    "size": 200,
-   "sub": "Con el modelo <b>«UVR-DeEcho-DeReverb»</b> instalado, quita la reverberación de una voz. Para la grabación que hiciste en un cuarto vacío.",
+   "sub": "Con el modelo <b>«UVR-DeEcho-DeReverb»</b> instalado, quita la reverberación de una pista de voz. Para la grabación que hiciste en un cuarto vacío.",
    "foot_left": "github.com/Anjok07/ultimatevocalremovergui · 25/11/2026"
   },
   {
@@ -76,7 +76,7 @@
    ],
    "size": 200,
    "sub": "Con los modelos Demucs separa <b>voz, batería, bajo y el resto</b>. Para tus remixes y edits con música propia.",
-   "foot_left": "github.com/Anjok07 · github.com/facebookresearch/demucs · 25/11/2026"
+   "foot_left": "github.com/facebookresearch/demucs · 25/11/2026"
   },
   {
    "type": "numbered",
@@ -85,12 +85,12 @@
    "h2": "Antes de instalarlo",
    "items": [
     {
-     "t": "Rápido con NVIDIA de 6 GB o más.",
-     "d": "Es el mínimo para usar la tarjeta gráfica: una GTX 1060 de 6 GB; recomiendan 8 GB. Si no, el tiempo depende de tu equipo."
+     "t": "Para ir rápido, pide tarjeta gráfica.",
+     "d": "En PC, una NVIDIA GTX 1060 de 6 GB como mínimo (recomiendan 8 GB). En Mac con chip M1 acelera Demucs v4 y MDX-Net."
     },
     {
      "t": "Su versión estable es de 2023.",
-     "d": "La 5.6; después salieron versiones beta. En Windows se instala sí o sí en el disco C:."
+     "d": "La 5.6; después salieron versiones beta. En Windows hay que instalarlo en el disco C."
     },
     {
      "t": "Separar no te da derechos.",

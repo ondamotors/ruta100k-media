@@ -27,7 +27,7 @@
     "usarlas."
    ],
    "size": 210,
-   "sub": "En el plan gratis de Suno no hay derechos comerciales ni descargas. ACE-Step es MIT y su ficha oficial <b>permite el uso comercial</b> de la música que generas. Y la 3 casi nadie la usa.",
+   "sub": "En el plan gratis de Suno no hay derechos comerciales ni descargas. ACE-Step es MIT y su ficha oficial <b>permite el uso comercial</b> de la música que generas. Y no te saltes la 3.",
    "foot_left": "suno.com/pricing · huggingface.co/ACE-Step · 25/11/2026"
   },
   {
@@ -35,11 +35,11 @@
    "theme": "dark",
    "kicker": "1 de 4 · música de fondo",
    "lines": [
-    "Tu música",
-    "de fondo"
+    "Tu banda",
+    "sonora"
    ],
    "size": 200,
-   "sub": "Describes el estilo y genera la pieza en tu computador, de <b>10 segundos a 10 minutos</b>. Y si no quieres voz, la pides instrumental.",
+   "sub": "Describes el estilo y genera la pieza en tu computador, de <b>10 segundos a 10 minutos</b> según tu tarjeta gráfica. Y si no quieres voz, la pides instrumental.",
    "foot_left": "github.com/ace-step/ACE-Step-1.5 · 25/11/2026"
   },
   {
@@ -47,8 +47,8 @@
    "theme": "light",
    "kicker": "2 de 4 · con letra",
    "lines": [
-    "Letra en",
-    "español"
+    "Tu letra",
+    "50+ idiomas"
    ],
    "size": 200,
    "sub": "Escribes tu propia letra: acepta más de 50 idiomas, español incluido. El jingle de tu marca o la canción de tu serie.",
@@ -57,7 +57,7 @@
   {
    "type": "cover_clean",
    "theme": "dark",
-   "kicker": "3 de 4 · la que casi nadie usa",
+   "kicker": "3 de 4 · no te la saltes",
    "lines": [
     "Rehaz",
     "un tramo"
