@@ -11,6 +11,8 @@ Prendre les entrées dans l'ordre. Cocher une fois programmée, avec l'id Metric
 - [x] Día 2 · 26/11 00:30 · Tier list TikTok · Metricool 440896545
 - [x] Día 2 · 26/11 02:30 · 30 ganchos (mot GANCHOS) · Metricool 440875965
 
+- [x] Instagram · 25/11 01:25 Día 1 (441081949) · 02:30 Stack (441081976) · 04:00 Tier list Instagram (441081990) · 18:30 El prompt (441082008) · 26/11 00:30 Tier list TikTok (441082046) · 02:30 30 ganchos (441082068)
+
 ## À produire
 
 

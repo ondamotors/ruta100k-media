@@ -4,7 +4,7 @@
 
 ## Le compte
 
-- RUTA 100K, TikTok « RUTA 100K | Crecer con IA » connecté à Metricool. Instagram pas encore connecté.
+- RUTA 100K | Crecer con IA. TikTok @ruta100k et Instagram @ruta100k.latam, tous deux connectés à Metricool. Chaque post sort sur les deux réseaux.
 - Espagnol latino neutre, tutoiement. Défi public : 0 à 100K abonnés du 24/11/2026 au 22/01/2027.
 - Día N = date en Amérique latine. Día 1 = 24/11/2026, Día 2 = 25/11/2026, etc.
 - Vincent peut apparaître dans des vidéos mais ne parle jamais face caméra. Il a déjà fait grandir d'autres comptes : on le dit, mais aucun chiffre sur ces comptes tant qu'il n'a pas fourni ses captures.
@@ -20,11 +20,11 @@
 
 ## Créneaux
 
-Metricool : brand 8343331, timezone Europe/Paris, réseau tiktok.
+Metricool : brand 8343331, timezone Europe/Paris, réseaux tiktok et instagram.
 
 Día N : 18:30 le jour N, puis 00:30 et 02:30 le jour N+1 (heure de Paris), soit 12:30, 18:30 et 20:30 à Bogotá.
 
-Un créneau est pris s'il existe déjà un post programmé à moins de 20 minutes. Une entrée du backlog à date imposée réserve son créneau : ne rien y mettre d'autre, et ne la produire que le jour indiqué.
+Un créneau est pris, réseau par réseau, s'il existe déjà un post programmé à moins de 20 minutes sur ce réseau. Une entrée du backlog à date imposée réserve son créneau : ne rien y mettre d'autre, et ne la produire que le jour indiqué.
 
 ## Mix quotidien
 
@@ -32,9 +32,9 @@ Un créneau est pris s'il existe déjà un post programmé à moins de 20 minute
 2. SOURCE OFFICIELLE ou OUTILS vérifiés : tier list, comparatif, « ce que TikTok a dit ». Fait pour le débat et le partage.
 3. RETO : récit du défi, coulisses, chiffres réels tirés de Metricool. Fait pour le follow.
 
-## Mécanique commentaire + follow sur TikTok
+## Mécanique commentaire + follow
 
-ManyChat ne peut pas se brancher sur un compte TikTok basé dans l'UE : Vincent livre les ressources à la main en DM.
+ManyChat ne peut pas se brancher sur un compte TikTok basé dans l'UE, et rien n'est encore automatisé sur Instagram : Vincent livre les ressources à la main en DM sur les deux réseaux.
 
 - Dernière slide d'un post ressource : type `cta`, verb « Comenta », keyword = le mot-clé en majuscules, lead « Y escríbeme MOT por mensaje: te mando … », list [« Solo para seguidores: sígueme antes de escribir. », « Guárdalo para … »].
 - Légende : une phrase de valeur, puis « ¿Lo quieres? Comenta MOT, sígueme y escríbeme MOT por mensaje. », puis 3 ou 4 hashtags de niche.
@@ -47,7 +47,9 @@ ManyChat ne peut pas se brancher sur un compte TikTok basé dans l'UE : Vincent 
 2. Rendu : `cd studio && python3 render.py posts/<fichier>.json`. Zéro ligne « [A CORRIGER] » : raccourcir le texte ou ajouter `"compact": true`. Puis ouvrir `out/<id>/planche.png` avec Read et vérifier chaque slide à l'œil.
 3. Export JPEG qualité 92 : `<AAAA-MM-JJ>/p<N>_<slug>/tiktok/NN.jpg` (depuis `out/<id>/tt/`) et `.../instagram/NN.jpg` (depuis `out/<id>/ig/`), à la racine du dépôt.
 4. Commit avec `git -c user.name="RUTA 100K" -c user.email="studio@ruta100k.invalid"`, jamais d'adresse personnelle. Push sur main.
-5. Metricool `createScheduledPost` : media = `https://raw.githubusercontent.com/ondamotors/ruta100k-media/<SHA du commit>/<chemin>` (le SHA, jamais main), providers tiktok, autoPublish true, tiktokData { privacyOption PUBLIC_TO_EVERYONE, title de 90 caractères maximum, autoAddMusic true, photoCoverIndex 0 }.
+5. Metricool `createScheduledPost`, deux fois au même créneau, avec media = `https://raw.githubusercontent.com/ondamotors/ruta100k-media/<SHA du commit>/<chemin>` (le SHA, jamais main) et autoPublish true :
+   - TikTok : images `tiktok/NN.jpg`, providers tiktok, tiktokData { privacyOption PUBLIC_TO_EVERYONE, title de 90 caractères maximum, autoAddMusic true, photoCoverIndex 0 }.
+   - Instagram : images `instagram/NN.jpg` (10 au maximum), providers instagram, instagramData { type POST, isAiGenerated false }. Même légende, avec « por DM » au lieu de « por mensaje ».
 6. Dans `studio/plan/backlog.md`, cocher l'entrée et noter l'id Metricool et l'heure.
 
 ## Chiffres du défi
