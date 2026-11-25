@@ -1,0 +1,117 @@
+{
+ "id": "2026-11-26_p47_banana",
+ "kind": "carousel",
+ "series": "IA GRATIS",
+ "foot_left": "Solo lo que Google publicó",
+ "foot_last": "Verificado el 25/11/2026",
+ "slides": [
+  {
+   "type": "cover_clean",
+   "theme": "dark",
+   "kicker": "Gratis · de Google",
+   "lines": [
+    "Tu celular ya",
+    "es un estudio"
+   ],
+   "size": 210,
+   "sub": "Fotos de producto con IA, gratis."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "Antes de seguir",
+   "display": [
+    "Nano",
+    "Banana"
+   ],
+   "display_size": 230,
+   "h1": "Está en la app de Gemini, es gratis y edita tus fotos con una frase.",
+   "lead": "<b>No te saltes la 3: es la que te arma una serie completa.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "1 de 4",
+   "display": [
+    "El fondo"
+   ],
+   "display_size": 220,
+   "h1": "Cambia el fondo de tu foto escribiendo lo que quieres.",
+   "lead": "«Ponlo en una mesa de mármol con luz de mañana.» Y la foto de tu cuarto se vuelve foto de estudio."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "2 de 4",
+   "display": [
+    "Texto"
+   ],
+   "display_size": 260,
+   "h1": "Escribe texto dentro de la imagen, y se lee.",
+   "lead": "Para tus portadas, miniaturas y anuncios."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "3 de 4 · no te la saltes",
+   "display": [
+    "La misma",
+    "cara"
+   ],
+   "display_size": 220,
+   "h1": "Mantiene igual a la persona o al producto en cada imagen.",
+   "lead": "<b>Una serie completa con el mismo protagonista.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "4 de 4 · para cobrar",
+   "display": [
+    "Cóbralo"
+   ],
+   "display_size": 230,
+   "h1": "Fotos de catálogo para emprendedores de tu zona.",
+   "lead": "Tienda en línea, redes, WhatsApp. Sin cámara ni estudio."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "Ojo · el límite real",
+   "display": [
+    "Solo",
+    "+18"
+   ],
+   "display_size": 240,
+   "h1": "Editar fotos no está disponible para menores de 18 años.",
+   "lead": "Y el plan gratis tiene un límite diario de imágenes."
+  },
+  {
+   "type": "sources",
+   "theme": "light",
+   "kicker": "Fuentes",
+   "h2": "Todo, de Google",
+   "items": [
+    {
+     "t": "Nano Banana, Gemini",
+     "u": "gemini.google/overview/image-generation"
+    },
+    {
+     "t": "Crear y editar imágenes, Centro de ayuda de Gemini",
+     "u": "support.google.com/gemini/answer/14286560"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "BANANA",
+   "lead": "Y escríbeme BANANA por DM: te mando 15 prompts que convierten una foto de celular en foto de estudio.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para tu próxima foto."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,90 @@
+{
+ "id": "2026-11-26_p47_banana_tiktok",
+ "kind": "tiktok",
+ "series": "IA GRATIS",
+ "foot_left": "Solo lo que Google publicó",
+ "foot_last": "Verificado el 25/11/2026",
+ "slides": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "kicker": "Gratis · de Google",
+   "lines": [
+    "Tu celular ya",
+    "es un estudio"
+   ],
+   "size": 200,
+   "sub": "Fotos de producto con IA. <b>Gratis.</b>"
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "Se llama Nano Banana.",
+   "text": "Está en Gemini, es gratis y edita tus fotos con una frase."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "1 de 4",
+   "h": "Cambia el fondo con una frase.",
+   "text": "«Ponlo en una mesa de mármol con luz de mañana.»"
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "2 de 4",
+   "h": "Escribe texto que sí se lee.",
+   "text": "Para tus portadas y miniaturas."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "3 de 4 · no te la saltes",
+   "h": "La misma cara en todas tus fotos.",
+   "text": "Mantiene igual a la persona o al producto. <b>Ideal para una serie.</b>"
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "4 de 4 · para cobrar",
+   "h": "Fotos para emprendedores.",
+   "text": "Catálogo, tienda en línea, redes. <b>Eso se cobra.</b>"
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Ojo · el límite real",
+   "h": "Editar fotos: solo +18.",
+   "text": "Y el plan gratis tiene un límite diario."
+  },
+  {
+   "type": "sources",
+   "theme": "dark",
+   "kicker": "Fuentes",
+   "h": "Todo, de Google",
+   "items": [
+    {
+     "t": "Nano Banana, Gemini",
+     "u": "gemini.google/overview/image-generation"
+    },
+    {
+     "t": "Crear y editar imágenes, Centro de ayuda de Gemini",
+     "u": "support.google.com/gemini/answer/14286560"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "BANANA",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme BANANA por mensaje.",
+    "Te mando 15 prompts que convierten una foto de celular en foto de estudio."
+   ]
+  }
+ ]
+}
