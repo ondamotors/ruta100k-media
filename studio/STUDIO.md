@@ -17,6 +17,7 @@
 - Toute ressource promise existe dans `recursos/` avant que le post soit programmé.
 - Jamais de tiret cadratin. Pas d'emoji dans les slides.
 - Rien n'est publié hors Metricool. Aucun DM, aucun commentaire au nom de Vincent.
+- Ne jamais chercher dans Google Drive, Gmail, Slack ou Notion : ces connecteurs sont des comptes professionnels sans rapport avec RUTA 100K. Les idées viennent du backlog, des analytics Metricool et de la recherche du run.
 
 ## Créneaux
 
@@ -28,6 +29,8 @@ Metricool : brand 8343331, timezone Europe/Paris, réseaux tiktok et instagram. 
 | Instagram | RESSOURCE, carrousel 4:5 | rien | SOURCE ou OUTILS, carrousel 4:5 | RETO, carrousel 4:5 |
 
 Un créneau est pris, réseau par réseau, s'il existe déjà un post programmé à moins de 20 minutes sur ce réseau. Une entrée du backlog à date imposée réserve son créneau : ne rien y mettre d'autre, et ne la produire que le jour indiqué.
+
+Les créneaux RETO (vidéo « Día N/60 » et carrousel RETO Instagram) ne se remplissent que pour le Día d'aujourd'hui, avec les chiffres Metricool du matin même : publier un chiffre vieux d'un jour et demi sous l'étiquette du jour suivant serait trompeur. Seule exception, un RETO dont les chiffres sont figés (post supprimé, semaine terminée).
 
 Un post qui ne parle que d'une plateforme (tier list TikTok, astuce Instagram) ne sort que sur cette plateforme : le noter « TikTok seulement » ou « Instagram seulement » dans le backlog et ne jamais le dupliquer. Le créneau laissé libre sur l'autre réseau prend l'entrée suivante du même type.
 

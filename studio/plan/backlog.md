@@ -61,7 +61,7 @@ Onglet Idées du tracker introuvable dans Google Drive le 25/11 : entrées tiré
 
 ## Réserve
 
-Quand il reste moins de 6 entrées à produire, en ajouter 6 en respectant le mix quotidien, en partant de l'onglet Idées du tracker et des posts qui ont le mieux marché dans Metricool.
+Quand il reste moins de 6 entrées à produire, en ajouter 6 en respectant le mix quotidien, en partant des posts qui ont le mieux marché dans Metricool (jamais de Google Drive).
 
 ## Format à tester plus tard (demandé par Vincent le 25/11, ne pas appliquer sans son feu vert)
 
