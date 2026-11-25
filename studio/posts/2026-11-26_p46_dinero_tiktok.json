@@ -1,0 +1,81 @@
+{
+ "id": "2026-11-26_p46_dinero_tiktok",
+ "kind": "tiktok",
+ "series": "DINERO CON IA",
+ "foot_left": "Herramientas verificadas el 25/11/2026",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "kicker": "Sin seguidores · sin plata",
+   "lines": [
+    "5 cosas que",
+    "puedes cobrar"
+   ],
+   "size": 200,
+   "sub": "Con IA gratis. <b>Desde hoy.</b>"
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "No esperes a tener 10K.",
+   "text": "TikTok te paga desde 10K seguidores. Un negocio te paga desde tu primer trabajo."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "1 de 5",
+   "h": "Webs y apps para negocios.",
+   "text": "Las haces con Canvas de Gemini. <b>Gratis.</b>"
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "2 de 5",
+   "h": "Fotos de producto de estudio.",
+   "text": "Con Nano Banana, desde una foto de celular."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "3 de 5 · no te la saltes",
+   "h": "Voz en off para marcas.",
+   "text": "Chatterbox clona una voz con permiso. <b>Licencia MIT: uso comercial.</b>"
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "4 de 5",
+   "h": "Mejorar fotos pixeladas.",
+   "text": "Upscayl las agranda hasta 4x con IA, gratis."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "5 de 5",
+   "h": "Informes de competencia.",
+   "text": "Deep Research analiza cientos de fuentes por ti."
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Ojo · el límite real",
+   "h": "La IA no te consigue clientes.",
+   "text": "Eso lo haces tú. En la guía te digo cómo."
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "DINERO",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme DINERO por mensaje.",
+    "Te mando las 5 paso a paso, cómo poner tu precio y cómo conseguir tu primer cliente."
+   ]
+  }
+ ]
+}

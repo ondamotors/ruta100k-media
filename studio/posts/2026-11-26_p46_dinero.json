@@ -1,0 +1,110 @@
+{
+ "id": "2026-11-26_p46_dinero",
+ "kind": "carousel",
+ "series": "DINERO CON IA",
+ "foot_left": "Herramientas verificadas el 25/11/2026",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "cover_clean",
+   "theme": "dark",
+   "kicker": "Sin seguidores · sin plata",
+   "lines": [
+    "5 cosas que",
+    "puedes cobrar"
+   ],
+   "size": 210,
+   "sub": "Con IA gratis. Desde hoy."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "Antes de seguir",
+   "display": [
+    "No",
+    "esperes."
+   ],
+   "display_size": 220,
+   "h1": "Para que una plataforma te pague necesitas miles de seguidores. Para que un negocio te pague, no.",
+   "lead": "<b>Con herramientas de IA gratis ya puedes vender esto. No te saltes la 3.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "1 de 5",
+   "display": [
+    "Webs"
+   ],
+   "display_size": 260,
+   "h1": "Páginas y apps para negocios de tu zona.",
+   "lead": "Con Canvas de Gemini, gratis: describes la app y la IA la programa."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "2 de 5",
+   "display": [
+    "Fotos"
+   ],
+   "display_size": 260,
+   "h1": "Fotos de producto con calidad de estudio.",
+   "lead": "Con Nano Banana en Gemini, gratis, desde una foto de celular."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "3 de 5 · no te la saltes",
+   "display": [
+    "Voces"
+   ],
+   "display_size": 260,
+   "h1": "Voz en off para los videos de marcas.",
+   "lead": "Chatterbox clona una voz con 10 segundos de audio, con permiso. <b>Licencia MIT: puedes cobrar por lo que haces.</b>"
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "4 de 5",
+   "display": [
+    "Nitidez"
+   ],
+   "display_size": 230,
+   "h1": "Mejorar fotos pequeñas o pixeladas.",
+   "lead": "Upscayl las agranda hasta 4x con IA, gratis y en tu computador."
+  },
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "5 de 5",
+   "display": [
+    "Informes"
+   ],
+   "display_size": 230,
+   "h1": "Análisis de la competencia para un negocio.",
+   "lead": "Deep Research de Gemini analiza cientos de fuentes y te arma el informe, gratis."
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "Ojo · el límite real",
+   "display": [
+    "Clientes"
+   ],
+   "display_size": 230,
+   "h1": "La IA hace el trabajo. Los clientes los consigues tú.",
+   "lead": "En la guía te digo cómo: qué ofrecer, cómo poner tu precio y qué mensaje mandar."
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "DINERO",
+   "lead": "Y escríbeme DINERO por DM: te mando las 5 paso a paso, cómo poner tu precio y cómo conseguir tu primer cliente.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo: es tu plan de esta semana."
+   ]
+  }
+ ]
+}
