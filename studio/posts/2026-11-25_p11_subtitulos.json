@@ -2,28 +2,18 @@
  "id": "2026-11-25_p11_subtitulos",
  "kind": "carousel",
  "series": "SUBTÍTULOS GRATIS",
- "foot_left": "RUTA 100K · Día 3 de 60",
+ "foot_left": "Verificado el 25/11/2026",
  "foot_last": "Gratis para seguidores",
  "slides": [
   {
-   "type": "cover_text",
+   "type": "cover_clean",
    "theme": "dark",
-   "kicker": "Herramientas verificadas · Día 3",
-   "display": [
+   "lines": [
     "Subtítulos",
-    "automáticos,",
-    "gratis."
+    "sin pagar"
    ],
-   "display_size": 200,
-   "h1": "4 opciones que no te cobran por subtitular tus videos.",
-   "lead": "En CapCut son función Pro, según su propio centro de ayuda.",
-   "teaser_label": "Las 4",
-   "teaser": [
-    "TikTok",
-    "Edits",
-    "Buzz",
-    "Kdenlive"
-   ]
+   "size": 230,
+   "sub": "4 opciones. Ninguna es CapCut."
   },
   {
    "type": "tool",

@@ -2,24 +2,18 @@
  "id": "2026-11-26_p12_bio",
  "kind": "carousel",
  "series": "RECURSO GRATIS",
- "foot_left": "RUTA 100K · Día 3 de 60",
+ "foot_left": "RUTA 100K · Recurso gratis",
  "foot_last": "Gratis para seguidores",
  "slides": [
   {
-   "type": "cover_num",
+   "type": "cover_clean",
    "theme": "dark",
-   "kicker": "Recurso gratis · Día 3",
-   "number": "150",
-   "number_size": 460,
-   "h1": "caracteres. Es todo lo que tienes para que una visita te siga.",
-   "lead": "La fórmula de 4 partes, con ejemplos. Gratis al final.",
-   "teaser_label": "La fórmula",
-   "teaser": [
-    "Qué das",
-    "Para quién",
-    "Por qué hoy",
-    "Qué hacer"
-   ]
+   "lines": [
+    "Tu bio",
+    "en 4 partes"
+   ],
+   "size": 230,
+   "sub": "Para que una visita te siga."
   },
   {
    "type": "cover_text",

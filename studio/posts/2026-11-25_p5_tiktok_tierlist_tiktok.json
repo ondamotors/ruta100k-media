@@ -1,0 +1,139 @@
+{
+ "id": "2026-11-25_p5_tiktok_tierlist_tiktok",
+ "kind": "tiktok",
+ "series": "FUENTE OFICIAL",
+ "foot_left": "Solo lo que TikTok publicó",
+ "foot_last": "Verificado el 24/11/2026",
+ "slides": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "lines": [
+    "Tier list",
+    "del Para ti"
+   ],
+   "size": 240,
+   "sub": "Solo con lo que dijo TikTok."
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de empezar",
+   "h": "13 tácticas, 5 niveles.",
+   "text": "El último nivel te puede sacar del Para ti. Fuentes al final."
+  },
+  {
+   "type": "list",
+   "theme": "dark",
+   "kicker": "Elite · lo que más pesa",
+   "items": [
+    {
+     "t": "Que lo vean hasta el final"
+    },
+    {
+     "t": "Que no lo salten"
+    },
+    {
+     "t": "Que lo compartan, comenten o guarden"
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "theme": "light",
+   "kicker": "Solid · lo que TikTok te da",
+   "items": [
+    {
+     "t": "Content Check Lite",
+     "d": "Revisa si tu video es apto antes de subirlo."
+    },
+    {
+     "t": "Tus analíticas",
+     "d": "Si un video queda fuera del Para ti, aparece ahí."
+    },
+    {
+     "t": "Etiqueta comercial",
+     "d": "Sin ella, el video puede quedar fuera."
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "theme": "dark",
+   "kicker": "Okay y Limit · ayuda poco",
+   "items": [
+    {
+     "t": "Hashtags",
+     "d": "Son señal del video. TikTok no dice cuánto pesan."
+    },
+    {
+     "t": "Sonidos en tendencia",
+     "d": "El Para ti evita dos seguidos con el mismo sonido."
+    },
+    {
+     "t": "Muchos seguidores",
+     "d": "No son un factor directo."
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "theme": "coral",
+   "kicker": "Avoid · te saca del Para ti",
+   "items": [
+    {
+     "t": "Prometer like por like"
+    },
+    {
+     "t": "Resubir sin aportar nada"
+    },
+    {
+     "t": "Comprar seguidores o likes"
+    },
+    {
+     "t": "Llenar tu cuenta de contenido no apto"
+    }
+   ]
+  },
+  {
+   "type": "sources",
+   "theme": "dark",
+   "kicker": "Fuentes",
+   "h": "Todo, de TikTok",
+   "items": [
+    {
+     "t": "Cómo TikTok recomienda videos, 18/06/2020",
+     "u": "newsroom.tiktok.com/how-tiktok-recommends-videos-for-you"
+    },
+    {
+     "t": "Sistema de recomendación",
+     "u": "tiktok.com/transparency/en/recommendation-system"
+    },
+    {
+     "t": "Normas: integridad y autenticidad",
+     "u": "tiktok.com/community-guidelines/en/integrity-authenticity"
+    },
+    {
+     "t": "Normas: contenido comercial",
+     "u": "tiktok.com/community-guidelines/en/regulated-commercial-activities"
+    },
+    {
+     "t": "Content Check Lite, 30/07/2025",
+     "u": "newsroom.tiktok.com/new-tools-for-creators"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "La checklist",
+   "verb": "Comenta",
+   "keyword": "ALGORITMO",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme ALGORITMO por mensaje.",
+    "Te mando los 10 puntos que TikTok confirmó, con cada fuente."
+   ]
+  }
+ ]
+}

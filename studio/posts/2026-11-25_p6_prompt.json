@@ -2,26 +2,19 @@
  "id": "2026-11-25_p6_prompt",
  "kind": "carousel",
  "series": "RECURSO GRATIS",
- "foot_left": "RUTA 100K · Día 2 de 60",
+ "foot_left": "RUTA 100K · Recurso gratis",
  "foot_last": "Gratis para seguidores",
  "slides": [
   {
-   "type": "cover_text",
+   "type": "cover_clean",
    "theme": "dark",
-   "kicker": "Recurso gratis · Día 2",
-   "display": [
-    "1 prompt,",
-    "1 carrusel."
+   "lines": [
+    "Este prompt",
+    "escribe tus",
+    "carruseles"
    ],
-   "display_size": 230,
-   "h1": "El prompt con el que escribo los carruseles de esta cuenta.",
-   "lead": "Funciona en ChatGPT, Claude o Gemini. Completo y gratis al final.",
-   "teaser_label": "Lo que resuelve",
-   "teaser": [
-    "El gancho",
-    "La estructura",
-    "El CTA"
-   ]
+   "size": 210,
+   "sub": "En ChatGPT, Claude o Gemini."
   },
   {
    "type": "numbered",
@@ -75,7 +68,7 @@
   {
    "type": "cover_text",
    "theme": "light",
-   "kicker": "La regla que más cambia",
+   "kicker": "La regla que te evita errores",
    "display": [
     "Cero datos",
     "inventados."

@@ -2,25 +2,18 @@
  "id": "2026-11-25_p8_ideas",
  "kind": "carousel",
  "series": "RECURSO GRATIS",
- "foot_left": "RUTA 100K · Día 2 de 60",
+ "foot_left": "RUTA 100K · Recurso gratis",
  "foot_last": "Gratis para seguidores",
  "slides": [
   {
-   "type": "cover_num",
+   "type": "cover_clean",
    "theme": "dark",
-   "kicker": "Recurso gratis · Día 2",
-   "number": "30",
-   "number_size": 420,
-   "h1": "ideas de contenido para cualquier nicho, listas para completar.",
-   "lead": "Aquí van 8. Las 30, gratis al final.",
-   "teaser_label": "Por tipo",
-   "teaser": [
-    "Enseñar",
-    "Comparar",
-    "Contar",
-    "Números",
-    "Fuentes"
-   ]
+   "lines": [
+    "30 ideas",
+    "de contenido"
+   ],
+   "size": 230,
+   "sub": "Para cualquier nicho, listas para completar."
   },
   {
    "type": "cover_text",

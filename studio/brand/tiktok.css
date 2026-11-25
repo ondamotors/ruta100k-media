@@ -84,3 +84,5 @@ b, strong { font-weight: inherit; color: var(--coral); }
 .vs-arrow { font-weight: 900; font-stretch: 62%; font-size: 170px; line-height: 0.9; color: var(--coral); margin: 26px 0 20px; }
 .vs .sub { font-size: 46px; line-height: 1.2; font-weight: 500; margin-top: 48px; }
 .hook .sub { max-width: 830px; }
+.coral .list .n { color: var(--paper); }
+.coral .list .item { border-top-color: rgba(13, 13, 13, 0.25); }

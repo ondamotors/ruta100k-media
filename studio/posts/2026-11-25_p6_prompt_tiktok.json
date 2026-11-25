@@ -1,0 +1,83 @@
+{
+ "id": "2026-11-25_p6_prompt_tiktok",
+ "kind": "tiktok",
+ "series": "RECURSO GRATIS",
+ "foot_left": "RUTA 100K · Recurso gratis",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "lines": [
+    "Este prompt",
+    "escribe tus",
+    "carruseles"
+   ],
+   "size": 210,
+   "sub": "En ChatGPT, Claude o Gemini."
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de copiarlo",
+   "h": "«Hazme un carrusel» no funciona.",
+   "text": "Le faltan 3 cosas. Y la 3 es la que te evita errores."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "1 de 3",
+   "h": "Un objetivo.",
+   "text": "Guardar, enviar o comentar: cada uno pide un carrusel distinto."
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "2 de 3",
+   "h": "Un lector.",
+   "text": "Sin nicho ni nivel, la IA escribe para nadie."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "3 de 3 · la que te evita errores",
+   "h": "Cero datos inventados.",
+   "text": "Si falta un dato, la IA escribe [VERIFICAR] en su lugar. Nunca publicas una cifra falsa."
+  },
+  {
+   "type": "list",
+   "theme": "light",
+   "kicker": "Cómo está armado",
+   "h": "Las 5 partes",
+   "items": [
+    {
+     "t": "Contexto y lector"
+    },
+    {
+     "t": "Un solo objetivo"
+    },
+    {
+     "t": "Estructura"
+    },
+    {
+     "t": "Reglas"
+    },
+    {
+     "t": "Entrega por slide"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "El prompt completo",
+   "verb": "Comenta",
+   "keyword": "PROMPT",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme PROMPT por mensaje.",
+    "Te lo mando completo, listo para copiar."
+   ]
+  }
+ ]
+}

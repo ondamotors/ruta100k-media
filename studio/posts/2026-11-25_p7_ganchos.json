@@ -2,26 +2,18 @@
  "id": "2026-11-25_p7_ganchos",
  "kind": "carousel",
  "series": "RECURSO GRATIS",
- "foot_left": "RUTA 100K · Día 2 de 60",
+ "foot_left": "RUTA 100K · Recurso gratis",
  "foot_last": "Gratis para seguidores",
  "slides": [
   {
-   "type": "cover_num",
+   "type": "cover_clean",
    "theme": "dark",
-   "kicker": "Recurso gratis · Día 2",
-   "number": "30",
-   "number_size": 420,
-   "h1": "ganchos para la primera slide, en español y listos para copiar.",
-   "lead": "Aquí van 6. Los 30, gratis al final.",
-   "teaser_label": "Por tipo",
-   "teaser": [
-    "Números",
-    "Errores",
-    "Contraste",
-    "Fuentes",
-    "Curiosidad",
-    "Guías"
-   ]
+   "lines": [
+    "30 ganchos",
+    "para copiar"
+   ],
+   "size": 230,
+   "sub": "Para la primera slide de tus posts."
   },
   {
    "type": "cover_text",

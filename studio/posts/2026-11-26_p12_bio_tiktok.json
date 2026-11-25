@@ -2,20 +2,19 @@
  "id": "2026-11-26_p12_bio_tiktok",
  "kind": "tiktok",
  "series": "RECURSO GRATIS",
- "foot_left": "RUTA 100K · Día 3 de 60",
+ "foot_left": "RUTA 100K · Recurso gratis",
  "foot_last": "Gratis para seguidores",
  "slides": [
   {
    "type": "hook",
    "theme": "dark",
-   "kicker": "Tu perfil de TikTok · Día 3",
    "lines": [
     "Sin link",
     "hasta 1000",
     "seguidores"
    ],
    "size": 200,
-   "sub": "Lo dice TikTok. <b>Hasta entonces, tu bio hace todo el trabajo. La fórmula, en 4 partes.</b>"
+   "sub": "Tu bio hace todo el trabajo."
   },
   {
    "type": "punch",
@@ -41,7 +40,7 @@
   {
    "type": "punch",
    "theme": "dark",
-   "kicker": "3 de 4 · la que convierte",
+   "kicker": "3 de 4 · guarda esta",
    "h": "Por qué seguirte hoy.",
    "text": "Una serie o un reto que cumples: «Una receta nueva cada día»."
   },

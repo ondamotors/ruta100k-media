@@ -1,0 +1,77 @@
+{
+ "id": "2026-11-25_p7_ganchos_tiktok",
+ "kind": "tiktok",
+ "series": "RECURSO GRATIS",
+ "foot_left": "RUTA 100K · Recurso gratis",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "lines": [
+    "30 ganchos",
+    "para copiar"
+   ],
+   "size": 230,
+   "sub": "Para la primera slide de tus posts."
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de copiar",
+   "h": "El gancho es una promesa.",
+   "text": "Si tu post no la cumple, la gente se va. Y no vuelve."
+  },
+  {
+   "type": "list",
+   "theme": "dark",
+   "kicker": "1 de 3 · cuando tienes un dato",
+   "items": [
+    {
+     "t": "[Número] herramientas gratis que reemplazan a [app de pago]."
+    },
+    {
+     "t": "De [A] a [B] en [tiempo]: lo que hice paso a paso."
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "theme": "light",
+   "kicker": "2 de 3 · cuando corriges algo",
+   "items": [
+    {
+     "t": "Deja de [hábito común] si quieres [resultado]."
+    },
+    {
+     "t": "El error que hace que [problema], y casi nadie lo nota."
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "theme": "dark",
+   "kicker": "3 de 3 · guarda este",
+   "items": [
+    {
+     "t": "[Fuente oficial] lo dijo y casi nadie lo leyó."
+    },
+    {
+     "t": "Si empezara de 0 en [tema], haría esto."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Los 30 ganchos",
+   "verb": "Comenta",
+   "keyword": "GANCHOS",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme GANCHOS por mensaje.",
+    "Te mando los 30, ordenados por tipo."
+   ]
+  }
+ ]
+}
