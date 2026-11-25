@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+:root { --y: #FFE14D; --red: #E5484D; --green: #16A34A; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #EEF0F3; }
+body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color: #111; }
+#ui { position: absolute; inset: 0; background: #EEF0F3; transform-origin: 485px 980px; }
+.card { position: absolute; left: 60px; top: 560px; width: 850px; height: 840px; background: #fff; border-radius: 34px; box-shadow: 0 10px 30px rgba(17,17,17,0.07); overflow: hidden; }
+
+/* VS */
+.pc { position: absolute; left: 60px; width: 850px; height: 380px; background: #fff; border-radius: 34px; box-shadow: 0 10px 30px rgba(17,17,17,0.08); padding: 30px 38px; overflow: hidden; }
+#pa { top: 560px; }
+#pb { top: 1020px; }
+.pc .top { display: flex; align-items: center; gap: 18px; }
+.pc .ic { width: 74px; height: 74px; border-radius: 20px; display: grid; place-items: center; font-size: 42px; flex: none; }
+.pc .lb { font-weight: 700; font-size: 29px; color: #6B7280; }
+.pc .nm { font-weight: 800; font-size: 44px; line-height: 1.05; }
+.pc .pr { margin-top: 14px; font-weight: 800; font-size: 136px; line-height: 1; letter-spacing: -5px; white-space: nowrap; }
+.pc .pr small { font-size: 42px; letter-spacing: 0; margin-left: 10px; color: #9CA3AF; }
+.pc .sub { position: absolute; right: 38px; bottom: 34px; font-weight: 700; font-size: 31px; color: #374151; white-space: nowrap; }
+#pa .ic { background: #FDECEC; } #pa .pr { color: var(--red); }
+#pb .ic { background: #E6FAEC; } #pb .pr { color: var(--green); }
+#vs { position: absolute; left: 415px; top: 910px; width: 140px; height: 140px; border-radius: 50%; background: #111; color: #fff; display: grid; place-items: center; font-weight: 800; font-size: 58px; z-index: 5; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 6px solid #EEF0F3; }
+#gr { position: absolute; right: 70px; top: 1060px; z-index: 6; background: var(--y); font-weight: 800; font-size: 50px; padding: 8px 26px 12px; border-radius: 18px; border: 4px solid #111; box-shadow: 0 8px 20px rgba(0,0,0,0.18); }
+
+/* le monstre */
+#spec { padding: 32px 38px; }
+#spec h3 { font-weight: 800; font-size: 48px; }
+#spec .sb { margin-top: 2px; font-weight: 700; font-size: 28px; color: #6B7280; }
+#tiles { margin-top: 26px; display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.tl { height: 280px; border-radius: 28px; background: #111; color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; }
+.tl b { font-weight: 800; font-size: 124px; line-height: 1; letter-spacing: -3px; }
+.tl span { font-weight: 700; font-size: 30px; color: #D1D5DB; }
+#t0 b { background: linear-gradient(90deg, #FDE68A, #F472B6, #818CF8); -webkit-background-clip: text; background-clip: text; color: transparent; }
+#t2 b { font-size: 110px; }
+#spec .src { position: absolute; left: 38px; bottom: 26px; font-weight: 600; font-size: 22px; color: #9CA3AF; }
+
+/* éditeur */
+#ed { z-index: 8; background: #15171C; color: #fff; }
+#ehd { position: absolute; left: 0; top: 0; width: 100%; height: 100px; display: flex; align-items: center; gap: 16px; padding: 0 30px; border-bottom: 2px solid #23262E; }
+#ehd .nm { font-weight: 800; font-size: 38px; }
+#loc { margin-left: auto; font-weight: 700; font-size: 25px; color: #86EFAC; background: #14321F; padding: 8px 18px; border-radius: 999px; white-space: nowrap; }
+#tabs { position: absolute; left: 26px; right: 26px; top: 118px; display: flex; gap: 10px; }
+.tb { flex: 1; height: 58px; border-radius: 16px; background: #23262E; display: grid; place-items: center; font-weight: 800; font-size: 22px; color: #9CA3AF; white-space: nowrap; }
+.tb.on { background: #fff; color: #111; }
+#pv { position: absolute; left: 26px; top: 196px; width: 798px; height: 330px; border-radius: 22px; overflow: hidden; background: linear-gradient(160deg, #0B1020, #1E293B); }
+#pvd { position: absolute; inset: 0; background: linear-gradient(160deg, #1E1B4B 0%, #7C3AED 45%, #F97316 100%); opacity: 0; }
+#grain { position: absolute; inset: 0; background-image: repeating-linear-gradient(0deg, rgba(255,255,255,0.035) 0 2px, transparent 2px 4px); }
+#gen { position: absolute; left: 0; right: 0; top: 112px; text-align: center; font-weight: 800; font-size: 36px; color: #E5E7EB; }
+#pbar { position: absolute; left: 120px; right: 120px; top: 176px; height: 16px; border-radius: 9px; background: #334155; overflow: hidden; }
+#pfill { height: 100%; width: 0; background: linear-gradient(90deg, #22C55E, #A3E635); }
+#play { position: absolute; left: 50%; top: 50%; width: 124px; height: 124px; margin: -62px 0 0 -62px; border-radius: 50%; background: rgba(255,255,255,0.92); display: grid; place-items: center; font-size: 52px; color: #111; opacity: 0; }
+.bd { position: absolute; top: 18px; font-weight: 800; font-size: 24px; padding: 6px 14px 8px; border-radius: 12px; background: rgba(0,0,0,0.55); color: #fff; opacity: 0; }
+#bd0 { left: 18px; } #bd1 { left: 112px; } #bd2 { left: 214px; }
+#rec { position: absolute; right: 18px; top: 18px; font-weight: 800; font-size: 24px; color: #fff; opacity: 0; }
+#tline { position: absolute; left: 26px; right: 26px; top: 546px; height: 150px; border-radius: 18px; background: #1D2027; padding: 14px; }
+.trk { position: relative; height: 54px; border-radius: 10px; background: #23262E; margin-bottom: 14px; overflow: hidden; }
+.clp { position: absolute; top: 6px; height: 42px; border-radius: 8px; opacity: 0; }
+#cl0 { left: 6px; width: 230px; background: #7C3AED; } #cl1 { left: 244px; width: 250px; background: #2563EB; } #cl2 { left: 502px; width: 230px; background: #DB2777; }
+#wave { position: absolute; left: 6px; right: 6px; top: 6px; bottom: 6px; display: flex; align-items: center; gap: 4px; }
+#wave i { flex: 1; background: #22C55E; border-radius: 3px; height: 0; }
+#ebar { position: absolute; left: 22px; right: 22px; bottom: 54px; height: 72px; border-radius: 36px; background: #23262E; display: flex; align-items: center; padding: 0 12px 0 28px; gap: 12px; }
+#einp { flex: 1; font-weight: 600; font-size: 27px; color: #fff; white-space: nowrap; overflow: hidden; }
+#eph { position: absolute; left: 28px; font-weight: 600; font-size: 27px; color: #6B7280; }
+#ego { height: 52px; padding: 0 22px; border-radius: 26px; background: #22C55E; color: #052E16; display: grid; place-items: center; font-weight: 800; font-size: 25px; white-space: nowrap; }
+#enote { position: absolute; left: 0; right: 0; bottom: 16px; text-align: center; font-weight: 600; font-size: 21px; color: #6B7280; }
+
+/* étapes */
+#sheet { position: absolute; left: 60px; top: 858px; width: 850px; height: 560px; background: #fff; border-radius: 40px; box-shadow: 0 -10px 50px rgba(17,17,17,0.18); padding: 26px 40px; z-index: 9; }
+#sheet .grab { width: 90px; height: 10px; border-radius: 9px; background: #D1D5DB; margin: 0 auto 24px; }
+#sheet h3 { font-weight: 800; font-size: 46px; margin-bottom: 12px; }
+.it { display: flex; align-items: center; gap: 20px; height: 120px; font-weight: 700; font-size: 38px; line-height: 1.15; border-top: 2px solid #F1F2F5; }
+.it .e { width: 72px; height: 72px; border-radius: 20px; background: #F5F6F8; display: grid; place-items: center; font-size: 40px; flex: none; }
+.it small { display: block; font-weight: 600; font-size: 28px; color: var(--green); }
+
+/* légendes */
+.cap { position: absolute; z-index: 12; left: 60px; right: 170px; display: flex; flex-direction: column; align-items: center; }
+.cap span { display: inline-block; font-weight: 700; font-size: 60px; line-height: 1.16; padding: 6px 24px 10px; border-radius: 20px; background: #fff; color: #111; margin-top: -6px; text-align: center; white-space: nowrap; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+.cap span.y { background: var(--y); }
+.cap span.xl { font-size: 92px; font-weight: 800; padding: 6px 30px 12px; }
+.cap span.l { font-size: 76px; font-weight: 800; padding: 6px 28px 12px; }
+.cap span.s { font-size: 48px; }
+.cap span.xs { font-size: 40px; font-weight: 600; }
+.conf { position: absolute; left: 0; top: 0; font-size: 64px; line-height: 1; opacity: 0; z-index: 11; }
+#flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 50; }
+.tap { position: absolute; width: 96px; height: 96px; margin: -48px 0 0 -48px; border-radius: 50%; background: rgba(120,120,128,0.45); border: 4px solid rgba(255,255,255,0.95); box-shadow: 0 6px 24px rgba(0,0,0,0.25); z-index: 40; opacity: 0; }
+</style>
+</head>
+<body>
+<div id="ui">
+  <div class="pc" id="pa">
+    <div class="top"><div class="ic">🎬</div><div><div class="lb">El plan más caro de Google (con Veo)</div><div class="nm">Google AI Ultra</div></div></div>
+    <div class="pr" id="pra">$0<small>al mes</small></div>
+    <div class="sub" id="y6k">= $2,400 al año 😳</div>
+  </div>
+  <div class="pc" id="pb">
+    <div class="top"><div class="ic">🔓</div><div><div class="lb">Open source · está en GitHub</div><div class="nm">LTX-2.5</div></div></div>
+    <div class="pr">$0<small>por video*</small></div>
+    <div class="sub" style="font-size: 25px; color: #9CA3AF">*en tu PC, con GPU NVIDIA de 16 GB o más</div>
+  </div>
+  <div id="vs">VS</div>
+  <div id="gr">¡GRATIS! 🎉</div>
+
+  <div class="card" id="spec">
+    <h3>👹 El monstruo</h3>
+    <div class="sb">lo que hace LTX-2.5, open source</div>
+    <div id="tiles">
+      <div class="tl" id="t0"><b>4K</b><span>calidad de cine</span></div>
+      <div class="tl" id="t1"><b>20 s</b><span>por clip</span></div>
+      <div class="tl" id="t2"><b>🔊</b><span>con sonido sincronizado</span></div>
+      <div class="tl" id="t3"><b>🎞️</b><span>varias tomas, mismo personaje</span></div>
+    </div>
+    <div class="src">Fuente: LTX, lanzamiento de LTX-2.5 (agosto 2026)</div>
+  </div>
+
+  <div class="card" id="ed">
+    <div id="ehd"><span style="font-size: 38px">🎬</span><span class="nm">LTX Desktop</span><span id="loc">en tu PC ✅</span></div>
+    <div id="tabs"><div class="tb" id="m0">✍️ Texto</div><div class="tb" id="m1">🖼️ Foto</div><div class="tb" id="m2">🎤 Audio</div><div class="tb" id="m3">🔁 Retake</div></div>
+    <div id="pv"><div id="pvd"></div><div id="grain"></div><div id="gen">Generando video… <span id="pct">0</span>%</div><div id="pbar"><div id="pfill"></div></div><div id="play">▶</div><div class="bd" id="bd0">4K</div><div class="bd" id="bd1">20 s</div><div class="bd" id="bd2">🔊 audio</div><div id="rec">● LISTO</div></div>
+    <div id="tline"><div class="trk"><div class="clp" id="cl0"></div><div class="clp" id="cl1"></div><div class="clp" id="cl2"></div></div><div class="trk"><div id="wave"></div></div></div>
+    <div id="ebar"><span id="eph">Describe tu video…</span><span id="einp"></span><div id="ego">Generar</div></div>
+    <div id="enote">Simulación de la interfaz · funciones según LTX</div>
+  </div>
+
+  <div id="sheet">
+    <div class="grab"></div>
+    <h3>Para usarlo gratis:</h3>
+    <div class="it" id="i0"><span class="e">💻</span><div>PC con GPU NVIDIA<small>16 GB de VRAM o más</small></div></div>
+    <div class="it" id="i1"><span class="e">⬇️</span><div>Descarga LTX Desktop<small>gratis y open source</small></div></div>
+    <div class="it" id="i2"><span class="e">🌐</span><div>¿Sin esa PC? LTX Studio<small>800 créditos gratis, una sola vez</small></div></div>
+  </div>
+</div>
+<div class="cap" id="h" style="top: 300px"><span id="h1">IA de video: $200/mes 😳</span><span class="y xl" id="h2">vs una GRATIS 🤯</span></div>
+<div class="cap" id="g" style="top: 330px"><span id="g1">Video 4K con sonido 🔊</span><span class="y l" id="g2">en TU computadora 💻</span></div>
+<div class="cap" id="c" style="top: 330px"><span id="c1">Y trae su propio editor 😳</span><span class="y l" id="c2">gratis y open source 🔓</span></div>
+<div class="cap" id="v" style="top: 330px"><span id="v1">¿No tienes esa PC? 😅</span><span class="y l" id="v2">pruébalo gratis online 👇</span></div>
+<div class="cap" id="k" style="top: 540px"><span id="k1">¿Quieres el paso a paso? 👀</span><span class="xl" id="k2">Comenta</span><span class="y xl" id="k3">VIDEO 👇</span><span class="s" id="k4">y te mando cómo instalarlo 📩</span><span class="xs" id="k5">(sígueme para recibirlo)</span></div>
+<div class="tap" id="tap"></div>
+<div id="flash"></div>
+
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<script>
+const EM = ['✨', '🔥', '💥', '🎬', '🎉', '🤯'];
+const confs = [];
+for (let k = 0; k < 16; k++) { const el = document.createElement('div'); el.className = 'conf'; el.textContent = EM[k % EM.length]; document.body.appendChild(el); confs.push(el); }
+let seed = 53; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+const wave = document.getElementById('wave');
+const WH = Array.from({ length: 64 }, (_, i) => 0.25 + 0.75 * Math.abs(Math.sin(i * 0.7) * Math.cos(i * 0.23)));
+WH.forEach(() => wave.insertAdjacentHTML('beforeend', '<i></i>'));
+const WI = Array.from(wave.children);
+
+const PR0 = 0.08, PR1 = 0.45, Y6K = 0.48, BOT = 0.55, VS = 0.82, GR = 1.15;
+const BE = 1.8;
+const TIL = [BE + 0.25, BE + 0.55, BE + 0.85, BE + 1.15];
+const DM0 = BE + 2.95;
+const TY0 = DM0 + 0.25, TY1 = DM0 + 0.95, GO = DM0 + 1.0, P0 = DM0 + 1.05, P1 = DM0 + 2.05, DONE = DM0 + 2.1;
+const TAB = [DM0 + 0.3, DM0 + 1.05, DM0 + 1.8, DM0 + 2.55];
+const SH = DM0 + 3.65;
+const K = SH + 2.0;
+const Q = 'Un barco pirata en una tormenta, cámara lenta…';
+
+const tl = gsap.timeline({ paused: true, defaults: { ease: 'power3.out' } });
+const P = { v: 0 }, PG = { v: 0 }, W = { v: 0 };
+const pop = (sel, at) => tl.fromTo(sel, { autoAlpha: 0, scale: 0.55 }, { autoAlpha: 1, scale: 1, duration: 0.32, ease: 'back.out(2.2)' }, at);
+const tap = (x, y, at) => tl.set('#tap', { left: x, top: y, scale: 1.2, autoAlpha: 0 }, at).to('#tap', { autoAlpha: 1, scale: 0.85, duration: 0.06 }, at).to('#tap', { autoAlpha: 0, duration: 0.1 }, at + 0.14);
+gsap.set('#ui', { filter: 'blur(0px) brightness(1)' });
+gsap.set(['#g1', '#g2', '#c1', '#c2', '#v1', '#v2', '#k1', '#k2', '#k3', '#k4', '#k5', '#y6k', '#vs', '#gr', '.tl'], { autoAlpha: 0 });
+gsap.set('#pa', { x: -1000 });
+gsap.set('#pb', { x: 1000 });
+gsap.set('#spec', { autoAlpha: 0, scale: 0.92 });
+gsap.set('#ed', { y: 1500 });
+gsap.set('#sheet', { y: 1150 });
+gsap.set('.it', { autoAlpha: 0, x: 40 });
+
+/* 0 · le VS */
+tl.fromTo('#h', { scale: 1.06 }, { scale: 1, duration: 0.2, ease: 'back.out(2)' }, 0)
+  .fromTo('#ui', { scale: 1.0 }, { scale: 1.03, duration: BE, ease: 'none' }, 0)
+  .to('#pa', { x: 0, duration: 0.3 }, 0.03)
+  .to(P, { v: 199.99, duration: PR1 - PR0, ease: 'power2.out' }, PR0)
+  .fromTo('#y6k', { autoAlpha: 0, y: 20 }, { autoAlpha: 1, y: 0, duration: 0.22 }, Y6K)
+  .to('#pb', { x: 0, duration: 0.3 }, BOT)
+  .fromTo('#vs', { autoAlpha: 0, scale: 2.2, rotation: -25 }, { autoAlpha: 1, scale: 1, rotation: 0, duration: 0.3, ease: 'back.out(2.4)' }, VS)
+  .to('#ui', { x: -14, duration: 0.05, ease: 'none' }, VS)
+  .to('#ui', { x: 10, duration: 0.06, ease: 'none' }, VS + 0.05)
+  .to('#ui', { x: 0, duration: 0.08 }, VS + 0.11)
+  .fromTo('#gr', { autoAlpha: 0, scale: 2, rotation: -16 }, { autoAlpha: 1, scale: 1, rotation: -6, duration: 0.24, ease: 'back.out(2.6)' }, GR);
+
+/* 1.8 · le monstre */
+tl.to(['#pa', '#pb', '#vs', '#gr'], { autoAlpha: 0, duration: 0.18 }, BE - 0.08)
+  .to('#spec', { autoAlpha: 1, scale: 1, duration: 0.3, ease: 'back.out(1.6)' }, BE)
+  .to('#h', { autoAlpha: 0, y: -20, duration: 0.15, ease: 'power2.in' }, BE - 0.1);
+pop('#g1', BE + 0.12);
+TIL.forEach((t, i) => tl.fromTo(`#t${i}`, { autoAlpha: 0, scale: 0.5, rotation: i % 2 ? 6 : -6 }, { autoAlpha: 1, scale: 1, rotation: 0, duration: 0.3, ease: 'back.out(2.4)' }, t));
+pop('#g2', BE + 0.95);
+tl.fromTo('#t0', { scale: 1 }, { scale: 1.06, duration: 0.18, yoyo: true, repeat: 1 }, BE + 1.5);
+confs.forEach((el) => {
+  const ang = rnd() * Math.PI * 2, sp = 220 + rnd() * 380;
+  const dx = Math.cos(ang) * sp, dy = Math.sin(ang) * sp * 0.8 - 200;
+  const sc = 0.7 + rnd() * 0.6, rot = (rnd() - 0.5) * 260;
+  const T0 = TIL[3] + 0.05;
+  tl.set(el, { left: 470, top: 1150, x: 0, y: 0, rotation: 0, scale: 0.4, autoAlpha: 0 }, T0)
+    .to(el, { autoAlpha: 1, scale: sc, duration: 0.08 }, T0)
+    .to(el, { x: dx, y: dy, rotation: rot, duration: 0.45, ease: 'power3.out' }, T0)
+    .to(el, { y: dy + 700, duration: 0.65, ease: 'power2.in' }, T0 + 0.45)
+    .to(el, { autoAlpha: 0, duration: 0.25 }, T0 + 0.8);
+});
+
+/* l'éditeur */
+tl.to('#g', { autoAlpha: 0, duration: 0.12 }, DM0 - 0.1)
+  .to('#ed', { y: 0, duration: 0.4, ease: 'power3.out' }, DM0)
+  .to('#ui', { scale: 1.0, duration: 0.4 }, DM0)
+  .to('#eph', { autoAlpha: 0, duration: 0.05 }, TY0);
+pop('#c1', DM0 + 0.1);
+pop('#c2', DM0 + 0.26);
+TAB.forEach((t, i) => { tl.set(`#m${i}`, { className: 'tb on' }, t); if (i > 0) tl.set(`#m${i - 1}`, { className: 'tb' }, t); });
+tap(60 + 850 - 22 - 12 - 60, 560 + 840 - 54 - 36, GO - 0.04);
+tl.set('#eph', { autoAlpha: 1 }, GO + 0.08)
+  .to(PG, { v: 100, duration: P1 - P0, ease: 'power1.inOut' }, P0)
+  .to(['#gen', '#pbar'], { autoAlpha: 0, duration: 0.12 }, DONE - 0.05)
+  .to('#pvd', { opacity: 1, duration: 0.3 }, DONE)
+  .fromTo('#play', { autoAlpha: 0, scale: 0.4 }, { autoAlpha: 1, scale: 1, duration: 0.3, ease: 'back.out(2.4)' }, DONE + 0.05)
+  .to('#flash', { opacity: 0.5, duration: 0.05, ease: 'none' }, DONE - 0.04)
+  .to('#flash', { opacity: 0, duration: 0.25 }, DONE + 0.01);
+['#bd0', '#bd1', '#bd2', '#rec'].forEach((s, i) => tl.fromTo(s, { autoAlpha: 0, y: -12 }, { autoAlpha: 1, y: 0, duration: 0.2, ease: 'back.out(2)' }, DONE + 0.15 + i * 0.12));
+['#cl0', '#cl1', '#cl2'].forEach((s, i) => tl.fromTo(s, { autoAlpha: 0, scaleX: 0.2, transformOrigin: '0% 50%' }, { autoAlpha: 1, scaleX: 1, duration: 0.25 }, DONE + 0.2 + i * 0.22));
+tl.to(W, { v: 1, duration: 0.6, ease: 'power2.out' }, DONE + 0.3);
+
+/* conditions */
+tl.to('#c', { autoAlpha: 0, duration: 0.12 }, SH - 0.1)
+  .to('#sheet', { y: 0, duration: 0.38, ease: 'power3.out' }, SH);
+[0, 1, 2].forEach((k) => tl.to(`#i${k}`, { autoAlpha: 1, x: 0, duration: 0.22 }, SH + 0.35 + k * 0.3));
+pop('#v1', SH + 0.12);
+pop('#v2', SH + 0.3);
+
+/* commente */
+tl.to('#v', { autoAlpha: 0, duration: 0.12 }, K - 0.12)
+  .to('#flash', { opacity: 0.55, duration: 0.05, ease: 'none' }, K - 0.05)
+  .to('#flash', { opacity: 0, duration: 0.25 }, K)
+  .to('#ui', { filter: 'blur(16px) brightness(0.62)', scale: 1.08, duration: 0.3, ease: 'power2.out' }, K);
+pop('#k1', K + 0.06);
+pop('#k2', K + 0.3);
+pop('#k3', K + 0.5);
+pop('#k4', K + 0.85);
+pop('#k5', K + 1.05);
+tl.to('#k3', { scale: 1.07, duration: 0.35, yoyo: true, repeat: 3, ease: 'sine.inOut' }, K + 1.3);
+tl.to({}, { duration: 0.01 }, K + 3.0);
+window.DURATION = K + 3.0;
+window.TIMES = { PR0, PR1, Y6K, BOT, VS, GR, BE, TIL, DM0, TY0, TY1, GO, P0, P1, DONE, TAB, SH, K };
+
+const pra = document.getElementById('pra'), einp = document.getElementById('einp'), pct = document.getElementById('pct'), pfill = document.getElementById('pfill');
+const QC = Array.from(Q);
+window.seek = (t) => {
+  tl.seek(t, false);
+  pra.firstChild.nodeValue = '$' + P.v.toFixed(2);
+  const q = Math.max(0, Math.min(1, (t - TY0) / (TY1 - TY0)));
+  einp.textContent = t >= TY0 && t < GO + 0.08 ? QC.slice(0, Math.ceil(q * QC.length)).join('') : '';
+  pct.textContent = String(Math.round(PG.v));
+  pfill.style.width = PG.v + '%';
+  WI.forEach((el, i) => { el.style.height = (WH[i] * Math.min(1, Math.max(0, W.v * 1.6 - i / 64)) * 100) + '%'; });
+};
+Promise.all([
+  document.fonts.load('700 60px "TT"', 'Aa'), document.fonts.load('800 60px "TT"', 'Aa'), document.fonts.load('600 60px "TT"', 'Aa'),
+]).then(() => document.fonts.ready).then(() => { window.seek(0); document.body.dataset.ready = '1'; });
+</script>
+</body>
+</html>
