@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+:root { --y: #FFE14D; --red: #E5484D; --green: #16A34A; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #EEF0F3; }
+body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color: #111; }
+#ui { position: absolute; inset: 0; background: #EEF0F3; transform-origin: 485px 960px; }
+#chat { position: absolute; left: 60px; top: 530px; width: 850px; height: 870px; background: #fff; border-radius: 34px; box-shadow: 0 10px 30px rgba(17,17,17,0.07); overflow: hidden; }
+#hd { position: absolute; left: 0; top: 0; width: 100%; height: 104px; display: flex; align-items: center; gap: 20px; padding: 0 30px; border-bottom: 2px solid #F1F2F5; }
+#av { width: 68px; height: 68px; border-radius: 50%; background: #E5E7EB; display: grid; place-items: center; font-size: 38px; }
+#hd .nm { font-weight: 800; font-size: 38px; line-height: 1.1; }
+#st { font-weight: 600; font-size: 30px; color: var(--green); position: relative; height: 36px; }
+#st span { position: absolute; left: 0; top: 0; white-space: nowrap; }
+.b { position: absolute; max-width: 610px; padding: 18px 26px 20px; border-radius: 30px; font-weight: 600; font-size: 38px; line-height: 1.28; }
+.in { left: 26px; background: #F1F2F5; border-bottom-left-radius: 10px; }
+.out { right: 26px; background: #DBEAFE; border-bottom-right-radius: 10px; }
+#vn { position: absolute; left: 26px; top: 286px; width: 560px; height: 100px; border-radius: 30px; border-bottom-left-radius: 10px; background: #F1F2F5; display: flex; align-items: center; gap: 18px; padding: 0 24px; }
+#play { width: 60px; height: 60px; border-radius: 50%; background: #111; color: #fff; display: grid; place-items: center; font-size: 26px; flex: none; }
+#wave { position: relative; flex: 1; height: 56px; display: flex; align-items: center; gap: 5px; }
+#wave i { display: block; width: 7px; border-radius: 4px; background: #B6BAC3; }
+#wave i.on { background: #111; }
+#dur { font-weight: 700; font-size: 28px; color: #6B7280; }
+#stamp { position: absolute; left: 70px; top: 300px; z-index: 5; padding: 10px 22px 12px; border: 6px solid var(--red); border-radius: 18px; color: var(--red); background: rgba(255,255,255,0.94); font-weight: 800; font-size: 44px; white-space: nowrap; transform: rotate(-6deg); }
+#typing { position: absolute; left: 26px; top: 712px; width: 130px; height: 70px; border-radius: 30px; border-bottom-left-radius: 10px; background: #F1F2F5; display: flex; align-items: center; justify-content: center; gap: 12px; }
+#typing i { width: 14px; height: 14px; border-radius: 50%; background: #9CA3AF; display: block; }
+#bar { position: absolute; left: 22px; right: 22px; bottom: 18px; height: 76px; border-radius: 38px; background: #F1F2F5; display: flex; align-items: center; padding: 0 12px 0 30px; gap: 12px; }
+#inp { flex: 1; font-weight: 600; font-size: 32px; color: #111; white-space: nowrap; overflow: hidden; }
+#ph { position: absolute; left: 30px; font-weight: 600; font-size: 32px; color: #9CA3AF; }
+#send { width: 56px; height: 56px; border-radius: 50%; background: #2563EB; color: #fff; display: grid; place-items: center; font-size: 26px; font-weight: 800; }
+.cap { position: absolute; z-index: 12; left: 60px; right: 170px; display: flex; flex-direction: column; align-items: center; }
+.cap span { display: inline-block; font-weight: 700; font-size: 60px; line-height: 1.16; padding: 6px 24px 10px; border-radius: 20px; background: #fff; color: #111; margin-top: -6px; text-align: center; white-space: nowrap; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+.cap span.y { background: var(--y); }
+.cap span.r { background: var(--red); color: #fff; }
+.cap span.xl { font-size: 92px; font-weight: 800; padding: 6px 30px 12px; }
+.cap span.s { font-size: 48px; }
+.cap span.xs { font-size: 40px; font-weight: 600; }
+#flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 50; }
+#redf { position: absolute; inset: 0; background: rgba(229,72,77,0.35); opacity: 0; z-index: 49; }
+.tap { position: absolute; width: 96px; height: 96px; margin: -48px 0 0 -48px; border-radius: 50%; background: rgba(120,120,128,0.45); border: 4px solid rgba(255,255,255,0.95); box-shadow: 0 6px 24px rgba(0,0,0,0.25); z-index: 40; opacity: 0; }
+</style>
+</head>
+<body>
+<div id="ui">
+  <div id="chat">
+    <div id="hd"><div id="av">👤</div><div><div class="nm">Número desconocido</div><div id="st"><span id="st1">en línea</span><span id="st2">escribiendo…</span></div></div></div>
+    <div class="b in" id="m1" style="top: 126px">Mamá, me robaron el celular 😭 este es mi número nuevo</div>
+    <div id="vn"><div id="play">▶</div><div id="wave"></div><div id="dur">0:07</div></div>
+    <div id="stamp">⚠️ VOZ CLONADA CON IA</div>
+    <div class="b in" id="m2" style="top: 408px">Necesito que me transfieras hoy, es urgente 🙏</div>
+    <div class="b out" id="m3" style="top: 568px">¿Cuál es nuestra palabra clave? 🔑</div>
+    <div id="typing"><i></i><i></i><i></i></div>
+    <div id="bar"><span id="ph">Escribe un mensaje</span><span id="inp"></span><div id="send">➤</div></div>
+  </div>
+</div>
+<div class="cap" id="h" style="top: 300px"><span class="y xl" id="h1">Clonan tu voz 😳</span><span id="h2">y estafan a tu mamá 👇</span></div>
+<div class="cap" id="z" style="top: 330px"><span class="r" id="z1">La sacaron de tus videos 📱</span></div>
+<div class="cap" id="w" style="top: 300px"><span class="y xl" id="w1">¿No la sabe? 📞</span><span class="xs" id="w2" style="font-weight: 700">cuelga y llama tú al número de siempre</span><span id="w3" style="display: none"></span></div>
+<div class="cap" id="k" style="top: 540px"><span id="k1">Mándale esto a tu mamá 👀</span><span class="xl" id="k2">Comenta</span><span class="y xl" id="k3">CLAVE 👇</span><span class="s" id="k4">y te mando la guía completa 📩</span><span class="xs" id="k5">(sígueme para recibirla)</span></div>
+<div class="tap" id="tap"></div>
+<div id="redf"></div>
+<div id="flash"></div>
+
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<script>
+const wave = document.getElementById('wave');
+let seed = 5; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+const NB = 38, bars = [];
+for (let k = 0; k < NB; k++) { const i = document.createElement('i'); i.style.height = (12 + Math.round(Math.abs(Math.sin(k * 0.55)) * 30 + rnd() * 14)) + 'px'; wave.appendChild(i); bars.push(i); }
+const PLAY0 = 0.62, PLAY1 = 2.45;          // lecture de la note vocale
+const TYPE0 = 4.35, TYPE1 = 4.9;           // la mère tape sa question
+const Q = '¿Cuál es nuestra palabra clave? 🔑';
+const tl = gsap.timeline({ paused: true, defaults: { ease: 'power3.out' } });
+const pop = (sel, at) => tl.fromTo(sel, { autoAlpha: 0, scale: 0.55 }, { autoAlpha: 1, scale: 1, duration: 0.32, ease: 'back.out(2.2)' }, at);
+const bub = (sel, at, from) => tl.fromTo(sel, { autoAlpha: 0, y: 30, scale: 0.9, transformOrigin: from }, { autoAlpha: 1, y: 0, scale: 1, duration: 0.28, ease: 'back.out(1.8)' }, at);
+function tapAt(x, y, at) {
+  tl.set('#tap', { left: x, top: y, scale: 1.25, autoAlpha: 0 }, at - 0.1)
+    .to('#tap', { autoAlpha: 1, scale: 1, duration: 0.07 }, at - 0.1)
+    .to('#tap', { scale: 0.8, duration: 0.07 }, at - 0.02)
+    .to('#tap', { autoAlpha: 0, duration: 0.12 }, at + 0.1);
+}
+gsap.set('#ui', { filter: 'blur(0px) brightness(1)' });
+gsap.set(['#vn', '#m2', '#m3', '#typing', '#stamp', '#st2', '#z1', '#w1', '#w2', '#w3', '#k1', '#k2', '#k3', '#k4', '#k5'], { autoAlpha: 0 });
+
+/* 0 · accroche, le premier message est déjà là */
+tl.fromTo('#h', { scale: 1.06 }, { scale: 1, duration: 0.2, ease: 'back.out(2)' }, 0)
+  .fromTo('#ui', { scale: 1.0 }, { scale: 1.035, duration: 4.2, ease: 'none' }, 0)
+  .to('#h', { autoAlpha: 0, y: -20, duration: 0.15, ease: 'power2.in' }, 1.35);
+bub('#vn', 0.32, '0% 100%');
+tapAt(146, 530 + 336, PLAY0 - 0.04);
+tl.set('#play', { textContent: '❚❚' }, PLAY0).set('#play', { textContent: '▶' }, PLAY1);
+bub('#m2', 1.62, '0% 100%');
+
+/* 2.5 · révélation */
+const R = 2.55;
+tl.to('#flash', { opacity: 0.75, duration: 0.05, ease: 'none' }, R - 0.05)
+  .to('#flash', { opacity: 0, duration: 0.3 }, R)
+  .to('#redf', { opacity: 1, duration: 0.06, ease: 'none' }, R)
+  .to('#redf', { opacity: 0, duration: 0.5 }, R + 0.12)
+  .fromTo('#stamp', { autoAlpha: 0, scale: 2.2, rotation: -14 }, { autoAlpha: 1, scale: 1, rotation: -6, duration: 0.22, ease: 'power4.in' }, R)
+  .to('#ui', { x: -20, duration: 0.05, ease: 'none' }, R + 0.2)
+  .to('#ui', { x: 16, duration: 0.06, ease: 'none' }, R + 0.25)
+  .to('#ui', { x: -9, duration: 0.06, ease: 'none' }, R + 0.31)
+  .to('#ui', { x: 0, duration: 0.08 }, R + 0.37)
+  .to('#vn', { backgroundColor: '#FDECEC', duration: 0.15 }, R + 0.2);
+pop('#z1', R + 0.3);
+tl.fromTo('#z1', { scale: 1 }, { scale: 1.06, duration: 0.18, yoyo: true, repeat: 1, ease: 'sine.inOut' }, R + 0.85);
+tl.to('#z', { autoAlpha: 0, duration: 0.15 }, 4.2);
+
+/* 4.35 · la mère pose la question */
+tl.to('#ph', { autoAlpha: 0, duration: 0.05 }, TYPE0);
+tapAt(60 + 850 - 22 - 12 - 28, 530 + 870 - 18 - 38, TYPE1 + 0.02);
+tl.set('#ph', { autoAlpha: 1 }, TYPE1 + 0.06);
+bub('#m3', TYPE1 + 0.08, '100% 100%');
+
+/* 5.2 · « escribiendo… », puis plus rien */
+const TY = 5.25, TYEND = 6.45;
+tl.set('#st1', { autoAlpha: 0 }, TY).set('#st2', { autoAlpha: 1 }, TY)
+  .fromTo('#typing', { autoAlpha: 0, scale: 0.6, transformOrigin: '0% 100%' }, { autoAlpha: 1, scale: 1, duration: 0.2, ease: 'back.out(2)' }, TY);
+[0, 1, 2].forEach((d) => tl.to(`#typing i:nth-child(${d + 1})`, { y: -10, duration: 0.16, yoyo: true, repeat: 5, ease: 'sine.inOut' }, TY + 0.1 + d * 0.1));
+tl.to('#typing', { autoAlpha: 0, scale: 0.6, duration: 0.15 }, TYEND)
+  .set('#st2', { autoAlpha: 0 }, TYEND).set('#st1', { autoAlpha: 1 }, TYEND);
+pop('#w1', TYEND + 0.1);
+pop('#w2', TYEND + 0.35);
+pop('#w3', TYEND + 0.55);
+
+/* 8.4 · commente */
+const K = 8.45;
+tl.to('#flash', { opacity: 0.55, duration: 0.05, ease: 'none' }, K - 0.05)
+  .to('#flash', { opacity: 0, duration: 0.25 }, K)
+  .to('#ui', { filter: 'blur(16px) brightness(0.62)', scale: 1.08, duration: 0.3, ease: 'power2.out' }, K)
+  .to('#w', { autoAlpha: 0, duration: 0.12 }, K);
+pop('#k1', K + 0.06);
+pop('#k2', K + 0.3);
+pop('#k3', K + 0.5);
+pop('#k4', K + 0.85);
+pop('#k5', K + 1.05);
+tl.to('#k3', { scale: 1.07, duration: 0.35, yoyo: true, repeat: 3, ease: 'sine.inOut' }, K + 1.3);
+tl.to({}, { duration: 0.01 }, K + 3.3);
+window.DURATION = K + 3.3;
+window.TIMES = { PLAY0, PLAY1, R, TYPE0, TYPE1, TY, TYEND, K };
+
+const inp = document.getElementById('inp'), dur = document.getElementById('dur');
+const QCH = Array.from(Q);
+window.seek = (t) => {
+  tl.seek(t, false);
+  const p = Math.max(0, Math.min(1, (t - PLAY0) / (PLAY1 - PLAY0)));
+  const on = t >= PLAY0 ? Math.round(p * NB) : 0;
+  bars.forEach((b, k) => b.classList.toggle('on', k < on));
+  dur.textContent = t >= PLAY0 && t < PLAY1 ? '0:0' + Math.min(7, Math.floor(p * 7)) : '0:07';
+  const q = Math.max(0, Math.min(1, (t - TYPE0) / (TYPE1 - TYPE0)));
+  inp.textContent = t >= TYPE0 && t < TYPE1 + 0.06 ? QCH.slice(0, Math.ceil(q * QCH.length)).join('') : '';
+};
+Promise.all([
+  document.fonts.load('700 60px "TT"', 'Aa'), document.fonts.load('800 60px "TT"', 'Aa'), document.fonts.load('600 60px "TT"', 'Aa'),
+]).then(() => document.fonts.ready).then(() => { window.seek(0); document.body.dataset.ready = '1'; });
+</script>
+</body>
+</html>
