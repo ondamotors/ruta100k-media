@@ -2,6 +2,18 @@
 
 À lire en entier avant de produire quoi que ce soit. Ligne éditoriale revue par Vincent le 25/11/2026.
 
+## Nouveau format, décidé par Vincent le 25/11 au soir : prime sur tout le reste de ce fichier
+
+- **Que de la vidéo verticale 9:16** : vidéo sur TikTok, Reel sur Instagram. Plus de carrousels, plus de posts photo, plus de diaporamas de slides. Sur Instagram, un carrousel part surtout chez les abonnés ; c'est le Reel qui est testé sur des inconnus.
+- **Style** : de vraies manips sur le téléphone. En priorité l'enregistrement d'écran de Vincent, accéléré, avec l'attente de l'IA ramenée à environ 1 s ; sinon une manip simulée avec ses vrais résultats (écran de chat générique, sans marque). L'avant/après est montré dans la première seconde. Texte natif TikTok (police TikTok Sans, boîtes blanches, mot fort en boîte jaune, emojis), transitions fluides, 10 à 15 s qui tournent en boucle. Aucun texte dans les 300 px du haut ni dans les 520 px du bas.
+- **Sujets** : avant/après spectaculaires faits avec une IA gratuite, et astuces pour gagner de l'argent avec. Ton latino, on peut en faire trop.
+- **Ne jamais nommer l'IA** à l'écran ni dans la légende : la curiosité fait commenter, le nom est donné en DM. Flouter les icônes et noms d'outil (icône Nano Banana, barre « Demander à Gemini »), les menus en français et le clavier.
+- **Pas de hashtags** : Adam Mosseri a dit qu'ils n'apportent pas de portée. Les mots-clés vont dans la phrase de la légende.
+- **Rien ne part sans le feu vert de Vincent** sur la vidéo finale. La production automatique s'arrête à des propositions : aucune programmation Metricool tant qu'il n'a pas validé.
+- **Publication en notification** (autoPublish false) sur les deux réseaux : Vincent ajoute le son en publiant. Toujours lui dire quel son mettre et où caler le drop. Déclarer le contenu IA (isAigc sur TikTok, isAiGenerated sur Instagram) quand la vidéo montre des images faites par IA.
+- **Rythme** : 3 posts par jour une fois validés ; le post du soir vers 17:30 à Bogotá.
+- **Outils** : studio/motion/ (render_motion.py, gabarits HTML animés avec GSAP, rendu image par image). Installer avec `npm install gsap @fontsource/tiktok-sans` dans studio/motion avant le rendu.
+
 ## Le compte
 
 - RUTA 100K | Crecer con IA. TikTok @ruta100k et Instagram @ruta100k.latam, connectés à Metricool.

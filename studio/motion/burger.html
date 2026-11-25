@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+:root { --y: #FFE14D; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; }
+.L { position: absolute; inset: 0; overflow: hidden; }
+.full { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.blurbg { position: absolute; inset: -60px; width: calc(100% + 120px); height: calc(100% + 120px); object-fit: cover; filter: blur(34px) brightness(0.5); }
+.cap { position: absolute; z-index: 12; left: 60px; right: 170px; display: flex; flex-direction: column; align-items: center; }
+.cap span { display: inline-block; font-weight: 700; font-size: 60px; line-height: 1.16; padding: 6px 24px 10px; border-radius: 20px; background: #fff; color: #111; margin-top: -6px; text-align: center; white-space: nowrap; }
+.cap span.y { background: var(--y); }
+.cap span.xl { font-size: 92px; font-weight: 800; padding: 6px 30px 12px; }
+.cap span.s { font-size: 48px; }
+.cap span.n { background: #111; color: #fff; }
+#flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 50; }
+.tap { position: absolute; width: 96px; height: 96px; margin: -48px 0 0 -48px; border-radius: 50%; background: rgba(255,255,255,0.55); border: 4px solid rgba(255,255,255,0.95); box-shadow: 0 6px 24px rgba(0,0,0,0.35); z-index: 40; opacity: 0; }
+.ring { position: absolute; width: 96px; height: 96px; margin: -48px 0 0 -48px; border-radius: 50%; border: 5px solid #fff; z-index: 39; opacity: 0; }
+#scr { position: absolute; inset: 0; width: 1080px; height: 1920px; }
+#after5 { clip-path: inset(0 100% 0 0); }
+#bar5 { position: absolute; top: 0; bottom: 0; width: 8px; margin-left: -4px; background: #fff; left: 0%; z-index: 5; box-shadow: 0 0 20px rgba(0,0,0,0.35); }
+#bar5 .k { position: absolute; top: 960px; left: 50%; width: 92px; height: 92px; margin: -46px 0 0 -46px; border-radius: 50%; background: #fff; display: grid; place-items: center; font: 800 38px "TT"; color: #111; box-shadow: 0 8px 30px rgba(0,0,0,0.35); }
+</style>
+</head>
+<body>
+<div class="L" id="L1">
+  <img class="full" id="b1" src="../burger/avant_crop.jpg">
+  <div class="cap" id="c1" style="top: 330px"><span>Mi hamburguesa 🍔</span><span>foto con el celular 😐</span></div>
+</div>
+<div class="L" id="L2">
+  <img class="full" id="a1" src="../burger/apres.jpg">
+  <div class="cap" id="c2" style="top: 330px"><span class="y xl">IA GRATIS 🤯</span><span id="c2b">nivel comercial de TV 👇</span></div>
+</div>
+<div class="L" id="L3">
+  <img id="scr" src="../burger/scr/0001.jpg">
+  <div class="cap" id="s1" style="top: 1270px"><span class="n">1. Subes tu foto</span></div>
+  <div class="cap" id="s2" style="top: 1270px"><span class="n">2. Pegas el prompt</span></div>
+  <div class="cap" id="s3" style="top: 1150px"><span>⏳ 34 segundos después…</span></div>
+  <div class="cap" id="s4" style="top: 300px"><span class="y">3. Listo ✨</span></div>
+</div>
+<div class="L" id="L4">
+  <img class="full" id="a4" src="../burger/apres.jpg">
+  <div class="cap" id="c4" style="top: 330px"><span>Esto lo puedes vender</span><span class="y">a restaurantes 💸</span></div>
+</div>
+<div class="L" id="L5">
+  <img class="full" src="../burger/avant_crop.jpg">
+  <img class="full" id="after5" src="../burger/apres.jpg">
+  <div id="bar5"><div class="k">‹ ›</div></div>
+  <div class="cap" id="c5" style="top: 330px"><span class="y" style="font-size: 76px; font-weight: 800">misma hamburguesa 🍔</span></div>
+</div>
+<div class="L" id="L6">
+  <img class="blurbg" src="../burger/apres.jpg">
+  <div class="cap" id="c6" style="top: 560px"><span id="c6a">¿Quieres el prompt exacto? 👀</span><span class="xl" id="c6b">Comenta</span><span class="y xl" id="c6d">MENU 👇</span><span class="s" id="c6c">y sígueme para recibirlo 📩</span></div>
+</div>
+<div class="tap" id="tap"></div><div class="ring" id="ring"></div>
+<div id="flash"></div>
+
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<script>
+const NFR = 147, S0 = 2.15;
+const frames = [];
+for (let i = 1; i <= NFR; i++) { const im = new Image(); im.src = '../burger/scr/' + String(i).padStart(4, '0') + '.jpg'; frames.push(im); }
+const scr = document.getElementById('scr');
+
+const tl = gsap.timeline({ paused: true, defaults: { ease: 'power3.out' } });
+const E = 'expo.inOut';
+const pop = (sel, at, extra = {}) => tl.fromTo(sel, { autoAlpha: 0, scale: 0.55 }, { autoAlpha: 1, scale: 1, duration: 0.32, ease: 'back.out(2.2)', ...extra }, at);
+function tapAt(x, y, at) {
+  tl.set('#tap', { left: x, top: y, scale: 1.25, autoAlpha: 0 }, at)
+    .to('#tap', { autoAlpha: 1, scale: 1, duration: 0.12 }, at)
+    .to('#tap', { scale: 0.82, duration: 0.1 }, at + 0.14)
+    .set('#ring', { left: x, top: y, scale: 0.8, autoAlpha: 0 }, at)
+    .set('#ring', { autoAlpha: 0.9 }, at + 0.16)
+    .to('#ring', { scale: 2.1, autoAlpha: 0, duration: 0.45, ease: 'power2.out' }, at + 0.16)
+    .to('#tap', { autoAlpha: 0, scale: 1.1, duration: 0.18 }, at + 0.32);
+}
+gsap.set(['#L2', '#L3', '#L4', '#L5', '#L6'], { autoAlpha: 0 });
+gsap.set(['#c2', '#c2b', '#s1', '#s2', '#s3', '#s4', '#c4', '#c5', '#c6a', '#c6b', '#c6c', '#c6d'], { autoAlpha: 0 });
+
+/* 0 · photo banale */
+tl.fromTo('#b1', { scale: 1.0 }, { scale: 1.07, duration: 0.95, ease: 'none' }, 0)
+  .fromTo('#c1', { scale: 1.12 }, { scale: 1, duration: 0.25, ease: 'back.out(2)' }, 0);
+tapAt(470, 1240, 0.42);
+/* 0.8 · flash, révélation */
+tl.to('#flash', { opacity: 0.85, duration: 0.07, ease: 'none' }, 0.8)
+  .set('#L2', { autoAlpha: 1 }, 0.87).set('#L1', { autoAlpha: 0 }, 0.87)
+  .to('#flash', { opacity: 0, duration: 0.22 }, 0.87)
+  .fromTo('#a1', { scale: 1.16 }, { scale: 1.0, duration: 0.6, ease: 'expo.out' }, 0.87)
+  .to('#L2', { x: -16, duration: 0.05, ease: 'none' }, 0.87).to('#L2', { x: 12, duration: 0.06, ease: 'none' }, 0.92)
+  .to('#L2', { x: -6, duration: 0.06, ease: 'none' }, 0.98).to('#L2', { x: 0, duration: 0.08 }, 1.04);
+pop('#c2', 0.95);
+tl.set('#c2b', { autoAlpha: 0 }, 0.95);
+pop('#c2b', 1.3);
+/* 2.05 · l'écran réel */
+tl.to('#L2', { scale: 0.92, autoAlpha: 0, duration: 0.3, ease: E }, 2.0)
+  .set('#L3', { autoAlpha: 1 }, 2.0)
+  .fromTo('#scr', { scale: 1.12, autoAlpha: 0 }, { scale: 1, autoAlpha: 1, duration: 0.32, ease: 'expo.out' }, 2.0);
+pop('#s1', 2.2);
+tl.to('#s1', { autoAlpha: 0, duration: 0.12 }, 2.62);
+pop('#s2', 2.68);
+tl.to('#s2', { autoAlpha: 0, duration: 0.12 }, 4.0);
+pop('#s3', 4.08);
+tl.to('#s3', { autoAlpha: 0, duration: 0.12 }, 5.0);
+pop('#s4', 5.1);
+/* 7.05 · le résultat en grand */
+tl.to('#flash', { opacity: 0.5, duration: 0.05, ease: 'none' }, 7.0)
+  .set('#L4', { autoAlpha: 1 }, 7.05).set('#L3', { autoAlpha: 0 }, 7.05)
+  .to('#flash', { opacity: 0, duration: 0.2 }, 7.05)
+  .fromTo('#a4', { scale: 1.0 }, { scale: 1.08, duration: 1.85, ease: 'none' }, 7.05);
+pop('#c4', 7.15);
+/* 8.9 · avant / après au curseur */
+tl.set('#L5', { autoAlpha: 1 }, 8.9).set('#L4', { autoAlpha: 0 }, 8.9);
+pop('#c5', 8.95);
+tl.to('#after5', { clipPath: 'inset(0 0% 0 0)', duration: 1.0, ease: 'power2.inOut' }, 9.25)
+  .fromTo('#bar5', { left: '0%' }, { left: '100%', duration: 1.0, ease: 'power2.inOut' }, 9.25)
+  .to('#bar5', { autoAlpha: 0, duration: 0.15 }, 10.25);
+/* 10.85 · commente */
+tl.to('#flash', { opacity: 0.6, duration: 0.06, ease: 'none' }, 10.8)
+  .set('#L6', { autoAlpha: 1 }, 10.86).set('#L5', { autoAlpha: 0 }, 10.86)
+  .to('#flash', { opacity: 0, duration: 0.2 }, 10.86);
+pop('#c6a', 10.92);
+pop('#c6b', 11.15);
+pop('#c6d', 11.35);
+pop('#c6c', 11.7);
+tl.to('#c6d', { scale: 1.07, duration: 0.35, yoyo: true, repeat: 3, ease: 'sine.inOut' }, 12.0);
+tl.to({}, { duration: 0.01 }, 14.0);
+window.DURATION = 14.0;
+window.seek = async (t) => {
+  tl.seek(t, false);
+  if (t >= S0 && t < S0 + NFR / 30 + 0.2) {
+    const k = Math.min(NFR - 1, Math.max(0, Math.round((t - S0) * 30)));
+    if (scr.src !== frames[k].src) { scr.src = frames[k].src; await scr.decode(); }
+  }
+};
+Promise.all([
+  document.fonts.load('700 60px "TT"', 'Aa'), document.fonts.load('800 60px "TT"', 'Aa'), document.fonts.load('600 60px "TT"', 'Aa'),
+  ...frames.map(f => f.decode().catch(() => {})),
+]).then(() => document.fonts.ready).then(() => { document.body.dataset.ready = '1'; });
+</script>
+</body>
+</html>

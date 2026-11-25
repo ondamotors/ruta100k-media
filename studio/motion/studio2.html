@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+:root { --y: #FFE14D; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; }
+.L { position: absolute; inset: 0; overflow: hidden; }
+.full { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.blurbg { position: absolute; inset: -60px; width: calc(100% + 120px); height: calc(100% + 120px); object-fit: cover; filter: blur(38px) brightness(0.62) saturate(1.1); }
+/* légendes natives */
+.cap { position: absolute; z-index: 12; left: 60px; right: 170px; display: flex; flex-direction: column; align-items: center; }
+.cap span { display: inline-block; font-weight: 700; font-size: 60px; line-height: 1.16; padding: 6px 24px 10px; border-radius: 20px; background: #fff; color: #111; margin-top: -6px; text-align: center; white-space: nowrap; }
+.cap span.y { background: var(--y); }
+.cap span.xl { font-size: 92px; font-weight: 800; padding: 6px 30px 12px; }
+.cap span.s { font-size: 48px; }
+.cap span.n { background: #111; color: #fff; }
+#flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 50; pointer-events: none; }
+/* doigt */
+.tap { position: absolute; width: 96px; height: 96px; margin: -48px 0 0 -48px; border-radius: 50%; background: rgba(255,255,255,0.55); border: 4px solid rgba(255,255,255,0.95); box-shadow: 0 6px 24px rgba(0,0,0,0.35); z-index: 40; opacity: 0; }
+.ring { position: absolute; width: 96px; height: 96px; margin: -48px 0 0 -48px; border-radius: 50%; border: 5px solid #fff; z-index: 39; opacity: 0; }
+/* téléphone */
+#phone { position: absolute; left: 245px; top: 425px; width: 510px; height: 975px; border-radius: 72px; background: #fff; border: 13px solid #0c0c0c; box-shadow: 0 0 0 2px #333, 0 50px 120px rgba(0,0,0,0.55); overflow: hidden; }
+#isl { position: absolute; top: 14px; left: 50%; width: 132px; height: 38px; margin-left: -66px; border-radius: 19px; background: #0c0c0c; z-index: 30; }
+.sb { position: absolute; top: 18px; left: 40px; font: 700 26px "TT"; color: #111; z-index: 29; }
+.scr { position: absolute; inset: 0; background: #fff; }
+.hdr { position: absolute; top: 70px; left: 0; right: 0; padding: 0 30px; font: 800 44px "TT"; color: #111; }
+#grid { position: absolute; top: 140px; left: 0; right: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+#grid div { height: 158px; background-size: cover; background-position: center; }
+#grid .pick { position: relative; }
+#grid .chk { position: absolute; right: 10px; bottom: 10px; width: 40px; height: 40px; border-radius: 50%; background: #0A84FF; border: 3px solid #fff; display: grid; place-items: center; color: #fff; font: 800 24px "TT"; opacity: 0; }
+#chat::before { content: ""; position: absolute; top: 0; left: 0; right: 0; height: 64px; background: #fff; z-index: 6; }
+#chat .bar { position: absolute; z-index: 6; background: #fff; top: 62px; left: 0; right: 0; height: 80px; display: flex; align-items: center; justify-content: center; gap: 12px; font: 700 32px "TT"; color: #111; border-bottom: 1px solid #eee; }
+#chat .spark { width: 40px; height: 40px; border-radius: 50%; background: linear-gradient(135deg, #6a7cff, #b06aff); display: grid; place-items: center; color: #fff; font: 800 22px "TT"; }
+#hint { position: absolute; top: 380px; left: 0; right: 0; text-align: center; font: 700 40px "TT"; color: #c9c9cf; }
+#input { position: absolute; left: 22px; right: 22px; bottom: 34px; min-height: 92px; border-radius: 46px; background: #f2f2f5; padding: 14px 92px 14px 22px; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; font: 600 27px/1.3 "TT"; color: #111; }
+#ithumb { width: 70px; height: 70px; border-radius: 14px; overflow: hidden; flex: 0 0 70px; }
+#ithumb img { width: 100%; height: 100%; object-fit: cover; }
+#itext { flex: 1 1 100%; }
+#itext i { display: inline-block; width: 3px; height: 30px; vertical-align: -6px; background: #0A84FF; }
+#send { position: absolute; right: 14px; bottom: 14px; width: 66px; height: 66px; border-radius: 50%; background: #111; color: #fff; display: grid; place-items: center; font: 800 34px "TT"; }
+#msgs { position: absolute; top: 160px; left: 22px; right: 22px; }
+#uimg { margin-left: auto; width: 230px; height: 280px; border-radius: 26px; overflow: hidden; }
+#uimg img { width: 100%; height: 100%; object-fit: cover; }
+#ubub { position: relative; margin: 12px 0 0 auto; width: 400px; padding: 18px 22px 76px; border-radius: 26px 26px 8px 26px; background: #0A84FF; color: #fff; font: 600 25px/1.3 "TT"; }
+#ubub .blur { filter: blur(6px); }
+#lock { position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%); white-space: nowrap; padding: 8px 18px 10px; border-radius: 30px; background: #fff; color: #111; font: 800 26px "TT", sans-serif; }
+#ai { margin-top: 18px; display: flex; gap: 12px; }
+#ai .spark { flex: 0 0 44px; height: 44px; border-radius: 50%; background: linear-gradient(135deg, #6a7cff, #b06aff); display: grid; place-items: center; color: #fff; font: 800 22px "TT"; }
+#abox { position: relative; width: 320px; height: 420px; border-radius: 26px; overflow: hidden; background: linear-gradient(110deg, #ececf1 30%, #f9f9fb 50%, #ececf1 70%); background-size: 300% 100%; }
+#gen { position: absolute; left: 22px; top: 20px; font: 700 26px "TT"; color: #8e8e98; }
+#aimg { position: absolute; inset: 0; }
+#aimg img { width: 100%; height: 100%; object-fit: cover; }
+#glint { position: absolute; top: -20%; bottom: -20%; width: 110px; left: -150px; background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.8), rgba(255,255,255,0)); transform: skewX(-16deg); }
+/* curseur avant/après plein écran */
+#after4 { clip-path: inset(0 0 0 100%); }
+#bar4 { position: absolute; top: 0; bottom: 0; width: 8px; margin-left: -4px; background: #fff; left: 100%; z-index: 5; box-shadow: 0 0 20px rgba(0,0,0,0.35); }
+#bar4 .k { position: absolute; top: 960px; left: 50%; width: 92px; height: 92px; margin: -46px 0 0 -46px; border-radius: 50%; background: #fff; display: grid; place-items: center; font: 800 38px "TT"; color: #111; box-shadow: 0 8px 30px rgba(0,0,0,0.35); }
+</style>
+</head>
+<body>
+<!-- 1 : avant -->
+<div class="L" id="L1">
+  <img class="full" id="b1" src="../ruta100k-media/studio/assets/studio_enceinte_avant.jpg">
+  <div class="cap" id="c1" style="top: 330px"><span>Foto con mi celular 😐</span></div>
+</div>
+<!-- 2 : après, le crochet -->
+<div class="L" id="L2">
+  <img class="full" id="a1" src="../ruta100k-media/studio/assets/studio_enceinte_apres.jpg">
+  <div class="cap" id="c2" style="top: 330px"><span class="y xl">IA GRATIS 🤯</span><span id="c2b">con una sola frase 👇</span></div>
+</div>
+<!-- 3 : la manip sur le téléphone -->
+<div class="L" id="L3">
+  <img class="blurbg" src="../ruta100k-media/studio/assets/studio_enceinte_apres.jpg">
+  <div class="cap" id="s1" style="top: 300px"><span class="n">1. Subes tu foto</span></div>
+  <div class="cap" id="s2" style="top: 300px"><span class="n">2. Pegas el prompt</span></div>
+  <div class="cap" id="s3" style="top: 300px"><span class="y">3. Listo ✨</span></div>
+  <div id="phone">
+    <div id="isl"></div>
+    <div class="scr" id="gal">
+      <div class="hdr">Fotos</div>
+      <div id="grid">
+        <div style="background:#d8cfc4"></div><div style="background:#9fb3c8"></div><div style="background:#c9d6b5"></div>
+        <div class="pick" style="background-image:url(../ruta100k-media/studio/assets/studio_enceinte_avant.jpg)"><span class="chk">✓</span></div>
+        <div style="background:#e6c9b8"></div><div style="background:#b8b2d6"></div>
+        <div style="background:#a9c7c3"></div><div style="background:#dcd3a8"></div><div style="background:#c7b2a5"></div>
+        <div style="background:#b5c4d9"></div><div style="background:#d9b8c4"></div><div style="background:#c2cfb0"></div>
+        <div style="background:#d2c2b0"></div><div style="background:#aebfd1"></div><div style="background:#cfc7e0"></div>
+      </div>
+    </div>
+    <div class="scr" id="chat">
+      <div class="bar"><span class="spark">✦</span>Chat IA</div>
+      <div id="hint">¿En qué te ayudo?</div>
+      <div id="msgs">
+        <div id="uimg"><img src="../ruta100k-media/studio/assets/studio_enceinte_avant.jpg"></div>
+        <div id="ubub">Edita esta foto y conviértela en una fotografía publicitaria de estudio de alta gama… <span class="blur">Reglas sobre el parlante, las más importantes: es un solo parlante</span><div id="lock">🔒 Comenta STUDIO</div></div>
+        <div id="ai"><span class="spark">✦</span><div id="abox"><div id="gen">Generando…</div><div id="aimg"><img src="../ruta100k-media/studio/assets/studio_enceinte_apres.jpg"><div id="glint"></div></div></div></div>
+      </div>
+      <div id="input"><div id="ithumb"><img src="../ruta100k-media/studio/assets/studio_enceinte_avant.jpg"></div><div id="itext"></div><div id="send">↑</div></div>
+    </div>
+  </div>
+</div>
+<!-- l'image du chat qui s'agrandit -->
+<img class="full" id="zoomimg" src="../ruta100k-media/studio/assets/studio_enceinte_apres.jpg" style="inset:auto; object-fit: cover; border-radius: 26px; z-index: 20">
+<!-- 4 : deuxième exemple -->
+<div class="L" id="L4">
+  <img class="full" src="../ruta100k-media/studio/assets/studio_casque_avant.jpg">
+  <img class="full" id="after4" src="../ruta100k-media/studio/assets/studio_casque_apres.jpg">
+  <div id="bar4"><div class="k">‹ ›</div></div>
+  <div class="cap" id="c4a" style="top: 330px"><span>¿Y con audífonos? 🎧</span></div>
+  <div class="cap" id="c4b" style="top: 330px"><span class="y xl">misma IA 🔥</span></div>
+</div>
+<!-- 5 : appel à commenter -->
+<div class="L" id="L5">
+  <img class="blurbg" src="../ruta100k-media/studio/assets/studio_casque_apres.jpg" style="filter: blur(30px) brightness(0.55)">
+  <div class="cap" id="c5" style="top: 560px"><span id="c5a">¿Quieres la IA y el prompt? 👀</span><span class="xl" id="c5b">Comenta</span><span class="y xl" id="c5d">STUDIO 👇</span><span class="s" id="c5c">y sígueme para recibirlo 📩</span></div>
+</div>
+<div class="tap" id="tap"></div><div class="ring" id="ring"></div>
+<div id="flash"></div>
+
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<script>
+const PROMPT = 'Edita esta foto y conviértela en una fotografía publicitaria de estudio de alta gama…';
+const itext = document.getElementById('itext');
+const ty = { n: 0 };
+const drawT = () => { const n = Math.round(ty.n); itext.innerHTML = PROMPT.slice(0, n) + '<i></i>'; };
+drawT();
+
+const tl = gsap.timeline({ paused: true, defaults: { ease: 'power3.out' } });
+const E = 'expo.inOut';
+const pop = (sel, at, extra = {}) => tl.fromTo(sel, { autoAlpha: 0, scale: 0.55 }, { autoAlpha: 1, scale: 1, duration: 0.32, ease: 'back.out(2.2)', ...extra }, at);
+function tapAt(x, y, at) {
+  tl.set('#tap', { left: x, top: y, scale: 1.25, autoAlpha: 0 }, at)
+    .to('#tap', { autoAlpha: 1, scale: 1, duration: 0.12 }, at)
+    .to('#tap', { scale: 0.82, duration: 0.1 }, at + 0.14)
+    .set('#ring', { left: x, top: y, scale: 0.8, autoAlpha: 0 }, at)
+    .set('#ring', { autoAlpha: 0.9 }, at + 0.16)
+    .to('#ring', { scale: 2.1, autoAlpha: 0, duration: 0.45, ease: 'power2.out' }, at + 0.16)
+    .to('#tap', { autoAlpha: 0, scale: 1.1, duration: 0.18 }, at + 0.32);
+}
+gsap.set(['#L2', '#L3', '#L4', '#L5', '#zoomimg'], { autoAlpha: 0 });
+gsap.set(['#c2', '#c2b', '#s1', '#s2', '#s3', '#c4a', '#c4b', '#c5a', '#c5b', '#c5c', '#c5d'], { autoAlpha: 0 });
+gsap.set('#chat', { xPercent: 100 });
+gsap.set(['#msgs', '#lock', '#ai', '#ithumb'], { autoAlpha: 0 });
+gsap.set('#aimg', { clipPath: 'inset(0 100% 0 0)' });
+
+/* 0 · photo banale */
+tl.fromTo('#b1', { scale: 1.0 }, { scale: 1.07, duration: 0.95, ease: 'none' }, 0);
+tl.fromTo('#c1', { scale: 1.12 }, { scale: 1, duration: 0.25, ease: 'back.out(2)' }, 0);
+tapAt(540, 1180, 0.42);
+/* 0.8 · flash + révélation */
+tl.to('#flash', { opacity: 0.85, duration: 0.07, ease: 'none' }, 0.8)
+  .set('#L2', { autoAlpha: 1 }, 0.87)
+  .set('#L1', { autoAlpha: 0 }, 0.87)
+  .to('#flash', { opacity: 0, duration: 0.22 }, 0.87)
+  .fromTo('#a1', { scale: 1.16 }, { scale: 1.0, duration: 0.6, ease: 'expo.out' }, 0.87)
+  .to('#L2', { x: -16, duration: 0.05, ease: 'none' }, 0.87).to('#L2', { x: 12, duration: 0.06, ease: 'none' }, 0.92).to('#L2', { x: -6, duration: 0.06, ease: 'none' }, 0.98).to('#L2', { x: 0, duration: 0.08 }, 1.04);
+pop('#c2', 0.95);
+tl.set('#c2b', { autoAlpha: 0 }, 0.95);
+pop('#c2b', 1.3);
+/* 2.0 · vers le téléphone */
+tl.to('#c2', { autoAlpha: 0, y: -40, duration: 0.25 }, 2.0)
+  .set('#L3', { autoAlpha: 1 }, 2.0)
+  .to('#L2', { autoAlpha: 0, duration: 0.35 }, 2.0)
+  .fromTo('#phone', { y: 1300, rotation: 6 }, { y: 0, rotation: 0, duration: 0.6, ease: E }, 2.0);
+pop('#s1', 2.4);
+tapAt(245 + 13 + 82, 425 + 13 + 140 + 162 + 79, 2.75);
+tl.to('#grid .pick', { scale: 0.9, duration: 0.1, yoyo: true, repeat: 1 }, 2.88)
+  .to('#grid .chk', { autoAlpha: 1, duration: 0.12 }, 2.95);
+/* 3.15 · le chat */
+tl.to('#gal', { xPercent: -30, duration: 0.42, ease: E }, 3.15)
+  .to('#chat', { xPercent: 0, duration: 0.42, ease: E }, 3.15)
+  .to('#s1', { autoAlpha: 0, duration: 0.15 }, 3.15);
+pop('#s2', 3.3);
+pop('#ithumb', 3.45);
+tl.to('#phone', { scale: 1.32, transformOrigin: '50% 92%', duration: 0.45, ease: E }, 3.4);
+tl.to(ty, { n: PROMPT.length, duration: 1.25, ease: 'none', onUpdate: drawT }, 3.6);
+tapAt(728, 1298, 4.92);
+tl.to('#phone', { scale: 1, duration: 0.45, ease: E }, 5.12);
+tl.set('#input', { autoAlpha: 0 }, 5.12)
+  .set('#hint', { autoAlpha: 0 }, 5.12)
+  .fromTo('#msgs', { autoAlpha: 0, y: 60 }, { autoAlpha: 1, y: 0, duration: 0.3 }, 5.12);
+pop('#lock', 5.32);
+tl.fromTo('#ai', { autoAlpha: 0, y: 30 }, { autoAlpha: 1, y: 0, duration: 0.25 }, 5.45)
+  .to('#msgs', { y: -300, duration: 0.45, ease: E }, 5.5)
+  .fromTo('#abox', { backgroundPosition: '100% 0' }, { backgroundPosition: '-100% 0', duration: 0.7, ease: 'none' }, 5.5)
+  .to('#phone', { scale: 1.26, transformOrigin: '49% 60%', duration: 0.45, ease: E }, 5.9)
+  .to('#aimg', { clipPath: 'inset(0 0% 0 0)', duration: 0.42, ease: 'power2.inOut' }, 6.05)
+  .to('#glint', { left: 460, duration: 0.5, ease: 'power2.inOut' }, 6.3)
+  .to('#s2', { autoAlpha: 0, duration: 0.15 }, 6.05);
+pop('#s3', 6.15);
+/* 6.75 · l'image grandit jusqu'au plein écran */
+tl.add(() => {}, 6.74);
+tl.seek(6.74, false);
+const r = document.getElementById('abox').getBoundingClientRect();
+tl.seek(0, false);
+tl.set('#zoomimg', { autoAlpha: 1, left: r.left, top: r.top, width: r.width, height: r.height }, 6.75)
+  .to('#zoomimg', { left: 0, top: 0, width: 1080, height: 1920, borderRadius: 0, duration: 0.55, ease: E }, 6.75)
+  .to('#L3', { autoAlpha: 0, duration: 0.3 }, 6.95);
+/* 7.6 · deuxième exemple, curseur */
+tl.set('#L4', { autoAlpha: 1 }, 7.6)
+  .set('#zoomimg', { autoAlpha: 0 }, 7.6)
+  .fromTo('#L4 .full', { scale: 1.08 }, { scale: 1, duration: 0.5, ease: 'expo.out' }, 7.6);
+pop('#c4a', 7.66);
+tl.to('#after4', { clipPath: 'inset(0 0 0 0%)', duration: 0.9, ease: 'power2.inOut' }, 8.05)
+  .fromTo('#bar4', { left: '100%' }, { left: '0%', duration: 0.9, ease: 'power2.inOut' }, 8.05)
+  .to('#bar4', { autoAlpha: 0, duration: 0.15 }, 8.97)
+  .to('#c4a', { autoAlpha: 0, duration: 0.15 }, 8.9);
+pop('#c4b', 9.0);
+/* 9.85 · commente */
+tl.to('#flash', { opacity: 0.6, duration: 0.06, ease: 'none' }, 9.8)
+  .set('#L5', { autoAlpha: 1 }, 9.86)
+  .set('#L4', { autoAlpha: 0 }, 9.86)
+  .to('#flash', { opacity: 0, duration: 0.2 }, 9.86);
+pop('#c5', 9.9, { duration: 0.01 });
+pop('#c5a', 9.92);
+pop('#c5b', 10.15);
+pop('#c5d', 10.35);
+pop('#c5c', 10.7);
+tl.to('#c5d', { scale: 1.07, duration: 0.35, yoyo: true, repeat: 3, ease: 'sine.inOut' }, 11.0);
+tl.to({}, { duration: 0.01 }, 12.3);
+window.DURATION = 12.3;
+window.seek = (t) => { tl.seek(t, false); };
+Promise.all([
+  document.fonts.load('700 60px "TT"', 'Aa'), document.fonts.load('800 60px "TT"', 'Aa'), document.fonts.load('600 60px "TT"', 'Aa'),
+]).then(() => document.fonts.ready).then(() => { document.body.dataset.ready = '1'; });
+</script>
+</body>
+</html>
