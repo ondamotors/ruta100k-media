@@ -20,11 +20,16 @@
 
 ## Créneaux
 
-Metricool : brand 8343331, timezone Europe/Paris, réseaux tiktok et instagram.
+Metricool : brand 8343331, timezone Europe/Paris, réseaux tiktok et instagram. Heures de Paris pour le Día N (Bogotá = Paris moins 6 h) :
 
-Día N : 18:30 le jour N, puis 00:30 et 02:30 le jour N+1 (heure de Paris), soit 12:30, 18:30 et 20:30 à Bogotá.
+| Réseau | 18:30 (jour N) | 23:30 (jour N) | 00:30 (N+1) | 02:30 (N+1) |
+| --- | --- | --- | --- | --- |
+| TikTok | RESSOURCE, carrousel natif | RETO, vidéo « Día N/60 » en notification | SOURCE ou OUTILS, carrousel natif | rien |
+| Instagram | RESSOURCE, carrousel 4:5 | rien | SOURCE ou OUTILS, carrousel 4:5 | RETO, carrousel 4:5 |
 
 Un créneau est pris, réseau par réseau, s'il existe déjà un post programmé à moins de 20 minutes sur ce réseau. Une entrée du backlog à date imposée réserve son créneau : ne rien y mettre d'autre, et ne la produire que le jour indiqué.
+
+Un post qui ne parle que d'une plateforme (tier list TikTok, astuce Instagram) ne sort que sur cette plateforme : le noter « TikTok seulement » ou « Instagram seulement » dans le backlog et ne jamais le dupliquer. Le créneau laissé libre sur l'autre réseau prend l'entrée suivante du même type.
 
 ## Mix quotidien
 
@@ -53,7 +58,14 @@ Règles de la version TikTok :
 - Ton oral et direct, phrases courtes (« Ojo », « Nadie te lo dice »). « POV » seulement si c'est vrai.
 - Le gabarit garde le texte dans la zone sûre (boutons à droite, légende en bas) : ne jamais le contourner avec du style en ligne.
 - Légende TikTok : d'abord les mots que les gens tapent dans la recherche, puis l'appel à l'action, puis 3 hashtags.
-- Le post RETO du jour sur TikTok devient la série « Día N/60 », toujours au même gabarit : couverture `num` avec le vrai nombre d'abonnés lu dans Metricool, puis la leçon du jour. La série doit se reconnaître d'un coup d'œil et donner envie de voir la suite.
+
+## Vidéo TikTok du jour : « Día N/60 »
+
+- Sur TikTok, le RETO du jour sort en vidéo courte : 4 à 6 scènes de 1,4 à 2 s, 7 à 10 s au total, fichier `<date>_p<N>_dia<N>_video.json` (kind `tiktok_video`, mêmes types de scène que la version TikTok native plus `dur`). Modèle : `posts/_exemple_video_dia.json`.
+- Rendu : `cd studio && python3 video.py posts/<fichier>.json`, zéro « [A CORRIGER] », puis ouvrir `out/<id>/planche.png` avec Read. Export : `out/<id>/video.mp4` et `cover.jpg` vers `<date>/p<N>_dia<N>/tiktok/`.
+- Écriture : scène 1 = « DÍA N » en énorme, puis les vrais chiffres Metricool de la veille (abonnés, vues, meilleur post), une leçon, et « Mañana: Día N+1 ». Pensée pour être regardée jusqu'au bout et revue.
+- Couverture : tant que le réseau n'a pas 1 000 abonnés, le nombre d'abonnés ne va jamais en couverture (ni de la vidéo, ni du carrousel RETO Instagram). Il est montré, en vrai, à l'intérieur.
+- Metricool : providers tiktok, media = URL raw du `video.mp4` au SHA du commit, **autoPublish false** (Vincent reçoit une notif dans l'app Metricool, ajoute un son dans TikTok et publie), tiktokData { privacyOption PUBLIC_TO_EVERYONE, title, isAigc false }.
 
 ## Produire un post
 

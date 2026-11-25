@@ -8,10 +8,10 @@ Prendre les entrées dans l'ordre. Cocher une fois programmée, avec l'id Metric
 - [x] Día 1 · 25/11 00:30 · Tier list Instagram · Metricool 440871111
 - [x] Día 1 · 25/11 02:30 · Stack $0 (mot STACK) · Metricool 440871137
 - [x] Día 2 · 25/11 18:30 · El prompt (mot PROMPT) · Metricool 440875932
-- [x] Día 2 · 26/11 00:30 · Tier list TikTok · Metricool 440896545
+- [x] Día 2 · 26/11 00:30 · Tier list TikTok (TikTok seulement) · Metricool 440896545
 - [x] Día 2 · 26/11 02:30 · 30 ganchos (mot GANCHOS) · Metricool 440875965
 
-- [x] Instagram · 25/11 01:25 Día 1 (441081949) · 02:30 Stack (441081976) · 04:00 Tier list Instagram (441081990) · 18:30 El prompt (441082008) · 26/11 00:30 Tier list TikTok (441082046) · 02:30 30 ganchos (441082068)
+- [x] Instagram · 25/11 01:25 Día 1 (441081949) · 02:30 Stack (441081976) · 04:00 Tier list Instagram (441081990) · 18:30 El prompt (441082008) · 26/11 00:30 30 ideas, mot IDEAS (441091478, remplace la tier list TikTok : Instagram seulement) · 02:30 30 ganchos (441082068)
 
 ## À produire
 
@@ -20,11 +20,11 @@ Prendre les entrées dans l'ordre. Cocher une fois programmée, avec l'id Metric
 
 - [ ] RESSOURCE · mot CHECKLIST · « Checklist antes de publicar en TikTok ». 8 à 10 points, chacun appuyé sur une page officielle TikTok (partir de `studio/research/tiktok_fyf.md`, compléter avec support.tiktok.com et les pages créateurs de TikTok). Ressource `recursos/checklist-tiktok.md` avec le lien de chaque source.
 - [ ] OUTILS · « Subtítulos automáticos gratis: 4 opciones comparadas » : sous-titres automatiques natifs de TikTok, CapCut, Buzz, Kdenlive. Ce qui est vraiment gratuit, la limite de chacun, une source officielle par ligne, date de vérification en pied. Une option sans page officielle claire sur le gratuit est remplacée par une option vérifiable.
-- [ ] RETO · « Día 3: las primeras 48 horas, sin filtro ». Chiffres réels Metricool de chaque post publié (vues, likes, commentaires, partages, abonnés si disponible), ce qui a le mieux marché, ce qu'on change. CTA : « Sígueme: el domingo, los números de la semana 1. »
+- [ ] RETO · TikTok en vidéo « Día 3/60 » à 23:30, Instagram en carrousel à 02:30 · « Día 3: las primeras 48 horas, sin filtro ». Chiffres réels Metricool de chaque post publié (vues, likes, commentaires, partages, abonnés si disponible), ce qui a le mieux marché, ce qu'on change. CTA : « Sígueme: el domingo, los números de la semana 1. »
 
 ### Día 4 (27/11)
 
-- [ ] RESSOURCE · mot IDEAS · « 30 ideas de contenido para cualquier nicho ». Modèles originaux à compléter, groupés par type (enseñar, comparar, contar una historia, mostrar números, reaccionar a una fuente). Ressource `recursos/30-ideas.md`.
+- [ ] RESSOURCE · mot IDEAS · Instagram déjà programmé (26/11 00:30, 441091478) et ressource `recursos/30-ideas.md` déjà en ligne : reste la version TikTok native au créneau RESSOURCE TikTok du Día 4. Le créneau RESSOURCE Instagram du Día 4 prend la ressource suivante. « 30 ideas de contenido para cualquier nicho ». Modèles originaux à compléter, groupés par type (enseñar, comparar, contar una historia, mostrar números, reaccionar a una fuente). Ressource `recursos/30-ideas.md`.
 - [ ] SOURCE OFFICIELLE · « Lo que TikTok dice sobre la búsqueda: cómo te encuentran ». Uniquement ce que TikTok a publié sur la recherche, les mots-clés, les descriptions et les sous-titres. Moins de 5 points vérifiables : en faire « N cosas que TikTok confirmó sobre la búsqueda ».
 - [ ] RETO · « Así hago 3 posts al día sin grabarme ». Le vrai système : le prompt (mot PROMPT), le modèle de slides, la programmation dans Metricool. Dire honnêtement les outils utilisés. CTA follow et renvoi au mot PROMPT.
 
