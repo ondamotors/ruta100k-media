@@ -73,7 +73,7 @@ Règles de la version TikTok :
 2. Rendu : `cd studio && python3 render.py posts/<fichier>.json`. Zéro ligne « [A CORRIGER] » : raccourcir le texte ou ajouter `"compact": true`. Puis ouvrir `out/<id>/planche.png` avec Read et vérifier chaque slide à l'œil.
 3. Export JPEG qualité 92 à la racine du dépôt : `<AAAA-MM-JJ>/p<N>_<slug>/tiktok/NN.jpg` depuis la version TikTok native (`out/<id>_tiktok/tt/`) et `.../instagram/NN.jpg` depuis la version Instagram (`out/<id>/ig/`).
 4. Commit avec `git -c user.name="RUTA 100K" -c user.email="studio@ruta100k.invalid"`, jamais d'adresse personnelle. Push sur main.
-5. Metricool `createScheduledPost`, deux fois au même créneau, avec media = `https://raw.githubusercontent.com/ondamotors/ruta100k-media/<SHA du commit>/<chemin>` (le SHA, jamais main) et autoPublish true :
+5. Metricool `createScheduledPost`, une fois par réseau au créneau prévu par la table Créneaux (les carrousels TikTok et Instagram d'un même post sortent ensemble), avec media = `https://raw.githubusercontent.com/ondamotors/ruta100k-media/<SHA du commit>/<chemin>` (le SHA, jamais main) et autoPublish true :
    - TikTok : images `tiktok/NN.jpg`, providers tiktok, tiktokData { privacyOption PUBLIC_TO_EVERYONE, title de 90 caractères maximum, autoAddMusic true, photoCoverIndex 0 }.
    - Instagram : images `instagram/NN.jpg` (10 au maximum), providers instagram, instagramData { type POST, isAiGenerated false }. Même légende, avec « por DM » au lieu de « por mensaje ».
 6. Dans `studio/plan/backlog.md`, cocher l'entrée et noter l'id Metricool et l'heure.
