@@ -59,6 +59,7 @@ body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color
   </div>
 </div>
 <div class="cap" id="h" style="top: 300px"><span class="y xl" id="h1">Clonan tu voz 😳</span><span id="h2">y estafan a tu mamá 👇</span></div>
+<div class="cap" id="v" style="top: 330px"><span id="v1">🔊 súbele el volumen</span></div>
 <div class="cap" id="z" style="top: 330px"><span class="r" id="z1">La sacaron de tus videos 📱</span></div>
 <div class="cap" id="w" style="top: 300px"><span class="y xl" id="w1">¿No la sabe? 📞</span><span class="xs" id="w2" style="font-weight: 700">cuelga y llama tú al número de siempre</span><span id="w3" style="display: none"></span></div>
 <div class="cap" id="k" style="top: 540px"><span id="k1">Mándale esto a tu mamá 👀</span><span class="xl" id="k2">Comenta</span><span class="y xl" id="k3">CLAVE 👇</span><span class="s" id="k4">y te mando la guía completa 📩</span><span class="xs" id="k5">(sígueme para recibirla)</span></div>
@@ -72,8 +73,8 @@ const wave = document.getElementById('wave');
 let seed = 5; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
 const NB = 38, bars = [];
 for (let k = 0; k < NB; k++) { const i = document.createElement('i'); i.style.height = (12 + Math.round(Math.abs(Math.sin(k * 0.55)) * 30 + rnd() * 14)) + 'px'; wave.appendChild(i); bars.push(i); }
-const PLAY0 = 0.62, PLAY1 = 2.45;          // lecture de la note vocale
-const TYPE0 = 4.35, TYPE1 = 4.9;           // la mère tape sa question
+const PLAY0 = 0.62, PLAY1 = 7.54;          // lecture de la note vocale
+const TYPE0 = 9.35, TYPE1 = 9.85;           // la mère tape sa question
 const Q = '¿Cuál es nuestra palabra clave? 🔑';
 const tl = gsap.timeline({ paused: true, defaults: { ease: 'power3.out' } });
 const pop = (sel, at) => tl.fromTo(sel, { autoAlpha: 0, scale: 0.55 }, { autoAlpha: 1, scale: 1, duration: 0.32, ease: 'back.out(2.2)' }, at);
@@ -85,19 +86,21 @@ function tapAt(x, y, at) {
     .to('#tap', { autoAlpha: 0, duration: 0.12 }, at + 0.1);
 }
 gsap.set('#ui', { filter: 'blur(0px) brightness(1)' });
-gsap.set(['#vn', '#m2', '#m3', '#typing', '#stamp', '#st2', '#z1', '#w1', '#w2', '#w3', '#k1', '#k2', '#k3', '#k4', '#k5'], { autoAlpha: 0 });
+gsap.set(['#v1', '#vn', '#m2', '#m3', '#typing', '#stamp', '#st2', '#z1', '#w1', '#w2', '#w3', '#k1', '#k2', '#k3', '#k4', '#k5'], { autoAlpha: 0 });
 
 /* 0 · accroche, le premier message est déjà là */
 tl.fromTo('#h', { scale: 1.06 }, { scale: 1, duration: 0.2, ease: 'back.out(2)' }, 0)
-  .fromTo('#ui', { scale: 1.0 }, { scale: 1.035, duration: 4.2, ease: 'none' }, 0)
-  .to('#h', { autoAlpha: 0, y: -20, duration: 0.15, ease: 'power2.in' }, 1.35);
+  .fromTo('#ui', { scale: 1.0 }, { scale: 1.035, duration: 7.7, ease: 'none' }, 0)
+  .to('#h', { autoAlpha: 0, y: -20, duration: 0.15, ease: 'power2.in' }, 1.8);
+pop('#v1', 1.95);
+tl.to('#v', { autoAlpha: 0, duration: 0.15 }, 4.6);
 bub('#vn', 0.32, '0% 100%');
 tapAt(146, 530 + 336, PLAY0 - 0.04);
 tl.set('#play', { textContent: '❚❚' }, PLAY0).set('#play', { textContent: '▶' }, PLAY1);
-bub('#m2', 1.62, '0% 100%');
+bub('#m2', 3.37, '0% 100%');
 
 /* 2.5 · révélation */
-const R = 2.55;
+const R = 7.7;
 tl.to('#flash', { opacity: 0.75, duration: 0.05, ease: 'none' }, R - 0.05)
   .to('#flash', { opacity: 0, duration: 0.3 }, R)
   .to('#redf', { opacity: 1, duration: 0.06, ease: 'none' }, R)
@@ -110,7 +113,7 @@ tl.to('#flash', { opacity: 0.75, duration: 0.05, ease: 'none' }, R - 0.05)
   .to('#vn', { backgroundColor: '#FDECEC', duration: 0.15 }, R + 0.2);
 pop('#z1', R + 0.3);
 tl.fromTo('#z1', { scale: 1 }, { scale: 1.06, duration: 0.18, yoyo: true, repeat: 1, ease: 'sine.inOut' }, R + 0.85);
-tl.to('#z', { autoAlpha: 0, duration: 0.15 }, 4.2);
+tl.to('#z', { autoAlpha: 0, duration: 0.15 }, R + 1.5);
 
 /* 4.35 · la mère pose la question */
 tl.to('#ph', { autoAlpha: 0, duration: 0.05 }, TYPE0);
@@ -119,7 +122,7 @@ tl.set('#ph', { autoAlpha: 1 }, TYPE1 + 0.06);
 bub('#m3', TYPE1 + 0.08, '100% 100%');
 
 /* 5.2 · « escribiendo… », puis plus rien */
-const TY = 5.25, TYEND = 6.45;
+const TY = 10.15, TYEND = 11.15;
 tl.set('#st1', { autoAlpha: 0 }, TY).set('#st2', { autoAlpha: 1 }, TY)
   .fromTo('#typing', { autoAlpha: 0, scale: 0.6, transformOrigin: '0% 100%' }, { autoAlpha: 1, scale: 1, duration: 0.2, ease: 'back.out(2)' }, TY);
 [0, 1, 2].forEach((d) => tl.to(`#typing i:nth-child(${d + 1})`, { y: -10, duration: 0.16, yoyo: true, repeat: 5, ease: 'sine.inOut' }, TY + 0.1 + d * 0.1));
@@ -130,7 +133,7 @@ pop('#w2', TYEND + 0.35);
 pop('#w3', TYEND + 0.55);
 
 /* 8.4 · commente */
-const K = 8.45;
+const K = 13.0;
 tl.to('#flash', { opacity: 0.55, duration: 0.05, ease: 'none' }, K - 0.05)
   .to('#flash', { opacity: 0, duration: 0.25 }, K)
   .to('#ui', { filter: 'blur(16px) brightness(0.62)', scale: 1.08, duration: 0.3, ease: 'power2.out' }, K)
