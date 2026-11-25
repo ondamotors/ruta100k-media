@@ -25,11 +25,15 @@
 
   {%- elif s.type == 'ba' %}
     {% for l in s.lines %}<div class="display" data-fit style="font-size: {{ s.size or 170 }}px">{{ l|safe }}</div>{% endfor %}
+    {% if s.split %}<div class="ba-stage ba-split" style="height: {{ s.stage_h or 760 }}px">
+        <div class="ba-col b"><img src="{{ root }}/{{ s.before }}" style="object-position: {{ s.before_pos or 'center' }}"><span class="ba-tag mono">{{ s.before_label or 'ANTES' }}</span></div>
+        <div class="ba-col a"><img src="{{ root }}/{{ s.after }}" style="object-position: {{ s.after_pos or 'center' }}"><span class="ba-tag after mono">{{ s.after_label or 'DESPUÉS' }}</span></div>
+      </div>{% else %}
     <div class="ba-stage" style="height: {{ s.stage_h or 760 }}px">
       <img class="ba-after" src="{{ root }}/{{ s.after }}" style="object-position: {{ s.after_pos or 'center' }}">
       <span class="ba-tag after mono">{{ s.after_label or 'DESPUÉS' }}</span>
       <div class="ba-before"><img src="{{ root }}/{{ s.before }}" style="object-position: {{ s.before_pos or 'center' }}"><span class="ba-tag mono">{{ s.before_label or 'ANTES' }}</span></div>
-    </div>
+    </div>{% endif %}
     {% if s.sub %}<p class="clean-sub">{{ s.sub|safe }}</p>{% endif %}
   {%- elif s.type == 'photo' %}
     {% if s.kicker %}<div class="kicker mono">{{ s.kicker }}</div>{% endif %}

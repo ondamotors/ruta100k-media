@@ -1,0 +1,66 @@
+{
+ "id": "2026-11-25_p49_studio",
+ "kind": "carousel",
+ "series": "IA GRATIS",
+ "foot_left": "Hecho con IA gratis",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "ba",
+   "theme": "dark",
+   "lines": [
+    "Esto es gratis"
+   ],
+   "size": 150,
+   "stage_h": 720,
+   "before": "assets/studio_enceinte_avant.jpg",
+   "after": "assets/studio_enceinte_apres.jpg",
+   "sub": "Foto de celular → foto de estudio, en una frase.",
+   "split": true
+  },
+  {
+   "type": "photo",
+   "theme": "dark",
+   "kicker": "Después",
+   "h1": "Sin cámara. Sin estudio.",
+   "img": "assets/studio_enceinte_apres.jpg",
+   "stage_h": 860,
+   "tag": "DESPUÉS"
+  },
+  {
+   "type": "ba",
+   "theme": "dark",
+   "lines": [
+    "Y esto también"
+   ],
+   "size": 150,
+   "stage_h": 720,
+   "before": "assets/studio_casque_avant.jpg",
+   "after": "assets/studio_casque_apres.jpg",
+   "sub": "Misma IA. Gratis.",
+   "split": true,
+   "before_pos": "72% center"
+  },
+  {
+   "type": "photo",
+   "theme": "dark",
+   "kicker": "Después",
+   "h1": "Sin pagar un peso.",
+   "img": "assets/studio_casque_apres.jpg",
+   "stage_h": 860,
+   "tag": "DESPUÉS"
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "¿Qué IA es?",
+   "verb": "Comenta",
+   "keyword": "STUDIO",
+   "lead": "Y escríbeme STUDIO por DM: te digo qué IA es y te mando el prompt exacto.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para tu próxima foto."
+   ]
+  }
+ ]
+}
