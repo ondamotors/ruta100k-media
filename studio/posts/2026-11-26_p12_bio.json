@@ -1,0 +1,115 @@
+{
+ "id": "2026-11-26_p12_bio",
+ "kind": "carousel",
+ "series": "RECURSO GRATIS",
+ "foot_left": "RUTA 100K · Día 3 de 60",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "cover_num",
+   "theme": "dark",
+   "kicker": "Recurso gratis · Día 3",
+   "number": "150",
+   "number_size": 460,
+   "h1": "caracteres. Es todo lo que tienes para que una visita te siga.",
+   "lead": "La fórmula de 4 partes, con ejemplos. Gratis al final.",
+   "teaser_label": "La fórmula",
+   "teaser": [
+    "Qué das",
+    "Para quién",
+    "Por qué hoy",
+    "Qué hacer"
+   ]
+  },
+  {
+   "type": "cover_text",
+   "theme": "light",
+   "kicker": "Lo dice Instagram",
+   "display": [
+    "Tu bio",
+    "también",
+    "se busca."
+   ],
+   "display_size": 210,
+   "h1": "La búsqueda de Instagram cruza lo que escribes con nombres de usuario y bios.",
+   "lead": "Su consejo: palabras clave sobre quién eres y de qué trata tu perfil."
+  },
+  {
+   "type": "numbered",
+   "theme": "dark",
+   "kicker": "La fórmula",
+   "h2": "4 partes, en este orden",
+   "items": [
+    {
+     "t": "Qué das",
+     "d": "Tu tema, con las palabras que la gente busca."
+    },
+    {
+     "t": "Para quién",
+     "d": "Tu lector exacto. Si es para todo el mundo, no le habla a nadie."
+    },
+    {
+     "t": "Por qué seguirte hoy",
+     "d": "Una serie, un reto o una promesa que cumples."
+    },
+    {
+     "t": "Qué hacer ahora",
+     "d": "Una sola acción: comentar una palabra o abrir tu link."
+    }
+   ]
+  },
+  {
+   "type": "numbered",
+   "theme": "light",
+   "kicker": "Ejemplos",
+   "h2": "3 bios armadas con la fórmula",
+   "items": [
+    {
+     "t": "Cocina",
+     "d": "Recetas de 10 minutos para quien llega tarde a casa. Una nueva cada día. Comenta RECETA."
+    },
+    {
+     "t": "Finanzas",
+     "d": "Ahorro sin apps de pago para tu primer sueldo. Un truco cada lunes. Mira el post fijado."
+    },
+    {
+     "t": "Fitness",
+     "d": "Rutinas de 15 minutos en casa, sin equipo. Un plan nuevo cada semana. Escríbeme PLAN."
+    }
+   ]
+  },
+  {
+   "type": "numbered",
+   "theme": "dark",
+   "kicker": "Lo que te da Instagram",
+   "h2": "3 datos para usarla bien",
+   "items": [
+    {
+     "t": "Hasta 150 caracteres de bio.",
+     "src": "help.instagram.com"
+    },
+    {
+     "t": "Hasta 5 links en tu perfil.",
+     "src": "help.instagram.com"
+    },
+    {
+     "t": "Un usuario y un nombre ligados a tu tema.",
+     "d": "Instagram lo recomienda para aparecer en búsquedas.",
+     "src": "about.instagram.com · 25/08/2021"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "10 bios de ejemplo",
+   "verb": "Comenta",
+   "keyword": "BIO",
+   "lead": "Y escríbeme BIO por DM: te mando la fórmula con 10 bios de ejemplo por nicho.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para cuando edites tu perfil."
+   ]
+  }
+ ]
+}

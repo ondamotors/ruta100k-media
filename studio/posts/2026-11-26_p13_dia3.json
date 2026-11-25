@@ -1,0 +1,88 @@
+{
+ "id": "2026-11-26_p13_dia3",
+ "kind": "carousel",
+ "series": "DÍA 3 DE 60",
+ "foot_left": "RUTA 100K · Día 3 de 60",
+ "foot_last": "Día 60: 22/01/2027",
+ "slides": [
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "Día 3 de 60 · sin filtro",
+   "display": [
+    "Borré",
+    "un post."
+   ],
+   "display_size": 260,
+   "h1": "Mi tier list de Instagram no funcionó en TikTok. Aquí están sus números.",
+   "lead": "Y lo que cambio desde entonces."
+  },
+  {
+   "type": "cover_num",
+   "theme": "light",
+   "kicker": "La tier list, en TikTok",
+   "number": "23",
+   "number_size": 460,
+   "h1": "vistas. 0 likes, 0 comentarios, 0 compartidos.",
+   "lead": "Datos de Metricool. Aquí, en Instagram, la misma lista sigue publicada."
+  },
+  {
+   "type": "cover_num",
+   "theme": "dark",
+   "kicker": "El mejor de mis 2 primeros posts en TikTok",
+   "number": "32",
+   "number_size": 460,
+   "h1": "vistas para el post del reto. 3 likes y 1 compartido.",
+   "lead": "Contar el reto funcionó mejor que la lista."
+  },
+  {
+   "type": "numbered",
+   "theme": "light",
+   "kicker": "Lo que aprendí",
+   "h2": "3 cambios desde ese día",
+   "items": [
+    {
+     "t": "Cada red, su versión.",
+     "d": "En TikTok, pantalla completa y una idea por slide."
+    },
+    {
+     "t": "Lo que es de una sola red, se queda ahí.",
+     "d": "Ya no duplico un post que solo habla de Instagram o de TikTok."
+    },
+    {
+     "t": "Los números deciden.",
+     "d": "Lo que no funciona se cambia rápido, y te lo cuento aquí."
+    }
+   ]
+  },
+  {
+   "type": "numbered",
+   "theme": "dark",
+   "kicker": "Seguidores el 24/11 · Metricool",
+   "h2": "El punto de partida, sin filtro",
+   "items": [
+    {
+     "t": "TikTok: 3 seguidores."
+    },
+    {
+     "t": "Instagram: 0 seguidores."
+    },
+    {
+     "t": "La meta: 100K antes del 22/01/2027."
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "El domingo",
+   "verb": "Sígueme",
+   "keyword": "SEMANA 1",
+   "lead": "El domingo publico los números reales de la semana 1: seguidores, vistas, el mejor y el peor post.",
+   "list": [
+    "Aunque sean malos.",
+    "Día 60: 22/01/2027. ¿Llego a 100K?"
+   ]
+  }
+ ]
+}

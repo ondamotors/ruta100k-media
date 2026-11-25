@@ -1,0 +1,95 @@
+{
+ "id": "2026-11-25_p11_subtitulos_tiktok",
+ "kind": "tiktok",
+ "series": "SUBTÍTULOS GRATIS",
+ "foot_left": "Verificado el 25/11/2026",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "kicker": "Subtítulos automáticos · Día 2",
+   "lines": [
+    "En CapCut",
+    "son Pro"
+   ],
+   "size": 230,
+   "sub": "Lo dice su propio centro de ayuda. <b>Aquí van 4 opciones gratis. La 2 es de Instagram.</b>"
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "No lo digo yo. Lo dice CapCut.",
+   "text": "Su centro de ayuda, abril 2026: los subtítulos automáticos están en Pro. Las fuentes, al final."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "1 de 4 · ya la tienes",
+   "h": "TikTok: vienen dentro de la app.",
+   "text": "Actívalos en la pantalla de edición, después de grabar o subir. Y corriges el texto."
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "2 de 4 · la de Instagram",
+   "h": "Edits: gratis y sin marca de agua.",
+   "text": "Crea los subtítulos con sus tiempos, automáticamente. Exporta en 4K a cualquier red. Ojo: solo en celular."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "3 de 4 · sin internet",
+   "h": "Buzz: tu computador transcribe, sin internet.",
+   "text": "Open source, con Whisper. Te da el archivo SRT o VTT. Ojo: en la Mac App Store cuesta US$9.99."
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "4 de 4 · editor completo",
+   "h": "Kdenlive: editas y subtitulas en un programa.",
+   "text": "Open source, con Whisper o VOSK. Ojo: con Whisper va lento y la primera vez descarga unos 2 GB."
+  },
+  {
+   "type": "sources",
+   "theme": "dark",
+   "kicker": "Fuentes",
+   "h": "Todo, de sus páginas oficiales",
+   "items": [
+    {
+     "t": "CapCut: Standard vs Pro, 07/04/2026",
+     "u": "capcut.com/help/difference-between-standard-and-pro-subscription"
+    },
+    {
+     "t": "TikTok: subtítulos automáticos, 06/04/2021",
+     "u": "newsroom.tiktok.com/en-us/introducing-auto-captions"
+    },
+    {
+     "t": "Edits: generador de subtítulos",
+     "u": "creators.instagram.com/edits/tutorials/caption-generator"
+    },
+    {
+     "t": "Buzz: código y preguntas frecuentes",
+     "u": "github.com/chidiwilliams/buzz"
+    },
+    {
+     "t": "Kdenlive: voz a texto",
+     "u": "docs.kdenlive.org/en/effects_and_compositions/speech_to_text.html"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "El paso a paso",
+   "verb": "Comenta",
+   "keyword": "SUBTITULOS",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme SUBTITULOS por mensaje.",
+    "Te mando cómo activar las 4, con los links oficiales."
+   ]
+  }
+ ]
+}

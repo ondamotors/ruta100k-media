@@ -1,0 +1,95 @@
+{
+ "id": "2026-11-26_p14_seo_tiktok",
+ "kind": "tiktok",
+ "series": "FUENTE OFICIAL",
+ "foot_left": "Solo lo que TikTok publicó",
+ "foot_last": "Verificado el 25/11/2026",
+ "slides": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "kicker": "Lo dijo TikTok · Día 3",
+   "lines": [
+    "+40%",
+    "búsquedas"
+   ],
+   "size": 260,
+   "sub": "Las búsquedas en TikTok subieron más de 40% en un año (dato de TikTok, 2025). <b>4 cosas que confirmó sobre cómo te encuentran.</b>"
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "No lo digo yo. Lo dijo TikTok.",
+   "text": "Sus páginas oficiales, al final. Y la 2 te dice qué grabar mañana."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "1 de 4 · lo que más pesa",
+   "h": "Que tu video responda a lo que buscan.",
+   "text": "Para muchas personas, eso suele pesar más que otros factores. También cuentan los hashtags y el sonido."
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "2 de 4 · qué grabar mañana",
+   "h": "TikTok te muestra qué se busca y casi no tiene videos.",
+   "text": "Se llama Estadísticas de búsqueda de creadores. Está en algunas regiones, como México y Colombia."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "3 de 4",
+   "h": "TikTok mide el «valor de búsqueda» de un video.",
+   "text": "Según los términos más buscados. En 2024 lo anunció como una de las 4 métricas de su programa de recompensas."
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "4 de 4 · la peligrosa",
+   "h": "Tu cuenta puede volverse difícil de encontrar.",
+   "text": "Si publicas una y otra vez contenido que no cumple las normas del Para ti. TikTok avisa y puedes apelar."
+  },
+  {
+   "type": "sources",
+   "theme": "dark",
+   "kicker": "Fuentes",
+   "h": "Todo, de TikTok",
+   "items": [
+    {
+     "t": "TikTok World 2025, 03/06/2025",
+     "u": "newsroom.tiktok.com/en-us/tiktok-world-2025"
+    },
+    {
+     "t": "Centro de ayuda: cómo recomienda TikTok, sección búsqueda",
+     "u": "support.tiktok.com/fr/using-tiktok/exploring-videos/how-tiktok-recommends-content"
+    },
+    {
+     "t": "Estadísticas de búsqueda de creadores, 30/08/2024",
+     "u": "newsroom.tiktok.com/es-latam/estadisticas-de-busqueda-de-creadores-tiktok-herramienta"
+    },
+    {
+     "t": "Programa de recompensas, 18/03/2024",
+     "u": "newsroom.tiktok.com/introducing-the-new-creator-rewards-program"
+    },
+    {
+     "t": "Cuentas más difíciles de encontrar, 17/04/2024",
+     "u": "newsroom.tiktok.com/more-updates-to-help-the-tiktok-community-create-and-share-safely"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Lo que no cabe aquí",
+   "verb": "Comenta",
+   "keyword": "SEO",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme SEO por mensaje.",
+    "Te mando la checklist de búsqueda, con cada fuente oficial."
+   ]
+  }
+ ]
+}

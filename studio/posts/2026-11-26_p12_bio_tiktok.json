@@ -1,0 +1,75 @@
+{
+ "id": "2026-11-26_p12_bio_tiktok",
+ "kind": "tiktok",
+ "series": "RECURSO GRATIS",
+ "foot_left": "RUTA 100K · Día 3 de 60",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "kicker": "Tu perfil de TikTok · Día 3",
+   "lines": [
+    "Sin link",
+    "hasta 1000",
+    "seguidores"
+   ],
+   "size": 200,
+   "sub": "Lo dice TikTok. <b>Hasta entonces, tu bio hace todo el trabajo. La fórmula, en 4 partes.</b>"
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Antes de seguir",
+   "h": "No lo digo yo. Lo dice TikTok.",
+   "text": "Link en el perfil: con 1000 seguidores o cuenta de empresa registrada. Y no en todos los países."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "1 de 4",
+   "h": "Qué das, en palabras simples.",
+   "text": "«Recetas de 10 minutos» se entiende al instante. «Pasión por la cocina», no."
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "2 de 4",
+   "h": "Para quién, sin rodeos.",
+   "text": "«Para quien llega tarde a casa». Si es para todo el mundo, no le habla a nadie."
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "3 de 4 · la que convierte",
+   "h": "Por qué seguirte hoy.",
+   "text": "Una serie o un reto que cumples: «Una receta nueva cada día»."
+  },
+  {
+   "type": "punch",
+   "theme": "light",
+   "kicker": "4 de 4",
+   "h": "Una sola acción.",
+   "text": "Sin link, dile qué hacer: «Comenta RECETA en cualquier video»."
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Así queda",
+   "h": "«Recetas de 10 min para quien llega tarde. Una diaria. Comenta RECETA»",
+   "text": "Qué das, para quién, por qué hoy y qué hacer. En una sola línea."
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "10 bios de ejemplo",
+   "verb": "Comenta",
+   "keyword": "BIO",
+   "steps": [
+    "Sígueme.",
+    "Escríbeme BIO por mensaje.",
+    "Te mando la fórmula con 10 bios de ejemplo por nicho."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,57 @@
+{
+ "id": "2026-11-26_p13_dia3_video",
+ "kind": "tiktok_video",
+ "series": "DÍA 3 DE 60",
+ "foot_left": "RUTA 100K · De 0 a 100K",
+ "foot_last": "",
+ "scenes": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "kicker": "Reto público",
+   "lines": [
+    "Día 3",
+    "de 60"
+   ],
+   "size": 300,
+   "sub": "Borré un post. Sin filtro.",
+   "dur": 1.7
+  },
+  {
+   "type": "num",
+   "theme": "light",
+   "kicker": "Mi tier list de Instagram, en TikTok",
+   "number": "23",
+   "label": "vistas",
+   "text": "0 likes. 0 comentarios. Datos de Metricool.",
+   "dur": 1.7
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "Por qué la borré",
+   "h": "Estaba hecha para Instagram.",
+   "text": "En TikTok no encajaba.",
+   "dur": 1.6
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "Lo que cambio",
+   "h": "Cada post nuevo, con versión para TikTok.",
+   "text": "Pantalla completa. Una idea por slide.",
+   "dur": 1.8
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Mañana",
+   "verb": "Sígueme",
+   "keyword": "Día 4",
+   "steps": [
+    "Y el domingo, los números reales de la semana 1."
+   ],
+   "dur": 1.8
+  }
+ ]
+}

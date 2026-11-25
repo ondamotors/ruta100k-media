@@ -1,0 +1,214 @@
+{
+ "id": "2026-11-25_p11_subtitulos",
+ "kind": "carousel",
+ "series": "SUBTÍTULOS GRATIS",
+ "foot_left": "RUTA 100K · Día 3 de 60",
+ "foot_last": "Gratis para seguidores",
+ "slides": [
+  {
+   "type": "cover_text",
+   "theme": "dark",
+   "kicker": "Herramientas verificadas · Día 3",
+   "display": [
+    "Subtítulos",
+    "automáticos,",
+    "gratis."
+   ],
+   "display_size": 200,
+   "h1": "4 opciones que no te cobran por subtitular tus videos.",
+   "lead": "En CapCut son función Pro, según su propio centro de ayuda.",
+   "teaser_label": "Las 4",
+   "teaser": [
+    "TikTok",
+    "Edits",
+    "Buzz",
+    "Kdenlive"
+   ]
+  },
+  {
+   "type": "tool",
+   "idx": "01/04",
+   "category": "Dentro de la app",
+   "paid": {
+    "name": "CapCut",
+    "price": "Pro"
+   },
+   "free": {
+    "name": "TikTok",
+    "desc": "Los subtítulos automáticos vienen en la app: se activan en la pantalla de edición, después de grabar o subir tu video."
+   },
+   "facts": [
+    {
+     "k": "Costo",
+     "v": "Incluido"
+    },
+    {
+     "k": "Texto",
+     "v": "Editable"
+    },
+    {
+     "k": "Dónde",
+     "v": "App TikTok"
+    }
+   ],
+   "platforms": "Para lo que publicas en TikTok",
+   "good": "Corriges el texto después de generarlo, antes de publicar.",
+   "limit": "Solo sirve para tus videos de TikTok.",
+   "foot_left": "newsroom.tiktok.com",
+   "foot_right": "Desliza →"
+  },
+  {
+   "type": "tool",
+   "idx": "02/04",
+   "category": "App gratis de Instagram",
+   "paid": {
+    "name": "CapCut",
+    "price": "Pro"
+   },
+   "free": {
+    "name": "Edits",
+    "desc": "El editor de video gratis de Instagram crea los subtítulos con sus tiempos, automáticamente, y los corriges todos juntos."
+   },
+   "facts": [
+    {
+     "k": "Costo",
+     "v": "US$0"
+    },
+    {
+     "k": "Exporta",
+     "v": "4K"
+    },
+    {
+     "k": "Marca de agua",
+     "v": "No"
+    }
+   ],
+   "platforms": "iPhone · Android",
+   "good": "Exportas en 4K sin marca de agua, para subirlo a cualquier red.",
+   "limit": "Solo en el celular, y entras con tu cuenta de Instagram.",
+   "foot_left": "creators.instagram.com/edits",
+   "foot_right": "Desliza →"
+  },
+  {
+   "type": "tool",
+   "idx": "03/04",
+   "category": "Sin internet",
+   "paid": {
+    "name": "CapCut",
+    "price": "Pro"
+   },
+   "free": {
+    "name": "Buzz",
+    "desc": "Transcribe audio y video sin internet con Whisper, y exporta subtítulos SRT, VTT o texto."
+   },
+   "facts": [
+    {
+     "k": "Costo",
+     "v": "US$0"
+    },
+    {
+     "k": "Licencia",
+     "v": "MIT"
+    },
+    {
+     "k": "Última versión",
+     "v": "Ago. 2026"
+    }
+   ],
+   "platforms": "Windows · macOS · Linux",
+   "good": "Todo se procesa en tu computador.",
+   "limit": "Con Whisper es lento y pide mucha RAM. En la Mac App Store cuesta US$9.99: bájalo gratis de GitHub.",
+   "foot_left": "github.com/chidiwilliams/buzz",
+   "foot_right": "Desliza →"
+  },
+  {
+   "type": "tool",
+   "idx": "04/04",
+   "category": "Editor completo",
+   "paid": {
+    "name": "CapCut",
+    "price": "Pro"
+   },
+   "free": {
+    "name": "Kdenlive",
+    "desc": "Editor de video open source: crea los subtítulos por reconocimiento de voz (Whisper o VOSK) y los pone en tu línea de tiempo."
+   },
+   "facts": [
+    {
+     "k": "Costo",
+     "v": "US$0"
+    },
+    {
+     "k": "Licencia",
+     "v": "GPL-3.0"
+    },
+    {
+     "k": "Última versión",
+     "v": "Nov. 2026"
+    }
+   ],
+   "platforms": "Windows · macOS · Linux",
+   "good": "Subtitulas y editas en el mismo programa.",
+   "limit": "Con Whisper usa solo el procesador, va lento y descarga unos 2 GB la primera vez.",
+   "foot_left": "kdenlive.org",
+   "foot_right": "Desliza →"
+  },
+  {
+   "type": "numbered",
+   "theme": "dark",
+   "kicker": "Lo que dejé fuera",
+   "h2": "Por qué CapCut no está",
+   "items": [
+    {
+     "t": "Su centro de ayuda pone los subtítulos automáticos en Pro.",
+     "d": "Si usas una función Pro sin Pro, al exportar te pide pasarte a Pro.",
+     "src": "capcut.com/help · abril 2026"
+    },
+    {
+     "t": "Sus páginas de marketing dicen «gratis».",
+     "d": "Con dos versiones oficiales distintas, no entra en una lista de gratis verificados.",
+     "src": "capcut.com/resource · marzo 2026"
+    }
+   ]
+  },
+  {
+   "type": "sources",
+   "kicker": "Fuentes",
+   "h2": "Verificado el 25/11/2026",
+   "items": [
+    {
+     "t": "CapCut: Standard vs Pro, 07/04/2026",
+     "u": "capcut.com/help/difference-between-standard-and-pro-subscription"
+    },
+    {
+     "t": "TikTok: subtítulos automáticos, 06/04/2021",
+     "u": "newsroom.tiktok.com/en-us/introducing-auto-captions"
+    },
+    {
+     "t": "Edits: generador de subtítulos",
+     "u": "creators.instagram.com/edits/tutorials/caption-generator"
+    },
+    {
+     "t": "Buzz: código y preguntas frecuentes",
+     "u": "github.com/chidiwilliams/buzz"
+    },
+    {
+     "t": "Kdenlive: voz a texto",
+     "u": "docs.kdenlive.org/en/effects_and_compositions/speech_to_text.html"
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "El paso a paso",
+   "verb": "Comenta",
+   "keyword": "SUBTITULOS",
+   "lead": "Y escríbeme SUBTITULOS por DM: te mando cómo activar las 4, con los links oficiales.",
+   "list": [
+    "Solo para seguidores: sígueme antes de escribir.",
+    "Guárdalo para tu próximo video."
+   ]
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+ "id": "2026-11-25_p10_dia2_video",
+ "kind": "tiktok_video",
+ "series": "DÍA 2 DE 60",
+ "foot_left": "RUTA 100K · De 0 a 100K",
+ "foot_last": "",
+ "scenes": [
+  {
+   "type": "hook",
+   "theme": "dark",
+   "kicker": "Reto público",
+   "lines": [
+    "Día 2",
+    "de 60"
+   ],
+   "size": 300,
+   "sub": "Los números del Día 1, sin filtro.",
+   "dur": 1.7
+  },
+  {
+   "type": "num",
+   "theme": "light",
+   "kicker": "Día 1 en TikTok",
+   "number": "3",
+   "label": "seguidores",
+   "text": "Datos de Metricool.",
+   "dur": 1.5
+  },
+  {
+   "type": "num",
+   "theme": "dark",
+   "kicker": "Vistas",
+   "number": "55",
+   "label": "en mis 2 primeros posts",
+   "dur": 1.5
+  },
+  {
+   "type": "punch",
+   "theme": "coral",
+   "kicker": "El mejor",
+   "h": "El post del reto: 32 vistas.",
+   "text": "3 likes y 1 compartido.",
+   "dur": 1.7
+  },
+  {
+   "type": "punch",
+   "theme": "dark",
+   "kicker": "La lección",
+   "h": "Contar el reto funcionó mejor que la lista.",
+   "text": "Tuvo más vistas y más likes que mi tier list.",
+   "dur": 1.9
+  },
+  {
+   "type": "cta",
+   "theme": "dark",
+   "kicker": "Mañana",
+   "verb": "Sígueme",
+   "keyword": "Día 3",
+   "steps": [
+    "El post que borré, y por qué."
+   ],
+   "dur": 1.7
+  }
+ ]
+}
