@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-600-normal.woff2") format("woff2"); font-weight: 600; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-700-normal.woff2") format("woff2"); font-weight: 700; }
+@font-face { font-family: "TT"; src: url("node_modules/@fontsource/tiktok-sans/files/tiktok-sans-latin-800-normal.woff2") format("woff2"); font-weight: 800; }
+:root { --y: #FFE14D; --red: #E5484D; --green: #16A34A; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1080px; height: 1920px; overflow: hidden; background: #EEF0F3; }
+body { font-family: "TT", sans-serif; -webkit-font-smoothing: antialiased; color: #111; }
+#ui { position: absolute; inset: 0; background: #EEF0F3; transform-origin: 485px 960px; }
+#wallet { position: absolute; left: 60px; top: 524px; width: 850px; height: 246px; background: #fff; border-radius: 34px; box-shadow: 0 10px 30px rgba(17,17,17,0.07); transform-origin: 425px 123px; }
+#wallet .lbl { position: absolute; left: 40px; top: 28px; font-weight: 600; font-size: 34px; color: #6B7280; }
+#wallet .src { position: absolute; right: 36px; top: 34px; font-weight: 600; font-size: 22px; color: #9CA3AF; }
+#wallet .amt { position: absolute; left: 36px; top: 82px; display: flex; align-items: baseline; gap: 16px; }
+#tot { font-weight: 800; font-size: 140px; line-height: 1; color: var(--green); letter-spacing: -4px; }
+#wallet .usd { font-weight: 700; font-size: 34px; color: #9CA3AF; }
+#cam { position: absolute; left: 60px; top: 790px; width: 850px; height: 610px; border-radius: 34px; background: #16171B; overflow: hidden; box-shadow: 0 10px 30px rgba(17,17,17,0.12); }
+#rec { position: absolute; left: 32px; top: 28px; display: flex; align-items: center; gap: 12px; font-weight: 800; font-size: 30px; color: #fff; }
+#rec i { width: 20px; height: 20px; border-radius: 50%; background: var(--red); display: block; }
+#cnt { position: absolute; right: 32px; top: 26px; font-weight: 800; font-size: 32px; color: #fff; background: rgba(255,255,255,0.14); padding: 6px 18px; border-radius: 999px; }
+.cr { position: absolute; width: 70px; height: 70px; border: 0 solid rgba(255,255,255,0.85); }
+#prod { position: absolute; left: 0; right: 0; top: 150px; text-align: center; font-size: 230px; line-height: 1; }
+#shut { position: absolute; left: 50%; bottom: 34px; width: 104px; height: 104px; margin-left: -52px; border-radius: 50%; border: 8px solid #fff; display: grid; place-items: center; }
+#shut i { width: 76px; height: 76px; border-radius: 50%; background: var(--red); display: block; }
+#camflash { position: absolute; inset: 0; background: #fff; opacity: 0; }
+.chip { position: absolute; z-index: 20; font-weight: 800; font-size: 44px; color: var(--green); background: #fff; padding: 6px 20px 8px; border-radius: 999px; box-shadow: 0 8px 24px rgba(0,0,0,0.18); opacity: 0; white-space: nowrap; }
+#sheet { position: absolute; left: 60px; top: 858px; width: 850px; height: 560px; background: #fff; border-radius: 40px; box-shadow: 0 -10px 50px rgba(17,17,17,0.18); padding: 26px 40px; z-index: 6; }
+#sheet .grab { width: 90px; height: 10px; border-radius: 9px; background: #D1D5DB; margin: 0 auto 22px; }
+#sheet h3 { font-weight: 800; font-size: 42px; margin-bottom: 4px; }
+#sheet .src { font-weight: 600; font-size: 24px; color: #9CA3AF; margin-bottom: 12px; }
+.tr { display: flex; align-items: center; height: 112px; border-top: 2px solid #F1F2F5; font-weight: 700; font-size: 40px; padding: 0 16px; border-radius: 22px; }
+.tr b { margin-left: auto; font-weight: 800; color: var(--green); }
+#t2 { background: #FFF6CC; }
+.cap { position: absolute; z-index: 12; left: 60px; right: 170px; display: flex; flex-direction: column; align-items: center; }
+.cap span { display: inline-block; font-weight: 700; font-size: 60px; line-height: 1.16; padding: 6px 24px 10px; border-radius: 20px; background: #fff; color: #111; margin-top: -6px; text-align: center; white-space: nowrap; box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+.cap span.y { background: var(--y); }
+.cap span.xl { font-size: 92px; font-weight: 800; padding: 6px 30px 12px; }
+.cap span.s { font-size: 48px; }
+.cap span.xs { font-size: 40px; font-weight: 600; }
+.conf { position: absolute; left: 0; top: 0; font-size: 64px; line-height: 1; opacity: 0; z-index: 11; }
+#flash { position: absolute; inset: 0; background: #fff; opacity: 0; z-index: 50; }
+.tap { position: absolute; width: 96px; height: 96px; margin: -48px 0 0 -48px; border-radius: 50%; background: rgba(120,120,128,0.45); border: 4px solid rgba(255,255,255,0.95); box-shadow: 0 6px 24px rgba(0,0,0,0.25); z-index: 40; opacity: 0; }
+</style>
+</head>
+<body>
+<div id="ui">
+  <div id="wallet">
+    <div class="lbl">Lo que te pagan las marcas:</div>
+    <div class="src">mediana: $175 por video</div>
+    <div class="amt"><span id="tot">$0</span><span class="usd">USD</span></div>
+  </div>
+  <div id="cam">
+    <div class="cr" style="left: 40px; top: 90px; border-left-width: 6px; border-top-width: 6px"></div>
+    <div class="cr" style="right: 40px; top: 90px; border-right-width: 6px; border-top-width: 6px"></div>
+    <div class="cr" style="left: 40px; bottom: 160px; border-left-width: 6px; border-bottom-width: 6px"></div>
+    <div class="cr" style="right: 40px; bottom: 160px; border-right-width: 6px; border-bottom-width: 6px"></div>
+    <div id="rec"><i></i><span id="tc">00:00</span></div>
+    <div id="cnt">Video 0/10</div>
+    <div id="prod">🧴</div>
+    <div id="shut"><i></i></div>
+    <div id="camflash"></div>
+  </div>
+  <div id="sheet">
+    <div class="grab"></div>
+    <h3>Y cuando subes de nivel:</h3>
+    <div class="src">precio por video UGC en EE. UU., 2026</div>
+    <div class="tr" id="t0">Principiante<b>$150 a $300</b></div>
+    <div class="tr" id="t1">Con experiencia<b>$400 a $800</b></div>
+    <div class="tr" id="t2">Pro 🔥<b>$1,000 a $3,000+</b></div>
+  </div>
+</div>
+<div class="cap" id="h" style="top: 300px"><span class="y xl" id="h1">$175 por video 💸</span><span id="h2">con 0 seguidores 😳</span></div>
+<div class="cap" id="z" style="top: 300px"><span id="z1">10 videos al mes =</span><span class="y xl" id="z2">$1,750 🤯</span></div>
+<div class="cap" id="k" style="top: 540px"><span id="k1">¿Cómo consigo marcas? 👀</span><span class="xl" id="k2">Comenta</span><span class="y xl" id="k3">UGC 👇</span><span class="s" id="k4">y te mando el paso a paso 📩</span><span class="xs" id="k5">(sígueme para recibirlo)</span></div>
+<div class="tap" id="tap"></div>
+<div id="flash"></div>
+
+<script src="node_modules/gsap/dist/gsap.min.js"></script>
+<script>
+const TAKES = [0.55, 1.15, 1.65, 2.08, 2.46, 2.8, 3.1, 3.36, 3.59, 3.8];
+const PRODS = ['🧴', '☕', '👟', '🎧', '💄', '📱', '🍫', '🕶️', '🧃', '⌚'];
+const PAY = 175;
+const EM = ['💸', '💵', '🤑', '💰', '🎉', '✨'];
+const confs = [];
+for (let k = 0; k < 26; k++) { const el = document.createElement('div'); el.className = 'conf'; el.textContent = EM[k % EM.length]; document.body.appendChild(el); confs.push(el); }
+TAKES.forEach((t, i) => document.body.insertAdjacentHTML('beforeend', `<div class="chip" id="d${i}">+$${PAY}</div>`));
+let seed = 17; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+const tl = gsap.timeline({ paused: true, defaults: { ease: 'power3.out' } });
+const C = { v: 0 };
+const pop = (sel, at) => tl.fromTo(sel, { autoAlpha: 0, scale: 0.55 }, { autoAlpha: 1, scale: 1, duration: 0.32, ease: 'back.out(2.2)' }, at);
+gsap.set('#ui', { filter: 'blur(0px) brightness(1)' });
+gsap.set(['#z1', '#z2', '#k1', '#k2', '#k3', '#k4', '#k5'], { autoAlpha: 0 });
+gsap.set('#sheet', { y: 1150 });
+gsap.set('.tr', { autoAlpha: 0, x: 40 });
+
+/* 0 · accroche */
+tl.fromTo('#h', { scale: 1.06 }, { scale: 1, duration: 0.2, ease: 'back.out(2)' }, 0)
+  .fromTo('#ui', { scale: 1.0 }, { scale: 1.03, duration: 4.2, ease: 'none' }, 0)
+  .to('#h', { autoAlpha: 0, y: -20, duration: 0.15, ease: 'power2.in' }, 1.4);
+
+/* 10 prises, de plus en plus rapides */
+TAKES.forEach((t, i) => {
+  tl.set('#tap', { left: 485, top: 790 + 610 - 34 - 52, scale: 1.2, autoAlpha: 0 }, t - 0.08)
+    .to('#tap', { autoAlpha: 1, scale: 0.85, duration: 0.06 }, t - 0.08)
+    .to('#tap', { autoAlpha: 0, duration: 0.1 }, t + 0.04)
+    .to('#camflash', { opacity: 0.85, duration: 0.03, ease: 'none' }, t)
+    .to('#camflash', { opacity: 0, duration: 0.16 }, t + 0.03)
+    .fromTo('#prod', { scale: 0.7, rotation: -8 }, { scale: 1, rotation: 0, duration: 0.22, ease: 'back.out(2.5)' }, t + 0.04)
+    .set(`#d${i}`, { left: 600, top: 1080, scale: 0.7, autoAlpha: 0 }, t + 0.02)
+    .to(`#d${i}`, { autoAlpha: 1, scale: 1.1, duration: 0.08 }, t + 0.02)
+    .to(`#d${i}`, { left: 470, top: 640, scale: 0.75, duration: 0.3, ease: 'power2.in' }, t + 0.1)
+    .to(`#d${i}`, { autoAlpha: 0, duration: 0.06 }, t + 0.38)
+    .to(C, { v: PAY * (i + 1), duration: 0.2, ease: 'power2.out' }, t + 0.38)
+    .fromTo('#wallet', { scale: 1 }, { scale: 1.04, duration: 0.08, yoyo: true, repeat: 1 }, t + 0.38);
+});
+
+/* 4.25 · 1 750 $ */
+const B = 4.25;
+tl.to('#flash', { opacity: 0.7, duration: 0.05, ease: 'none' }, B - 0.05)
+  .to('#flash', { opacity: 0, duration: 0.3 }, B)
+  .fromTo('#wallet', { scale: 1 }, { scale: 1.1, duration: 0.14, yoyo: true, repeat: 1, ease: 'power2.out' }, B)
+  .to('#ui', { x: -18, duration: 0.05, ease: 'none' }, B)
+  .to('#ui', { x: 14, duration: 0.06, ease: 'none' }, B + 0.05)
+  .to('#ui', { x: -8, duration: 0.06, ease: 'none' }, B + 0.11)
+  .to('#ui', { x: 0, duration: 0.08 }, B + 0.17);
+confs.forEach((el) => {
+  const ang = rnd() * Math.PI * 2, sp = 260 + rnd() * 440;
+  const dx = Math.cos(ang) * sp, dy = Math.sin(ang) * sp * 0.8 - 220;
+  const sc = 0.8 + rnd() * 0.6, rot = (rnd() - 0.5) * 260;
+  tl.set(el, { left: 420, top: 610, x: 0, y: 0, rotation: 0, scale: 0.4, autoAlpha: 0 }, B)
+    .to(el, { autoAlpha: 1, scale: sc, duration: 0.08 }, B)
+    .to(el, { x: dx, y: dy, rotation: rot, duration: 0.45, ease: 'power3.out' }, B)
+    .to(el, { y: dy + 700, duration: 0.65, ease: 'power2.in' }, B + 0.45)
+    .to(el, { autoAlpha: 0, duration: 0.25 }, B + 0.8);
+});
+pop('#z1', B + 0.1);
+pop('#z2', B + 0.3);
+
+/* 6.0 · les niveaux */
+const SH = B + 1.8;
+tl.to('#z', { autoAlpha: 0, duration: 0.15 }, SH - 0.1)
+  .to('#sheet', { y: 0, duration: 0.38, ease: 'power3.out' }, SH);
+[0, 1, 2].forEach((k) => tl.to(`#t${k}`, { autoAlpha: 1, x: 0, duration: 0.22 }, SH + 0.35 + k * 0.32));
+tl.fromTo('#t2', { scale: 1 }, { scale: 1.05, duration: 0.18, yoyo: true, repeat: 3, ease: 'sine.inOut' }, SH + 1.1);
+
+/* commente */
+const K = SH + 2.3;
+tl.to('#flash', { opacity: 0.55, duration: 0.05, ease: 'none' }, K - 0.05)
+  .to('#flash', { opacity: 0, duration: 0.25 }, K)
+  .to('#ui', { filter: 'blur(16px) brightness(0.62)', scale: 1.08, duration: 0.3, ease: 'power2.out' }, K);
+pop('#k1', K + 0.06);
+pop('#k2', K + 0.3);
+pop('#k3', K + 0.5);
+pop('#k4', K + 0.85);
+pop('#k5', K + 1.05);
+tl.to('#k3', { scale: 1.07, duration: 0.35, yoyo: true, repeat: 3, ease: 'sine.inOut' }, K + 1.3);
+tl.to({}, { duration: 0.01 }, K + 3.3);
+window.DURATION = K + 3.3;
+window.TIMES = { TAKES, B, SH, K };
+
+const tot = document.getElementById('tot'), cnt = document.getElementById('cnt'), prod = document.getElementById('prod'), tc = document.getElementById('tc');
+const fmt = (d) => '$' + String(Math.round(d)).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+window.seek = (t) => {
+  tl.seek(t, false);
+  tot.textContent = fmt(C.v);
+  let n = 0; TAKES.forEach((x) => { if (t >= x) n++; });
+  cnt.textContent = 'Video ' + n + '/10';
+  prod.textContent = PRODS[Math.min(9, n)] || PRODS[9];
+  const last = n ? TAKES[n - 1] : 0;
+  const s = Math.max(0, Math.floor((t - last) * 10)) % 60;
+  tc.textContent = '00:' + String(s).padStart(2, '0');
+};
+Promise.all([
+  document.fonts.load('700 60px "TT"', 'Aa'), document.fonts.load('800 60px "TT"', 'Aa'), document.fonts.load('600 60px "TT"', 'Aa'),
+]).then(() => document.fonts.ready).then(() => { window.seek(0); document.body.dataset.ready = '1'; });
+</script>
+</body>
+</html>
